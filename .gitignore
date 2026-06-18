@@ -1,0 +1,52 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.csr
+*.kdbx
+*.age
+*.gpg
+*.asc
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Logs and runtime output
+*.log
+logs/
+tmp/
+temp/
+.tmp/
+coverage/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Common future build/cache artifacts, stack-neutral
+node_modules/
+dist/
+build/
+out/
+.cache/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Local Codex runtime artifacts
+.codex-log/

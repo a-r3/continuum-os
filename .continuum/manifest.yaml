@@ -1,0 +1,20 @@
+bundle_id: continuum-os
+project_working_title: Continuum OS
+bundle_type: project-local-bootstrap
+lifecycle_status: P00 provisional
+schema_status: provisional_not_ratified
+canonical_governance_root: governance/
+references:
+  current_phase: governance/CURRENT_PHASE.md
+  project_state: governance/PROJECT_STATE.md
+  active_task: governance/ACTIVE_TASK.md
+  handoff: governance/HANDOFF.md
+  decisions: governance/DECISION_LOG.md
+  risks: governance/RISK_REGISTER.md
+  open_questions: governance/OPEN_QUESTIONS.md
+visibility: project_local
+secret_policy: no_secret_values_only_external_references
+derived_status: derived_projection_from_governance
+notes:
+  - This manifest does not ratify a final Continuum format.
+  - Canonical project-control information lives in governance files.
