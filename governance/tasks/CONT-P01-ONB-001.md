@@ -1,28 +1,28 @@
 ---
 task_id: CONT-P01-ONB-001
 title: Conduct Founder Onboarding and Ratify the Product Foundation
-lifecycle_status: PROPOSED
-current_gate: NONE
-gate_status: NOT_REQUESTED
-ratification_status: NOT_RATIFIED
-active: false
-execution_authorized: false
+lifecycle_status: IN_PROGRESS
+current_gate: P01_FOUNDER_ONBOARDING
+gate_status: ACTIVATED
+ratification_status: APPROVED_FOR_EXECUTION
+active: true
+execution_authorized: true
 ---
 
 # CONT-P01-ONB-001 - Conduct Founder Onboarding and Ratify the Product Foundation
 
 ## Status
 
-- Lifecycle status: `PROPOSED`
-- Current gate: `NONE`
-- Gate status: `NOT_REQUESTED`
-- Ratification status: `NOT_RATIFIED`
-- Active: `false`
-- Execution authorized: `false`
+- Lifecycle status: `IN_PROGRESS`
+- Current gate: `P01_FOUNDER_ONBOARDING`
+- Gate status: `ACTIVATED`
+- Ratification status: `APPROVED_FOR_EXECUTION`
+- Active: `true`
+- Execution authorized: `true`
 
 ## Owner
 
-Claude Code, after Product Owner transition approval and task activation.
+Claude Code, under Product Owner ratification authority.
 
 ## Objective
 
@@ -30,20 +30,7 @@ Conduct founder onboarding and prepare a ratified product foundation for Continu
 
 ## Required First Step
 
-Claude Code must perform a read-only comprehension and consistency review before asking founder discovery questions or modifying files.
-
-The first response must cover:
-
-- current project state;
-- current phase;
-- task state;
-- ratified decisions;
-- unresolved questions;
-- risks;
-- explicit non-scope;
-- contradictions;
-- missing information;
-- readiness to begin P01.
+Claude Code completed the read-only comprehension and consistency review before activation. The first substantive next action is controlled founder onboarding question group 1, which must wait for explicit Product Owner approval to start.
 
 ## Scope After Activation
 
@@ -62,6 +49,8 @@ The first response must cover:
 - Autonomous phase transition.
 - Commit or push without approval.
 - License invention without Product Owner decision.
+- Hook registration or activation.
+- Dependency installation.
 
 ## Acceptance Criteria
 
@@ -71,6 +60,10 @@ The first response must cover:
 - Product foundation is prepared only from confirmed answers and ratified decisions.
 - Governance and handoff remain current throughout the task.
 
-## Activation Requirement
+## Approval History
 
-This task may become active only after Product Owner approval of the P00 to P01 transition.
+- 2026-06-19: Product Owner approved activation after Claude read-only P01 transition comprehension report.
+
+## Activation Evidence
+
+Product Owner approved activation after Claude read-only P01 transition comprehension report.

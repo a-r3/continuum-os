@@ -1,44 +1,43 @@
 ---
-handoff_status: READY_FOR_PRODUCT_OWNER_P01_TRANSITION_APPROVAL
-current_gate: P00_TO_P01_TRANSITION
-gate_status: PRODUCT_OWNER_APPROVAL_PENDING
-next_action: PRODUCT_OWNER_DECISION_ON_P01_TRANSITION
-known_closeout_blockers: []
+handoff_status: P01_ACTIVATED_AWAITING_ONBOARDING_START_APPROVAL
+current_gate: P01_FOUNDER_ONBOARDING
+gate_status: ACTIVATED
+next_action: PRODUCT_OWNER_APPROVAL_TO_START_ONBOARDING_QUESTION_GROUP_1
+known_blockers: []
 ---
 
 # Handoff
 
 ## Current Handoff State
 
-Codex P00 work is complete after this closeout commit is pushed. P00 created and pushed the Claude-ready project-control foundation.
+Claude Code is now the primary project agent for the active P01 onboarding task `CONT-P01-ONB-001`. P00 is closed. P01 transition was approved by the Product Owner. This activation commit records the transition.
 
-Claude Code is the next intended primary agent only after Product Owner transition approval. `CONT-P01-ONB-001` remains proposed and inactive until explicitly activated by the Product Owner.
+Founder onboarding questions have not started. The first substantive next action is controlled onboarding question group 1, which requires explicit Product Owner approval before Claude may begin.
 
-## Claude First Response Requirement
+## Next Action
 
-Claude's first action after transition approval must be a read-only comprehension review. Claude must not modify files in its first response.
-
-The read-only comprehension report must cover current project state, phase, task state, ratified decisions, unresolved questions, risks, explicit non-scope, contradictions, missing information, and readiness to begin P01.
+- Product Owner approval to start P01 founder onboarding question group 1.
 
 ## Actions Not Yet Authorized
 
-- P01 activation.
-- `CONT-P01-ONB-001` activation.
-- Founder onboarding.
-- File modification by Claude before its first read-only comprehension response.
-- Hook registration or activation.
-- Product charter ratification.
-- Architecture or implementation stack selection.
-- `LICENSE` creation.
+- Starting onboarding questions before Product Owner start approval.
+- Ratifying any product decision.
+- License creation or selection.
+- Architecture evaluation or selection.
+- Implementation stack selection.
+- ADR creation.
 - Implementation work.
+- Dependency installation.
+- Hook registration or activation.
 
 ## Current Constraints
 
 - No hooks are activated.
 - No license is selected.
 - No implementation stack is selected.
+- No architecture is ratified.
 - No product charter is ratified.
-- P01 has not started.
+- Product Owner remains sole ratification authority.
 
 ## Claude Cold Start Reading Order
 
