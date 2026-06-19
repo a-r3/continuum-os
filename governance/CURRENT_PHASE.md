@@ -4,24 +4,30 @@
 
 P01 — Founder Discovery and Product Definition
 
+## Current P01 Sub-State
+
+P01 — Consolidation and Ratification Planning
+
 ## Status
 
 - P01 is active.
-- Founder onboarding task `CONT-P01-ONB-001` is active and execution-authorized.
+- Founder onboarding (`CONT-P01-ONB-001`) is complete.
+- Consolidation planning task `CONT-P01-CONSOL-001` is active and execution-authorized.
 - P02, P03, P04, and P05 are not active.
 
 ## Objective
 
-Conduct founder onboarding and prepare a ratified product foundation for Continuum OS. P01 covers product discovery, scope, non-goals, personas, use cases, and proposed product decisions in reviewable groups. Proposed decisions remain separate from Product Owner-ratified decisions.
+Produce a ratifiable P01 consolidation and ratification plan mapping the P01 deliverables to bundles, document paths, statuses, gates, evidence, approval verbs, and a closeout sequence. Authoring the P01 deliverable documents themselves is deferred to separately approved successor Strict-lane execution task(s).
 
 ## Current Gate
 
-- Current gate: `P01_FOUNDER_ONBOARDING`
+- Current gate: `P01_CONSOLIDATION_PLANNING`
 - Gate status: `ACTIVATED`
 
 ## Prohibited Work
 
-- Starting founder onboarding questions before this activation commit is recorded and Product Owner gives the onboarding start approval.
+- Drafting the P01 consolidation plan content before the next Product Owner instruction.
+- Authoring P01 deliverable documents (`PRODUCT_CHARTER.md`, `GLOSSARY.md`, `NEVER_AUTOMATIC.md`, `TRUST_BOUNDARIES.md`, `docs/REFERENCE_STRUCTURE.md`, cold-start acceptance checklist).
 - Product implementation.
 - Architecture evaluation outside approved P03 tasks.
 - Implementation stack selection.
@@ -29,7 +35,8 @@ Conduct founder onboarding and prepare a ratified product foundation for Continu
 - ADR creation.
 - Dependency installation.
 - Hook registration or activation.
-- Ratifying product decisions; only the Product Owner ratifies.
+- Modification of adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`).
+- Ratifying product or governance decisions; only the Product Owner ratifies.
 
 ## Phase Boundary
 
@@ -41,6 +48,7 @@ Conduct founder onboarding and prepare a ratified product foundation for Continu
 
 ## Exit Conditions
 
-- Founder onboarding completed in reviewable groups.
-- Product foundation prepared from confirmed answers and ratified decisions.
+- Consolidation and ratification plan drafted, reviewed, and ratified by the Product Owner.
+- Successor execution task(s) for each bundle proposed for later Product Owner review and activation, one active task at a time.
+- P01 closeout sequence (consistency verification, cold-start acceptance test, closeout commit, push) executed under separately approved successor tasks.
 - Product Owner approves P01 closeout and authorizes transition to P02.

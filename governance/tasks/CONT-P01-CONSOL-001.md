@@ -2,12 +2,12 @@
 task_id: CONT-P01-CONSOL-001
 title: P01 Consolidation and Ratification Planning
 lane: Strict
-lifecycle_status: PROPOSED
-current_gate: NONE
-gate_status: NOT_REQUESTED
-ratification_status: NOT_RATIFIED
-active: false
-execution_authorized: false
+lifecycle_status: IN_PROGRESS
+current_gate: P01_CONSOLIDATION_PLANNING
+gate_status: ACTIVATED
+ratification_status: APPROVED_FOR_EXECUTION
+active: true
+execution_authorized: true
 predecessor_task: CONT-P01-ONB-001
 product_owner: Rauf Alizada
 ---
@@ -19,22 +19,22 @@ product_owner: Rauf Alizada
 Rauf Alizada is the only valid Product Owner, project authority, and ratification authority for v1.
 No other identity is valid for project governance.
 
-## Proposal Notice
+## Activation Notice
 
-This task is proposed only. It is not active. It cannot execute until explicitly activated by Product Owner approval.
+This task is now the single active task. Execution is authorized only for consolidation planning. Drafting the actual consolidation plan content is the next step and still requires the next Product Owner instruction. Authoring P01 deliverable documents remains out of scope under this activation.
 
-The active-task invariant remains: `active_task_id: CONT-P01-ONB-001`. This proposed successor does not displace the active onboarding task until Product Owner explicitly transitions activation.
+The active-task invariant holds: `active_task_id: CONT-P01-CONSOL-001`. Predecessor task `CONT-P01-ONB-001` is closed/completed.
 
 ## Status
 
 - Lane: `Strict`
-- Lifecycle status: `PROPOSED`
-- Current gate: `NONE`
-- Gate status: `NOT_REQUESTED`
-- Ratification status: `NOT_RATIFIED`
-- Active: `false`
-- Execution authorized: `false`
-- Predecessor / input: `CONT-P01-ONB-001`
+- Lifecycle status: `IN_PROGRESS`
+- Current gate: `P01_CONSOLIDATION_PLANNING`
+- Gate status: `ACTIVATED`
+- Ratification status: `APPROVED_FOR_EXECUTION`
+- Active: `true`
+- Execution authorized: `true`
+- Predecessor / input: `CONT-P01-ONB-001` (closed/completed)
 - Product Owner: `Rauf Alizada`
 
 ## Owner
@@ -141,3 +141,17 @@ These bundle gates are planning targets only. This task maps the gates and deliv
 ## Activation Requirement
 
 This task may become active only after Product Owner approval of the transition from `CONT-P01-ONB-001` to `CONT-P01-CONSOL-001`. Until then, this record is a proposed successor only.
+
+## Activation Evidence
+
+- 2026-06-19: Product Owner approved activation after review of the proposed task as committed in `81207bdf5c0d897105cdb8f25e8e025c46413df7`.
+- `CONT-P01-CONSOL-001` is now the single active task.
+- Execution is authorized only for consolidation planning.
+- Drafting the actual consolidation and ratification plan content is the next step and still requires the next Product Owner instruction.
+- Authoring P01 deliverable documents remains out of scope under this activation.
+
+## Approval History
+
+- 2026-06-19: Product Owner approved preparation of this proposed successor task as a diff-only draft (no staging, commit, push, or activation).
+- 2026-06-19: Product Owner approved corrections (planning-only scope) and authorized staging, commit, and push (commit `81207bdf5c0d897105cdb8f25e8e025c46413df7`).
+- 2026-06-19: Product Owner approved the activation transition from `CONT-P01-ONB-001` to `CONT-P01-CONSOL-001`.

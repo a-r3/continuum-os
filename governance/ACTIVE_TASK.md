@@ -1,7 +1,7 @@
 ---
-active_task_id: CONT-P01-ONB-001
+active_task_id: CONT-P01-CONSOL-001
 lifecycle_status: IN_PROGRESS
-current_gate: P01_FOUNDER_ONBOARDING
+current_gate: P01_CONSOLIDATION_PLANNING
 gate_status: ACTIVATED
 execution_authorized: true
 ---
@@ -18,18 +18,18 @@ A zero-active-task state is permitted only during an explicit transition, approv
 
 Exactly one active task exists.
 
-- Task ID: `CONT-P01-ONB-001`
-- Title: Conduct Founder Onboarding and Ratify the Product Foundation
+- Task ID: `CONT-P01-CONSOL-001`
+- Title: P01 Consolidation and Ratification Planning
 - Lifecycle status: `IN_PROGRESS`
-- Current gate: `P01_FOUNDER_ONBOARDING`
+- Current gate: `P01_CONSOLIDATION_PLANNING`
 - Gate status: `ACTIVATED`
 - Execution authorized: `true`
-- Task file: `governance/tasks/CONT-P01-ONB-001.md`
+- Task file: `governance/tasks/CONT-P01-CONSOL-001.md`
 
-P01 is active. Execution authorization is scoped strictly to the approved P01 founder onboarding task and does not extend to any other work.
+`CONT-P01-ONB-001` is closed/completed. P01 remains active and consolidation planning is the active work. No P01 deliverable document authoring is authorized yet. No P01 decisions have been ratified yet. The Product Owner / sole ratification authority for v1 is `Rauf Alizada`.
 
 ## Scope Boundaries
 
-- Authorized: governance updates and controlled founder onboarding preparation under `CONT-P01-ONB-001`.
-- Prohibited under this activation: architecture selection, implementation work, implementation stack selection, license selection, ADR creation, dependency installation, hook registration, and hook activation.
+- Authorized: governance updates and consolidation planning under `CONT-P01-CONSOL-001` (planning only).
+- Prohibited under this activation: drafting the P01 consolidation plan content before the next Product Owner instruction, authoring P01 deliverable documents (`PRODUCT_CHARTER.md`, `GLOSSARY.md`, `NEVER_AUTOMATIC.md`, `TRUST_BOUNDARIES.md`, `docs/REFERENCE_STRUCTURE.md`, cold-start acceptance checklist), architecture selection, implementation work, implementation stack selection, license selection, ADR creation, dependency installation, hook registration, hook activation, and modification of adapter rules.
 - Product Owner remains the sole ratification authority for any semantic decision.

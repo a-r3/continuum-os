@@ -1,7 +1,7 @@
 ---
 session_log_status: ACTIVE
 latest_session_date: 2026-06-19
-latest_session_scope: P01_CONSOLIDATION_PLANNING_PROPOSED_COMMITTED
+latest_session_scope: P01_CONSOLIDATION_PLANNING_ACTIVATED
 ---
 
 # Session Log
@@ -70,3 +70,17 @@ Append-only summaries of completed sessions belong here.
 - No P01 deliverable documents authored.
 - Adapter rules, settings, hooks, architecture, implementation, license, and dependencies not modified.
 - Commit SHA recorded in evidence below.
+- Proposed-commit SHA: `81207bdf5c0d897105cdb8f25e8e025c46413df7`.
+
+## 2026-06-19 - P01 Consolidation Planning Activated
+
+- Proposed consolidation planning task was reviewed and committed (`81207bdf5c0d897105cdb8f25e8e025c46413df7`).
+- Product Owner approved the active-task transition from `CONT-P01-ONB-001` to `CONT-P01-CONSOL-001`.
+- `CONT-P01-ONB-001` closed/completed (`lifecycle_status: DONE`, `active: false`, `execution_authorized: false`).
+- `CONT-P01-CONSOL-001` activated as the single active task (`lifecycle_status: IN_PROGRESS`, `active: true`, `execution_authorized: true`).
+- `governance/ACTIVE_TASK.md`, `governance/PROJECT_STATE.md`, `governance/CURRENT_PHASE.md`, `governance/HANDOFF.md`, and `governance/SESSION_LOG.md` updated to reflect the transition.
+- Product Owner / sole ratification authority: `Rauf Alizada`.
+- No P01 decisions ratified.
+- No P01 deliverable documents authored.
+- No hooks, architecture, implementation, license, dependencies, or adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) modified.
+- Activation commit SHA recorded in evidence below.

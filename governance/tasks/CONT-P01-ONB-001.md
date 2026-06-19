@@ -1,24 +1,24 @@
 ---
 task_id: CONT-P01-ONB-001
 title: Conduct Founder Onboarding and Ratify the Product Foundation
-lifecycle_status: IN_PROGRESS
+lifecycle_status: DONE
 current_gate: P01_FOUNDER_ONBOARDING
-gate_status: ACTIVATED
+gate_status: COMPLETED
 ratification_status: APPROVED_FOR_EXECUTION
-active: true
-execution_authorized: true
+active: false
+execution_authorized: false
 ---
 
 # CONT-P01-ONB-001 - Conduct Founder Onboarding and Ratify the Product Foundation
 
 ## Status
 
-- Lifecycle status: `IN_PROGRESS`
+- Lifecycle status: `DONE`
 - Current gate: `P01_FOUNDER_ONBOARDING`
-- Gate status: `ACTIVATED`
+- Gate status: `COMPLETED`
 - Ratification status: `APPROVED_FOR_EXECUTION`
-- Active: `true`
-- Execution authorized: `true`
+- Active: `false`
+- Execution authorized: `false`
 
 ## Owner
 
@@ -64,6 +64,8 @@ Claude Code completed the read-only comprehension and consistency review before 
 
 - 2026-06-19: Product Owner approved activation after Claude read-only P01 transition comprehension report.
 - 2026-06-19: Product Owner approved preparation of proposed successor task `CONT-P01-CONSOL-001` diff (prepare-diff only; no staging, commit, push, or activation).
+- 2026-06-19: Product Owner approved staging, commit, and push of the corrected proposed successor task `CONT-P01-CONSOL-001` (commit `81207bdf5c0d897105cdb8f25e8e025c46413df7`).
+- 2026-06-19: Product Owner approved the activation transition from `CONT-P01-ONB-001` to `CONT-P01-CONSOL-001`; this task is now closed/completed.
 
 ## Activation Evidence
 
@@ -80,5 +82,15 @@ Product Owner approved activation after Claude read-only P01 transition comprehe
 - No P01 decisions have been ratified yet.
 - No P01 deliverable documents have been created yet.
 - Recommendation: proposed successor task `CONT-P01-CONSOL-001` (P01 Consolidation and Ratification Planning) prepared as a diff-only proposal for Product Owner review.
-- This onboarding task `CONT-P01-ONB-001` remains active. It is not closed and not marked done. Closeout will occur only after the successor activation transition is explicitly approved by the Product Owner.
-- The active-task invariant remains valid: `active_task_id: CONT-P01-ONB-001`.
+- This onboarding task `CONT-P01-ONB-001` is now closed/completed following Product Owner activation approval for `CONT-P01-CONSOL-001`.
+- The active-task invariant remains valid: `active_task_id: CONT-P01-CONSOL-001`.
+
+## Closeout Evidence
+
+- Onboarding Question Groups 1 through 5 completed.
+- Pre-consolidation clarifications U1 through U14 resolved.
+- Successor task `CONT-P01-CONSOL-001` proposed and committed in `81207bdf5c0d897105cdb8f25e8e025c46413df7`.
+- Product Owner approved the transition from `CONT-P01-ONB-001` to `CONT-P01-CONSOL-001`.
+- No P01 decisions ratified during onboarding.
+- No P01 deliverable documents authored during onboarding.
+- Handoff to consolidation planning is complete.
