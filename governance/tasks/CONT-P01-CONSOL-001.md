@@ -3,9 +3,9 @@ task_id: CONT-P01-CONSOL-001
 title: P01 Consolidation and Ratification Planning
 lane: Strict
 lifecycle_status: IN_PROGRESS
-current_gate: P01_CONSOLIDATION_PLANNING
-gate_status: ACTIVATED
-ratification_status: APPROVED_FOR_EXECUTION
+current_gate: P01_CONSOLIDATION_PLAN_RATIFIED
+gate_status: COMPLETED
+ratification_status: RATIFIED
 active: true
 execution_authorized: true
 predecessor_task: CONT-P01-ONB-001
@@ -29,9 +29,9 @@ The active-task invariant holds: `active_task_id: CONT-P01-CONSOL-001`. Predeces
 
 - Lane: `Strict`
 - Lifecycle status: `IN_PROGRESS`
-- Current gate: `P01_CONSOLIDATION_PLANNING`
-- Gate status: `ACTIVATED`
-- Ratification status: `APPROVED_FOR_EXECUTION`
+- Current gate: `P01_CONSOLIDATION_PLAN_RATIFIED`
+- Gate status: `COMPLETED`
+- Ratification status: `RATIFIED`
 - Active: `true`
 - Execution authorized: `true`
 - Predecessor / input: `CONT-P01-ONB-001` (closed/completed)
@@ -164,6 +164,20 @@ No successor task may be activated until separately approved by the Product Owne
 - 2026-06-19: Product Owner approved corrections (planning-only scope) and authorized staging, commit, and push (commit `81207bdf5c0d897105cdb8f25e8e025c46413df7`).
 - 2026-06-19: Product Owner approved the activation transition from `CONT-P01-ONB-001` to `CONT-P01-CONSOL-001`.
 - 2026-06-19: Product Owner approved preparation of the P01 consolidation and ratification plan as a draft inside this task record (prepare diff only; no staging, commit, push, or ratification).
+- 2026-06-19: Product Owner approved staging, commit, and push of the draft P01 consolidation plan (commit `2b746dd28d84237a50c0526bac282243a62e2987`).
+- 2026-06-19: Product Owner **ratified** the P01 consolidation and ratification plan, selected **Option A** (one Strict-lane execution task per bundle), and approved preparation of a proposed inactive successor task `CONT-P01-BUNDLE-001` as a diff-only artifact (no staging, commit, push, or activation).
+
+## Plan Ratification Evidence
+
+- Product Owner reviewed the draft plan committed in `2b746dd28d84237a50c0526bac282243a62e2987`.
+- Product Owner ratified the P01 consolidation and ratification plan as the approved P01 execution plan.
+- Product Owner selected **Option A**: one Strict-lane execution task per bundle.
+- This ratification covers the plan only. It does not ratify the individual P01 deliverable documents.
+- No P01 deliverable documents were authored.
+- No product or governance decisions other than the consolidation-plan ratification and the successor-task-shape selection (Option A) were ratified.
+- `CONT-P01-CONSOL-001` remains active until a successor transition is separately approved by the Product Owner.
+- `CONT-P01-BUNDLE-001` (P01 Bundle 1 — Identity and Scope) is proposed only and inactive; activation requires a separate explicit Product Owner approval.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`. No other identity is valid.
 
 ## Draft P01 Consolidation and Ratification Plan
 

@@ -1,8 +1,8 @@
 ---
-handoff_status: P01_CONSOLIDATION_PLANNING_ACTIVE_AWAITING_PLAN_DRAFT_APPROVAL
-current_gate: P01_CONSOLIDATION_PLANNING
-gate_status: ACTIVATED
-next_action: PRODUCT_OWNER_APPROVAL_TO_DRAFT_P01_CONSOLIDATION_PLAN
+handoff_status: P01_PLAN_RATIFIED_AWAITING_BUNDLE_1_TASK_REVIEW
+current_gate: P01_CONSOLIDATION_PLAN_RATIFIED
+gate_status: COMPLETED
+next_action: PRODUCT_OWNER_REVIEW_OF_PROPOSED_CONT_P01_BUNDLE_001
 known_blockers: []
 ---
 
@@ -10,20 +10,23 @@ known_blockers: []
 
 ## Current Handoff State
 
-The single active task is now `CONT-P01-CONSOL-001` (P01 Consolidation and Ratification Planning). The onboarding task `CONT-P01-ONB-001` is closed/completed.
+The single active task remains `CONT-P01-CONSOL-001` (P01 Consolidation and Ratification Planning). The onboarding task `CONT-P01-ONB-001` is closed/completed.
 
 The Product Owner / sole project authority / sole ratification authority for v1 is **Rauf Alizada**. No other identity is valid for project governance, participation, approval, ratification, or authority. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` does not participate in this project in any form and must not be encoded as a project identity; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
 
-Consolidation planning is active. The next action is Product Owner approval to draft the consolidation and ratification plan. No P01 deliverable documents (`PRODUCT_CHARTER.md`, `GLOSSARY.md`, `NEVER_AUTOMATIC.md`, `TRUST_BOUNDARIES.md`, `docs/REFERENCE_STRUCTURE.md`, cold-start acceptance checklist) may be authored yet. No P01 decisions have been ratified yet.
+The P01 consolidation and ratification plan is **ratified**. Successor-task shape **Option A** (one Strict-lane execution task per bundle) was selected by the Product Owner. A proposed inactive successor task `CONT-P01-BUNDLE-001` (P01 Bundle 1 — Identity and Scope) has been prepared as a diff for Product Owner review. It is proposed only and inactive; it has not been activated and does not displace `CONT-P01-CONSOL-001`. No Bundle 1 execution may begin until explicit Product Owner activation approval. No P01 deliverable documents (`PRODUCT_CHARTER.md`, `GLOSSARY.md`, `NEVER_AUTOMATIC.md`, `TRUST_BOUNDARIES.md`, `docs/REFERENCE_STRUCTURE.md`, cold-start acceptance checklist) have been authored yet.
 
 ## Next Action
 
-- Product Owner approval to begin drafting the P01 consolidation and ratification plan inside `CONT-P01-CONSOL-001`.
+- Product Owner review of the proposed `CONT-P01-BUNDLE-001` diff.
 
 ## Actions Not Yet Authorized
 
-- Drafting the P01 consolidation and ratification plan content before the next Product Owner instruction.
+- Activating `CONT-P01-BUNDLE-001`.
+- Closing or marking done `CONT-P01-CONSOL-001`.
+- Modifying `governance/ACTIVE_TASK.md`.
 - Authoring any P01 deliverable documents (`PRODUCT_CHARTER.md`, `GLOSSARY.md`, `NEVER_AUTOMATIC.md`, `TRUST_BOUNDARIES.md`, `docs/REFERENCE_STRUCTURE.md`, cold-start acceptance checklist).
+- Modifying `governance/PROJECT_STATE.md`, `governance/CHANGE_PROTOCOL.md`, `governance/DECISION_LOG.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, or `governance/DOCUMENT_REGISTRY.md`.
 - Modifying adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`).
 - Ratifying any product or governance decision.
 - License creation or selection.
