@@ -2,13 +2,14 @@
 task_id: CONT-P01-CONSOL-001
 title: P01 Consolidation and Ratification Planning
 lane: Strict
-lifecycle_status: IN_PROGRESS
+lifecycle_status: DONE
 current_gate: P01_CONSOLIDATION_PLAN_RATIFIED
 gate_status: COMPLETED
 ratification_status: RATIFIED
-active: true
-execution_authorized: true
+active: false
+execution_authorized: false
 predecessor_task: CONT-P01-ONB-001
+successor_task: CONT-P01-BUNDLE-001
 product_owner: Rauf Alizada
 ---
 
@@ -28,13 +29,14 @@ The active-task invariant holds: `active_task_id: CONT-P01-CONSOL-001`. Predeces
 ## Status
 
 - Lane: `Strict`
-- Lifecycle status: `IN_PROGRESS`
+- Lifecycle status: `DONE`
 - Current gate: `P01_CONSOLIDATION_PLAN_RATIFIED`
 - Gate status: `COMPLETED`
 - Ratification status: `RATIFIED`
-- Active: `true`
-- Execution authorized: `true`
+- Active: `false`
+- Execution authorized: `false`
 - Predecessor / input: `CONT-P01-ONB-001` (closed/completed)
+- Successor: `CONT-P01-BUNDLE-001` (active)
 - Product Owner: `Rauf Alizada`
 
 ## Owner
@@ -140,15 +142,13 @@ These bundle gates are planning targets only. This task maps the gates and deliv
 
 ## Activation State
 
-This task is active.
+This task is closed/completed.
 
-Activation was completed after Product Owner approval of the transition from `CONT-P01-ONB-001` to `CONT-P01-CONSOL-001`.
+Activation was completed after Product Owner approval of the transition from `CONT-P01-ONB-001` to `CONT-P01-CONSOL-001`. Closeout was completed after Product Owner approval of the transition from `CONT-P01-CONSOL-001` to `CONT-P01-BUNDLE-001`.
 
-`CONT-P01-CONSOL-001` is the single active task.
+`CONT-P01-BUNDLE-001` is now the single active task.
 
-`CONT-P01-ONB-001` is closed/completed.
-
-No successor task may be activated until separately approved by the Product Owner.
+`CONT-P01-ONB-001` and `CONT-P01-CONSOL-001` are both closed/completed.
 
 ## Activation Evidence
 
@@ -166,6 +166,8 @@ No successor task may be activated until separately approved by the Product Owne
 - 2026-06-19: Product Owner approved preparation of the P01 consolidation and ratification plan as a draft inside this task record (prepare diff only; no staging, commit, push, or ratification).
 - 2026-06-19: Product Owner approved staging, commit, and push of the draft P01 consolidation plan (commit `2b746dd28d84237a50c0526bac282243a62e2987`).
 - 2026-06-19: Product Owner **ratified** the P01 consolidation and ratification plan, selected **Option A** (one Strict-lane execution task per bundle), and approved preparation of a proposed inactive successor task `CONT-P01-BUNDLE-001` as a diff-only artifact (no staging, commit, push, or activation).
+- 2026-06-19: Product Owner approved staging, commit, and push of the plan ratification and the proposed Bundle 1 task (commit `956c6ff7da7cafbafa21fb51502e828502ca0fb0`).
+- 2026-06-19: Product Owner approved the active-task transition from `CONT-P01-CONSOL-001` to `CONT-P01-BUNDLE-001`, closing this task and activating Bundle 1.
 
 ## Plan Ratification Evidence
 
@@ -458,3 +460,15 @@ Recommendation: **Option A**. No activation is performed under this draft; the r
 9. Product Owner `commit and push` approval verb explicitly granted.
 10. Push to `origin/main`.
 11. Transition readiness for P02 declared in `governance/HANDOFF.md` `next_action`; no automatic P02 activation.
+
+## Closeout Evidence
+
+- P01 consolidation and ratification plan was drafted and committed in `2b746dd28d84237a50c0526bac282243a62e2987`.
+- Product Owner ratified the P01 consolidation and ratification plan and selected Option A (one Strict-lane execution task per bundle).
+- Proposed Bundle 1 task `CONT-P01-BUNDLE-001` was committed in `956c6ff7da7cafbafa21fb51502e828502ca0fb0`.
+- Product Owner approved the active-task transition from `CONT-P01-CONSOL-001` to `CONT-P01-BUNDLE-001`.
+- No P01 deliverable documents were authored during `CONT-P01-CONSOL-001`.
+- No Bundle 1 execution occurred before activation of `CONT-P01-BUNDLE-001`.
+- Handoff to Bundle 1 completed.
+- Active-task invariant preserved throughout the transition; the single active task is now `CONT-P01-BUNDLE-001`.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.

@@ -2,12 +2,12 @@
 task_id: CONT-P01-BUNDLE-001
 title: P01 Bundle 1 - Identity and Scope
 lane: Strict
-lifecycle_status: PROPOSED
-current_gate: NONE
-gate_status: NOT_REQUESTED
-ratification_status: NOT_RATIFIED
-active: false
-execution_authorized: false
+lifecycle_status: IN_PROGRESS
+current_gate: P01_BUNDLE_1_IDENTITY_SCOPE
+gate_status: ACTIVATED
+ratification_status: APPROVED_FOR_EXECUTION
+active: true
+execution_authorized: true
 predecessor_task: CONT-P01-CONSOL-001
 product_owner: Rauf Alizada
 ---
@@ -18,22 +18,22 @@ product_owner: Rauf Alizada
 
 `Rauf Alizada` is the only valid Product Owner, project authority, and ratification authority for v1. No other identity is valid for project governance. Any reintroduction of an invalid identity (`Raauf Alizada`, `Tural Rahmanli`, or any other) is a stop condition.
 
-## Proposal Notice
+## Activation Notice
 
-This task is proposed only. It is inactive. It cannot execute until explicitly activated by Product Owner approval.
+This task is now the single active task. Execution is authorized only for Bundle 1 Identity and Scope work. Drafting the Bundle 1 deliverables (`governance/PRODUCT_CHARTER.md` and the Product Owner identity encoding update in `governance/PROJECT_STATE.md`) is the next step and still requires the next Product Owner instruction. Ratification of Bundle 1 deliverables remains out of scope under this activation.
 
-The active-task invariant currently holds as: `active_task_id: CONT-P01-CONSOL-001`. This proposed successor does not displace the active consolidation planning task until the Product Owner explicitly approves the transition.
+The active-task invariant holds: `active_task_id: CONT-P01-BUNDLE-001`. Predecessor task `CONT-P01-CONSOL-001` is closed/completed.
 
 ## Status
 
 - Lane: `Strict`
-- Lifecycle status: `PROPOSED`
-- Current gate: `NONE`
-- Gate status: `NOT_REQUESTED`
-- Ratification status: `NOT_RATIFIED`
-- Active: `false`
-- Execution authorized: `false`
-- Predecessor / input: `CONT-P01-CONSOL-001` (ratified P01 consolidation plan; Option A selected)
+- Lifecycle status: `IN_PROGRESS`
+- Current gate: `P01_BUNDLE_1_IDENTITY_SCOPE`
+- Gate status: `ACTIVATED`
+- Ratification status: `APPROVED_FOR_EXECUTION`
+- Active: `true`
+- Execution authorized: `true`
+- Predecessor / input: `CONT-P01-CONSOL-001` (ratified P01 consolidation plan; Option A selected; closed/completed)
 - Product Owner: `Rauf Alizada`
 
 ## Objective
@@ -108,6 +108,19 @@ Output is reviewable diffs prepared under the approval-verb discipline (`prepare
 - Commit SHAs recorded for every authorized commit.
 - Product Owner ratification entries appended to an approval-history section as they occur.
 
-## Activation Requirement
+## Activation Evidence
 
-This task may become active only after Product Owner approval of the transition from `CONT-P01-CONSOL-001` to `CONT-P01-BUNDLE-001`. Until then, this record is a proposed successor only and confers no execution authority. The active-task invariant continues to hold as `active_task_id: CONT-P01-CONSOL-001`.
+- 2026-06-19: Product Owner approved activation after review of the proposed task as committed in `956c6ff7da7cafbafa21fb51502e828502ca0fb0`.
+- `CONT-P01-BUNDLE-001` is now the single active task.
+- Execution is authorized only for Bundle 1 Identity and Scope.
+- Drafting Bundle 1 deliverables (`governance/PRODUCT_CHARTER.md` and the Product Owner identity encoding update in `governance/PROJECT_STATE.md`) is the next step and still requires the next Product Owner instruction.
+- No Product Charter or `PROJECT_STATE.md` Product Owner identity encoding has been authored yet.
+- No Bundle 1 deliverables have been ratified yet.
+- Bundle 2–5 deliverables remain out of scope under this activation.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
+
+## Approval History
+
+- 2026-06-19: Product Owner approved preparation of this task as a diff-only proposed successor (no staging, commit, push, or activation).
+- 2026-06-19: Product Owner approved staging, commit, and push of this proposed task together with the consolidation-plan ratification (commit `956c6ff7da7cafbafa21fb51502e828502ca0fb0`).
+- 2026-06-19: Product Owner approved the active-task transition from `CONT-P01-CONSOL-001` to `CONT-P01-BUNDLE-001`, activating Bundle 1 Identity and Scope.

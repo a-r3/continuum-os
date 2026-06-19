@@ -5,24 +5,25 @@
 - Project working title: Continuum OS.
 - Repository status: P00 complete; P01 active.
 - Current phase: P01 — Founder Discovery and Product Definition.
-- Current P01 sub-state: P01 — Consolidation and Ratification Planning.
-- Active task: `CONT-P01-CONSOL-001`.
+- Current P01 sub-state: P01 — Bundle 1 Identity and Scope.
+- Active task: `CONT-P01-BUNDLE-001`.
 - Lifecycle status: `IN_PROGRESS`.
-- Current gate: `P01_CONSOLIDATION_PLANNING`.
+- Current gate: `P01_BUNDLE_1_IDENTITY_SCOPE`.
 - Gate status: `ACTIVATED`.
 - Execution authorized: `true`.
 - P00 status: complete.
 - P01 status: active.
 - P01 founder onboarding: completed (`CONT-P01-ONB-001` closed).
+- P01 consolidation planning: completed (`CONT-P01-CONSOL-001` closed); P01 consolidation and ratification plan ratified; successor-task shape Option A (one Strict-lane execution task per bundle) selected.
 - Product Owner / sole project authority / sole ratification authority for v1: `Rauf Alizada`.
-- No P01 decisions ratified yet.
-- No P01 deliverable documents authored yet.
-- Next action: Product Owner approval to start drafting the P01 consolidation and ratification plan.
+- No Bundle 1 deliverable documents authored yet.
+- No Bundle 1 deliverables ratified yet.
+- Next action: Product Owner approval to draft Bundle 1 deliverables (`governance/PRODUCT_CHARTER.md` and the Product Owner identity encoding update in `governance/PROJECT_STATE.md`).
 
 ## Ratified Boundaries
 
 - Codex authority is limited to P00 bootstrap and closeout unless explicitly reassigned by the Product Owner.
-- Claude Code is the primary project agent for the active P01 consolidation planning task.
+- Claude Code is the primary project agent for the active P01 Bundle 1 Identity and Scope task.
 - Product and domain discovery occur in approved P01/P02 work.
 - Architecture evaluation, tradeoff analysis, technical spikes, and ADR preparation occur only in approved P03 tasks.
 - Architecture decisions may be proposed during P03, but only the Product Owner may ratify them.
@@ -43,6 +44,9 @@
 - P00 closeout commit: `4ed361607bfbc40f4783e6fc0e28244d9c6e8472`.
 - P01 activation commit: `66e806c1618646f52aa13ec481698943e7302fdd`.
 - P01 consolidation planning proposed commit: `81207bdf5c0d897105cdb8f25e8e025c46413df7`.
+- P01 consolidation planning activation commit: `bfe33441237e362b3164a726b7bee3e21d5a6ee5`.
+- P01 consolidation plan draft commit: `2b746dd28d84237a50c0526bac282243a62e2987`.
+- P01 plan ratification and Bundle 1 proposed commit: `956c6ff7da7cafbafa21fb51502e828502ca0fb0`.
 - Initial foundation baseline push to `origin/main`: completed.
 - Baseline remote verification: `origin/main` matched local baseline SHA.
 - Committed foundation file count: 68.
@@ -60,3 +64,4 @@
 - Validation date for P00 baseline: 2026-06-18.
 - P01 activation date: 2026-06-19.
 - P01 consolidation planning activation date: 2026-06-19.
+- P01 Bundle 1 Identity and Scope activation date: 2026-06-19.

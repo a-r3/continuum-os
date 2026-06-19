@@ -6,28 +6,36 @@ P01 — Founder Discovery and Product Definition
 
 ## Current P01 Sub-State
 
-P01 — Consolidation and Ratification Planning
+P01 — Bundle 1 Identity and Scope
 
 ## Status
 
 - P01 is active.
 - Founder onboarding (`CONT-P01-ONB-001`) is complete.
-- Consolidation planning task `CONT-P01-CONSOL-001` is active and execution-authorized.
-- P02, P03, P04, and P05 are not active.
+- Consolidation planning task `CONT-P01-CONSOL-001` is closed/completed.
+- P01 consolidation and ratification plan is ratified.
+- Bundle 1 task `CONT-P01-BUNDLE-001` is the single active and execution-authorized task.
+- P02 is not active. P03, P04, and P05 are not active.
+- Bundle 1 deliverable authoring requires the next Product Owner instruction.
+- Architecture, implementation, license, hook activation, and Bundle 2–5 deliverables remain unauthorized unless separately approved.
 
 ## Objective
 
-Produce a ratifiable P01 consolidation and ratification plan mapping the P01 deliverables to bundles, document paths, statuses, gates, evidence, approval verbs, and a closeout sequence. Authoring the P01 deliverable documents themselves is deferred to separately approved successor Strict-lane execution task(s).
+Prepare Bundle 1 (Identity and Scope) deliverables — `governance/PRODUCT_CHARTER.md` (new) and the Product Owner identity encoding update in `governance/PROJECT_STATE.md` — for Product Owner review and ratification under the approval-verb discipline. Drafting and ratification occur only under separate Product Owner approvals.
 
 ## Current Gate
 
-- Current gate: `P01_CONSOLIDATION_PLANNING`
+- Current gate: `P01_BUNDLE_1_IDENTITY_SCOPE`
 - Gate status: `ACTIVATED`
 
 ## Prohibited Work
 
-- Drafting the P01 consolidation plan content before the next Product Owner instruction.
-- Authoring P01 deliverable documents (`PRODUCT_CHARTER.md`, `GLOSSARY.md`, `NEVER_AUTOMATIC.md`, `TRUST_BOUNDARIES.md`, `docs/REFERENCE_STRUCTURE.md`, cold-start acceptance checklist).
+- Drafting `governance/PRODUCT_CHARTER.md` before the next Product Owner instruction.
+- Modifying `governance/PROJECT_STATE.md` with the Product Owner identity encoding deliverable before the next Product Owner instruction.
+- Ratifying the Product Charter or Product Owner identity encoding without explicit Product Owner approval.
+- Creating `governance/PRODUCT_OWNER.md`.
+- Authoring Bundle 2–5 deliverables (`GLOSSARY.md`, `CHANGE_PROTOCOL.md` updates, `NEVER_AUTOMATIC.md`, `TRUST_BOUNDARIES.md`, `RISK_REGISTER.md` top-six update, `docs/REFERENCE_STRUCTURE.md`, cold-start acceptance checklist ratification, roadmap update, adapter-rule alignment, P01 closeout).
+- Modifying `CHANGE_PROTOCOL.md`, `DECISION_LOG.md`, `RISK_REGISTER.md`, `ROADMAP.md`, or `DOCUMENT_REGISTRY.md`.
 - Product implementation.
 - Architecture evaluation outside approved P03 tasks.
 - Implementation stack selection.
@@ -48,7 +56,7 @@ Produce a ratifiable P01 consolidation and ratification plan mapping the P01 del
 
 ## Exit Conditions
 
-- Consolidation and ratification plan drafted, reviewed, and ratified by the Product Owner.
-- Successor execution task(s) for each bundle proposed for later Product Owner review and activation, one active task at a time.
+- Consolidation and ratification plan drafted, reviewed, and ratified by the Product Owner (completed).
+- Bundle 1 through Bundle 5 deliverables drafted, reviewed, and ratified one bundle at a time under separately approved Strict-lane execution tasks.
 - P01 closeout sequence (consistency verification, cold-start acceptance test, closeout commit, push) executed under separately approved successor tasks.
 - Product Owner approves P01 closeout and authorizes transition to P02.

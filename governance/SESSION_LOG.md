@@ -1,7 +1,7 @@
 ---
 session_log_status: ACTIVE
 latest_session_date: 2026-06-19
-latest_session_scope: P01_PLAN_RATIFIED_BUNDLE_1_TASK_PROPOSED_DRAFT
+latest_session_scope: P01_BUNDLE_1_IDENTITY_SCOPE_ACTIVATED
 ---
 
 # Session Log
@@ -108,3 +108,17 @@ Append-only summaries of completed sessions belong here.
 - `governance/ACTIVE_TASK.md` not modified; active-task invariant preserved: `active_task_id: CONT-P01-CONSOL-001`.
 - `governance/PROJECT_STATE.md`, `governance/CHANGE_PROTOCOL.md`, `governance/DECISION_LOG.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, adapter rules, hooks, architecture, implementation, license, and dependencies not modified.
 - Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`. No other identity is valid.
+
+## 2026-06-19 - P01 Bundle 1 Identity and Scope Activated
+
+- Proposed Bundle 1 task `CONT-P01-BUNDLE-001` was reviewed and committed in `956c6ff7da7cafbafa21fb51502e828502ca0fb0`.
+- Product Owner approved the active-task transition from `CONT-P01-CONSOL-001` to `CONT-P01-BUNDLE-001`.
+- `CONT-P01-CONSOL-001` closed/completed (`lifecycle_status: DONE`, `active: false`, `execution_authorized: false`); closeout evidence recorded.
+- `CONT-P01-BUNDLE-001` activated as the single active task (`lifecycle_status: IN_PROGRESS`, `active: true`, `execution_authorized: true`, `ratification_status: APPROVED_FOR_EXECUTION`).
+- `governance/ACTIVE_TASK.md`, `governance/PROJECT_STATE.md`, `governance/CURRENT_PHASE.md`, `governance/HANDOFF.md`, and `governance/SESSION_LOG.md` updated to reflect the transition.
+- No Bundle 1 deliverable documents authored.
+- No Bundle 1 deliverables ratified.
+- No hooks, architecture, implementation, license, dependencies, or adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) modified.
+- Activation commit SHA recorded in evidence below.
+- Activation commit SHA: pending (will be recorded after the activation commit is created and pushed).
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
