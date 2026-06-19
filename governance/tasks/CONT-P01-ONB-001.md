@@ -63,7 +63,22 @@ Claude Code completed the read-only comprehension and consistency review before 
 ## Approval History
 
 - 2026-06-19: Product Owner approved activation after Claude read-only P01 transition comprehension report.
+- 2026-06-19: Product Owner approved preparation of proposed successor task `CONT-P01-CONSOL-001` diff (prepare-diff only; no staging, commit, push, or activation).
 
 ## Activation Evidence
 
 Product Owner approved activation after Claude read-only P01 transition comprehension report.
+
+## Onboarding Progress and Pre-Consolidation Resolution
+
+- Onboarding Question Groups 1 through 5 completed in controlled, reviewable sessions, each followed by a structured summary accepted as working onboarding context.
+- Pre-consolidation clarifications U1 through U14 are resolved.
+- Product Owner identity is fully resolved as `Rauf Alizada`.
+- `Rauf Alizada` is the only valid Product Owner, project authority, and sole ratification authority for v1.
+- The spelling `Raauf Alizada` is invalid.
+- The identity `Tural Rahmanli` does not participate in this project in any form and must not be encoded or treated as a project identity. Any prior references to `Tural Rahmanli` in conversation, environment metadata, Git metadata, or earlier summaries are invalid historical/error context only and must not propagate into governance.
+- No P01 decisions have been ratified yet.
+- No P01 deliverable documents have been created yet.
+- Recommendation: proposed successor task `CONT-P01-CONSOL-001` (P01 Consolidation and Ratification Planning) prepared as a diff-only proposal for Product Owner review.
+- This onboarding task `CONT-P01-ONB-001` remains active. It is not closed and not marked done. Closeout will occur only after the successor activation transition is explicitly approved by the Product Owner.
+- The active-task invariant remains valid: `active_task_id: CONT-P01-ONB-001`.
