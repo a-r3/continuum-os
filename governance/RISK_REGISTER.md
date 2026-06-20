@@ -1,3 +1,14 @@
+---
+doc_status: ratified_evolving
+owner: Product Owner
+ratification_status: RATIFIED
+last_ratified_by: Rauf Alizada
+last_ratified_at: 2026-06-20
+source_task: CONT-P01-BUNDLE-004
+supersedes:
+superseded_by:
+---
+
 # Risk Register
 
 | ID | Status | Severity | Risk | Mitigation | Owner | Evidence |
@@ -8,11 +19,11 @@
 | RISK-P00-004 | Active | Medium | `.continuum/` bootstrap projection may be mistaken for final format. | Mark manifest and index as provisional and derived. | Product Owner | `.continuum/manifest.yaml` |
 | RISK-P00-005 | Resolved | Medium | Claude Code project configuration had not been interactively runtime-validated. | Product Owner completed interactive `claude doctor` in a normal terminal; Search diagnostic was OK. Claude version update availability is informational and not a P00 blocker. | Product Owner | `governance/HANDOFF.md`, `governance/tasks/CONT-P00-ONB-001.md` |
 
-## P01 Top Risks — Bundle 4 Proposed Update
+## P01 Top Risks — Bundle 4 Ratified Update
 
-This section is a **proposed** Bundle 4 update under `CONT-P01-BUNDLE-004`. It is **not ratified**. It becomes binding only after explicit Product Owner ratification by `Rauf Alizada`. No other identity is valid for project governance, approval, ratification, or authority. The spelling `Raauf Alizada` is invalid; `Tural Rahmanli` is not a project identity.
+This section is the **ratified** Bundle 4 P01 top-risk update under `CONT-P01-BUNDLE-004`, ratified by the Product Owner `Rauf Alizada` on `2026-06-20` and recorded in `governance/DECISION_LOG.md` as `DEC-P01-B4-002`. The six P01 risks below are binding governance risk records until superseded by a later Product Owner-ratified change. No other identity is valid for project governance, approval, ratification, or authority. The spelling `Raauf Alizada` is invalid; `Tural Rahmanli` is not a project identity.
 
-Risks recorded here do **not** authorize work by themselves. Any mitigation requiring Git mutation, task transition, ratification, hook changes, adapter changes, implementation, dependencies, architecture, settings, or project-code changes still requires explicit Product Owner approval under the approval verb vocabulary (`prepare diff` / `commit only` / `commit and push`).
+Risks recorded here do **not** authorize work by themselves. Any mitigation requiring Git mutation, task transition, ratification, hook changes, adapter changes, implementation, dependencies, architecture, settings, license, or project-code changes still requires explicit Product Owner approval under the approval verb vocabulary (`prepare diff` / `commit only` / `commit and push`).
 
 ### P01-RISK-001 — Authority Confusion
 

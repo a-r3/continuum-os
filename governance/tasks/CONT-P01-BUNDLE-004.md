@@ -171,6 +171,8 @@ Until that explicit activation occurs, this task confers no execution authority.
 
 - 2026-06-20: Product Owner approved active-task transition from `CONT-P01-BUNDLE-003` to `CONT-P01-BUNDLE-004`; Bundle 4 activated; no Bundle 4 deliverable authoring yet.
 - 2026-06-20: Product Owner approved preparation of Bundle 4 deliverable drafts (`governance/TRUST_BOUNDARIES.md` and `governance/RISK_REGISTER.md` P01 top-risk update) as a prepare-diff-only action; no staging, commit, push, ratification, Bundle 5 work, hooks, adapter rules, architecture, implementation, license, dependency, settings, or project-code changes.
+- 2026-06-20: Product Owner approved staging, commit, and push of the Bundle 4 deliverable drafts (commit `3d09ee6bbafbadfc0731cf98788739398aee5b42`); Bundle 4 deliverables remained proposed/not ratified.
+- 2026-06-20: Product Owner approved preparation of the Bundle 4 deliverable ratification diff; prepare-diff-only — no staging, commit, push, task closeout, successor activation, Bundle 5 work, hooks, adapter rules, architecture, implementation, license, dependency, settings, or project-code changes.
 
 ## Bundle 4 Deliverable Draft Evidence
 
@@ -192,3 +194,16 @@ Until that explicit activation occurs, this task confers no execution authority.
 - `governance/TRUST_BOUNDARIES.md` was not modified.
 - Bundle 4 scope unchanged; no ratification; both deliverables remain proposed / not ratified.
 - No staging, commit, or push performed.
+
+## Bundle 4 Ratification Diff Evidence
+
+- Product Owner reviewed Bundle 4 deliverable draft commit `3d09ee6bbafbadfc0731cf98788739398aee5b42`.
+- Product Owner approved preparation of a ratification diff as a prepare-diff-only artifact under active task `CONT-P01-BUNDLE-004`.
+- `governance/TRUST_BOUNDARIES.md` target state: `doc_status: ratified_evolving`, `ratification_status: RATIFIED`, `last_ratified_by: Rauf Alizada`, `last_ratified_at: 2026-06-20`, `source_task: CONT-P01-BUNDLE-004`; Status Notice rewritten to ratified; `## Ratification Requirement` renamed to `## Ratification Evidence` citing `DEC-P01-B4-001`.
+- `governance/RISK_REGISTER.md` Bundle 4 P01 top-risk update target state: ratified; new file-level frontmatter `doc_status: ratified_evolving`, `ratification_status: RATIFIED`, `last_ratified_by: Rauf Alizada`, `last_ratified_at: 2026-06-20`, `source_task: CONT-P01-BUNDLE-004`; section renamed to `## P01 Top Risks — Bundle 4 Ratified Update`; opening paragraph rewritten to ratified; all six P01 risks (`P01-RISK-001`…`P01-RISK-006`) preserved intact; corrected `P01-RISK-001` invalid-identity stop-condition wording preserved.
+- `governance/DECISION_LOG.md` records exactly two Bundle 4 decisions: `DEC-P01-B4-001` (Trust Boundaries ratification) and `DEC-P01-B4-002` (Risk Register Bundle 4 P01 top-risk update ratification), each as a table row and an extended provenance block. No `DEC-P01-B4-003`.
+- No staging, commit, or push occurred for this prepare-diff.
+- `CONT-P01-BUNDLE-004` remains the single active task; no successor task activated.
+- No Bundle 5 deliverables authored.
+- No hooks, adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), architecture, implementation, license, dependency, settings, or project-code changes made.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.

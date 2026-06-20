@@ -1,9 +1,9 @@
 ---
-doc_status: proposed
+doc_status: ratified_evolving
 owner: Product Owner
-ratification_status: NOT_RATIFIED
-last_ratified_by:
-last_ratified_at:
+ratification_status: RATIFIED
+last_ratified_by: Rauf Alizada
+last_ratified_at: 2026-06-20
 source_task: CONT-P01-BUNDLE-004
 supersedes:
 superseded_by:
@@ -13,9 +13,11 @@ superseded_by:
 
 ## Status Notice
 
-This document is a **proposed** Bundle 4 deliverable. It is **not ratified**. It becomes binding only after explicit Product Owner ratification under `CONT-P01-BUNDLE-004`. The Product Owner / sole project authority / sole ratification authority for v1 is `Rauf Alizada`. No other identity is valid for project governance, approval, ratification, or authority. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` does not participate in this project in any form.
+This document is **ratified** under `CONT-P01-BUNDLE-004` on `2026-06-20` by the Product Owner `Rauf Alizada`. Document status is `ratified_evolving`; ratification status is `RATIFIED`. It is binding Continuum OS v1 governance for trust boundaries.
 
-This document does **not** authorize any implementation, architecture, hook, adapter, dependency, license, settings, or project-code change. It documents governance behavior only.
+The Product Owner / sole project authority / sole ratification authority for v1 is `Rauf Alizada`. No other identity is valid for project governance, approval, ratification, or authority. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` does not participate in this project in any form.
+
+Future changes to this document require a separately approved Product Owner-ratified governance change. Ratification of this document does **not** authorize implementation, architecture selection, hook modification or activation, adapter-rule modification, dependency installation, license selection or creation, settings changes, project-code changes, Bundle 5 work, task closeout, or successor-task activation.
 
 ## Purpose
 
@@ -199,13 +201,10 @@ For any governance write, the recording task or session must capture:
 
 Evidence sufficient for Bundle 4 ratification of Trust Boundaries includes a ratified `DEC-P01-B4-*` entry, the committed `governance/TRUST_BOUNDARIES.md` file with `doc_status: ratified_evolving` and `ratification_status: RATIFIED`, and an updated `governance/DECISION_LOG.md`.
 
-## Ratification Requirement
+## Ratification Evidence
 
-This document remains **proposed and not ratified** until the Product Owner explicitly ratifies it. Ratification must:
-
-- be issued by `Rauf Alizada`;
-- name this file (`governance/TRUST_BOUNDARIES.md`) and its Bundle 4 source task (`CONT-P01-BUNDLE-004`);
-- update frontmatter (`doc_status: ratified_evolving`, `ratification_status: RATIFIED`, `last_ratified_by: Rauf Alizada`, `last_ratified_at: <date>`);
-- be recorded as a `DEC-P01-B4-*` entry in `governance/DECISION_LOG.md` with an extended provenance block.
-
-Until ratification, this document is reviewable but **not binding**, and it confers no execution authority, no ratification authority, and no exemption from any other ratified governance constraint.
+- The Product Owner `Rauf Alizada` ratified this document under `CONT-P01-BUNDLE-004` on `2026-06-20`.
+- Ratification applies to `governance/TRUST_BOUNDARIES.md` (`doc_status: ratified_evolving`, `ratification_status: RATIFIED`, `last_ratified_by: Rauf Alizada`, `last_ratified_at: 2026-06-20`, `source_task: CONT-P01-BUNDLE-004`).
+- Ratification is recorded in `governance/DECISION_LOG.md` as `DEC-P01-B4-001` (table row + extended provenance block).
+- Future changes to this document require a separately approved Product Owner-ratified governance change recorded as a successor `DEC-*` entry in `governance/DECISION_LOG.md`.
+- Ratification does **not** authorize any prohibited Bundle 5, implementation, architecture, hook, adapter, dependency, license, settings, or project-code action. It does not authorize task closeout or successor-task activation.
