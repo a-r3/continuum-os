@@ -125,6 +125,25 @@ Output is reviewable diffs prepared under the approval-verb discipline (`prepare
 - 2026-06-19: Product Owner approved staging, commit, and push of this proposed task together with the consolidation-plan ratification (commit `956c6ff7da7cafbafa21fb51502e828502ca0fb0`).
 - 2026-06-19: Product Owner approved the active-task transition from `CONT-P01-CONSOL-001` to `CONT-P01-BUNDLE-001`, activating Bundle 1 Identity and Scope.
 - 2026-06-19: Product Owner approved preparation of Bundle 1 deliverable drafts (`governance/PRODUCT_CHARTER.md` and Product Owner identity encoding in `governance/PROJECT_STATE.md`) as a prepare-diff-only action; no staging, commit, push, or ratification.
+- 2026-06-19: Product Owner approved Product Charter Status Notice clarification (prepare-diff-only); no staging, commit, push, or ratification at that step.
+- 2026-06-19: Product Owner approved staging, commit, and push of the Bundle 1 deliverable drafts (commit `571a75115e20c8bcee61b338aa9ae69f2c355450`); deliverables remained proposed/not ratified.
+- 2026-06-20: Product Owner approved preparation of the Bundle 1 ratification diff (Product Charter ratification + Product Owner identity encoding ratification + DECISION_LOG entries); prepare-diff-only — no staging, commit, push, or successor activation.
+
+## Bundle 1 Ratification Diff Evidence
+
+- Product Owner reviewed the Bundle 1 deliverable drafts committed in `571a75115e20c8bcee61b338aa9ae69f2c355450`.
+- Product Owner approved preparation of a ratification diff covering Bundle 1 deliverables only.
+- `governance/PRODUCT_CHARTER.md` moved to ratified target state in the diff (`doc_status: ratified_evolving`, `ratification_status: RATIFIED`, `last_ratified_by: Rauf Alizada`, `last_ratified_at: 2026-06-20`); `## Status Notice` updated; `## Ratification Requirement` renamed to `## Ratification Evidence`.
+- `governance/PROJECT_STATE.md` Product Owner identity encoding moved to ratified target state in the diff (`product_owner_identity_encoding_status: RATIFIED`, `product_owner_identity_last_ratified_by: Rauf Alizada`, `product_owner_identity_last_ratified_at: 2026-06-20`); body `## Product Owner Identity Encoding` updated accordingly.
+- `governance/DECISION_LOG.md` records exactly two Bundle 1 decisions: `DEC-P01-B1-001` (Product Charter ratification) and `DEC-P01-B1-002` (Product Owner identity encoding ratification), each with full provenance fields (`drafted_by`, `reviewed_by`, `ratified_by`, `ratified_at`, `source_task`, `evidence`, `scope_note`).
+- No staging, no commit, no push performed at this step.
+- `CONT-P01-BUNDLE-001` remains the single active task; not closed.
+- No successor task activated.
+- No Bundle 2–5 deliverables created.
+- No `governance/PRODUCT_OWNER.md` created.
+- No architecture, implementation, license, hooks, dependencies, or adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) modified.
+- Active-task invariant preserved: `active_task_id: CONT-P01-BUNDLE-001`.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
 
 ## Bundle 1 Deliverable Draft Evidence
 

@@ -1,9 +1,9 @@
 ---
-doc_status: proposed
+doc_status: ratified_evolving
 owner: Product Owner
-ratification_status: NOT_RATIFIED
-last_ratified_by:
-last_ratified_at:
+ratification_status: RATIFIED
+last_ratified_by: Rauf Alizada
+last_ratified_at: 2026-06-20
 source_task: CONT-P01-BUNDLE-001
 supersedes:
 superseded_by:
@@ -13,7 +13,7 @@ superseded_by:
 
 ## Status Notice
 
-This Product Charter is a **draft / proposed** artifact prepared under task `CONT-P01-BUNDLE-001` (P01 Bundle 1 — Identity and Scope). It has **no ratified authority** and confers no decisions until the Product Owner (`Rauf Alizada`) ratifies it. Until ratification, this document has no independent ratified authority as the Product Charter. Where this draft repeats already-established current governance state, such as the canonical Product Owner identity, that underlying state remains governed by the current canonical governance files. New or consolidated charter language remains proposed until Product Owner ratification.
+This Product Charter is **ratified** under task `CONT-P01-BUNDLE-001` (P01 Bundle 1 — Identity and Scope). It was ratified by **`Rauf Alizada`**, the sole Product Owner and sole ratification authority for v1. Its document status is **`ratified_evolving`**: it carries effective project authority as the v1 Product Charter and may evolve only under a future Product Owner-approved governance change. This charter alone **does not authorize** any implementation work, architecture selection, license selection, dependency installation, hook activation, or adapter-rule changes; such changes require their own separately approved governance and execution gates.
 
 ## Product Identity
 
@@ -142,10 +142,10 @@ This draft is derived from:
 - The ratified P01 consolidation and ratification plan inside `governance/tasks/CONT-P01-CONSOL-001.md` (commit `2b746dd28d84237a50c0526bac282243a62e2987`, ratified per `956c6ff7da7cafbafa21fb51502e828502ca0fb0`);
 - The Bundle 1 task scope defined in `governance/tasks/CONT-P01-BUNDLE-001.md`.
 
-## Ratification Requirement
+## Ratification Evidence
 
-This Product Charter is **proposed and not ratified**. It has no execution authority and confers no binding decisions. Ratification requires explicit approval by the Product Owner (`Rauf Alizada`). Until then:
-
-- this document must be read as a draft;
-- no governance, task, adapter, or implementation work may rely on its statements as ratified authority;
-- only after Product Owner ratification will this document's `doc_status` move to `ratified_evolving` and its `ratification_status` move to `RATIFIED`, with `last_ratified_by` and `last_ratified_at` populated.
+- The Product Owner (`Rauf Alizada`) ratified this Product Charter under task `CONT-P01-BUNDLE-001` (P01 Bundle 1 — Identity and Scope) on `2026-06-20`.
+- Ratification applies to **this Product Charter only**. It does not extend to any other governance document or deliverable.
+- Ratification **does not authorize** Bundle 2–5 work (`governance/GLOSSARY.md`, `governance/CHANGE_PROTOCOL.md` updates, `governance/NEVER_AUTOMATIC.md`, `governance/TRUST_BOUNDARIES.md`, `governance/RISK_REGISTER.md` top-six update, `docs/REFERENCE_STRUCTURE.md`, cold-start acceptance checklist ratification, roadmap update, adapter-rule alignment, P01 closeout).
+- Ratification **does not authorize** architecture evaluation or selection, implementation work, implementation stack selection, license selection or creation, dependency installation, hook registration or activation, ADR creation, or modification of adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`).
+- Future changes to this Product Charter require a separately approved Product Owner-ratified governance change.

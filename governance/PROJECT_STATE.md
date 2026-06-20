@@ -1,8 +1,10 @@
 ---
 product_owner: Rauf Alizada
 product_owner_authority: sole_product_owner_and_sole_ratification_authority_for_v1
-product_owner_identity_encoding_status: PROPOSED_NOT_RATIFIED
+product_owner_identity_encoding_status: RATIFIED
 product_owner_identity_source_task: CONT-P01-BUNDLE-001
+product_owner_identity_last_ratified_by: Rauf Alizada
+product_owner_identity_last_ratified_at: 2026-06-20
 ---
 
 # Project State
@@ -75,11 +77,10 @@ product_owner_identity_source_task: CONT-P01-BUNDLE-001
 
 ## Product Owner Identity Encoding
 
-This section is a Bundle 1 deliverable draft. It is **proposed and not ratified**. It carries no ratified authority until the Product Owner ratifies it under `CONT-P01-BUNDLE-001`.
+This section is a Bundle 1 deliverable. It is **ratified** under task `CONT-P01-BUNDLE-001` on `2026-06-20` by the Product Owner (`Rauf Alizada`). Frontmatter `product_owner_identity_encoding_status: RATIFIED`.
 
 - `Rauf Alizada` is the only valid Product Owner, project authority, and sole ratification authority for v1.
 - No other identity is valid for project governance, approval, ratification, or authority. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` does not participate in this project in any form and is not a valid project identity; any incidental appearance in Git committer metadata or environment metadata is not project authority.
-- This identity encoding is proposed under `CONT-P01-BUNDLE-001` and is not ratified until explicit Product Owner ratification (`product_owner_identity_encoding_status: PROPOSED_NOT_RATIFIED`).
 - No cryptographic identity (PGP, SSH key fingerprint, DID, or other) is used to encode Product Owner identity in v1.
-- No separate `governance/PRODUCT_OWNER.md` document exists in v1; Product Owner identity is encoded solely in this `governance/PROJECT_STATE.md` section and in the frontmatter above, plus the references in `governance/PRODUCT_CHARTER.md` (also proposed/not ratified).
-- Ratification of this encoding moves `product_owner_identity_encoding_status` to `RATIFIED` and is recorded in `governance/DECISION_LOG.md` under a separately approved Bundle 1 ratification gate.
+- No separate `governance/PRODUCT_OWNER.md` document exists in v1; Product Owner identity is encoded solely in this `governance/PROJECT_STATE.md` section and in the frontmatter above, with consistent references in the ratified `governance/PRODUCT_CHARTER.md`.
+- Future changes to this Product Owner identity encoding require a separately approved Product Owner-ratified governance change.

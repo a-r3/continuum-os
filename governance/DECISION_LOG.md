@@ -15,3 +15,31 @@ Only explicit Product Owner decisions are recorded here.
 | DEC-P00-009 | Ratified | License selection is deferred to Claude-led P01. Do not create `LICENSE` during P00. | Product Owner | 2026-06-18 | `governance/tasks/CONT-P00-ONB-001.md` approval history |
 | DEC-P00-010 | Ratified | Secrets must never be stored in project memory or knowledge files. | Product Owner | 2026-06-18 | `governance/tasks/CONT-P00-ONB-001.md` approval history |
 | DEC-P00-011 | Ratified | Hooks must be tested before activation and must not be activated merely because files exist. | Product Owner | 2026-06-18 | `governance/tasks/CONT-P00-ONB-001.md` approval history |
+| DEC-P01-B1-001 | Ratified | Ratify `governance/PRODUCT_CHARTER.md` as the v1 Product Charter (`doc_status: ratified_evolving`). See `## DEC-P01-B1-001` below for full provenance fields. | Product Owner | 2026-06-20 | commit `571a75115e20c8bcee61b338aa9ae69f2c355450` + Bundle 1 ratification diff |
+| DEC-P01-B1-002 | Ratified | Ratify the canonical Product Owner identity encoding in `governance/PROJECT_STATE.md` (`product_owner_identity_encoding_status: RATIFIED`): `Rauf Alizada` is the sole Product Owner and sole ratification authority for v1; no other identity is valid; no cryptographic identity is used in v1; no `governance/PRODUCT_OWNER.md` exists in v1. See `## DEC-P01-B1-002` below for full provenance fields. | Product Owner | 2026-06-20 | commit `571a75115e20c8bcee61b338aa9ae69f2c355450` + Bundle 1 ratification diff |
+
+## DEC-P01-B1-001
+
+- decision_id: `DEC-P01-B1-001`
+- status: `RATIFIED`
+- decision: Ratify `governance/PRODUCT_CHARTER.md` as the v1 Product Charter; document status `ratified_evolving`.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-20`
+- source_task: `CONT-P01-BUNDLE-001`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- evidence: commit `571a75115e20c8bcee61b338aa9ae69f2c355450` (Bundle 1 deliverable drafts) and the Bundle 1 ratification diff prepared under this task.
+- scope_note: Ratifies the Product Charter only. Does not authorize Bundle 2–5 work (`GLOSSARY.md`, `CHANGE_PROTOCOL.md` updates, `NEVER_AUTOMATIC.md`, `TRUST_BOUNDARIES.md`, `RISK_REGISTER.md` top-six update, `docs/REFERENCE_STRUCTURE.md`, cold-start checklist ratification, roadmap update, adapter alignment, P01 closeout). Does not authorize architecture evaluation or selection, implementation work, implementation stack selection, license selection or creation, dependency installation, hook registration or activation, ADR creation, or modification of adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`).
+
+## DEC-P01-B1-002
+
+- decision_id: `DEC-P01-B1-002`
+- status: `RATIFIED`
+- decision: Ratify the canonical Product Owner identity encoding in `governance/PROJECT_STATE.md` (frontmatter `product_owner_identity_encoding_status: RATIFIED` and body section `## Product Owner Identity Encoding`). `Rauf Alizada` is the sole Product Owner, sole project authority, and sole ratification authority for v1; no other identity is valid; no cryptographic identity is used in v1; no separate `governance/PRODUCT_OWNER.md` exists in v1.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-20`
+- source_task: `CONT-P01-BUNDLE-001`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- evidence: commit `571a75115e20c8bcee61b338aa9ae69f2c355450` (Bundle 1 deliverable drafts) and the Bundle 1 ratification diff prepared under this task.
+- scope_note: Ratifies the Product Owner identity encoding only. Does not authorize Bundle 2–5 work. Does not authorize architecture, implementation, license selection, dependency installation, hook activation, or adapter-rule changes.
