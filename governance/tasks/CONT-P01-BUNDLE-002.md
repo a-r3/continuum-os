@@ -164,3 +164,16 @@ Until that explicit activation occurs, this task confers no execution authority.
 ## Approval History
 
 - 2026-06-20: Product Owner approved active-task transition from `CONT-P01-BUNDLE-001` to `CONT-P01-BUNDLE-002`; Bundle 2 activated; no Bundle 2 deliverable authoring yet.
+- 2026-06-20: Product Owner approved preparation of the Bundle 2 Glossary draft (`governance/GLOSSARY.md`) as a prepare-diff-only action; no staging, commit, push, ratification, successor activation, architecture, implementation, license, hooks, dependencies, or adapter-rule changes.
+
+## Bundle 2 Glossary Draft Evidence
+
+- `governance/GLOSSARY.md` draft prepared (new file; `doc_status: proposed`, `ratification_status: NOT_RATIFIED`, `source_task: CONT-P01-BUNDLE-002`).
+- The Glossary is **proposed and not ratified**; no execution or ratification authority is conferred by this draft.
+- No staging, no commit, no push performed.
+- No Bundle 3–5 deliverables authored (`CHANGE_PROTOCOL.md` updates, `NEVER_AUTOMATIC.md`, `TRUST_BOUNDARIES.md`, `RISK_REGISTER.md` top-six update, `docs/REFERENCE_STRUCTURE.md`, cold-start checklist ratification, roadmap update, adapter alignment, P01 closeout).
+- No `governance/PRODUCT_OWNER.md` created.
+- No architecture, implementation, license, hooks, dependencies, or adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) modified.
+- No `governance/ACTIVE_TASK.md`, `governance/CURRENT_PHASE.md`, `governance/PROJECT_STATE.md`, `governance/PRODUCT_CHARTER.md`, `governance/DECISION_LOG.md`, `governance/CHANGE_PROTOCOL.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, or `docs/REFERENCE_STRUCTURE.md` modifications.
+- Active-task invariant preserved: `active_task_id: CONT-P01-BUNDLE-002` remains active.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.

@@ -1,7 +1,7 @@
 ---
 session_log_status: ACTIVE
 latest_session_date: 2026-06-20
-latest_session_scope: P01_BUNDLE_1_CLOSED_AND_BUNDLE_2_ACTIVATED
+latest_session_scope: P01_BUNDLE_2_GLOSSARY_DRAFT_PREPARED
 ---
 
 # Session Log
@@ -187,4 +187,22 @@ Append-only summaries of completed sessions belong here.
 - No `governance/PRODUCT_CHARTER.md`, `governance/DECISION_LOG.md`, `governance/CHANGE_PROTOCOL.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, `governance/NEVER_AUTOMATIC.md`, `governance/TRUST_BOUNDARIES.md`, or `docs/REFERENCE_STRUCTURE.md` modifications.
 - No hooks, architecture, implementation, license, dependencies, or adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) modified.
 - No unauthorized files modified.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
+
+## 2026-06-20 - P01 Bundle 2 Glossary Draft Prepared
+
+- Product Owner accepted the evidence package for Bundle 2 activation commit `24069b6545095d295b4f0c832e16b726b466b519`.
+- Product Owner approved prepare-diff-only drafting of the Bundle 2 deliverable `governance/GLOSSARY.md` under active task `CONT-P01-BUNDLE-002`.
+- `governance/GLOSSARY.md` draft prepared as a new file (`doc_status: proposed`, `ratification_status: NOT_RATIFIED`, `source_task: CONT-P01-BUNDLE-002`).
+- `governance/tasks/CONT-P01-BUNDLE-002.md` updated with Approval History entry and `## Bundle 2 Glossary Draft Evidence` section.
+- `governance/HANDOFF.md` updated to `P01_BUNDLE_2_GLOSSARY_DRAFT_AWAITING_REVIEW` / `next_action: PRODUCT_OWNER_REVIEW_OF_BUNDLE_2_GLOSSARY_DRAFT`.
+- No ratification of the Glossary.
+- No staging, no commit, no push performed.
+- No successor task activated.
+- No Bundle 3–5 deliverables authored.
+- No `governance/PRODUCT_OWNER.md` created.
+- No `governance/ACTIVE_TASK.md`, `governance/CURRENT_PHASE.md`, `governance/PROJECT_STATE.md`, `governance/PRODUCT_CHARTER.md`, `governance/DECISION_LOG.md`, `governance/CHANGE_PROTOCOL.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, `governance/NEVER_AUTOMATIC.md`, `governance/TRUST_BOUNDARIES.md`, or `docs/REFERENCE_STRUCTURE.md` modifications.
+- No hooks, architecture, implementation, license, dependencies, or adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) modified.
+- No unauthorized files modified.
+- Active-task invariant preserved: `active_task_id: CONT-P01-BUNDLE-002`.
 - Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
