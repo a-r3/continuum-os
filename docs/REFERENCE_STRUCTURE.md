@@ -1,9 +1,9 @@
 ---
-doc_status: proposed
+doc_status: ratified_evolving
 owner: Product Owner
-ratification_status: NOT_RATIFIED
-last_ratified_by:
-last_ratified_at:
+ratification_status: RATIFIED
+last_ratified_by: Rauf Alizada
+last_ratified_at: 2026-06-21
 source_task: CONT-P01-BUNDLE-005
 supersedes:
 superseded_by:
@@ -13,7 +13,7 @@ superseded_by:
 
 ## Status Notice
 
-This document is a **proposed** Bundle 5 draft. It is **not ratified**. Product Owner ratification by `Rauf Alizada` is required before this document becomes binding. Until then, this document is informational and does not authorize any change to governance, adapter rules, hooks, architecture, implementation, license, dependencies, settings, project code, P01 closeout, or P02 activation. Adapter-rule changes, hook changes, architecture decisions, implementation work, license selection, dependency installation, settings changes, project-code changes, P01 closeout, and P02 activation each require separate explicit Product Owner approval.
+This document is **ratified** as `ratified_evolving` under task `CONT-P01-BUNDLE-005`, ratified by the Product Owner `Rauf Alizada`. It is binding Continuum OS v1 cold-start reference guidance. Future changes to this document require a separately approved Product Owner-ratified governance change. Ratification of this document does not authorize adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), hook changes, architecture evaluation or selection, implementation work, license selection, dependency installation, settings changes, project-code changes, P01 closeout, or P02 activation; each of those requires separate explicit Product Owner approval.
 
 ## Purpose
 
@@ -171,6 +171,12 @@ If any checklist item cannot be answered from the repository, the agent must sto
 | Continuum projection (derived) | `.continuum/manifest.yaml`, `.continuum/index.md` |
 | Adapter behavioral guidance | `CLAUDE.md`, `AGENTS.md`, `.claude/rules/` |
 
-## Ratification Requirement
+## Ratification Evidence
 
-This document is **proposed** and **not ratified**. It becomes binding only after the Product Owner (`Rauf Alizada`) ratifies it under an explicit Product Owner approval recorded in `governance/DECISION_LOG.md` and reflected in this document's frontmatter (`doc_status: ratified_evolving`, `ratification_status: RATIFIED`, `last_ratified_by: Rauf Alizada`, `last_ratified_at`, and the corresponding decision ID). Until then, this document does not authorize adapter-rule changes, hook changes, architecture, implementation, license, dependency, settings, project-code changes, P01 closeout, or P02 activation. Ratification by anyone or anything other than the Product Owner is not valid; hooks, skills, subagents, agents, tools, and chat memory cannot ratify.
+- The Product Owner (`Rauf Alizada`) ratified this document under task `CONT-P01-BUNDLE-005`.
+- Ratification applies to `docs/REFERENCE_STRUCTURE.md` only.
+- Ratification is recorded in `governance/DECISION_LOG.md` as `DEC-P01-B5-001`.
+- Document status is `ratified_evolving`; frontmatter records `ratification_status: RATIFIED`, `last_ratified_by: Rauf Alizada`, and `last_ratified_at: 2026-06-21`.
+- Future changes to this document require a separately approved Product Owner-ratified governance change.
+- Ratification of this document does not authorize adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), hook changes, architecture, implementation, license, dependency, settings, project-code changes, P01 closeout, or P02 activation; each of those requires separate explicit Product Owner approval.
+- Ratification by anyone or anything other than the Product Owner is not valid; hooks, skills, subagents, agents, tools, and chat memory cannot ratify.

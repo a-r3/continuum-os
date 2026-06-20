@@ -1,8 +1,19 @@
+---
+doc_status: ratified_evolving
+owner: Product Owner
+ratification_status: RATIFIED
+last_ratified_by: Rauf Alizada
+last_ratified_at: 2026-06-21
+source_task: CONT-P01-BUNDLE-005
+supersedes:
+superseded_by:
+---
+
 # Roadmap
 
 ## Status Notice
 
-This Bundle 5 roadmap update is **proposed** and not ratified. Product Owner ratification by `Rauf Alizada` is required before this update becomes binding. The update is informational and does not authorize any architecture, implementation, license, dependency, hook activation, settings, or project-code work. P01 closeout and P02 activation each require separate explicit Product Owner approval.
+This Bundle 5 roadmap update is **ratified** as `ratified_evolving` governance roadmap content, ratified by the Product Owner `Rauf Alizada` under task `CONT-P01-BUNDLE-005`. P01 remains **active and not yet closed**. P02 remains **not active**. Ratification of this roadmap update does not authorize P01 closeout, P02 activation, architecture evaluation or selection, implementation work, implementation-stack selection, license selection or creation, dependency installation, hook activation, settings changes, adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), or project-code work; each of those requires separate explicit Product Owner approval.
 
 ## Phase Model
 
@@ -23,7 +34,7 @@ This Bundle 5 roadmap update is **proposed** and not ratified. Product Owner rat
 | Bundle 2 | Terminology and Knowledge Model (`GLOSSARY.md`) | Complete | Ratified (`DEC-P01-B2-001`) |
 | Bundle 3 | Authority, Change Protocol, and Never-Automatic Guardrail (`CHANGE_PROTOCOL.md`, `NEVER_AUTOMATIC.md`) | Complete | Ratified (`DEC-P01-B3-001`, `DEC-P01-B3-002`) |
 | Bundle 4 | Trust Boundaries and Risk Register (`TRUST_BOUNDARIES.md`, `RISK_REGISTER.md` P01 top-risk update) | Complete | Ratified (`DEC-P01-B4-001`, `DEC-P01-B4-002`) |
-| Bundle 5 | Reference Structure, Roadmap, Adapter Alignment, and P01 Closeout (`docs/REFERENCE_STRUCTURE.md`, `governance/ROADMAP.md` update, `governance/DOCUMENT_REGISTRY.md` update, adapter-rule alignment review, P01 closeout readiness) | Active; deliverable drafts proposed | Not ratified |
+| Bundle 5 | Reference Structure, Roadmap, Adapter Alignment, and P01 Closeout (`docs/REFERENCE_STRUCTURE.md`, `governance/ROADMAP.md` update, `governance/DOCUMENT_REGISTRY.md` update, adapter-rule alignment review, P01 closeout readiness) | Active; deliverable drafts ratified | Ratified (`DEC-P01-B5-001`, `DEC-P01-B5-002`, `DEC-P01-B5-003`) |
 
 ## P01 Closeout
 
@@ -71,6 +82,10 @@ This roadmap update does not authorize:
 - adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`);
 - modifications to ratified governance documents outside a separately approved gate.
 
-## Ratification
+## Ratification Evidence
 
-Ratification of this roadmap update requires explicit Product Owner approval by `Rauf Alizada`. Until ratified, this update is informational.
+- The Product Owner (`Rauf Alizada`) ratified the `governance/ROADMAP.md` Bundle 5 roadmap update under task `CONT-P01-BUNDLE-005`.
+- Ratification is recorded in `governance/DECISION_LOG.md` as `DEC-P01-B5-002`.
+- Document status is `ratified_evolving`; frontmatter records `ratification_status: RATIFIED`, `last_ratified_by: Rauf Alizada`, and `last_ratified_at: 2026-06-21`.
+- Future changes to this roadmap require a separately approved Product Owner-ratified governance change.
+- Ratification of this roadmap update does not authorize P01 closeout, P02 activation, architecture evaluation or selection, implementation work, implementation-stack selection, license selection or creation, dependency installation, hook activation, settings changes, adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), or project-code work; each of those requires separate explicit Product Owner approval.
