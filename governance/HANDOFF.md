@@ -1,8 +1,8 @@
 ---
-handoff_status: P01_BUNDLE_5_ACTIVE_AWAITING_DRAFT_APPROVAL
+handoff_status: P01_BUNDLE_5_DELIVERABLE_DRAFTS_AWAITING_REVIEW
 current_gate: P01_BUNDLE_5_REFERENCE_STRUCTURE_ROADMAP_ADAPTER_ALIGNMENT_CLOSEOUT
 gate_status: ACTIVATED
-next_action: PRODUCT_OWNER_APPROVAL_TO_DRAFT_BUNDLE_5_DELIVERABLES
+next_action: PRODUCT_OWNER_REVIEW_OF_BUNDLE_5_DELIVERABLE_DRAFTS
 known_blockers: []
 ---
 
@@ -20,27 +20,29 @@ Bundle 2 deliverable is ratified (ratification commit `12fd21eaf3c7a624dfabcbd44
 
 Bundle 3 deliverables are ratified (ratification commit `5713511268a671f22395bb854bbebf9243ae6332`): `governance/CHANGE_PROTOCOL.md` is `ratified_evolving` / `RATIFIED`; `governance/NEVER_AUTOMATIC.md` is `ratified_evolving` / `RATIFIED`; `governance/DECISION_LOG.md` records `DEC-P01-B3-001` and `DEC-P01-B3-002`.
 
-Bundle 4 deliverables are ratified (drafts commit `3d09ee6bbafbadfc0731cf98788739398aee5b42`; ratification commit `154edeff2242cac3f562353f43f4ea1bd3a17249`): `governance/TRUST_BOUNDARIES.md` is `ratified_evolving` / `RATIFIED`; `governance/RISK_REGISTER.md` Bundle 4 P01 top-risk update is `ratified_evolving` / `RATIFIED`; `governance/DECISION_LOG.md` records `DEC-P01-B4-001` and `DEC-P01-B4-002`. The Bundle 5 task was proposed (and remained inactive) in commit `d95d2bc1b72156c9fbc73cd628e15bf06d93b0c6`.
+Bundle 4 deliverables are ratified (drafts commit `3d09ee6bbafbadfc0731cf98788739398aee5b42`; ratification commit `154edeff2242cac3f562353f43f4ea1bd3a17249`): `governance/TRUST_BOUNDARIES.md` is `ratified_evolving` / `RATIFIED`; `governance/RISK_REGISTER.md` Bundle 4 P01 top-risk update is `ratified_evolving` / `RATIFIED`; `governance/DECISION_LOG.md` records `DEC-P01-B4-001` and `DEC-P01-B4-002`. The Bundle 5 task was first proposed (and inactive) in commit `d95d2bc1b72156c9fbc73cd628e15bf06d93b0c6` and then activated under explicit Product Owner approval in commit `672cd88fdd3a83dd55f6578b33b1ce49025bd3b3` (Bundle 4 closed and Bundle 5 activated in a single diff).
 
-Under explicit Product Owner approval, this transition closes Bundle 4 and activates Bundle 5 in a single diff. The active-task invariant holds: exactly one active task before and after the transition.
+Under explicit Product Owner approval, Bundle 5 deliverable drafts have been prepared as a prepare-diff-only action. `CONT-P01-BUNDLE-005` remains the single active task. The active-task invariant holds.
 
-- `CONT-P01-BUNDLE-004` is **closed/completed** (`lifecycle_status: DONE`, `gate_status: COMPLETED`, `ratification_status: RATIFIED`, `active: false`, `execution_authorized: false`).
-- `CONT-P01-BUNDLE-005` is now the **single active task** (`lifecycle_status: IN_PROGRESS`, `current_gate: P01_BUNDLE_5_REFERENCE_STRUCTURE_ROADMAP_ADAPTER_ALIGNMENT_CLOSEOUT`, `gate_status: ACTIVATED`, `ratification_status: APPROVED_FOR_EXECUTION`, `active: true`, `execution_authorized: true`, `predecessor_task: CONT-P01-BUNDLE-004`).
-
-Bundle 5 is **active**, but Bundle 5 **deliverables have not been authored**. `docs/REFERENCE_STRUCTURE.md` has not been created or modified. `governance/ROADMAP.md` has not been modified for Bundle 5. `governance/DOCUMENT_REGISTRY.md` has not been modified for Bundle 5. Adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) have not been modified. No P01 closeout has occurred. P02 has not been activated. No hooks, architecture, implementation, license, dependency, settings, or project-code changes have occurred. No `governance/PRODUCT_CHARTER.md`, `governance/GLOSSARY.md`, `governance/CHANGE_PROTOCOL.md`, `governance/NEVER_AUTOMATIC.md`, `governance/TRUST_BOUNDARIES.md`, `governance/RISK_REGISTER.md`, `governance/DECISION_LOG.md`, or `governance/PRODUCT_OWNER.md` modifications occurred in this transition diff.
+- `docs/REFERENCE_STRUCTURE.md` exists as a **proposed / not ratified** Bundle 5 draft (frontmatter `doc_status: proposed`, `ratification_status: NOT_RATIFIED`, `source_task: CONT-P01-BUNDLE-005`).
+- `governance/ROADMAP.md` has a **proposed Bundle 5 update** reflecting Bundles 1–4 ratified, Bundle 5 active, P01 not closed, P02 not active and gated on Product Owner approval after P01 closeout.
+- `governance/DOCUMENT_REGISTRY.md` has a **proposed Bundle 5 update** covering ratified P01 governance documents, the new `docs/REFERENCE_STRUCTURE.md` proposed entry, decision references `DEC-P01-B1-001`, `DEC-P01-B1-002`, `DEC-P01-B2-001`, `DEC-P01-B3-001`, `DEC-P01-B3-002`, `DEC-P01-B4-001`, and `DEC-P01-B4-002`, and proposed/active status of in-flight records.
+- Adapter-rule alignment review is **recorded** in `governance/tasks/CONT-P01-BUNDLE-005.md` without modifying `CLAUDE.md`, `AGENTS.md`, or `.claude/rules/`; the review is informational and any adapter-rule diff requires separate explicit Product Owner approval.
+- No staging, commit, push, or ratification has occurred under this diff.
+- No P01 closeout has occurred.
+- P02 has not been activated.
+- No hooks, architecture, implementation, license, dependency, settings, or project-code changes have occurred.
+- No `governance/ACTIVE_TASK.md`, `governance/CURRENT_PHASE.md`, `governance/PROJECT_STATE.md`, `governance/PRODUCT_CHARTER.md`, `governance/GLOSSARY.md`, `governance/CHANGE_PROTOCOL.md`, `governance/NEVER_AUTOMATIC.md`, `governance/TRUST_BOUNDARIES.md`, `governance/RISK_REGISTER.md`, `governance/DECISION_LOG.md`, or `governance/PRODUCT_OWNER.md` modifications occurred in this diff.
 
 ## Next Action
 
-- Product Owner approval to draft Bundle 5 deliverables (creation of `docs/REFERENCE_STRUCTURE.md`, cold-start acceptance / reference checklist, `governance/ROADMAP.md` update, `governance/DOCUMENT_REGISTRY.md` update, adapter-rule alignment review, and P01 closeout readiness evidence) under approval-verb discipline (`prepare diff` / `commit only` / `commit and push`). Adapter-rule alignment diffs and any ratification, closeout, or successor-phase activation require separate explicit Product Owner approvals.
+- Product Owner review of the Bundle 5 deliverable drafts (`docs/REFERENCE_STRUCTURE.md`, `governance/ROADMAP.md` proposed update, `governance/DOCUMENT_REGISTRY.md` proposed update, adapter-rule alignment review recorded in `governance/tasks/CONT-P01-BUNDLE-005.md`) under approval-verb discipline (`prepare diff` / `commit only` / `commit and push`). Ratification of any Bundle 5 deliverable, P01 closeout, P02 activation, and any adapter-rule diff each require separate explicit Product Owner approvals.
 
 ## Actions Not Yet Authorized
 
-- Drafting or modifying any Bundle 5 deliverable.
-- Creating or modifying `docs/REFERENCE_STRUCTURE.md`.
-- Modifying `governance/ROADMAP.md` for Bundle 5.
-- Modifying `governance/DOCUMENT_REGISTRY.md` for Bundle 5.
-- Modifying adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`).
+- Staging, committing, or pushing the Bundle 5 deliverable drafts.
 - Ratifying any Bundle 5 deliverable.
+- Modifying adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`).
 - Closing P01.
 - Activating P02.
 - Modifying `governance/ACTIVE_TASK.md` outside an approved transition.
@@ -73,12 +75,12 @@ Bundle 5 is **active**, but Bundle 5 **deliverables have not been authored**. `d
 - `governance/TRUST_BOUNDARIES.md` is **ratified** (`ratified_evolving`).
 - `governance/RISK_REGISTER.md` Bundle 4 P01 top-risk update is **ratified** (`ratified_evolving`).
 - Bundle 1, Bundle 2, Bundle 3, and Bundle 4 are closed/completed.
-- Bundle 5 is **active and execution-authorized**; no Bundle 5 deliverable has been authored.
-- `governance/DECISION_LOG.md` records `DEC-P01-B1-001`, `DEC-P01-B1-002`, `DEC-P01-B2-001`, `DEC-P01-B3-001`, `DEC-P01-B3-002`, `DEC-P01-B4-001`, and `DEC-P01-B4-002`; no Bundle 5 decision.
-- `docs/REFERENCE_STRUCTURE.md` has not been created.
-- `governance/ROADMAP.md` has not been modified for Bundle 5.
-- `governance/DOCUMENT_REGISTRY.md` has not been modified for Bundle 5.
+- Bundle 5 is **active and execution-authorized**; Bundle 5 deliverable drafts are **proposed / not ratified**.
+- `docs/REFERENCE_STRUCTURE.md` is **proposed / not ratified**.
+- `governance/ROADMAP.md` Bundle 5 update is **proposed / not ratified**.
+- `governance/DOCUMENT_REGISTRY.md` Bundle 5 update is **proposed / not ratified**.
 - Adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) have not been modified.
+- `governance/DECISION_LOG.md` records `DEC-P01-B1-001`, `DEC-P01-B1-002`, `DEC-P01-B2-001`, `DEC-P01-B3-001`, `DEC-P01-B3-002`, `DEC-P01-B4-001`, and `DEC-P01-B4-002`; no Bundle 5 decision.
 - P01 has not been closed.
 - P02 has not been activated.
 - Product Owner remains sole ratification authority. The Product Owner is `Rauf Alizada`.
@@ -100,5 +102,6 @@ Claude Code must read:
 10. `governance/OPEN_QUESTIONS.md`
 11. `governance/ROADMAP.md`
 12. `governance/DOCUMENT_REGISTRY.md`
-13. `.continuum/manifest.yaml`
-14. `.continuum/index.md`
+13. `docs/REFERENCE_STRUCTURE.md` (proposed)
+14. `.continuum/manifest.yaml`
+15. `.continuum/index.md`
