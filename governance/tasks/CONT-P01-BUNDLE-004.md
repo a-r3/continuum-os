@@ -170,3 +170,25 @@ Until that explicit activation occurs, this task confers no execution authority.
 ## Approval History
 
 - 2026-06-20: Product Owner approved active-task transition from `CONT-P01-BUNDLE-003` to `CONT-P01-BUNDLE-004`; Bundle 4 activated; no Bundle 4 deliverable authoring yet.
+- 2026-06-20: Product Owner approved preparation of Bundle 4 deliverable drafts (`governance/TRUST_BOUNDARIES.md` and `governance/RISK_REGISTER.md` P01 top-risk update) as a prepare-diff-only action; no staging, commit, push, ratification, Bundle 5 work, hooks, adapter rules, architecture, implementation, license, dependency, settings, or project-code changes.
+
+## Bundle 4 Deliverable Draft Evidence
+
+- Product Owner approved prepare-diff-only drafting of the Bundle 4 deliverables.
+- `governance/TRUST_BOUNDARIES.md` proposed draft created with frontmatter `doc_status: proposed`, `ratification_status: NOT_RATIFIED`, `source_task: CONT-P01-BUNDLE-004`; required sections present (Status Notice, Purpose, Core Principle, Authority Boundary, Repository File Boundary, Evidence Boundary, Decision Boundary, Agent Boundary, Hook/Skill/Subagent Boundary, Adapter Rule Boundary, Chat Memory and Hidden Memory Boundary, External Tool and Connector Boundary, Git Operation Boundary, Validation Boundary, Session Boundary, Stop-Condition Boundary, Trust-Level Model, Boundary Matrix, Evidence Requirements, Ratification Requirement); document explicitly states it is proposed and not ratified, that Product Owner ratification by `Rauf Alizada` is required, and that it authorizes no implementation, architecture, hook, adapter, dependency, license, settings, or project-code change.
+- `governance/RISK_REGISTER.md` proposed P01 top-risk update appended as `## P01 Top Risks — Bundle 4 Proposed Update`; existing P00 risk rows preserved unchanged; no ratified frontmatter introduced (file had no frontmatter); section is explicitly proposed and not ratified.
+- Six required P01 top risks included: `P01-RISK-001` Authority confusion, `P01-RISK-002` Hidden-memory / chat-memory drift, `P01-RISK-003` Active-task invariant failure, `P01-RISK-004` Unsafe Git mutation, `P01-RISK-005` Hook / adapter / skill / subagent overreach, `P01-RISK-006` Premature implementation or architecture selection; each carries risk ID, title, description, impact, likelihood, severity, triggers, mitigation, required evidence, stop condition, owner / accountable authority, and current status.
+- Both deliverables are proposed / not ratified.
+- No staging, commit, or push occurred for this prepare-diff.
+- No Bundle 5 deliverables authored.
+- No hooks, adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), architecture, implementation, license, dependency, settings, or project-code changes made.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
+- 2026-06-20: Product Owner approved a minimal wording correction to `governance/RISK_REGISTER.md` (`P01-RISK-001` stop condition) so that explicit invalidation, stop-condition, and historical-error references are not treated as violations; no other content changed; no staging, commit, push, or ratification.
+
+## Bundle 4 Deliverable Draft Correction Evidence
+
+- Product Owner reviewed exported diff `/tmp/p01-bundle-004-deliverable-drafts-review.diff` and identified a self-contradiction in `P01-RISK-001` stop condition wording.
+- Minimal correction applied to `governance/RISK_REGISTER.md` only: rewrote the `P01-RISK-001` stop condition to: "Any appearance of an invalid identity as a valid project identity, authority, approver, ratifier, owner, or participant; or any appearance of an invalid identity outside explicit invalidation, stop-condition, or historical-error reference context; or any agent claim of self-ratification."
+- `governance/TRUST_BOUNDARIES.md` was not modified.
+- Bundle 4 scope unchanged; no ratification; both deliverables remain proposed / not ratified.
+- No staging, commit, or push performed.

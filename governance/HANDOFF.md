@@ -1,8 +1,8 @@
 ---
-handoff_status: P01_BUNDLE_4_ACTIVE_AWAITING_DRAFT_APPROVAL
+handoff_status: P01_BUNDLE_4_DELIVERABLE_DRAFTS_AWAITING_REVIEW
 current_gate: P01_BUNDLE_4_TRUST_BOUNDARIES_RISK_REGISTER
 gate_status: ACTIVATED
-next_action: PRODUCT_OWNER_APPROVAL_TO_DRAFT_BUNDLE_4_DELIVERABLES
+next_action: PRODUCT_OWNER_REVIEW_OF_BUNDLE_4_DELIVERABLE_DRAFTS
 known_blockers: []
 ---
 
@@ -25,11 +25,19 @@ Under explicit Product Owner approval, this transition closes Bundle 3 and activ
 - `CONT-P01-BUNDLE-003` is **closed/completed** (`lifecycle_status: DONE`, `gate_status: COMPLETED`, `ratification_status: RATIFIED`, `active: false`, `execution_authorized: false`).
 - `CONT-P01-BUNDLE-004` is now the **single active task** (`lifecycle_status: IN_PROGRESS`, `current_gate: P01_BUNDLE_4_TRUST_BOUNDARIES_RISK_REGISTER`, `gate_status: ACTIVATED`, `ratification_status: APPROVED_FOR_EXECUTION`, `active: true`, `execution_authorized: true`, `predecessor_task: CONT-P01-BUNDLE-003`).
 
-Bundle 4 is **active**, but Bundle 4 deliverables have **not** been authored. `governance/TRUST_BOUNDARIES.md` has **not** been created. `governance/RISK_REGISTER.md` has **not** been modified for Bundle 4. No Bundle 5 work has started. No hooks, adapter rules, architecture, implementation, license, dependency, settings, or project-code changes have occurred.
+Under explicit Product Owner approval, the Bundle 4 deliverable drafts have now been prepared as a prepare-diff-only artifact:
+
+- `CONT-P01-BUNDLE-004` remains the **single active task** (`lifecycle_status: IN_PROGRESS`, `current_gate: P01_BUNDLE_4_TRUST_BOUNDARIES_RISK_REGISTER`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`).
+- `governance/TRUST_BOUNDARIES.md` is created as a **proposed / not ratified** Bundle 4 draft (`doc_status: proposed`, `ratification_status: NOT_RATIFIED`, `source_task: CONT-P01-BUNDLE-004`). It confers no ratification and authorizes no implementation, architecture, hook, adapter, dependency, license, settings, or project-code change.
+- `governance/RISK_REGISTER.md` carries a **proposed / not ratified** Bundle 4 update section `## P01 Top Risks — Bundle 4 Proposed Update` containing the six required P01 risks (`P01-RISK-001` Authority confusion, `P01-RISK-002` Hidden-memory / chat-memory drift, `P01-RISK-003` Active-task invariant failure, `P01-RISK-004` Unsafe Git mutation, `P01-RISK-005` Hook / adapter / skill / subagent overreach, `P01-RISK-006` Premature implementation or architecture selection). The existing P00 risk rows are preserved unchanged. No ratified frontmatter was added.
+- `governance/tasks/CONT-P01-BUNDLE-004.md` has new Approval History entries and `## Bundle 4 Deliverable Draft Evidence` plus `## Bundle 4 Deliverable Draft Correction Evidence` sections.
+- A minimal wording correction was applied to `governance/RISK_REGISTER.md` under explicit Product Owner approval: the `P01-RISK-001` stop condition was rewritten so that explicit invalidation, stop-condition, and historical-error references are not treated as violations. No other content was changed; `governance/TRUST_BOUNDARIES.md` was not modified by the correction.
+
+No staging, commit, or push occurred for this prepare-diff. No ratification occurred. No Bundle 5 work has started. No hooks, adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), architecture, implementation, license, dependency, settings, or project-code changes have occurred. No `governance/ACTIVE_TASK.md`, `governance/CURRENT_PHASE.md`, `governance/PROJECT_STATE.md`, `governance/PRODUCT_CHARTER.md`, `governance/GLOSSARY.md`, `governance/CHANGE_PROTOCOL.md`, `governance/NEVER_AUTOMATIC.md`, `governance/DECISION_LOG.md`, `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, `docs/REFERENCE_STRUCTURE.md`, or `governance/PRODUCT_OWNER.md` modifications occurred in this diff.
 
 ## Next Action
 
-- Product Owner approval to draft the Bundle 4 deliverables: creation of `governance/TRUST_BOUNDARIES.md` and update of `governance/RISK_REGISTER.md` with the top P01 risks. Subsequent gates (`prepare diff` for drafts, ratification, `commit only` / `commit and push`, Bundle 4 closeout, Bundle 5 activation) require separate explicit Product Owner approvals.
+- Product Owner review of the prepared Bundle 4 deliverable drafts (`governance/TRUST_BOUNDARIES.md` and `governance/RISK_REGISTER.md` P01 top-risk update) together with `governance/tasks/CONT-P01-BUNDLE-004.md`, `governance/SESSION_LOG.md`, and this handoff. Subsequent gates (`commit only` / `commit and push`, ratification, Bundle 4 closeout, Bundle 5 activation) require separate explicit Product Owner approvals.
 
 ## Actions Not Yet Authorized
 
