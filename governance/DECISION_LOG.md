@@ -18,6 +18,8 @@ Only explicit Product Owner decisions are recorded here.
 | DEC-P01-B1-001 | Ratified | Ratify `governance/PRODUCT_CHARTER.md` as the v1 Product Charter (`doc_status: ratified_evolving`). See `## DEC-P01-B1-001` below for full provenance fields. | Product Owner | 2026-06-20 | commit `571a75115e20c8bcee61b338aa9ae69f2c355450` + Bundle 1 ratification diff |
 | DEC-P01-B1-002 | Ratified | Ratify the canonical Product Owner identity encoding in `governance/PROJECT_STATE.md` (`product_owner_identity_encoding_status: RATIFIED`): `Rauf Alizada` is the sole Product Owner and sole ratification authority for v1; no other identity is valid; no cryptographic identity is used in v1; no `governance/PRODUCT_OWNER.md` exists in v1. See `## DEC-P01-B1-002` below for full provenance fields. | Product Owner | 2026-06-20 | commit `571a75115e20c8bcee61b338aa9ae69f2c355450` + Bundle 1 ratification diff |
 | DEC-P01-B2-001 | Ratified | Ratify `governance/GLOSSARY.md` as the canonical Continuum OS terminology and knowledge-model Glossary for P01 (`doc_status: ratified_evolving`). See `## DEC-P01-B2-001` below for full provenance fields. | Product Owner | 2026-06-20 | commit `173a66d1905e610b8473223f871e1382221d28f4` + Bundle 2 Glossary ratification diff |
+| DEC-P01-B3-001 | Ratified | Ratify `governance/CHANGE_PROTOCOL.md` Bundle 3 authority, approval-verb, active-task, session lifecycle, and hook/validation/skill usage updates as ratified_evolving governance. See `## DEC-P01-B3-001` below for full provenance fields. | Product Owner | 2026-06-20 | commit `b1fe85bb2634df227ae9c8ff21381b832553cd18` + Bundle 3 ratification diff |
+| DEC-P01-B3-002 | Ratified | Ratify `governance/NEVER_AUTOMATIC.md` as the Continuum OS v1 Never-Automatic Guardrail (`doc_status: ratified_evolving`). See `## DEC-P01-B3-002` below for full provenance fields. | Product Owner | 2026-06-20 | commit `b1fe85bb2634df227ae9c8ff21381b832553cd18` + Bundle 3 ratification diff |
 
 ## DEC-P01-B1-001
 
@@ -57,3 +59,29 @@ Only explicit Product Owner decisions are recorded here.
 - reviewed_by: `Product Owner`
 - evidence: commit `173a66d1905e610b8473223f871e1382221d28f4` (Bundle 2 Glossary draft) and the Bundle 2 Glossary ratification diff prepared under this task.
 - scope_note: Ratifies the Glossary only. Does not authorize Bundle 3–5 work, architecture, implementation, implementation stack selection, license selection or creation, dependency installation, hook registration or activation, ADR creation, or adapter-rule changes.
+
+## DEC-P01-B3-001
+
+- decision_id: `DEC-P01-B3-001`
+- status: `RATIFIED`
+- decision: Ratify `governance/CHANGE_PROTOCOL.md` Bundle 3 authority, approval-verb, active-task, session lifecycle, and hook/validation/skill usage updates as ratified_evolving governance.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-20`
+- source_task: `CONT-P01-BUNDLE-003`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- evidence: commit `b1fe85bb2634df227ae9c8ff21381b832553cd18` (Bundle 3 deliverable drafts) and the Bundle 3 ratification diff prepared under this task.
+- scope_note: Ratifies Bundle 3 Change Protocol governance updates only. Does not authorize Bundle 4–5 work, implementation, architecture selection, license selection or creation, dependency installation, hook modification or activation, adapter-rule changes, project code changes, or successor-task activation.
+
+## DEC-P01-B3-002
+
+- decision_id: `DEC-P01-B3-002`
+- status: `RATIFIED`
+- decision: Ratify `governance/NEVER_AUTOMATIC.md` as the Continuum OS v1 Never-Automatic Guardrail; document status `ratified_evolving`.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-20`
+- source_task: `CONT-P01-BUNDLE-003`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- evidence: commit `b1fe85bb2634df227ae9c8ff21381b832553cd18` (Bundle 3 deliverable drafts) and the Bundle 3 ratification diff prepared under this task.
+- scope_note: Ratifies the Never-Automatic Guardrail only. Does not authorize any never-automatic action automatically and does not authorize Bundle 4–5 work, implementation, architecture selection, license selection or creation, dependency installation, hook modification or activation, adapter-rule changes, project code changes, or successor-task activation.

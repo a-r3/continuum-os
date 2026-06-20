@@ -170,6 +170,8 @@ Until that explicit activation occurs, this task confers no execution authority.
 
 - 2026-06-20: Product Owner approved active-task transition from `CONT-P01-BUNDLE-002` to `CONT-P01-BUNDLE-003`; Bundle 3 activated; no Bundle 3 deliverable authoring yet.
 - 2026-06-20: Product Owner approved preparation of Bundle 3 deliverable drafts (`governance/CHANGE_PROTOCOL.md` updates and `governance/NEVER_AUTOMATIC.md`) as a prepare-diff-only action; no staging, commit, push, ratification, Bundle 4–5 work, architecture, implementation, license, hooks, dependencies, or adapter-rule changes.
+- 2026-06-20: Product Owner approved staging, commit, and push of the Bundle 3 deliverable drafts (commit `b1fe85bb2634df227ae9c8ff21381b832553cd18`); Bundle 3 deliverables remained proposed/not ratified.
+- 2026-06-20: Product Owner approved preparation of the Bundle 3 deliverable ratification diff; prepare-diff-only — no staging, commit, push, task closeout, successor activation, Bundle 4–5 work, hooks, adapter rules, architecture, implementation, license, or dependency changes.
 
 ## Bundle 3 Deliverable Draft Evidence
 
@@ -183,5 +185,23 @@ Until that explicit activation occurs, this task confers no execution authority.
 - No `governance/PRODUCT_OWNER.md` created.
 - No hook scripts (`.claude/hooks/**`), adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), architecture, implementation, license, or dependency changes made.
 - No `governance/ACTIVE_TASK.md`, `governance/CURRENT_PHASE.md`, `governance/PROJECT_STATE.md`, `governance/PRODUCT_CHARTER.md`, `governance/GLOSSARY.md`, `governance/DECISION_LOG.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, or `docs/REFERENCE_STRUCTURE.md` modifications in this diff.
+- Active-task invariant preserved: `active_task_id: CONT-P01-BUNDLE-003` remains the single active task.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
+
+## Bundle 3 Ratification Diff Evidence
+
+- Product Owner approved preparation of the Bundle 3 deliverable ratification diff as a prepare-diff-only action under active task `CONT-P01-BUNDLE-003`.
+- `governance/CHANGE_PROTOCOL.md` updated: frontmatter moved to ratified state (`doc_status: ratified_evolving`, `ratification_status: RATIFIED`, `last_ratified_by: Rauf Alizada`, `last_ratified_at: 2026-06-20`, `source_task: CONT-P01-BUNDLE-003`); Status Notice rewritten to declare the document ratified-evolving and to enumerate the six ratified Bundle 3 additions; Bundle 3 section headings rewritten from "(Bundle 3 — Proposed)" to ratified equivalents with per-section ratification provenance.
+- `governance/NEVER_AUTOMATIC.md` updated: frontmatter moved to ratified state (`doc_status: ratified_evolving`, `ratification_status: RATIFIED`, `last_ratified_by: Rauf Alizada`, `last_ratified_at: 2026-06-20`, `source_task: CONT-P01-BUNDLE-003`); Status Notice rewritten to declare the document ratified and binding; `## Ratification Requirement` replaced by `## Ratification Evidence` recording Product Owner ratification on 2026-06-20 under `CONT-P01-BUNDLE-003` and recorded as `DEC-P01-B3-002`.
+- `governance/DECISION_LOG.md` updated: two new ratified entries — `DEC-P01-B3-001` (ratifies the Bundle 3 Change Protocol updates) and `DEC-P01-B3-002` (ratifies the Never-Automatic Guardrail) — recorded both as table rows and as extended `## DEC-P01-B3-001` / `## DEC-P01-B3-002` provenance blocks with `ratified_by: Rauf Alizada`, `ratified_at: 2026-06-20`, `source_task: CONT-P01-BUNDLE-003`, `drafted_by: Claude Code`, `reviewed_by: Product Owner`, evidence commit `b1fe85bb2634df227ae9c8ff21381b832553cd18`, and explicit scope notes that nothing beyond the respective Bundle 3 deliverable is authorized.
+- No third decision recorded; no `DEC-P01-B3-003` entry exists.
+- `governance/tasks/CONT-P01-BUNDLE-003.md` updated only with Approval History entries and this Bundle 3 Ratification Diff Evidence section. Task lifecycle remains `IN_PROGRESS`; gate remains `ACTIVATED`; `active: true`; `execution_authorized: true`. No closeout.
+- `governance/HANDOFF.md` updated to reflect Bundle 3 deliverable ratification diff awaiting Product Owner review; `CONT-P01-BUNDLE-003` remains the single active task.
+- `governance/SESSION_LOG.md` appended with a dated entry recording preparation of the Bundle 3 ratification diff under active task `CONT-P01-BUNDLE-003`.
+- No staging, commit, or push performed.
+- No successor task activated. No Bundle 4 or Bundle 5 deliverable authored (`TRUST_BOUNDARIES.md`, `RISK_REGISTER.md` top-six update, `docs/REFERENCE_STRUCTURE.md`, cold-start checklist ratification, roadmap update, adapter alignment, P01 closeout).
+- No `governance/PRODUCT_OWNER.md` created.
+- No hook scripts (`.claude/hooks/**`), adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), architecture, implementation, license, or dependency changes made.
+- No `governance/ACTIVE_TASK.md`, `governance/CURRENT_PHASE.md`, `governance/PROJECT_STATE.md`, `governance/PRODUCT_CHARTER.md`, `governance/GLOSSARY.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, or `docs/REFERENCE_STRUCTURE.md` modifications in this diff.
 - Active-task invariant preserved: `active_task_id: CONT-P01-BUNDLE-003` remains the single active task.
 - Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.

@@ -1,9 +1,9 @@
 ---
-doc_status: proposed
+doc_status: ratified_evolving
 owner: Product Owner
-ratification_status: NOT_RATIFIED
-last_ratified_by:
-last_ratified_at:
+ratification_status: RATIFIED
+last_ratified_by: Rauf Alizada
+last_ratified_at: 2026-06-20
 source_task: CONT-P01-BUNDLE-003
 supersedes:
 superseded_by:
@@ -13,7 +13,7 @@ superseded_by:
 
 ## Status Notice
 
-This document is a **proposed** Bundle 3 deliverable prepared under active task `CONT-P01-BUNDLE-003`. It is **not ratified**. Until the Product Owner (`Rauf Alizada`) ratifies this document, it describes intended governance behavior consistent with the ratified `governance/PRODUCT_CHARTER.md`, the ratified Product Owner identity encoding in `governance/PROJECT_STATE.md`, the ratified `governance/GLOSSARY.md`, and the unconditional rules in `.claude/rules/`, but it does not itself constitute new ratified authority.
+This document is **ratified** (`doc_status: ratified_evolving`, `ratification_status: RATIFIED`). Ratified by `Rauf Alizada` on 2026-06-20 under active task `CONT-P01-BUNDLE-003`. It is binding Continuum OS v1 governance for never-automatic actions. Future changes require a separately approved Product Owner-ratified governance change. This document does **not** authorize any listed action automatically; every listed action remains never-automatic and requires explicit, current, scoped Product Owner approval.
 
 The only valid Product Owner / project authority / sole ratification authority for v1 is `Rauf Alizada`. No other identity is valid. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` does not participate in this project in any form; any incidental appearance in Git committer or environment metadata is not project authority.
 
@@ -192,12 +192,10 @@ When this document is invoked (e.g., to justify a stop, to record why a requeste
 
 Conversation output may supplement but does not replace durable repository evidence.
 
-## Ratification Requirement
+## Ratification Evidence
 
-This document is **proposed** under `CONT-P01-BUNDLE-003`. It becomes binding only after:
-
-- Product Owner (`Rauf Alizada`) review of the prepared Bundle 3 deliverable drafts;
-- a Product Owner-approved Bundle 3 ratification gate that updates this document's frontmatter — moving `doc_status` to the ratified-evolving value, moving `ratification_status` to the ratified value, and filling the `last_ratified_by` and `last_ratified_at` fields with the Product Owner's name and the ratification date;
-- A corresponding ratified entry in `governance/DECISION_LOG.md` recording the Bundle 3 ratification decision with full provenance.
-
-Until then, this document describes intended governance behavior but does not itself constitute new ratified authority beyond the unconditional rules already encoded in `.claude/rules/` and the ratified Bundle 1 and Bundle 2 deliverables.
+- Product Owner (`Rauf Alizada`) ratified this document under active task `CONT-P01-BUNDLE-003` on 2026-06-20.
+- Ratification applies to the Never-Automatic Guardrail only.
+- Ratification is recorded in `governance/DECISION_LOG.md` as `DEC-P01-B3-002` (table row + extended provenance block).
+- Future changes to this document require a separately approved Product Owner-ratified governance change.
+- Ratification of this document does not authorize Bundle 4–5 work, implementation, architecture selection, license selection or creation, dependency installation, hook modification or activation, adapter-rule modification (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), or project code changes.

@@ -1,8 +1,28 @@
+---
+doc_status: ratified_evolving
+owner: Product Owner
+ratification_status: RATIFIED
+last_ratified_by: Rauf Alizada
+last_ratified_at: 2026-06-20
+source_task: CONT-P01-BUNDLE-003
+supersedes:
+superseded_by:
+---
+
 # Change Protocol
 
 ## Status Notice
 
-This document carries pre-existing P00/P01 content together with Bundle 3 (Authority, Change Protocol, and Never-Automatic Guardrail) **proposed updates** prepared under active task `CONT-P01-BUNDLE-003`. The Bundle 3 additions below — Authority Model, Approval Verb Discipline, Active-Task Invariant clarifications, Ceremony Lanes, Session Lifecycle Protocol, and Hook / Validation / Skill Usage Protocol — are **proposed and not ratified**. Only the Product Owner (`Rauf Alizada`) may ratify these additions. Until that ratification, they describe intended governance behavior but do not themselves constitute new ratified authority beyond the unconditional rules already encoded in `.claude/rules/` and the ratified `governance/PRODUCT_CHARTER.md`, `governance/GLOSSARY.md`, and Product Owner identity encoding.
+`governance/CHANGE_PROTOCOL.md` is **ratified** (`doc_status: ratified_evolving`, `ratification_status: RATIFIED`). The Bundle 3 (Authority, Change Protocol, and Never-Automatic Guardrail) additions in this document were ratified by `Rauf Alizada` on 2026-06-20 under active task `CONT-P01-BUNDLE-003`. The ratified Bundle 3 additions are:
+
+- Authority Model;
+- Approval Verb Discipline;
+- Active-Task Invariant clarification;
+- Ceremony Lanes;
+- Session Lifecycle Protocol;
+- Hook, Validation, and Skill Usage Protocol.
+
+Future changes to this document require a separately approved Product Owner-ratified governance change. Ratification of this document does not authorize Bundle 4–5 work, implementation, architecture selection, license selection or creation, dependency installation, hook modification or activation, adapter-rule modification (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), or project code changes. The only valid Product Owner / project authority / sole ratification authority for v1 is `Rauf Alizada`; no other identity is valid for project governance.
 
 ## Lifecycle Overview
 
@@ -119,9 +139,9 @@ Stop immediately on secret exposure, authority conflict, unexpected repository s
 
 If adapters conflict with governance, governance wins. If canonical governance files conflict, stop and ask the Product Owner to resolve or authorize a correction task.
 
-## Authority Model (Bundle 3 — Proposed)
+## Authority Model (Bundle 3)
 
-Status: **proposed**, not ratified. Drafted under `CONT-P01-BUNDLE-003`.
+Status: **ratified** under `CONT-P01-BUNDLE-003` by `Rauf Alizada` on 2026-06-20.
 
 ### Product Owner Authority
 
@@ -155,9 +175,9 @@ These are distinct and must not be conflated:
 
 No approval category implies any other. No earlier approval implies a later approval.
 
-## Approval Verb Discipline (Bundle 3 — Proposed)
+## Approval Verb Discipline (Bundle 3)
 
-Status: **proposed**, not ratified.
+Status: **ratified** under `CONT-P01-BUNDLE-003` by `Rauf Alizada` on 2026-06-20.
 
 The only valid Git approval verbs are:
 
@@ -187,9 +207,9 @@ commit and push
 - No implied staging, commit, or push from vague approval language (e.g., "go ahead", "do it"). The Product Owner must use one of the three verbs above for any Git mutation.
 - Each approval verb authorizes the action exactly once for the named files. A new mutation requires a new approval.
 
-## Active-Task Invariant (Bundle 3 — Proposed Clarification)
+## Active-Task Invariant (Bundle 3 — Ratified Clarification)
 
-Status: **proposed** clarification of the unconditional invariant already recorded above.
+Status: **ratified** clarification of the unconditional invariant already recorded above; ratified under `CONT-P01-BUNDLE-003` by `Rauf Alizada` on 2026-06-20.
 
 - The repository may have **zero or one** active task, never more than one.
 - Any mutating execution work requires **exactly one** active task with `execution_authorized: true` and a matching `governance/ACTIVE_TASK.md` record.
@@ -198,9 +218,9 @@ Status: **proposed** clarification of the unconditional invariant already record
 - Closing a task and activating another in the same transition must preserve the single-active-task invariant: exactly one active task before, exactly one active task after.
 - A zero-active-task state is permitted only during an explicit transition, approval wait, suspension, or closed-project state.
 
-## Ceremony Lanes (Bundle 3 — Proposed)
+## Ceremony Lanes (Bundle 3)
 
-Status: **proposed**, not ratified.
+Status: **ratified** under `CONT-P01-BUNDLE-003` by `Rauf Alizada` on 2026-06-20.
 
 ### Strict Lane
 
@@ -230,9 +250,9 @@ The Product Owner may, by a separately ratified decision, describe lighter lanes
 - must **not** override Product Owner authority, the approval-verb discipline, the active-task invariant, or any never-automatic action;
 - does not exist for v1 until the Product Owner explicitly ratifies one.
 
-## Session Lifecycle Protocol (Bundle 3 — Proposed)
+## Session Lifecycle Protocol (Bundle 3)
 
-Status: **proposed**, not ratified.
+Status: **ratified** under `CONT-P01-BUNDLE-003` by `Rauf Alizada` on 2026-06-20.
 
 A session is a single contiguous Claude Code interactive context. Sessions are governance objects, not just chat windows. The rules below apply to every session.
 
@@ -316,9 +336,9 @@ A new session is required or strongly preferred:
 
 A new session must cold-start; it must not rely on hidden memory of the previous session.
 
-## Hook, Validation, and Skill Usage Protocol (Bundle 3 — Proposed)
+## Hook, Validation, and Skill Usage Protocol (Bundle 3)
 
-Status: **proposed**, not ratified.
+Status: **ratified** under `CONT-P01-BUNDLE-003` by `Rauf Alizada` on 2026-06-20.
 
 ### General Rules
 
