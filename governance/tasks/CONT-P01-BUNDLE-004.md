@@ -2,12 +2,12 @@
 task_id: CONT-P01-BUNDLE-004
 title: P01 Bundle 4 - Trust Boundaries and Risk Register
 lane: Strict
-lifecycle_status: PROPOSED
-current_gate: NONE
-gate_status: NOT_REQUESTED
-ratification_status: NOT_RATIFIED
-active: false
-execution_authorized: false
+lifecycle_status: IN_PROGRESS
+current_gate: P01_BUNDLE_4_TRUST_BOUNDARIES_RISK_REGISTER
+gate_status: ACTIVATED
+ratification_status: APPROVED_FOR_EXECUTION
+active: true
+execution_authorized: true
 predecessor_task: CONT-P01-BUNDLE-003
 product_owner: Rauf Alizada
 ---
@@ -18,24 +18,24 @@ product_owner: Rauf Alizada
 
 `Rauf Alizada` is the only valid Product Owner, project authority, and sole ratification authority for v1. No other identity is valid for project governance, approval, ratification, or authority. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` does not participate in this project in any form and is not a valid project identity; any incidental appearance in Git committer metadata or environment metadata is not project authority. Any reintroduction of an invalid identity is a stop condition.
 
-## Proposal Notice
+## Activation Notice
 
-This task is **proposed only and inactive**. It is recorded as a reviewable diff so the Product Owner can evaluate the proposed Bundle 4 scope and acceptance criteria before any activation decision. Until the Product Owner explicitly approves an active-task transition that activates `CONT-P01-BUNDLE-004`, this file confers **no execution authority**.
+This task is now the single active task. Execution is authorized only for Bundle 4 Trust Boundaries and Risk Register work under approval-verb discipline. Drafting the Bundle 4 deliverables (creation of `governance/TRUST_BOUNDARIES.md` and update of `governance/RISK_REGISTER.md`) still requires a separate Product Owner approval. Ratification of Bundle 4 deliverables remains out of scope under this activation.
 
-No Bundle 4 deliverable may be authored under this proposed task. `governance/TRUST_BOUNDARIES.md` must not be created. `governance/RISK_REGISTER.md` must not be modified. `governance/ACTIVE_TASK.md`, `governance/CURRENT_PHASE.md`, and `governance/PROJECT_STATE.md` must not be modified. `CONT-P01-BUNDLE-003` remains the single active task and is not closed by this file.
+The active-task invariant holds: `active_task_id: CONT-P01-BUNDLE-004`. Predecessor task `CONT-P01-BUNDLE-003` is closed/completed in the same transition.
 
-The active-task invariant holds: `active_task_id: CONT-P01-BUNDLE-003`. Activation of this task requires a separate Product Owner-approved active-task transition.
+(Historical proposal context: this task was first prepared as a proposed inactive successor task in commit `a58df6a9d037916d7eb3a18ce5366db0ff5a8323` and conferred no execution authority until the explicit Product Owner-approved active-task transition recorded below.)
 
 ## Status
 
 - Lane: `Strict`
-- Lifecycle status: `PROPOSED`
-- Current gate: `NONE`
-- Gate status: `NOT_REQUESTED`
-- Ratification status: `NOT_RATIFIED`
-- Active: `false`
-- Execution authorized: `false`
-- Predecessor / input: `CONT-P01-BUNDLE-003` (Bundle 3 deliverables ratified in commit `5713511268a671f22395bb854bbebf9243ae6332`; `CONT-P01-BUNDLE-003` remains the single active task and is not closed by this proposed-task file).
+- Lifecycle status: `IN_PROGRESS`
+- Current gate: `P01_BUNDLE_4_TRUST_BOUNDARIES_RISK_REGISTER`
+- Gate status: `ACTIVATED`
+- Ratification status: `APPROVED_FOR_EXECUTION`
+- Active: `true`
+- Execution authorized: `true`
+- Predecessor / input: `CONT-P01-BUNDLE-003` (Bundle 3 deliverables ratified in commit `5713511268a671f22395bb854bbebf9243ae6332`; `CONT-P01-BUNDLE-003` closed/completed in this same activation transition).
 - Product Owner: `Rauf Alizada`
 
 ## Objective
@@ -155,3 +155,18 @@ This task is proposed only and inactive. It may be activated only by an explicit
 - preserves the active-task invariant of exactly one active task at all times.
 
 Until that explicit activation occurs, this task confers no execution authority. No Bundle 4 deliverable (`governance/TRUST_BOUNDARIES.md` creation or `governance/RISK_REGISTER.md` update) may be authored, modified, or created. No staging, commit, or push of any Bundle 4 deliverable may occur.
+
+## Activation Evidence
+
+- 2026-06-20: Product Owner approved activation after Bundle 3 ratification (commit `5713511268a671f22395bb854bbebf9243ae6332`) and review/acceptance of the Bundle 4 proposed-task diff (commit `a58df6a9d037916d7eb3a18ce5366db0ff5a8323`).
+- Predecessor `CONT-P01-BUNDLE-003` is closed/completed in the same transition (`lifecycle_status: DONE`, `gate_status: COMPLETED`, `active: false`, `execution_authorized: false`).
+- `CONT-P01-BUNDLE-004` is now the single active task (`lifecycle_status: IN_PROGRESS`, `current_gate: P01_BUNDLE_4_TRUST_BOUNDARIES_RISK_REGISTER`, `gate_status: ACTIVATED`, `ratification_status: APPROVED_FOR_EXECUTION`, `active: true`, `execution_authorized: true`); active-task invariant preserved (exactly one active task).
+- Activation authorizes Bundle 4 execution only under approval-verb discipline (`prepare diff` / `commit only` / `commit and push`).
+- Activation does not authorize immediate `governance/TRUST_BOUNDARIES.md` creation or `governance/RISK_REGISTER.md` modification; drafting the Bundle 4 deliverables requires a separate Product Owner approval.
+- Activation does not authorize Bundle 5 work.
+- No hooks, adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), architecture, implementation, license, dependency, settings, or project-code changes are authorized.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
+
+## Approval History
+
+- 2026-06-20: Product Owner approved active-task transition from `CONT-P01-BUNDLE-003` to `CONT-P01-BUNDLE-004`; Bundle 4 activated; no Bundle 4 deliverable authoring yet.

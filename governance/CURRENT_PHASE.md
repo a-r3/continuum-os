@@ -6,7 +6,7 @@ P01 — Founder Discovery and Product Definition
 
 ## Current P01 Sub-State
 
-P01 — Bundle 3 Authority, Change Protocol, and Never-Automatic Guardrail
+P01 — Bundle 4 Trust Boundaries and Risk Register
 
 ## Status
 
@@ -16,30 +16,31 @@ P01 — Bundle 3 Authority, Change Protocol, and Never-Automatic Guardrail
 - P01 consolidation and ratification plan is ratified.
 - Bundle 1 task `CONT-P01-BUNDLE-001` is closed/completed. Bundle 1 deliverables (`governance/PRODUCT_CHARTER.md` and the Product Owner identity encoding in `governance/PROJECT_STATE.md`) are ratified.
 - Bundle 2 task `CONT-P01-BUNDLE-002` is closed/completed. Bundle 2 deliverable (`governance/GLOSSARY.md`) is ratified (`ratified_evolving` / `RATIFIED`); `DEC-P01-B2-001` recorded.
-- Bundle 3 task `CONT-P01-BUNDLE-003` is the single active and execution-authorized task.
-- `governance/CHANGE_PROTOCOL.md` has not been modified for Bundle 3.
-- `governance/NEVER_AUTOMATIC.md` has not been created.
+- Bundle 3 task `CONT-P01-BUNDLE-003` is closed/completed. Bundle 3 deliverables (`governance/CHANGE_PROTOCOL.md` and `governance/NEVER_AUTOMATIC.md`) are ratified (`ratified_evolving` / `RATIFIED`); `DEC-P01-B3-001` and `DEC-P01-B3-002` recorded.
+- Bundle 4 task `CONT-P01-BUNDLE-004` is the single active and execution-authorized task.
+- `governance/TRUST_BOUNDARIES.md` has not been created.
+- `governance/RISK_REGISTER.md` has not been modified for Bundle 4.
 - P02 is not active. P03, P04, and P05 are not active.
-- Bundle 3 deliverable authoring requires the next Product Owner instruction.
-- Architecture, implementation, license, hook activation, and Bundle 4–5 deliverables remain unauthorized unless separately approved.
+- Bundle 4 deliverable authoring requires the next Product Owner instruction.
+- Architecture, implementation, license, hook activation, and Bundle 5 deliverables remain unauthorized unless separately approved.
 
 ## Objective
 
-Prepare Bundle 3 (Authority, Change Protocol, and Never-Automatic Guardrail) deliverables — updates to `governance/CHANGE_PROTOCOL.md` and creation of `governance/NEVER_AUTOMATIC.md` — for Product Owner review and ratification under the approval-verb discipline. Drafting and ratification occur only under separate Product Owner approvals.
+Prepare Bundle 4 (Trust Boundaries and Risk Register) deliverables — creation of `governance/TRUST_BOUNDARIES.md` and update of `governance/RISK_REGISTER.md` with the top P01 risks — for Product Owner review and ratification under the approval-verb discipline. Drafting and ratification occur only under separate Product Owner approvals.
 
 ## Current Gate
 
-- Current gate: `P01_BUNDLE_3_AUTHORITY_CHANGE_PROTOCOL_NEVER_AUTOMATIC`
+- Current gate: `P01_BUNDLE_4_TRUST_BOUNDARIES_RISK_REGISTER`
 - Gate status: `ACTIVATED`
 
 ## Prohibited Work
 
-- Modifying `governance/CHANGE_PROTOCOL.md` for Bundle 3 before the next Product Owner instruction.
-- Creating `governance/NEVER_AUTOMATIC.md` before the next Product Owner instruction.
-- Ratifying any Bundle 3 deliverable without explicit Product Owner approval.
+- Creating `governance/TRUST_BOUNDARIES.md` before the next Product Owner instruction.
+- Modifying `governance/RISK_REGISTER.md` before the next Product Owner instruction.
+- Ratifying any Bundle 4 deliverable without explicit Product Owner approval.
 - Creating `governance/PRODUCT_OWNER.md`.
-- Authoring Bundle 4–5 deliverables (`TRUST_BOUNDARIES.md`, `RISK_REGISTER.md` top-six update, `docs/REFERENCE_STRUCTURE.md`, cold-start acceptance checklist ratification, roadmap update, adapter-rule alignment, P01 closeout).
-- Modifying `PRODUCT_CHARTER.md`, `GLOSSARY.md`, `DECISION_LOG.md`, `RISK_REGISTER.md`, `ROADMAP.md`, or `DOCUMENT_REGISTRY.md`.
+- Authoring Bundle 5 deliverables (`docs/REFERENCE_STRUCTURE.md`, cold-start acceptance checklist ratification, roadmap update, adapter-rule alignment, P01 closeout).
+- Modifying `PRODUCT_CHARTER.md`, `GLOSSARY.md`, `CHANGE_PROTOCOL.md`, `NEVER_AUTOMATIC.md`, `DECISION_LOG.md`, `ROADMAP.md`, or `DOCUMENT_REGISTRY.md`.
 - Product implementation.
 - Architecture evaluation outside approved P03 tasks.
 - Implementation stack selection.

@@ -2,12 +2,12 @@
 task_id: CONT-P01-BUNDLE-003
 title: P01 Bundle 3 - Authority, Change Protocol, and Never-Automatic Guardrail
 lane: Strict
-lifecycle_status: IN_PROGRESS
+lifecycle_status: DONE
 current_gate: P01_BUNDLE_3_AUTHORITY_CHANGE_PROTOCOL_NEVER_AUTOMATIC
-gate_status: ACTIVATED
-ratification_status: APPROVED_FOR_EXECUTION
-active: true
-execution_authorized: true
+gate_status: COMPLETED
+ratification_status: RATIFIED
+active: false
+execution_authorized: false
 predecessor_task: CONT-P01-BUNDLE-002
 product_owner: Rauf Alizada
 ---
@@ -173,6 +173,8 @@ Until that explicit activation occurs, this task confers no execution authority.
 - 2026-06-20: Product Owner approved staging, commit, and push of the Bundle 3 deliverable drafts (commit `b1fe85bb2634df227ae9c8ff21381b832553cd18`); Bundle 3 deliverables remained proposed/not ratified.
 - 2026-06-20: Product Owner approved preparation of the Bundle 3 deliverable ratification diff; prepare-diff-only — no staging, commit, push, task closeout, successor activation, Bundle 4–5 work, hooks, adapter rules, architecture, implementation, license, or dependency changes.
 - 2026-06-20: Product Owner approved preparation of the Bundle 3 closeout readiness record and the proposed inactive successor task `CONT-P01-BUNDLE-004` as a prepare-diff-only action; no staging, commit, push, task closure, successor activation, Bundle 4 deliverable authoring, Bundle 5 work, hooks, adapter rules, architecture, implementation, license, dependency, settings, or project-code changes.
+- 2026-06-20: Product Owner approved staging, commit, and push of the Bundle 3 closeout readiness record and the proposed inactive successor task `CONT-P01-BUNDLE-004` (commit `a58df6a9d037916d7eb3a18ce5366db0ff5a8323`); Bundle 3 remained active and Bundle 4 remained proposed/inactive at that point.
+- 2026-06-20: Product Owner approved closing `CONT-P01-BUNDLE-003` and activating `CONT-P01-BUNDLE-004` as the single active task; no Bundle 4 deliverable authoring, no `TRUST_BOUNDARIES.md` creation, no `RISK_REGISTER.md` update, no Bundle 5 work, no hooks, adapter rules, architecture, implementation, license, dependency, settings, or project-code changes.
 
 ## Bundle 3 Deliverable Draft Evidence
 
@@ -222,4 +224,19 @@ Until that explicit activation occurs, this task confers no execution authority.
 - No staging, commit, or push performed in this prepare-diff gate.
 - No `governance/ACTIVE_TASK.md`, `governance/CURRENT_PHASE.md`, `governance/PROJECT_STATE.md`, `governance/PRODUCT_CHARTER.md`, `governance/GLOSSARY.md`, `governance/DECISION_LOG.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, `docs/REFERENCE_STRUCTURE.md`, adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), hooks, settings, architecture, implementation, license, dependency, or project-code changes made.
 - Active-task invariant preserved: `active_task_id: CONT-P01-BUNDLE-003`.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
+
+## Bundle 3 Closeout Evidence
+
+- Bundle 3 deliverable drafts were committed in `b1fe85bb2634df227ae9c8ff21381b832553cd18`.
+- Bundle 3 deliverables were ratified in commit `5713511268a671f22395bb854bbebf9243ae6332`.
+- Bundle 4 proposed inactive task was committed in `a58df6a9d037916d7eb3a18ce5366db0ff5a8323`.
+- `governance/CHANGE_PROTOCOL.md` is ratified as `ratified_evolving` (`ratification_status: RATIFIED`, `last_ratified_by: Rauf Alizada`, `last_ratified_at: 2026-06-20`, `source_task: CONT-P01-BUNDLE-003`).
+- `governance/NEVER_AUTOMATIC.md` is ratified as `ratified_evolving` (`ratification_status: RATIFIED`, `last_ratified_by: Rauf Alizada`, `last_ratified_at: 2026-06-20`, `source_task: CONT-P01-BUNDLE-003`).
+- `governance/DECISION_LOG.md` records `DEC-P01-B3-001` (Bundle 3 Change Protocol updates) and `DEC-P01-B3-002` (Never-Automatic Guardrail) as both table rows and extended provenance blocks; no `DEC-P01-B3-003` exists.
+- Bundle 3 is **closed/completed** (`lifecycle_status: DONE`, `gate_status: COMPLETED`, `active: false`, `execution_authorized: false`).
+- No Bundle 4 deliverable was authored during closeout. `governance/TRUST_BOUNDARIES.md` was not created. `governance/RISK_REGISTER.md` was not modified for Bundle 4.
+- `CONT-P01-BUNDLE-004` is activated in this same transition as the single active task (`lifecycle_status: IN_PROGRESS`, `current_gate: P01_BUNDLE_4_TRUST_BOUNDARIES_RISK_REGISTER`, `gate_status: ACTIVATED`, `ratification_status: APPROVED_FOR_EXECUTION`, `active: true`, `execution_authorized: true`).
+- Active-task invariant preserved: exactly one active task before and after the transition; new `active_task_id: CONT-P01-BUNDLE-004`.
+- No Bundle 5 deliverables authored. No `governance/PRODUCT_OWNER.md` created. No hook scripts, adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), settings, architecture, implementation, license, dependency, or project-code changes made.
 - Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
