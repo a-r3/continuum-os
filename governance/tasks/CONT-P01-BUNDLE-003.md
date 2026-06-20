@@ -2,12 +2,12 @@
 task_id: CONT-P01-BUNDLE-003
 title: P01 Bundle 3 - Authority, Change Protocol, and Never-Automatic Guardrail
 lane: Strict
-lifecycle_status: PROPOSED
-current_gate: NONE
-gate_status: NOT_REQUESTED
-ratification_status: NOT_RATIFIED
-active: false
-execution_authorized: false
+lifecycle_status: IN_PROGRESS
+current_gate: P01_BUNDLE_3_AUTHORITY_CHANGE_PROTOCOL_NEVER_AUTOMATIC
+gate_status: ACTIVATED
+ratification_status: APPROVED_FOR_EXECUTION
+active: true
+execution_authorized: true
 predecessor_task: CONT-P01-BUNDLE-002
 product_owner: Rauf Alizada
 ---
@@ -18,22 +18,24 @@ product_owner: Rauf Alizada
 
 `Rauf Alizada` is the only valid Product Owner, project authority, and sole ratification authority for v1. No other identity is valid for project governance, approval, ratification, or authority. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` does not participate in this project in any form and is not a valid project identity; any incidental appearance in Git committer metadata or environment metadata is not project authority. Any reintroduction of an invalid identity is a stop condition.
 
-## Proposal Notice
+## Activation Notice
 
-This task is **proposed only and inactive**. It confers no execution authority. It does not authorize any modification of `governance/CHANGE_PROTOCOL.md`, creation of `governance/NEVER_AUTOMATIC.md`, or any other Bundle 3 deliverable. It may be activated only by a separately approved Product Owner active-task transition that preserves the active-task invariant.
+This task is now the single active task. Execution is authorized only for Bundle 3 Authority, Change Protocol, and Never-Automatic Guardrail work under approval-verb discipline. Drafting the Bundle 3 deliverables (updates to `governance/CHANGE_PROTOCOL.md` and creation of `governance/NEVER_AUTOMATIC.md`) still requires a separate Product Owner approval. Ratification of Bundle 3 deliverables remains out of scope under this activation.
 
-The active-task invariant currently holds with `CONT-P01-BUNDLE-002` as the single active task. `CONT-P01-BUNDLE-002` is not closed by this proposal.
+The active-task invariant holds: `active_task_id: CONT-P01-BUNDLE-003`. Predecessor task `CONT-P01-BUNDLE-002` is closed/completed in the same transition.
+
+(Historical proposal context: this task was first prepared as a proposed inactive successor task in commit `eed550859b0e650a328f35ec9ed8a74aa1e56c0a` and conferred no execution authority until the explicit Product Owner-approved active-task transition recorded below.)
 
 ## Status
 
 - Lane: `Strict`
-- Lifecycle status: `PROPOSED`
-- Current gate: `NONE`
-- Gate status: `NOT_REQUESTED`
-- Ratification status: `NOT_RATIFIED`
-- Active: `false`
-- Execution authorized: `false`
-- Predecessor / input: `CONT-P01-BUNDLE-002` (Bundle 2 Glossary ratified in commit `12fd21eaf3c7a624dfabcbd44d22753176beb2bf`; `CONT-P01-BUNDLE-002` remains active pending a separately approved active-task transition).
+- Lifecycle status: `IN_PROGRESS`
+- Current gate: `P01_BUNDLE_3_AUTHORITY_CHANGE_PROTOCOL_NEVER_AUTOMATIC`
+- Gate status: `ACTIVATED`
+- Ratification status: `APPROVED_FOR_EXECUTION`
+- Active: `true`
+- Execution authorized: `true`
+- Predecessor / input: `CONT-P01-BUNDLE-002` (Bundle 2 Glossary ratified in commit `12fd21eaf3c7a624dfabcbd44d22753176beb2bf`; `CONT-P01-BUNDLE-002` closed/completed in this same activation transition).
 - Product Owner: `Rauf Alizada`
 
 ## Objective
@@ -152,3 +154,18 @@ This task is proposed only and inactive. It may be activated only by an explicit
 - preserves the active-task invariant of exactly one active task at all times.
 
 Until that explicit activation occurs, this task confers no execution authority. No Bundle 3 deliverable (`governance/CHANGE_PROTOCOL.md` update or `governance/NEVER_AUTOMATIC.md`) may be authored, modified, or created. No staging, commit, or push of any Bundle 3 deliverable may occur.
+
+## Activation Evidence
+
+- 2026-06-20: Product Owner approved activation after Bundle 2 Glossary ratification (commit `12fd21eaf3c7a624dfabcbd44d22753176beb2bf`) and review/acceptance of the Bundle 3 proposed-task diff (commit `eed550859b0e650a328f35ec9ed8a74aa1e56c0a`).
+- Predecessor `CONT-P01-BUNDLE-002` is closed/completed in the same transition (`lifecycle_status: DONE`, `gate_status: COMPLETED`, `active: false`, `execution_authorized: false`).
+- `CONT-P01-BUNDLE-003` is now the single active task (`lifecycle_status: IN_PROGRESS`, `current_gate: P01_BUNDLE_3_AUTHORITY_CHANGE_PROTOCOL_NEVER_AUTOMATIC`, `gate_status: ACTIVATED`, `ratification_status: APPROVED_FOR_EXECUTION`, `active: true`, `execution_authorized: true`); active-task invariant preserved (exactly one active task).
+- Activation authorizes Bundle 3 execution only under approval-verb discipline (`prepare diff` / `commit only` / `commit and push`).
+- Activation does not authorize immediate `governance/CHANGE_PROTOCOL.md` modification or `governance/NEVER_AUTOMATIC.md` creation; drafting the Bundle 3 deliverables requires a separate Product Owner approval.
+- Activation does not authorize Bundle 4–5 work.
+- No architecture, implementation, license, dependencies, hook activation, or adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) are authorized.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
+
+## Approval History
+
+- 2026-06-20: Product Owner approved active-task transition from `CONT-P01-BUNDLE-002` to `CONT-P01-BUNDLE-003`; Bundle 3 activated; no Bundle 3 deliverable authoring yet.
