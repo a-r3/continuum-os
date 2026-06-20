@@ -1,9 +1,9 @@
 ---
-doc_status: proposed
+doc_status: ratified_evolving
 owner: Product Owner
-ratification_status: NOT_RATIFIED
-last_ratified_by:
-last_ratified_at:
+ratification_status: RATIFIED
+last_ratified_by: Rauf Alizada
+last_ratified_at: 2026-06-20
 source_task: CONT-P01-BUNDLE-002
 supersedes:
 superseded_by:
@@ -13,11 +13,13 @@ superseded_by:
 
 ## Status Notice
 
-This Glossary is a **draft / proposed** artifact prepared under task `CONT-P01-BUNDLE-002` (P01 Bundle 2 — Terminology and Knowledge Model). It is **not ratified**. No term defined below is binding as ratified Continuum OS governance terminology until the Product Owner (`Rauf Alizada`) explicitly ratifies this document.
+This Glossary is **ratified** Continuum OS governance terminology. It was ratified by the Product Owner (`Rauf Alizada`) under task `CONT-P01-BUNDLE-002` (P01 Bundle 2 — Terminology and Knowledge Model). Its document status is `ratified_evolving`.
 
-This draft must remain consistent with the ratified `governance/PRODUCT_CHARTER.md` and the ratified Product Owner identity encoding in `governance/PROJECT_STATE.md`. Any term defined here that would conflict with those ratified sources must be corrected before ratification.
+This Glossary defines the canonical Continuum OS terminology and knowledge-model vocabulary for P01. Its terms are binding ratified governance terminology for the project. Future changes to this Glossary require a separately approved Product Owner-ratified governance change.
 
-This draft does not authorize any Bundle 3, Bundle 4, or Bundle 5 work, nor any architecture evaluation or selection, implementation, implementation-stack selection, license selection or creation, dependency installation, hook registration or activation, ADR creation, or modification of adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`).
+This Glossary remains consistent with the ratified `governance/PRODUCT_CHARTER.md` and the ratified Product Owner identity encoding in `governance/PROJECT_STATE.md`. Where this Glossary repeats already-ratified governance state, that underlying state remains governed by its canonical file; this Glossary does not re-ratify it.
+
+This Glossary alone does not authorize any Bundle 3, Bundle 4, or Bundle 5 work, nor any architecture evaluation or selection, implementation, implementation-stack selection, license selection or creation, dependency installation, hook registration or activation, ADR creation, or modification of adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`).
 
 ## Purpose
 
@@ -34,11 +36,11 @@ This Glossary is a governance artifact, not an architectural or implementation s
 
 The Glossary distinguishes term entries by their status under governance:
 
-- **Ratified term** — a term whose definition has been ratified by the Product Owner and is binding on the project. No term in this draft is ratified until the Product Owner ratifies this document.
-- **Proposed term** — a term whose definition is drafted for review but is not binding. Every term in this draft is proposed.
-- **Superseded term** — a term whose former definition has been replaced by a ratified update. None exist in this draft.
+- **Ratified term** — a term whose definition has been ratified by the Product Owner and is binding on the project.
+- **Proposed term** — a term whose definition is drafted for review but is not binding. Proposed terms become ratified only after a separately approved Product Owner-ratified governance change.
+- **Superseded term** — a term whose former definition has been replaced by a ratified update.
 
-Until ratification, every entry below is a proposed term. References to ratified governance artifacts inside definitions (for example, the ratified Product Charter or the ratified Product Owner identity encoding) remain governed by their own canonical files; this Glossary does not re-ratify them.
+The term entries in this Glossary are ratified as P01 governance terminology by Product Owner ratification under `CONT-P01-BUNDLE-002`. Future term changes begin as proposals and become ratified only after a separately approved Product Owner-ratified governance change. References to ratified governance artifacts inside definitions (for example, the ratified Product Charter or the ratified Product Owner identity encoding) remain governed by their own canonical files; this Glossary does not re-ratify them.
 
 ## Knowledge Model Overview
 
@@ -102,7 +104,6 @@ Ratification authority for v1 belongs solely to `Rauf Alizada`. It is non-delega
 
 This Glossary is explicitly **not**:
 
-- a ratified governance document until the Product Owner ratifies it;
 - a substitute for `governance/PRODUCT_CHARTER.md`, `governance/PROJECT_STATE.md`, `governance/CHANGE_PROTOCOL.md`, `governance/DECISION_LOG.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, or any other canonical file;
 - an architecture specification, schema definition, data model, or storage design;
 - an implementation specification or API contract;
@@ -115,7 +116,7 @@ This Glossary is explicitly **not**:
 
 ## Source Inputs
 
-This draft is consolidated from:
+This Glossary is consolidated from:
 
 - P01 founder onboarding Group 3 (terminology and knowledge-model questions) recorded under the closed task `CONT-P01-ONB-001`;
 - the ratified P01 consolidation and ratification plan recorded under the closed task `CONT-P01-CONSOL-001`;
@@ -123,16 +124,14 @@ This draft is consolidated from:
 - the ratified Product Owner identity encoding in `governance/PROJECT_STATE.md` (Bundle 1 deliverable, ratified in commit `7cfd308367adcd9aecd50994122326167f042b35`);
 - `governance/DECISION_LOG.md` entries `DEC-P01-B1-001` and `DEC-P01-B1-002`.
 
-Where this draft repeats already-ratified governance state (for example, the canonical Product Owner identity or the ratified Product Charter), that underlying state remains governed by the canonical files; this Glossary does not re-ratify it.
+Where this Glossary repeats already-ratified governance state (for example, the canonical Product Owner identity or the ratified Product Charter), that underlying state remains governed by the canonical files; this Glossary does not re-ratify it.
 
-## Ratification Requirement
+## Ratification Evidence
 
-This Glossary becomes ratified Continuum OS governance terminology only when the Product Owner explicitly ratifies it under task `CONT-P01-BUNDLE-002`, recorded with the appropriate provenance fields (`doc_status: ratified_evolving`, `ratification_status: RATIFIED`, `last_ratified_by: Rauf Alizada`, `last_ratified_at`, plus a corresponding `governance/DECISION_LOG.md` entry under a separately approved ratification diff).
+The Product Owner (`Rauf Alizada`) ratified this Glossary under task `CONT-P01-BUNDLE-002` on `2026-06-20`. Ratification is recorded with provenance fields (`doc_status: ratified_evolving`, `ratification_status: RATIFIED`, `last_ratified_by: Rauf Alizada`, `last_ratified_at: 2026-06-20`, `source_task: CONT-P01-BUNDLE-002`) and a corresponding entry `DEC-P01-B2-001` in `governance/DECISION_LOG.md`.
 
-Until that explicit ratification occurs:
+This ratification applies to the Glossary terminology and knowledge-model vocabulary only. It does not authorize Bundle 3, Bundle 4, or Bundle 5 work. It does not authorize architecture evaluation or selection, implementation, implementation-stack selection, license selection or creation, dependency installation, hook registration or activation, ADR creation, or modification of adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`).
 
-- no term defined here is binding ratified governance terminology;
-- no agent or document may cite this Glossary as ratified authority;
-- no Bundle 3–5 work, architecture, implementation, license, hook activation, dependency, or adapter-rule change is authorized by the existence of this draft.
+Future changes to this Glossary require a separately approved Product Owner-ratified governance change.
 
 Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.

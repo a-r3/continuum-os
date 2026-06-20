@@ -17,6 +17,7 @@ Only explicit Product Owner decisions are recorded here.
 | DEC-P00-011 | Ratified | Hooks must be tested before activation and must not be activated merely because files exist. | Product Owner | 2026-06-18 | `governance/tasks/CONT-P00-ONB-001.md` approval history |
 | DEC-P01-B1-001 | Ratified | Ratify `governance/PRODUCT_CHARTER.md` as the v1 Product Charter (`doc_status: ratified_evolving`). See `## DEC-P01-B1-001` below for full provenance fields. | Product Owner | 2026-06-20 | commit `571a75115e20c8bcee61b338aa9ae69f2c355450` + Bundle 1 ratification diff |
 | DEC-P01-B1-002 | Ratified | Ratify the canonical Product Owner identity encoding in `governance/PROJECT_STATE.md` (`product_owner_identity_encoding_status: RATIFIED`): `Rauf Alizada` is the sole Product Owner and sole ratification authority for v1; no other identity is valid; no cryptographic identity is used in v1; no `governance/PRODUCT_OWNER.md` exists in v1. See `## DEC-P01-B1-002` below for full provenance fields. | Product Owner | 2026-06-20 | commit `571a75115e20c8bcee61b338aa9ae69f2c355450` + Bundle 1 ratification diff |
+| DEC-P01-B2-001 | Ratified | Ratify `governance/GLOSSARY.md` as the canonical Continuum OS terminology and knowledge-model Glossary for P01 (`doc_status: ratified_evolving`). See `## DEC-P01-B2-001` below for full provenance fields. | Product Owner | 2026-06-20 | commit `173a66d1905e610b8473223f871e1382221d28f4` + Bundle 2 Glossary ratification diff |
 
 ## DEC-P01-B1-001
 
@@ -43,3 +44,16 @@ Only explicit Product Owner decisions are recorded here.
 - reviewed_by: `Product Owner`
 - evidence: commit `571a75115e20c8bcee61b338aa9ae69f2c355450` (Bundle 1 deliverable drafts) and the Bundle 1 ratification diff prepared under this task.
 - scope_note: Ratifies the Product Owner identity encoding only. Does not authorize Bundle 2–5 work. Does not authorize architecture, implementation, license selection, dependency installation, hook activation, or adapter-rule changes.
+
+## DEC-P01-B2-001
+
+- decision_id: `DEC-P01-B2-001`
+- status: `RATIFIED`
+- decision: Ratify `governance/GLOSSARY.md` as the canonical Continuum OS terminology and knowledge-model Glossary for P01; document status `ratified_evolving`.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-20`
+- source_task: `CONT-P01-BUNDLE-002`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- evidence: commit `173a66d1905e610b8473223f871e1382221d28f4` (Bundle 2 Glossary draft) and the Bundle 2 Glossary ratification diff prepared under this task.
+- scope_note: Ratifies the Glossary only. Does not authorize Bundle 3–5 work, architecture, implementation, implementation stack selection, license selection or creation, dependency installation, hook registration or activation, ADR creation, or adapter-rule changes.

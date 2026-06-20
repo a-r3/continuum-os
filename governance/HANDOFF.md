@@ -1,8 +1,8 @@
 ---
-handoff_status: P01_BUNDLE_2_GLOSSARY_DRAFT_AWAITING_REVIEW
+handoff_status: P01_BUNDLE_2_GLOSSARY_RATIFICATION_DIFF_AWAITING_REVIEW
 current_gate: P01_BUNDLE_2_TERMINOLOGY_KNOWLEDGE_MODEL
 gate_status: ACTIVATED
-next_action: PRODUCT_OWNER_REVIEW_OF_BUNDLE_2_GLOSSARY_DRAFT
+next_action: PRODUCT_OWNER_REVIEW_OF_BUNDLE_2_GLOSSARY_RATIFICATION_DIFF
 known_blockers: []
 ---
 
@@ -16,13 +16,13 @@ The Product Owner / sole project authority / sole ratification authority for v1 
 
 Bundle 1 deliverables are ratified (commit `7cfd308367adcd9aecd50994122326167f042b35`): `governance/PRODUCT_CHARTER.md` is `ratified_evolving` / `RATIFIED`; Product Owner identity encoding in `governance/PROJECT_STATE.md` is `RATIFIED`; `governance/DECISION_LOG.md` records `DEC-P01-B1-001` and `DEC-P01-B1-002` with full provenance.
 
-`CONT-P01-BUNDLE-002` remains the single active task. A draft of `governance/GLOSSARY.md` has been prepared as a prepare-diff-only artifact and exists for Product Owner review. The Glossary is **proposed and not ratified**. No staging, commit, or push has occurred for this draft. No Bundle 2 ratification is authorized at this step.
+`CONT-P01-BUNDLE-002` remains the single active task. The Bundle 2 Glossary draft was committed in `173a66d1905e610b8473223f871e1382221d28f4`. A Bundle 2 Glossary ratification diff has been prepared as a prepare-diff-only artifact and exists for Product Owner review. In that diff, `governance/GLOSSARY.md` is proposed to move to `doc_status: ratified_evolving` / `ratification_status: RATIFIED` (ratified by `Rauf Alizada` on `2026-06-20`), and `governance/DECISION_LOG.md` is proposed to record exactly one Bundle 2 ratification decision (`DEC-P01-B2-001`). No staging, commit, or push has occurred for this ratification diff. No successor task has been activated.
 
 No Bundle 3–5 work has started. No architecture, implementation, license, hooks, dependencies, or adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) have changed.
 
 ## Next Action
 
-- Product Owner review of the `governance/GLOSSARY.md` draft.
+- Product Owner review of the Bundle 2 Glossary ratification diff (`governance/GLOSSARY.md` + `governance/DECISION_LOG.md` + `governance/tasks/CONT-P01-BUNDLE-002.md` + `governance/HANDOFF.md` + `governance/SESSION_LOG.md`).
 
 ## Actions Not Yet Authorized
 
