@@ -1,8 +1,9 @@
 ---
-active_task_id: CONT-P01-BUNDLE-001
-lifecycle_status: IN_PROGRESS
-current_gate: P01_BUNDLE_1_IDENTITY_SCOPE
-gate_status: ACTIVATED
+active_task_id: CONT-P01-BUNDLE-002
+active_task_title: P01 Bundle 2 - Terminology and Knowledge Model
+active_task_lane: Strict
+active_task_gate: P01_BUNDLE_2_TERMINOLOGY_KNOWLEDGE_MODEL
+active_task_status: IN_PROGRESS
 execution_authorized: true
 ---
 
@@ -18,18 +19,19 @@ A zero-active-task state is permitted only during an explicit transition, approv
 
 Exactly one active task exists.
 
-- Task ID: `CONT-P01-BUNDLE-001`
-- Title: P01 Bundle 1 - Identity and Scope
+- Task ID: `CONT-P01-BUNDLE-002`
+- Title: P01 Bundle 2 - Terminology and Knowledge Model
+- Lane: `Strict`
 - Lifecycle status: `IN_PROGRESS`
-- Current gate: `P01_BUNDLE_1_IDENTITY_SCOPE`
+- Current gate: `P01_BUNDLE_2_TERMINOLOGY_KNOWLEDGE_MODEL`
 - Gate status: `ACTIVATED`
 - Execution authorized: `true`
-- Task file: `governance/tasks/CONT-P01-BUNDLE-001.md`
+- Task file: `governance/tasks/CONT-P01-BUNDLE-002.md`
 
-`CONT-P01-CONSOL-001` is closed/completed. P01 remains active and Bundle 1 Identity and Scope is the active work. No Bundle 1 deliverable authoring is authorized until the next Product Owner instruction. No Bundle 1 deliverables have been ratified yet. The Product Owner / sole ratification authority for v1 is `Rauf Alizada`.
+`CONT-P01-BUNDLE-001` is closed/completed (Bundle 1 deliverables ratified in commit `7cfd308367adcd9aecd50994122326167f042b35`; closeout transition committed together with the activation of `CONT-P01-BUNDLE-002`). `CONT-P01-CONSOL-001` and `CONT-P01-ONB-001` remain closed/completed. P01 remains active and Bundle 2 Terminology and Knowledge Model is the active work. No Bundle 2 deliverable authoring is authorized until the next Product Owner instruction. `governance/GLOSSARY.md` has not been authored. No Bundle 2 deliverable has been ratified. The Product Owner / sole ratification authority for v1 is `Rauf Alizada`.
 
 ## Scope Boundaries
 
-- Authorized: governance updates and Bundle 1 Identity and Scope work under `CONT-P01-BUNDLE-001` (activation only at this gate; deliverable drafting requires the next Product Owner instruction).
-- Prohibited under this activation: drafting `governance/PRODUCT_CHARTER.md`, modifying `governance/PROJECT_STATE.md` with the Product Owner identity encoding deliverable, ratifying the Product Charter, ratifying the Product Owner identity encoding, creating `governance/PRODUCT_OWNER.md`, authoring Bundle 2–5 deliverables, modifying `CHANGE_PROTOCOL.md`, `DECISION_LOG.md`, `RISK_REGISTER.md`, `ROADMAP.md`, or `DOCUMENT_REGISTRY.md`, architecture evaluation or selection, implementation work, implementation stack selection, license selection, ADR creation, dependency installation, hook registration, hook activation, and modification of adapter rules.
+- Authorized: governance updates and Bundle 2 Terminology and Knowledge Model work under `CONT-P01-BUNDLE-002` (activation only at this gate; deliverable drafting requires the next Product Owner instruction).
+- Prohibited under this activation: authoring `governance/GLOSSARY.md` before the next Product Owner instruction, ratifying the Glossary, creating `governance/PRODUCT_OWNER.md`, authoring Bundle 3–5 deliverables, modifying `CHANGE_PROTOCOL.md`, `RISK_REGISTER.md`, `ROADMAP.md`, `DOCUMENT_REGISTRY.md`, `NEVER_AUTOMATIC.md`, `TRUST_BOUNDARIES.md`, or `docs/REFERENCE_STRUCTURE.md`, modifying `PRODUCT_CHARTER.md` or `DECISION_LOG.md`, architecture evaluation or selection, implementation work, implementation stack selection, license selection, ADR creation, dependency installation, hook registration, hook activation, and modification of adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`).
 - Product Owner remains the sole ratification authority for any semantic decision.

@@ -2,12 +2,12 @@
 task_id: CONT-P01-BUNDLE-002
 title: P01 Bundle 2 - Terminology and Knowledge Model
 lane: Strict
-lifecycle_status: PROPOSED
-current_gate: NONE
-gate_status: NOT_REQUESTED
-ratification_status: NOT_RATIFIED
-active: false
-execution_authorized: false
+lifecycle_status: IN_PROGRESS
+current_gate: P01_BUNDLE_2_TERMINOLOGY_KNOWLEDGE_MODEL
+gate_status: ACTIVATED
+ratification_status: APPROVED_FOR_EXECUTION
+active: true
+execution_authorized: true
 predecessor_task: CONT-P01-BUNDLE-001
 product_owner: Rauf Alizada
 ---
@@ -18,22 +18,22 @@ product_owner: Rauf Alizada
 
 `Rauf Alizada` is the only valid Product Owner, project authority, and sole ratification authority for v1. No other identity is valid for project governance, approval, ratification, or authority. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` does not participate in this project in any form and is not a valid project identity; any incidental appearance in Git committer metadata or environment metadata is not project authority. Any reintroduction of an invalid identity is a stop condition.
 
-## Proposal Notice
+## Activation Notice
 
-This task is **proposed only and inactive**. It confers no execution authority. It is not the active task. It must not be treated as an active task, used as execution authority, or relied upon for any scope expansion until the Product Owner explicitly approves a separate active-task transition that activates it. Activation requires a separately approved governance transition that closes/keeps-active the current active task per the active-task invariant.
+This task is now the single active task. Execution is authorized only for Bundle 2 Terminology and Knowledge Model work under approval-verb discipline. Drafting the Bundle 2 deliverable (`governance/GLOSSARY.md`) is the next step and still requires the next Product Owner instruction. Ratification of Bundle 2 deliverables remains out of scope under this activation.
 
-Predecessor task is `CONT-P01-BUNDLE-001` (P01 Bundle 1 — Identity and Scope), which remains the single active task. Bundle 1 deliverables are ratified (commit `7cfd308367adcd9aecd50994122326167f042b35`). This proposed Bundle 2 task confers no authority over Bundle 1, Bundle 3, Bundle 4, Bundle 5, or any non-Bundle-2 work.
+The active-task invariant holds: `active_task_id: CONT-P01-BUNDLE-002`. Predecessor task `CONT-P01-BUNDLE-001` is closed/completed.
 
 ## Status
 
 - Lane: `Strict`
-- Lifecycle status: `PROPOSED`
-- Current gate: `NONE`
-- Gate status: `NOT_REQUESTED`
-- Ratification status: `NOT_RATIFIED`
-- Active: `false`
-- Execution authorized: `false`
-- Predecessor / input: `CONT-P01-BUNDLE-001` (Bundle 1 deliverables ratified; commit `7cfd308367adcd9aecd50994122326167f042b35`; task remains active pending separately approved closeout)
+- Lifecycle status: `IN_PROGRESS`
+- Current gate: `P01_BUNDLE_2_TERMINOLOGY_KNOWLEDGE_MODEL`
+- Gate status: `ACTIVATED`
+- Ratification status: `APPROVED_FOR_EXECUTION`
+- Active: `true`
+- Execution authorized: `true`
+- Predecessor / input: `CONT-P01-BUNDLE-001` (Bundle 1 deliverables ratified in commit `7cfd308367adcd9aecd50994122326167f042b35`; task closed/completed in this same activation transition)
 - Product Owner: `Rauf Alizada`
 
 ## Objective
@@ -149,3 +149,18 @@ This task is proposed only and inactive. It may be activated only by an explicit
 - preserves the active-task invariant of exactly one active task at all times.
 
 Until that explicit activation occurs, this task confers no execution authority. No `governance/GLOSSARY.md` may be authored. No Bundle 2 deliverable may be created or modified. No staging, commit, or push of any Bundle 2 deliverable may occur.
+
+## Activation Evidence
+
+- 2026-06-20: Product Owner approved activation after Bundle 1 ratification (commit `7cfd308367adcd9aecd50994122326167f042b35`) and review/acceptance of the Bundle 2 proposed-task diff (commit `c1da6972b2bc7fef45e5868c823fb0e31c47e634`).
+- Predecessor `CONT-P01-BUNDLE-001` is closed/completed in the same transition (`lifecycle_status: DONE`, `gate_status: COMPLETED`, `active: false`, `execution_authorized: false`).
+- `CONT-P01-BUNDLE-002` is now the single active task (`lifecycle_status: IN_PROGRESS`, `current_gate: P01_BUNDLE_2_TERMINOLOGY_KNOWLEDGE_MODEL`, `gate_status: ACTIVATED`, `ratification_status: APPROVED_FOR_EXECUTION`, `active: true`, `execution_authorized: true`); active-task invariant preserved (exactly one active task).
+- Activation authorizes Bundle 2 execution only under approval-verb discipline (`prepare diff` / `commit only` / `commit and push`).
+- Activation does not authorize immediate `governance/GLOSSARY.md` authoring; drafting the Bundle 2 deliverable requires a separate Product Owner approval.
+- Activation does not authorize Bundle 3–5 work.
+- No architecture, implementation, license, dependencies, hook activation, or adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) are authorized.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
+
+## Approval History
+
+- 2026-06-20: Product Owner approved active-task transition from `CONT-P01-BUNDLE-001` to `CONT-P01-BUNDLE-002`; Bundle 2 activated; no Bundle 2 deliverable authoring yet.

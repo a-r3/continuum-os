@@ -2,12 +2,12 @@
 task_id: CONT-P01-BUNDLE-001
 title: P01 Bundle 1 - Identity and Scope
 lane: Strict
-lifecycle_status: IN_PROGRESS
+lifecycle_status: DONE
 current_gate: P01_BUNDLE_1_IDENTITY_SCOPE
-gate_status: ACTIVATED
-ratification_status: APPROVED_FOR_EXECUTION
-active: true
-execution_authorized: true
+gate_status: COMPLETED
+ratification_status: RATIFIED
+active: false
+execution_authorized: false
 predecessor_task: CONT-P01-CONSOL-001
 product_owner: Rauf Alizada
 ---
@@ -130,6 +130,21 @@ Output is reviewable diffs prepared under the approval-verb discipline (`prepare
 - 2026-06-20: Product Owner approved preparation of the Bundle 1 ratification diff (Product Charter ratification + Product Owner identity encoding ratification + DECISION_LOG entries); prepare-diff-only — no staging, commit, push, or successor activation.
 - 2026-06-20: Product Owner approved staging, commit, and push of the Bundle 1 ratification diff (commit `7cfd308367adcd9aecd50994122326167f042b35`); Bundle 1 deliverables ratified; task remains active.
 - 2026-06-20: Product Owner approved preparation of a prepare-diff-only artifact recording Bundle 1 closeout readiness in this task record and creating a proposed inactive successor task `governance/tasks/CONT-P01-BUNDLE-002.md`; no staging, no commit, no push, no closeout of this task, no activation of `CONT-P01-BUNDLE-002`.
+- 2026-06-20: Product Owner approved staging, commit, and push of the Bundle 1 closeout-readiness and Bundle 2 proposed-task diff (commit `c1da6972b2bc7fef45e5868c823fb0e31c47e634`); `CONT-P01-BUNDLE-001` remained active and `CONT-P01-BUNDLE-002` remained proposed/inactive at that step.
+- 2026-06-20: Product Owner approved closing `CONT-P01-BUNDLE-001` and activating `CONT-P01-BUNDLE-002` as the single active task; no Bundle 2 deliverable authoring, no `GLOSSARY.md`, no Bundle 3–5 work, no architecture, implementation, license, hooks, dependencies, or adapter-rule changes.
+
+## Bundle 1 Closeout Evidence
+
+- Bundle 1 deliverable drafts committed in `571a75115e20c8bcee61b338aa9ae69f2c355450`.
+- Bundle 1 deliverables ratified in `7cfd308367adcd9aecd50994122326167f042b35`.
+- Bundle 2 proposed inactive task committed in `c1da6972b2bc7fef45e5868c823fb0e31c47e634`.
+- `governance/PRODUCT_CHARTER.md` is ratified as the v1 Product Charter (`doc_status: ratified_evolving`, `ratification_status: RATIFIED`).
+- Product Owner identity encoding in `governance/PROJECT_STATE.md` is ratified (`product_owner_identity_encoding_status: RATIFIED`).
+- `DEC-P01-B1-001` (Product Charter ratification) and `DEC-P01-B1-002` (Product Owner identity encoding ratification) are recorded in `governance/DECISION_LOG.md` with full provenance fields.
+- Bundle 1 is closed/completed (`lifecycle_status: DONE`, `gate_status: COMPLETED`, `active: false`, `execution_authorized: false`).
+- No Bundle 2 deliverable was authored during closeout. `governance/GLOSSARY.md` has not been created.
+- `CONT-P01-BUNDLE-002` is activated in this same transition as the single active task; the active-task invariant is preserved (exactly one active task throughout the transition).
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
 
 ## Bundle 1 Closeout Readiness Evidence
 

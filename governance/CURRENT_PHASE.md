@@ -6,7 +6,7 @@ P01 — Founder Discovery and Product Definition
 
 ## Current P01 Sub-State
 
-P01 — Bundle 1 Identity and Scope
+P01 — Bundle 2 Terminology and Knowledge Model
 
 ## Status
 
@@ -14,28 +14,29 @@ P01 — Bundle 1 Identity and Scope
 - Founder onboarding (`CONT-P01-ONB-001`) is complete.
 - Consolidation planning task `CONT-P01-CONSOL-001` is closed/completed.
 - P01 consolidation and ratification plan is ratified.
-- Bundle 1 task `CONT-P01-BUNDLE-001` is the single active and execution-authorized task.
+- Bundle 1 task `CONT-P01-BUNDLE-001` is closed/completed. Bundle 1 deliverables (`governance/PRODUCT_CHARTER.md` and the Product Owner identity encoding in `governance/PROJECT_STATE.md`) are ratified.
+- Bundle 2 task `CONT-P01-BUNDLE-002` is the single active and execution-authorized task.
+- `governance/GLOSSARY.md` has not been authored.
 - P02 is not active. P03, P04, and P05 are not active.
-- Bundle 1 deliverable authoring requires the next Product Owner instruction.
-- Architecture, implementation, license, hook activation, and Bundle 2–5 deliverables remain unauthorized unless separately approved.
+- Bundle 2 deliverable authoring requires the next Product Owner instruction.
+- Architecture, implementation, license, hook activation, and Bundle 3–5 deliverables remain unauthorized unless separately approved.
 
 ## Objective
 
-Prepare Bundle 1 (Identity and Scope) deliverables — `governance/PRODUCT_CHARTER.md` (new) and the Product Owner identity encoding update in `governance/PROJECT_STATE.md` — for Product Owner review and ratification under the approval-verb discipline. Drafting and ratification occur only under separate Product Owner approvals.
+Prepare Bundle 2 (Terminology and Knowledge Model) deliverable — `governance/GLOSSARY.md` (new) — for Product Owner review and ratification under the approval-verb discipline. Drafting and ratification occur only under separate Product Owner approvals.
 
 ## Current Gate
 
-- Current gate: `P01_BUNDLE_1_IDENTITY_SCOPE`
+- Current gate: `P01_BUNDLE_2_TERMINOLOGY_KNOWLEDGE_MODEL`
 - Gate status: `ACTIVATED`
 
 ## Prohibited Work
 
-- Drafting `governance/PRODUCT_CHARTER.md` before the next Product Owner instruction.
-- Modifying `governance/PROJECT_STATE.md` with the Product Owner identity encoding deliverable before the next Product Owner instruction.
-- Ratifying the Product Charter or Product Owner identity encoding without explicit Product Owner approval.
+- Drafting `governance/GLOSSARY.md` before the next Product Owner instruction.
+- Ratifying the Glossary without explicit Product Owner approval.
 - Creating `governance/PRODUCT_OWNER.md`.
-- Authoring Bundle 2–5 deliverables (`GLOSSARY.md`, `CHANGE_PROTOCOL.md` updates, `NEVER_AUTOMATIC.md`, `TRUST_BOUNDARIES.md`, `RISK_REGISTER.md` top-six update, `docs/REFERENCE_STRUCTURE.md`, cold-start acceptance checklist ratification, roadmap update, adapter-rule alignment, P01 closeout).
-- Modifying `CHANGE_PROTOCOL.md`, `DECISION_LOG.md`, `RISK_REGISTER.md`, `ROADMAP.md`, or `DOCUMENT_REGISTRY.md`.
+- Authoring Bundle 3–5 deliverables (`CHANGE_PROTOCOL.md` updates, `NEVER_AUTOMATIC.md`, `TRUST_BOUNDARIES.md`, `RISK_REGISTER.md` top-six update, `docs/REFERENCE_STRUCTURE.md`, cold-start acceptance checklist ratification, roadmap update, adapter-rule alignment, P01 closeout).
+- Modifying `PRODUCT_CHARTER.md`, `DECISION_LOG.md`, `CHANGE_PROTOCOL.md`, `RISK_REGISTER.md`, `ROADMAP.md`, or `DOCUMENT_REGISTRY.md`.
 - Product implementation.
 - Architecture evaluation outside approved P03 tasks.
 - Implementation stack selection.
