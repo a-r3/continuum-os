@@ -2,12 +2,12 @@
 task_id: CONT-P01-BUNDLE-005
 title: P01 Bundle 5 - Reference Structure, Roadmap, Adapter Alignment, and P01 Closeout
 lane: Strict
-lifecycle_status: PROPOSED
-current_gate: NONE
-gate_status: NOT_REQUESTED
-ratification_status: NOT_RATIFIED
-active: false
-execution_authorized: false
+lifecycle_status: IN_PROGRESS
+current_gate: P01_BUNDLE_5_REFERENCE_STRUCTURE_ROADMAP_ADAPTER_ALIGNMENT_CLOSEOUT
+gate_status: ACTIVATED
+ratification_status: APPROVED_FOR_EXECUTION
+active: true
+execution_authorized: true
 predecessor_task: CONT-P01-BUNDLE-004
 product_owner: Rauf Alizada
 ---
@@ -20,24 +20,24 @@ The only valid Product Owner / project authority / ratification authority for v1
 
 This task does not delegate ratification authority. Only the Product Owner ratifies any decision or deliverable. Hooks, adapter rules, skills, subagents, agents, tools, and chat memory are not authority and cannot ratify.
 
-## Proposal Notice
+## Activation Notice
 
-This task is **proposed only** and **inactive**. It has no execution authority. It does not authorize any file creation, file modification, staging, commit, push, hook activation, adapter-rule modification, architecture work, implementation work, license selection, dependency installation, settings change, or project-code change.
+This task is now the **single active task**. Execution is authorized only for Bundle 5 work under approval-verb discipline (`prepare diff` / `commit only` / `commit and push`). Drafting any Bundle 5 deliverable (`docs/REFERENCE_STRUCTURE.md`, cold-start acceptance / reference checklist, `governance/ROADMAP.md` update, `governance/DOCUMENT_REGISTRY.md` update, adapter-rule alignment diffs, or P01 closeout evidence) still requires a separate Product Owner approval per gate. Ratification of any Bundle 5 deliverable remains out of scope under this activation.
 
-This task does not modify `governance/ACTIVE_TASK.md`, `governance/CURRENT_PHASE.md`, or `governance/PROJECT_STATE.md`. It does not close the currently active task `CONT-P01-BUNDLE-004`.
+The active-task invariant holds: `active_task_id: CONT-P01-BUNDLE-005`. Predecessor `CONT-P01-BUNDLE-004` is closed/completed in the same transition.
 
-Activation of this task requires a separate explicit Product Owner approval that simultaneously closes `CONT-P01-BUNDLE-004` and activates `CONT-P01-BUNDLE-005` in a single diff preserving the active-task invariant.
+(Historical proposal context: this task was first prepared as a proposed inactive successor task in commit `d95d2bc1b72156c9fbc73cd628e15bf06d93b0c6` and conferred no execution authority until the explicit Product Owner-approved active-task transition recorded below.)
 
 ## Status
 
-- `lifecycle_status`: `PROPOSED`
-- `current_gate`: `NONE`
-- `gate_status`: `NOT_REQUESTED`
-- `ratification_status`: `NOT_RATIFIED`
-- `active`: `false`
-- `execution_authorized`: `false`
+- `lifecycle_status`: `IN_PROGRESS`
+- `current_gate`: `P01_BUNDLE_5_REFERENCE_STRUCTURE_ROADMAP_ADAPTER_ALIGNMENT_CLOSEOUT`
+- `gate_status`: `ACTIVATED`
+- `ratification_status`: `APPROVED_FOR_EXECUTION`
+- `active`: `true`
+- `execution_authorized`: `true`
 - `predecessor_task`: `CONT-P01-BUNDLE-004`
-- The currently active task remains `CONT-P01-BUNDLE-004`. The active-task invariant holds: exactly one active task.
+- The single active task is `CONT-P01-BUNDLE-005`. The active-task invariant holds: exactly one active task.
 
 ## Objective
 
@@ -157,3 +157,17 @@ This task is **not activated** by this proposal. Activation requires a separate 
 - records the activation in `governance/ACTIVE_TASK.md`, `governance/CURRENT_PHASE.md`, `governance/PROJECT_STATE.md`, `governance/HANDOFF.md`, and `governance/SESSION_LOG.md`.
 
 Until that separate approval, this task remains proposed and inactive, and authorizes no work.
+
+## Activation Evidence
+
+- Product Owner approved activation after Bundle 4 ratification (commit `154edeff2242cac3f562353f43f4ea1bd3a17249`) and review/acceptance of the Bundle 5 proposed-task commit (`d95d2bc1b72156c9fbc73cd628e15bf06d93b0c6`).
+- Predecessor `CONT-P01-BUNDLE-004` is closed/completed in the same transition (`lifecycle_status: DONE`, `gate_status: COMPLETED`, `ratification_status: RATIFIED`, `active: false`, `execution_authorized: false`).
+- `CONT-P01-BUNDLE-005` is now the single active task (`lifecycle_status: IN_PROGRESS`, `current_gate: P01_BUNDLE_5_REFERENCE_STRUCTURE_ROADMAP_ADAPTER_ALIGNMENT_CLOSEOUT`, `gate_status: ACTIVATED`, `ratification_status: APPROVED_FOR_EXECUTION`, `active: true`, `execution_authorized: true`); active-task invariant preserved (exactly one active task before and after the transition).
+- Activation authorizes Bundle 5 execution only under approval-verb discipline (`prepare diff` / `commit only` / `commit and push`).
+- Activation does not authorize immediate `docs/REFERENCE_STRUCTURE.md` creation or modification, `governance/ROADMAP.md` update, `governance/DOCUMENT_REGISTRY.md` update, adapter-rule change (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), P01 closeout, P02 activation, or Bundle 5 deliverable ratification; each of those requires a separate Product Owner approval.
+- Activation does not authorize architecture, implementation, license, dependency, hook, settings, or project-code changes.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
+
+## Approval History
+
+- 2026-06-20: Product Owner approved active-task transition from `CONT-P01-BUNDLE-004` to `CONT-P01-BUNDLE-005`; Bundle 5 activated; no Bundle 5 deliverable authoring yet.

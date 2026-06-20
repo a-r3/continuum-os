@@ -2,12 +2,12 @@
 task_id: CONT-P01-BUNDLE-004
 title: P01 Bundle 4 - Trust Boundaries and Risk Register
 lane: Strict
-lifecycle_status: IN_PROGRESS
+lifecycle_status: DONE
 current_gate: P01_BUNDLE_4_TRUST_BOUNDARIES_RISK_REGISTER
-gate_status: ACTIVATED
-ratification_status: APPROVED_FOR_EXECUTION
-active: true
-execution_authorized: true
+gate_status: COMPLETED
+ratification_status: RATIFIED
+active: false
+execution_authorized: false
 predecessor_task: CONT-P01-BUNDLE-003
 product_owner: Rauf Alizada
 ---
@@ -174,6 +174,7 @@ Until that explicit activation occurs, this task confers no execution authority.
 - 2026-06-20: Product Owner approved staging, commit, and push of the Bundle 4 deliverable drafts (commit `3d09ee6bbafbadfc0731cf98788739398aee5b42`); Bundle 4 deliverables remained proposed/not ratified.
 - 2026-06-20: Product Owner approved preparation of the Bundle 4 deliverable ratification diff; prepare-diff-only — no staging, commit, push, task closeout, successor activation, Bundle 5 work, hooks, adapter rules, architecture, implementation, license, dependency, settings, or project-code changes.
 - 2026-06-20: Product Owner approved preparation of the Bundle 4 closeout readiness record and the proposed inactive successor task `CONT-P01-BUNDLE-005` as a prepare-diff-only action; no staging, commit, push, task closure, successor activation, Bundle 5 deliverable authoring, hooks, adapter rules, architecture, implementation, license, dependency, settings, or project-code changes.
+- 2026-06-20: Product Owner approved closing `CONT-P01-BUNDLE-004` and activating `CONT-P01-BUNDLE-005` as the single active task; no Bundle 5 deliverable authoring, no `docs/REFERENCE_STRUCTURE.md` creation or modification, no `ROADMAP.md` update, no `DOCUMENT_REGISTRY.md` update, no adapter-rule changes, no P01 closeout, no P02 activation, no hooks, architecture, implementation, license, dependency, settings, or project-code changes.
 
 ## Bundle 4 Deliverable Draft Evidence
 
@@ -221,4 +222,18 @@ Until that explicit activation occurs, this task confers no execution authority.
 - `CONT-P01-BUNDLE-004` remains active until a separately approved transition activates `CONT-P01-BUNDLE-005`.
 - No Bundle 5 deliverable has been authored.
 - No `docs/REFERENCE_STRUCTURE.md` has been created or modified; no `governance/ROADMAP.md` update; no `governance/DOCUMENT_REGISTRY.md` update; no adapter-rule update; no hooks, architecture, implementation, license, dependency, settings, or project-code changes.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
+
+## Bundle 4 Closeout Evidence
+
+- Bundle 4 deliverable drafts were committed in `3d09ee6bbafbadfc0731cf98788739398aee5b42`.
+- Bundle 4 deliverables were ratified in commit `154edeff2242cac3f562353f43f4ea1bd3a17249`.
+- Bundle 5 proposed inactive task was committed in `d95d2bc1b72156c9fbc73cd628e15bf06d93b0c6`.
+- `governance/TRUST_BOUNDARIES.md` is ratified as `ratified_evolving`.
+- `governance/RISK_REGISTER.md` Bundle 4 P01 top-risk update is ratified.
+- `governance/DECISION_LOG.md` records `DEC-P01-B4-001` (Trust Boundaries ratification) and `DEC-P01-B4-002` (Risk Register Bundle 4 P01 top-risk update ratification).
+- Bundle 4 is closed/completed (`lifecycle_status: DONE`, `gate_status: COMPLETED`, `ratification_status: RATIFIED`, `active: false`, `execution_authorized: false`).
+- No Bundle 5 deliverable was authored during closeout.
+- `CONT-P01-BUNDLE-005` is activated in this same transition as the single active task; active-task invariant preserved (exactly one active task before and after the transition).
+- No `docs/REFERENCE_STRUCTURE.md` creation or modification; no `governance/ROADMAP.md` update; no `governance/DOCUMENT_REGISTRY.md` update; no adapter-rule changes; no P01 closeout; no P02 activation; no hooks, architecture, implementation, license, dependency, settings, or project-code changes.
 - Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
