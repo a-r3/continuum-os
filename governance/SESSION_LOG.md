@@ -1,7 +1,7 @@
 ---
 session_log_status: ACTIVE
 latest_session_date: 2026-06-20
-latest_session_scope: P01_BUNDLE_2_CLOSED_AND_BUNDLE_3_ACTIVATED
+latest_session_scope: P01_BUNDLE_3_DELIVERABLE_DRAFTS_PREPARED
 ---
 
 # Session Log
@@ -261,4 +261,25 @@ Append-only summaries of completed sessions belong here.
 - No `governance/PRODUCT_CHARTER.md`, `governance/GLOSSARY.md`, `governance/DECISION_LOG.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, or `docs/REFERENCE_STRUCTURE.md` modifications.
 - No hooks, architecture, implementation, license, dependencies, or adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) modified.
 - No unauthorized files modified.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
+
+## 2026-06-20 - P01 Bundle 3 Deliverable Drafts Prepared
+
+- Product Owner approved prepare-diff-only drafting of Bundle 3 deliverables under active task `CONT-P01-BUNDLE-003`.
+- `governance/CHANGE_PROTOCOL.md` updated with proposed Bundle 3 sections: Status Notice, Authority Model, Approval Verb Discipline, Active-Task Invariant (proposed clarification), Ceremony Lanes, Session Lifecycle Protocol, and Hook / Validation / Skill Usage Protocol. Pre-existing P00/P01 sections preserved; proposed sections not ratified.
+- `governance/NEVER_AUTOMATIC.md` proposed draft created as a new file (`doc_status: proposed`, `ratification_status: NOT_RATIFIED`, `source_task: CONT-P01-BUNDLE-003`) with required sections including Status Notice, Purpose, Core Rule, Never-Automatic Actions, Git/Repository, Ratification/Authority, Task/Phase, Session Lifecycle, Hook/Validation/Skill, Implementation/Dependency, Identity/Authority, Stop Conditions, Evidence Requirements, Ratification Requirement.
+- Session lifecycle protocol included (open/cold-start, continue, pause/handoff, close, new-session-required).
+- Hook / validation / skill usage protocol included (general rules, validation discipline, uncertainty stop, decision table).
+- `governance/tasks/CONT-P01-BUNDLE-003.md` updated with Approval History entry and `## Bundle 3 Deliverable Draft Evidence` section.
+- `governance/HANDOFF.md` updated to `P01_BUNDLE_3_DELIVERABLE_DRAFTS_AWAITING_REVIEW` / `next_action: PRODUCT_OWNER_REVIEW_OF_BUNDLE_3_DELIVERABLE_DRAFTS`.
+- No staging, commit, or push performed.
+- No ratification of any Bundle 3 deliverable.
+- No successor task activated; `CONT-P01-BUNDLE-003` remains the single active task.
+- No Bundle 4 or Bundle 5 deliverables authored.
+- No `governance/PRODUCT_OWNER.md` created.
+- No `governance/TRUST_BOUNDARIES.md` created.
+- No hook scripts (`.claude/hooks/**`), adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), architecture, implementation, license, or dependency changes made.
+- No `governance/ACTIVE_TASK.md`, `governance/CURRENT_PHASE.md`, `governance/PROJECT_STATE.md`, `governance/PRODUCT_CHARTER.md`, `governance/GLOSSARY.md`, `governance/DECISION_LOG.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, or `docs/REFERENCE_STRUCTURE.md` modifications.
+- No unauthorized files modified.
+- Active-task invariant preserved: `active_task_id: CONT-P01-BUNDLE-003`.
 - Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.

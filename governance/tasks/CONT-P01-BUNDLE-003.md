@@ -169,3 +169,19 @@ Until that explicit activation occurs, this task confers no execution authority.
 ## Approval History
 
 - 2026-06-20: Product Owner approved active-task transition from `CONT-P01-BUNDLE-002` to `CONT-P01-BUNDLE-003`; Bundle 3 activated; no Bundle 3 deliverable authoring yet.
+- 2026-06-20: Product Owner approved preparation of Bundle 3 deliverable drafts (`governance/CHANGE_PROTOCOL.md` updates and `governance/NEVER_AUTOMATIC.md`) as a prepare-diff-only action; no staging, commit, push, ratification, Bundle 4–5 work, architecture, implementation, license, hooks, dependencies, or adapter-rule changes.
+
+## Bundle 3 Deliverable Draft Evidence
+
+- Product Owner approved prepare-diff-only drafting of Bundle 3 deliverables under active task `CONT-P01-BUNDLE-003`.
+- `governance/CHANGE_PROTOCOL.md` proposed updates prepared: Status Notice plus new sections — Authority Model, Approval Verb Discipline, Active-Task Invariant (proposed clarification), Ceremony Lanes (Strict + reserved lighter lanes), Session Lifecycle Protocol (open/cold-start, continue, pause/handoff, close, new-session-required), and Hook / Validation / Skill Usage Protocol (general rules, validation discipline, uncertainty stop, decision table). Pre-existing P00/P01 sections preserved.
+- `governance/NEVER_AUTOMATIC.md` proposed draft created as a new file (frontmatter `doc_status: proposed`, `owner: Product Owner`, `ratification_status: NOT_RATIFIED`, `source_task: CONT-P01-BUNDLE-003`) with all required sections (Status Notice, Purpose, Core Rule, Never-Automatic Actions, Git and Repository Actions, Ratification and Authority Actions, Task and Phase Actions, Session Lifecycle Actions, Hook/Validation/Skill Actions, Implementation and Dependency Actions, Identity and Authority Actions, Stop Conditions, Evidence Requirements, Ratification Requirement).
+- Both deliverables are **proposed** and **not ratified**. Ratification requires a separately approved Product Owner-ratified Bundle 3 ratification gate.
+- No staging, commit, or push performed.
+- No successor task activated; `CONT-P01-BUNDLE-003` remains the single active task; active-task invariant preserved.
+- No Bundle 4 or Bundle 5 deliverables authored (`TRUST_BOUNDARIES.md`, `RISK_REGISTER.md` top-six update, `docs/REFERENCE_STRUCTURE.md`, cold-start checklist ratification, roadmap update, adapter alignment, P01 closeout).
+- No `governance/PRODUCT_OWNER.md` created.
+- No hook scripts (`.claude/hooks/**`), adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), architecture, implementation, license, or dependency changes made.
+- No `governance/ACTIVE_TASK.md`, `governance/CURRENT_PHASE.md`, `governance/PROJECT_STATE.md`, `governance/PRODUCT_CHARTER.md`, `governance/GLOSSARY.md`, `governance/DECISION_LOG.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, or `docs/REFERENCE_STRUCTURE.md` modifications in this diff.
+- Active-task invariant preserved: `active_task_id: CONT-P01-BUNDLE-003` remains the single active task.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.

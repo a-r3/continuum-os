@@ -1,8 +1,8 @@
 ---
-handoff_status: P01_BUNDLE_3_ACTIVE_AWAITING_DRAFT_APPROVAL
+handoff_status: P01_BUNDLE_3_DELIVERABLE_DRAFTS_AWAITING_REVIEW
 current_gate: P01_BUNDLE_3_AUTHORITY_CHANGE_PROTOCOL_NEVER_AUTOMATIC
 gate_status: ACTIVATED
-next_action: PRODUCT_OWNER_APPROVAL_TO_DRAFT_BUNDLE_3_DELIVERABLES
+next_action: PRODUCT_OWNER_REVIEW_OF_BUNDLE_3_DELIVERABLE_DRAFTS
 known_blockers: []
 ---
 
@@ -20,13 +20,16 @@ Bundle 2 deliverable is ratified (Glossary draft committed `173a66d1905e610b8473
 
 `CONT-P01-BUNDLE-002` is **closed/completed** in this same transition (`lifecycle_status: DONE`, `gate_status: COMPLETED`, `active: false`, `execution_authorized: false`). `CONT-P01-BUNDLE-003` is now the **single active task** (`lifecycle_status: IN_PROGRESS`, `current_gate: P01_BUNDLE_3_AUTHORITY_CHANGE_PROTOCOL_NEVER_AUTOMATIC`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`). The active-task invariant holds: exactly one active task before and after the transition.
 
-Bundle 3 is active, but no Bundle 3 deliverable has been authored. `governance/CHANGE_PROTOCOL.md` has not been modified for Bundle 3. `governance/NEVER_AUTOMATIC.md` has not been created. The next safe action is Product Owner approval to draft the Bundle 3 deliverables.
+`CONT-P01-BUNDLE-003` remains the single active task. Bundle 3 deliverable drafts have now been prepared as a prepare-diff-only artifact under Product Owner approval:
 
-No Bundle 4 or Bundle 5 work has started. No architecture, implementation, license, hooks, dependencies, or adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) have changed.
+- `governance/CHANGE_PROTOCOL.md` has **proposed updates** (Status Notice plus new sections: Authority Model, Approval Verb Discipline, Active-Task Invariant proposed clarification, Ceremony Lanes, Session Lifecycle Protocol, Hook / Validation / Skill Usage Protocol). Pre-existing P00/P01 sections preserved. **Proposed and not ratified.**
+- `governance/NEVER_AUTOMATIC.md` exists as a new file: **proposed and not ratified** (`doc_status: proposed`, `ratification_status: NOT_RATIFIED`, `source_task: CONT-P01-BUNDLE-003`).
+
+No staging, commit, push, or ratification occurred. No successor task has been activated. No Bundle 4 or Bundle 5 work has started. No architecture, implementation, license, hooks, dependencies, or adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) have changed.
 
 ## Next Action
 
-- Product Owner approval to draft the Bundle 3 deliverables (updates to `governance/CHANGE_PROTOCOL.md` and creation of `governance/NEVER_AUTOMATIC.md`) under the approval-verb discipline (`prepare diff` → review → `commit only` or `commit and push`).
+- Product Owner review of the prepared Bundle 3 deliverable drafts (`governance/CHANGE_PROTOCOL.md` proposed updates and the new `governance/NEVER_AUTOMATIC.md`) together with the active-task record `governance/tasks/CONT-P01-BUNDLE-003.md` and this handoff. Subsequent gates (`commit only` / `commit and push` and a later ratification gate) require separate explicit Product Owner approvals.
 
 ## Actions Not Yet Authorized
 
@@ -62,9 +65,9 @@ No Bundle 4 or Bundle 5 work has started. No architecture, implementation, licen
 - Glossary is **ratified** (`ratified_evolving`).
 - Bundle 1 is closed/completed.
 - Bundle 2 is closed/completed.
-- Bundle 3 is **active and execution-authorized**, but no Bundle 3 deliverable has been authored.
-- `governance/CHANGE_PROTOCOL.md` has not been modified for Bundle 3.
-- `governance/NEVER_AUTOMATIC.md` does not exist.
+- Bundle 3 is **active and execution-authorized**; Bundle 3 deliverable **drafts are prepared** (prepare-diff-only) and awaiting Product Owner review.
+- `governance/CHANGE_PROTOCOL.md` has proposed Bundle 3 updates (not ratified).
+- `governance/NEVER_AUTOMATIC.md` exists as proposed/not ratified.
 - Product Owner remains sole ratification authority. The Product Owner is `Rauf Alizada`.
 - The active-task invariant holds: `active_task_id: CONT-P01-BUNDLE-003`.
 
