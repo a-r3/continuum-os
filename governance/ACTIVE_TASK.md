@@ -1,10 +1,10 @@
 ---
-active_task_id: CONT-P01-BUNDLE-005
-active_task_title: P01 Bundle 5 - Reference Structure, Roadmap, Adapter Alignment, and P01 Closeout
-active_task_lane: Strict
-active_task_gate: P01_BUNDLE_5_REFERENCE_STRUCTURE_ROADMAP_ADAPTER_ALIGNMENT_CLOSEOUT
-active_task_status: IN_PROGRESS
-execution_authorized: true
+active_task_id:
+active_task_title:
+active_task_lane:
+active_task_gate:
+active_task_status: NONE
+execution_authorized: false
 ---
 
 # Active Task
@@ -13,25 +13,23 @@ execution_authorized: true
 
 The repository may have zero or one active task, but never more than one. Any mutating execution work requires exactly one Product Owner-approved active task and `execution_authorized: true`.
 
-A zero-active-task state is permitted only during an explicit transition, approval wait, suspension, or closed-project state.
+A zero-active-task state is permitted only during an explicit transition, approval wait, suspension, or closed-project state. After P01 closeout and before P02 activation, the repository is in an explicit approval-wait state with zero active tasks.
 
 ## Current Active Task
 
-Exactly one active task exists.
+There is **no active task**. Execution is **not authorized**. The active-task invariant is preserved as zero active tasks.
 
-- Task ID: `CONT-P01-BUNDLE-005`
-- Title: P01 Bundle 5 - Reference Structure, Roadmap, Adapter Alignment, and P01 Closeout
-- Lane: `Strict`
-- Lifecycle status: `IN_PROGRESS`
-- Current gate: `P01_BUNDLE_5_REFERENCE_STRUCTURE_ROADMAP_ADAPTER_ALIGNMENT_CLOSEOUT`
-- Gate status: `ACTIVATED`
-- Execution authorized: `true`
-- Task file: `governance/tasks/CONT-P01-BUNDLE-005.md`
+- Active task ID: none
+- Active task title: none
+- Lane: none
+- Current gate: none
+- Gate status: closed
+- Execution authorized: `false`
 
-`CONT-P01-BUNDLE-004` is closed/completed (Bundle 4 deliverables — `governance/TRUST_BOUNDARIES.md` and the `governance/RISK_REGISTER.md` Bundle 4 P01 top-risk update — ratified in commit `154edeff2242cac3f562353f43f4ea1bd3a17249`; Bundle 5 proposed-task commit `d95d2bc1b72156c9fbc73cd628e15bf06d93b0c6`; closeout transition committed together with the activation of `CONT-P01-BUNDLE-005`). `CONT-P01-BUNDLE-003`, `CONT-P01-BUNDLE-002`, `CONT-P01-BUNDLE-001`, `CONT-P01-CONSOL-001`, and `CONT-P01-ONB-001` remain closed/completed. P01 remains active and Bundle 5 Reference Structure, Roadmap, Adapter Alignment, and P01 Closeout is the active work. No Bundle 5 deliverable authoring is authorized until the next Product Owner instruction. `docs/REFERENCE_STRUCTURE.md` has not been created. `governance/ROADMAP.md` has not been modified for Bundle 5. `governance/DOCUMENT_REGISTRY.md` has not been modified for Bundle 5. Adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) have not been modified. No Bundle 5 deliverable has been ratified. The Product Owner / sole ratification authority for v1 is `Rauf Alizada`.
+P01 is closed/completed. `CONT-P01-BUNDLE-005` is closed/completed (`lifecycle_status: DONE`, `gate_status: COMPLETED`, `ratification_status: RATIFIED`, `active: false`, `execution_authorized: false`); Bundle 5 deliverables ratified in commit `4a4529e5dc40d6d807cc22eab2c18f70aafb8ef5`. `CONT-P01-BUNDLE-001`, `CONT-P01-BUNDLE-002`, `CONT-P01-BUNDLE-003`, `CONT-P01-BUNDLE-004`, `CONT-P01-CONSOL-001`, and `CONT-P01-ONB-001` remain closed/completed. P02 is **not active**. No P02 task has been created. P02 activation requires separate explicit Product Owner approval. The Product Owner / sole ratification authority for v1 is `Rauf Alizada`.
 
 ## Scope Boundaries
 
-- Authorized: governance updates and Bundle 5 Reference Structure, Roadmap, Adapter Alignment, and P01 Closeout work under `CONT-P01-BUNDLE-005` (activation only at this gate; deliverable drafting requires the next Product Owner instruction).
-- Prohibited under this activation: creating or modifying `docs/REFERENCE_STRUCTURE.md` before the next Product Owner instruction, modifying `governance/ROADMAP.md` before the next Product Owner instruction, modifying `governance/DOCUMENT_REGISTRY.md` before the next Product Owner instruction, modifying adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), ratifying any Bundle 5 deliverable, closing P01, activating P02, creating `governance/PRODUCT_OWNER.md`, modifying `governance/PRODUCT_CHARTER.md`, `governance/GLOSSARY.md`, `governance/CHANGE_PROTOCOL.md`, `governance/NEVER_AUTOMATIC.md`, `governance/TRUST_BOUNDARIES.md`, `governance/RISK_REGISTER.md`, or `governance/DECISION_LOG.md`, architecture evaluation or selection, implementation work, implementation stack selection, license selection, ADR creation, dependency installation, hook registration, hook activation, and settings changes.
+- Authorized under the current zero-active-task state: none. No execution work is authorized.
+- Prohibited under this state: activating P02 without explicit Product Owner approval, creating a P02 task without explicit Product Owner approval, modifying adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), modifying hooks, architecture evaluation or selection, implementation work, implementation-stack selection, license selection or creation, ADR creation, dependency installation, hook registration or activation, settings changes, project-code changes, modifying ratified governance documents outside a separately approved gate, creating `governance/PRODUCT_OWNER.md`, and encoding any identity other than `Rauf Alizada` as valid project identity.
 - Product Owner remains the sole ratification authority for any semantic decision.

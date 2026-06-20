@@ -20,8 +20,8 @@ This Bundle 5 roadmap update is **ratified** as `ratified_evolving` governance r
 | Phase | Name | Status | Gate |
 |---|---|---|---|
 | P00 | Baseline and Project Control Foundation | Complete | Closeout commit and push authorized by Product Owner |
-| P01 | Founder Discovery and Product Definition | Active; Bundles 1-4 complete and ratified; Bundle 5 active | Requires Product Owner ratification of Bundle 5 deliverables and explicit P01 closeout approval |
-| P02 | Domain, Governance, and Security | Not active | Gated on explicit Product Owner approval after P01 closeout |
+| P01 | Founder Discovery and Product Definition | Closed/Completed; Bundles 1-5 ratified; closed under `DEC-P01-CLOSEOUT-001` | Closed |
+| P02 | Domain, Governance, and Security | Not active | Gated on a separately proposed and Product Owner-approved P02 activation task |
 | P03 | Architecture Evaluation and ADRs | Not started | Requires P02 closeout and approved P03 task |
 | P04 | Implementation Readiness Gate | Not started | Requires architecture consistency review |
 | P05 | Core MVP Implementation | Not started | Requires explicit P04 GO |
@@ -34,26 +34,20 @@ This Bundle 5 roadmap update is **ratified** as `ratified_evolving` governance r
 | Bundle 2 | Terminology and Knowledge Model (`GLOSSARY.md`) | Complete | Ratified (`DEC-P01-B2-001`) |
 | Bundle 3 | Authority, Change Protocol, and Never-Automatic Guardrail (`CHANGE_PROTOCOL.md`, `NEVER_AUTOMATIC.md`) | Complete | Ratified (`DEC-P01-B3-001`, `DEC-P01-B3-002`) |
 | Bundle 4 | Trust Boundaries and Risk Register (`TRUST_BOUNDARIES.md`, `RISK_REGISTER.md` P01 top-risk update) | Complete | Ratified (`DEC-P01-B4-001`, `DEC-P01-B4-002`) |
-| Bundle 5 | Reference Structure, Roadmap, Adapter Alignment, and P01 Closeout (`docs/REFERENCE_STRUCTURE.md`, `governance/ROADMAP.md` update, `governance/DOCUMENT_REGISTRY.md` update, adapter-rule alignment review, P01 closeout readiness) | Active; deliverable drafts ratified | Ratified (`DEC-P01-B5-001`, `DEC-P01-B5-002`, `DEC-P01-B5-003`) |
+| Bundle 5 | Reference Structure, Roadmap, Adapter Alignment, and P01 Closeout (`docs/REFERENCE_STRUCTURE.md`, `governance/ROADMAP.md` update, `governance/DOCUMENT_REGISTRY.md` update, adapter-rule alignment review, P01 closeout readiness) | Complete | Ratified (`DEC-P01-B5-001`, `DEC-P01-B5-002`, `DEC-P01-B5-003`) |
 
 ## P01 Closeout
 
-P01 is **not yet closed**. P01 closeout requires:
-
-- ratification of Bundle 5 deliverables under separately approved Product Owner gates;
-- consistency verification across ratified governance files;
-- cold-start acceptance test against `docs/REFERENCE_STRUCTURE.md`;
-- explicit Product Owner approval of the P01 closeout commit and push under approval-verb discipline (`prepare diff` / `commit only` / `commit and push`).
+P01 is **closed/completed** under `DEC-P01-CLOSEOUT-001`. P01 Bundles 1–5 are complete and ratified. No active task exists after P01 closeout. P01 closeout does not authorize architecture, implementation, license, dependency, hook activation, settings, adapter-rule changes, or project-code work.
 
 ## P02 Status
 
 P02 is **not active**. P02 activation is gated on:
 
-- explicit Product Owner ratification of P01 closeout;
-- a separately proposed and approved P02 activation task;
+- a separately proposed and Product Owner-approved P02 activation task;
 - preservation of the active-task invariant (zero or one active task) during transition.
 
-P02 activation is not authorized by this roadmap update.
+P02 activation is not authorized by this roadmap update or by P01 closeout.
 
 ## Phase Boundaries
 
@@ -89,3 +83,4 @@ This roadmap update does not authorize:
 - Document status is `ratified_evolving`; frontmatter records `ratification_status: RATIFIED`, `last_ratified_by: Rauf Alizada`, and `last_ratified_at: 2026-06-21`.
 - Future changes to this roadmap require a separately approved Product Owner-ratified governance change.
 - Ratification of this roadmap update does not authorize P01 closeout, P02 activation, architecture evaluation or selection, implementation work, implementation-stack selection, license selection or creation, dependency installation, hook activation, settings changes, adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), or project-code work; each of those requires separate explicit Product Owner approval.
+- P01 closeout is recorded separately as `DEC-P01-CLOSEOUT-001`. P01 closeout does not authorize P02 activation, P02 task creation, architecture, implementation, license, dependency, hook activation, settings, adapter-rule changes, or project-code work.

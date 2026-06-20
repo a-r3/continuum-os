@@ -25,11 +25,11 @@ The registry tracks canonical governance documents, active/proposed task records
 |---|---|---|---|---|---|---|---|---|
 | `CLAUDE.md` | Agent entry point | Claude Code adapter entry and cold-start reading order | Active | — | Not applicable (adapter behavioral guidance) | — | Product Owner | Adapter; subordinate to ratified governance |
 | `AGENTS.md` | Agent adapter | Generic agent adapter notes | Active | — | Not applicable (adapter behavioral guidance) | — | Product Owner | Adapter; subordinate to ratified governance |
-| `governance/PROJECT_STATE.md` | Governance | Canonical current state and Product Owner identity encoding | Active-state | `CONT-P01-BUNDLE-001` (identity encoding section) | Product Owner identity encoding section RATIFIED; rest active-state | `DEC-P01-B1-002` | Product Owner | Canonical |
-| `governance/CURRENT_PHASE.md` | Governance | Canonical phase contract | Active-state | — | Active-state | — | Product Owner | Canonical |
-| `governance/ACTIVE_TASK.md` | Governance | Canonical single-active-task contract | Active-state | — | Active-state | — | Product Owner | Canonical; enforces active-task invariant |
+| `governance/PROJECT_STATE.md` | Governance | Canonical current state and Product Owner identity encoding | Active-state (P01 closed; no active task) | `CONT-P01-BUNDLE-001` (identity encoding section) | Product Owner identity encoding section RATIFIED; rest active-state | `DEC-P01-B1-002` | Product Owner | Canonical |
+| `governance/CURRENT_PHASE.md` | Governance | Canonical phase contract | Active-state (P01 closed; P02 not active) | — | Active-state | — | Product Owner | Canonical |
+| `governance/ACTIVE_TASK.md` | Governance | Canonical single-active-task contract | Active-state (no active task after P01 closeout) | — | Active-state | — | Product Owner | Canonical; enforces active-task invariant |
 | `governance/HANDOFF.md` | Governance | Current handoff and next action | Active-state | — | Active-state | — | Product Owner | Canonical |
-| `governance/ROADMAP.md` | Governance | Canonical lifecycle and phase model | Ratified (`ratified_evolving`); Bundle 5 update ratified | `CONT-P01-BUNDLE-005` (Bundle 5 update) | RATIFIED | `DEC-P01-B5-002` | Product Owner | Canonical |
+| `governance/ROADMAP.md` | Governance | Canonical lifecycle and phase model | Ratified (`ratified_evolving`); Bundle 5 update ratified; reflects P01 closeout | `CONT-P01-BUNDLE-005` (Bundle 5 update) | RATIFIED | `DEC-P01-B5-002`, `DEC-P01-CLOSEOUT-001` | Product Owner | Canonical |
 | `governance/DOCUMENT_REGISTRY.md` | Governance | Canonical document authority registry (this document) | Ratified (`ratified_evolving`); Bundle 5 update ratified | `CONT-P01-BUNDLE-005` (Bundle 5 update) | RATIFIED | `DEC-P01-B5-003` | Product Owner | Canonical |
 | `governance/PRODUCT_CHARTER.md` | Governance | Canonical product charter | Ratified (`ratified_evolving`) | `CONT-P01-BUNDLE-001` | RATIFIED | `DEC-P01-B1-001` | Product Owner | Canonical |
 | `governance/GLOSSARY.md` | Governance | Canonical terminology and knowledge model | Ratified (`ratified_evolving`) | `CONT-P01-BUNDLE-002` | RATIFIED | `DEC-P01-B2-001` | Product Owner | Canonical |
@@ -37,7 +37,7 @@ The registry tracks canonical governance documents, active/proposed task records
 | `governance/NEVER_AUTOMATIC.md` | Governance | Canonical never-automatic guardrail | Ratified (`ratified_evolving`) | `CONT-P01-BUNDLE-003` | RATIFIED | `DEC-P01-B3-002` | Product Owner | Canonical |
 | `governance/TRUST_BOUNDARIES.md` | Governance | Canonical trust boundaries | Ratified (`ratified_evolving`) | `CONT-P01-BUNDLE-004` | RATIFIED | `DEC-P01-B4-001` | Product Owner | Canonical |
 | `governance/RISK_REGISTER.md` | Governance | Canonical risks | Active; Bundle 4 P01 top-risk section ratified (`ratified_evolving`) | `CONT-P01-BUNDLE-004` (Bundle 4 update) | Bundle 4 P01 top-risk section RATIFIED | `DEC-P01-B4-002` | Product Owner | Canonical |
-| `governance/DECISION_LOG.md` | Governance | Canonical decisions | Active append-only | — | Records ratified decisions (`DEC-P01-B1-001`, `DEC-P01-B1-002`, `DEC-P01-B2-001`, `DEC-P01-B3-001`, `DEC-P01-B3-002`, `DEC-P01-B4-001`, `DEC-P01-B4-002`, `DEC-P01-B5-001`, `DEC-P01-B5-002`, `DEC-P01-B5-003`) | `DEC-P01-B1-001`, `DEC-P01-B1-002`, `DEC-P01-B2-001`, `DEC-P01-B3-001`, `DEC-P01-B3-002`, `DEC-P01-B4-001`, `DEC-P01-B4-002`, `DEC-P01-B5-001`, `DEC-P01-B5-002`, `DEC-P01-B5-003` | Product Owner | Canonical |
+| `governance/DECISION_LOG.md` | Governance | Canonical decisions | Active append-only | — | Records ratified decisions (`DEC-P01-B1-001`, `DEC-P01-B1-002`, `DEC-P01-B2-001`, `DEC-P01-B3-001`, `DEC-P01-B3-002`, `DEC-P01-B4-001`, `DEC-P01-B4-002`, `DEC-P01-B5-001`, `DEC-P01-B5-002`, `DEC-P01-B5-003`, `DEC-P01-CLOSEOUT-001`) | `DEC-P01-B1-001`, `DEC-P01-B1-002`, `DEC-P01-B2-001`, `DEC-P01-B3-001`, `DEC-P01-B3-002`, `DEC-P01-B4-001`, `DEC-P01-B4-002`, `DEC-P01-B5-001`, `DEC-P01-B5-002`, `DEC-P01-B5-003`, `DEC-P01-CLOSEOUT-001` | Product Owner | Canonical |
 | `governance/OPEN_QUESTIONS.md` | Governance | Canonical unresolved questions | Active | — | Active-state | — | Product Owner | Canonical |
 | `governance/SESSION_LOG.md` | Governance | Historical append-only session log | Active append-only | — | Evidence (not ratified content) | — | Product Owner | Canonical evidence |
 | `docs/REFERENCE_STRUCTURE.md` | Reference | Canonical cold-start reference structure | Ratified (`ratified_evolving`) | `CONT-P01-BUNDLE-005` | RATIFIED | `DEC-P01-B5-001` | Product Owner | Bundle 5 deliverable |
@@ -48,7 +48,7 @@ The registry tracks canonical governance documents, active/proposed task records
 | `governance/tasks/CONT-P01-BUNDLE-002.md` | Task record | P01 Bundle 2 Terminology and Knowledge Model | Closed/Completed | `CONT-P01-BUNDLE-002` | RATIFIED (deliverable) | `DEC-P01-B2-001` | Product Owner | Historical |
 | `governance/tasks/CONT-P01-BUNDLE-003.md` | Task record | P01 Bundle 3 Authority, Change Protocol, and Never-Automatic Guardrail | Closed/Completed | `CONT-P01-BUNDLE-003` | RATIFIED (deliverables) | `DEC-P01-B3-001`, `DEC-P01-B3-002` | Product Owner | Historical |
 | `governance/tasks/CONT-P01-BUNDLE-004.md` | Task record | P01 Bundle 4 Trust Boundaries and Risk Register | Closed/Completed | `CONT-P01-BUNDLE-004` | RATIFIED (deliverables) | `DEC-P01-B4-001`, `DEC-P01-B4-002` | Product Owner | Historical |
-| `governance/tasks/CONT-P01-BUNDLE-005.md` | Task record | P01 Bundle 5 Reference Structure, Roadmap, Adapter Alignment, and P01 Closeout (single active task) | Active (`IN_PROGRESS`) | `CONT-P01-BUNDLE-005` | APPROVED_FOR_EXECUTION (task); Bundle 5 deliverables RATIFIED (`DEC-P01-B5-001`, `DEC-P01-B5-002`, `DEC-P01-B5-003`) | `DEC-P01-B5-001`, `DEC-P01-B5-002`, `DEC-P01-B5-003` | Product Owner | Canonical active task |
+| `governance/tasks/CONT-P01-BUNDLE-005.md` | Task record | P01 Bundle 5 Reference Structure, Roadmap, Adapter Alignment, and P01 Closeout | Closed/Completed | `CONT-P01-BUNDLE-005` | RATIFIED (deliverables); P01 closed under `DEC-P01-CLOSEOUT-001` | `DEC-P01-B5-001`, `DEC-P01-B5-002`, `DEC-P01-B5-003`, `DEC-P01-CLOSEOUT-001` | Product Owner | Historical |
 | `.continuum/manifest.yaml` | Continuum projection | Derived provisional projection manifest | Bootstrap only | — | Derived; not ratified content | — | Product Owner | Derived |
 | `.continuum/index.md` | Continuum projection | Derived provisional projection index | Bootstrap only | — | Derived; not ratified content | — | Product Owner | Derived |
 
@@ -66,6 +66,7 @@ The following decision IDs from `governance/DECISION_LOG.md` are referenced by r
 - `DEC-P01-B5-001` — Reference Structure (`docs/REFERENCE_STRUCTURE.md`) ratification.
 - `DEC-P01-B5-002` — Roadmap (`governance/ROADMAP.md`) Bundle 5 update ratification.
 - `DEC-P01-B5-003` — Document Registry (`governance/DOCUMENT_REGISTRY.md`) Bundle 5 update ratification.
+- `DEC-P01-CLOSEOUT-001` — P01 Founder Discovery and Product Definition closeout after ratification of Bundles 1–5.
 
 ## Duplicate Authority Rule
 

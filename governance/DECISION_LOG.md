@@ -25,6 +25,7 @@ Only explicit Product Owner decisions are recorded here.
 | DEC-P01-B5-001 | Ratified | Ratify `docs/REFERENCE_STRUCTURE.md` as the Continuum OS v1 cold-start Reference Structure (`doc_status: ratified_evolving`). See `## DEC-P01-B5-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `0dcb7cf7ac982cc4ade0b6993a9dc44683dcf572` + Bundle 5 ratification diff |
 | DEC-P01-B5-002 | Ratified | Ratify the `governance/ROADMAP.md` Bundle 5 roadmap update as ratified_evolving governance roadmap content. See `## DEC-P01-B5-002` below for full provenance fields. | Product Owner | 2026-06-21 | commit `0dcb7cf7ac982cc4ade0b6993a9dc44683dcf572` + Bundle 5 ratification diff |
 | DEC-P01-B5-003 | Ratified | Ratify the `governance/DOCUMENT_REGISTRY.md` Bundle 5 registry update as ratified_evolving governance registry content. See `## DEC-P01-B5-003` below for full provenance fields. | Product Owner | 2026-06-21 | commit `0dcb7cf7ac982cc4ade0b6993a9dc44683dcf572` + Bundle 5 ratification diff |
+| DEC-P01-CLOSEOUT-001 | Ratified | Close P01 Founder Discovery and Product Definition after completion and ratification of Bundles 1–5. See `## DEC-P01-CLOSEOUT-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `4a4529e5dc40d6d807cc22eab2c18f70aafb8ef5` + P01 closeout diff |
 
 ## DEC-P01-B1-001
 
@@ -155,3 +156,16 @@ Only explicit Product Owner decisions are recorded here.
 - reviewed_by: `Product Owner`
 - evidence: commit `0dcb7cf7ac982cc4ade0b6993a9dc44683dcf572` (Bundle 5 deliverable drafts) and the Bundle 5 ratification diff prepared under this task.
 - scope_note: Ratifies the Bundle 5 document registry update only. Does not authorize adapter-rule changes, hook changes, architecture, implementation, license, dependency, settings, project-code changes, P01 closeout, P02 activation, task closeout, or successor-task activation.
+
+## DEC-P01-CLOSEOUT-001
+
+- decision_id: `DEC-P01-CLOSEOUT-001`
+- status: `RATIFIED`
+- decision: Close P01 Founder Discovery and Product Definition after completion and ratification of Bundles 1–5.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-21`
+- source_task: `CONT-P01-BUNDLE-005`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- evidence: commit `4a4529e5dc40d6d807cc22eab2c18f70aafb8ef5` (Bundle 5 deliverable ratification) and the P01 closeout diff prepared under this task.
+- scope_note: Closes P01 only. Does not activate P02, create a P02 task, authorize adapter-rule changes, hook changes, architecture, implementation, license, dependency, settings, project-code changes, task execution, or successor-task activation.
