@@ -641,8 +641,11 @@ Before this plan may be approved by the Product Owner, the following must hold:
 
 - plan_id: `P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001`
 - title: `P02 Domain Discovery Draft Plan 001`
-- status: `PROPOSED_INACTIVE`
-- approval_status: `NOT_APPROVED`
+- status: `APPROVED_FOR_DRAFTING`
+- approval_status: `APPROVED`
+- approval_decision: `DEC-P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001`
+- approved_by: `Rauf Alizada`
+- approved_at: `2026-06-21`
 - source_task: `CONT-P02-ONB-001`
 - source_plan: `P02-DISCOVERY-PLAN-002`
 - source_decision: `DEC-P02-DISCOVERY-PLAN-002`
@@ -650,12 +653,14 @@ Before this plan may be approved by the Product Owner, the following must hold:
 
 ### Plan Status
 
-- This is a proposed inactive draft plan only.
-- It is not approved.
-- It does not authorize execution.
-- It does not create a domain model deliverable.
-- It does not modify canonical domain/governance documents.
-- Separate Product Owner approval is required before drafting any domain discovery deliverable.
+- This plan is **approved for drafting preparation** under `DEC-P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001`.
+- It authorizes planning and prepare-diff work for a future `P02 Domain Discovery Draft` only after a separate Product Owner-approved verb.
+- It does not itself create a domain discovery deliverable.
+- It does not modify canonical domain/governance documents (`PRODUCT_CHARTER.md`, `GLOSSARY.md`, `CHANGE_PROTOCOL.md`, `TRUST_BOUNDARIES.md`, `NEVER_AUTOMATIC.md`, `ROADMAP.md`).
+- It does not draft or ratify domain concepts, terms, entities, relationships, lifecycle states, or constraints.
+- It does not approve architecture, schema, implementation, runtime packs, hooks, adapter rules, dependencies, settings, license, or project code.
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task.
 
 ### Purpose
 
@@ -771,3 +776,18 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - P02 remains active;
 - `CONT-P02-ONB-001` remains the single active task;
 - no runtime pack is generated.
+
+### Approval Evidence
+
+- proposed plan commit: `b371b77fcd290cc329a5f53f44c95bf58eaaab70`.
+- approval decision: `DEC-P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001`.
+- approved by: `Rauf Alizada`.
+- source task: `CONT-P02-ONB-001`.
+- source plan: `P02-DISCOVERY-PLAN-002` (approved under `DEC-P02-DISCOVERY-PLAN-002`).
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
+- No `P02 Domain Discovery Draft` was created.
+- No `governance/OPEN_QUESTIONS.md` update occurred.
+- No `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, or `governance/DOCUMENT_REGISTRY.md` update occurred.
+- No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
+- No hooks, adapter-rule, architecture, implementation, dependency, settings, license, or project-code changes.

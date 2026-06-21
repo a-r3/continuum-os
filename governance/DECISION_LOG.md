@@ -34,6 +34,7 @@ Only explicit Product Owner decisions are recorded here.
 | DEC-P02-CONTEXT-RETRIEVAL-001 | Ratified | Ratify `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` as the canonical Context Retrieval Protocol for Continuum OS retrieval-mode selection, source authority order, file-category rules, freshness checks, generated-context handling, escalation rules, and emergency stop conditions. See `## DEC-P02-CONTEXT-RETRIEVAL-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `585773d4591f1c97b49e70f494fcc7a5daaff6fe` (proposed Context Retrieval Protocol draft) + Context Retrieval Protocol ratification diff |
 | DEC-P02-CONTEXT-SET-CLOSEOUT-001 | Ratified | Close the P02 context-policy set after ratification of `governance/CONTEXT_POLICY.md`, `governance/CONTEXT_BUDGET.md`, and `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`. Closes the context-policy set only; does not close P02 or `CONT-P02-ONB-001`. See `## DEC-P02-CONTEXT-SET-CLOSEOUT-001` below for full provenance fields. | Product Owner | 2026-06-21 | commits `26bd1217a4e324ed736fabdda54ee2263ddd7279`, `8bf9990ebafd5ce87d05a5e4a58e636d2efecd1c`, and `1a0cfdaeb7da78a087ba43d18dbe0a27999b4a94` + P02 context-policy set closeout diff |
 | DEC-P02-DISCOVERY-PLAN-002 | Ratified | Approve `P02 Discovery Plan 002 - Remaining P02 Discovery Scope` for drafting preparation under `CONT-P02-ONB-001`. Changes the plan from `PROPOSED_INACTIVE` / `NOT_APPROVED` to `APPROVED_FOR_DRAFTING` / `APPROVED`. See `## DEC-P02-DISCOVERY-PLAN-002` below for full provenance fields. | Product Owner | 2026-06-21 | commit `8a3fe920ca89895eaeb71570d6a0e917b21a4702` (proposed P02 Discovery Plan 002) + P02 Discovery Plan 002 approval diff |
+| DEC-P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001 | Ratified | Approve `P02 Domain Discovery Draft Plan 001` for preparing a future `P02 Domain Discovery Draft` under `CONT-P02-ONB-001`. Changes the plan from `PROPOSED_INACTIVE` / `NOT_APPROVED` to `APPROVED_FOR_DRAFTING` / `APPROVED`. See `## DEC-P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `b371b77fcd290cc329a5f53f44c95bf58eaaab70` (proposed P02 Domain Discovery Draft Plan 001) + P02 Domain Discovery Draft Plan 001 approval diff |
 
 ## DEC-P01-B1-001
 
@@ -281,3 +282,16 @@ Only explicit Product Owner decisions are recorded here.
 - reviewed_by: `Product Owner`
 - evidence: commit `8a3fe920ca89895eaeb71570d6a0e917b21a4702` (proposed P02 Discovery Plan 002) plus the P02 Discovery Plan 002 approval diff.
 - scope_note: Approves P02 Discovery Plan 002 only and changes it from `PROPOSED_INACTIVE` / `NOT_APPROVED` to `APPROVED_FOR_DRAFTING` / `APPROVED`. Does not draft or ratify any domain, governance, security, data-classification, open-questions, or token-efficiency deliverable; does not update `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, or `governance/DOCUMENT_REGISTRY.md`; does not close P02 or `CONT-P02-ONB-001`; P02 remains active and `CONT-P02-ONB-001` remains the single active task. Does not generate runtime context packs; does not authorize hooks, adapter-rule changes, architecture, implementation, license, dependency, settings, project-code changes, or P03/P04/P05 activation.
+
+## DEC-P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001
+
+- decision_id: `DEC-P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001`
+- status: `RATIFIED`
+- decision: Approve `P02 Domain Discovery Draft Plan 001` for preparing a future `P02 Domain Discovery Draft` under `CONT-P02-ONB-001`.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-21`
+- source_task: `CONT-P02-ONB-001`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- evidence: commit `b371b77fcd290cc329a5f53f44c95bf58eaaab70` (proposed P02 Domain Discovery Draft Plan 001) plus the P02 Domain Discovery Draft Plan 001 approval diff.
+- scope_note: Approves the draft plan only. Changes `P02 Domain Discovery Draft Plan 001` from `PROPOSED_INACTIVE` / `NOT_APPROVED` to `APPROVED_FOR_DRAFTING` / `APPROVED`. Does not create `P02 Domain Discovery Draft`; does not update `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, or `governance/DOCUMENT_REGISTRY.md`; does not draft or ratify any domain concept, term, entity, relationship, lifecycle, or constraint; does not define architecture, schema, implementation, or project code; does not close P02 or `CONT-P02-ONB-001`; P02 remains active and `CONT-P02-ONB-001` remains the single active task; does not generate runtime context packs; does not activate P03, P04, or P05; does not authorize hooks, adapter-rule changes, license, dependency, settings, or project-code changes.
