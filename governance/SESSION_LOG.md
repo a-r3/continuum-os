@@ -557,3 +557,20 @@ Append-only summaries of completed sessions belong here.
 - No staging, commit, or push performed.
 - No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes.
 - Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
+
+## 2026-06-21 - P02 Discovery Plan 001 Approved
+
+- Product Owner accepted P02 Discovery Plan 001 commit `4a66193344e4151d411964ec047ad7ba3f181536`.
+- Product Owner approved preparation of the plan-approval diff as prepare-diff-only.
+- `P02 Discovery Plan 001 - Token-Efficiency and Context Policy Discovery` marked `APPROVED_FOR_DRAFTING` in `governance/tasks/CONT-P02-ONB-001.md`.
+- `DEC-P02-DISCOVERY-PLAN-001` added to `governance/DECISION_LOG.md` (table row + provenance block).
+- `governance/HANDOFF.md` updated to `handoff_status: P02_DISCOVERY_PLAN_001_APPROVED_AWAITING_FIRST_DELIVERABLE_DRAFT_PLAN` and `next_action: PRODUCT_OWNER_REVIEW_OF_FIRST_P02_CONTEXT_POLICY_DELIVERABLE_DRAFT_PLAN`.
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task. The active-task invariant holds.
+- No P02 deliverable drafted.
+- No P02 deliverable ratified.
+- No context-policy files created (`CONTEXT_POLICY.md`, `CONTEXT_BUDGET.md`, `CONTEXT_RETRIEVAL_PROTOCOL.md`, or any equivalent).
+- No runtime context pack generated.
+- No staging, commit, or push performed.
+- No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
