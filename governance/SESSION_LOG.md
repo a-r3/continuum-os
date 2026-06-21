@@ -642,3 +642,19 @@ Append-only summaries of completed sessions belong here.
 - No staging, commit, or push performed.
 - No hooks, adapter-rule, architecture, implementation, dependency, settings, or project-code changes.
 - Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
+
+## 2026-06-21 - Context Budget Proposed Draft Prepared
+
+- Product Owner accepted Context Policy ratification commit `26bd1217a4e324ed736fabdda54ee2263ddd7279`.
+- Product Owner approved prepare-diff-only creation of proposed `governance/CONTEXT_BUDGET.md`.
+- `governance/CONTEXT_BUDGET.md` created as `PROPOSED_DRAFT` / `NOT_RATIFIED`, subordinate to ratified `governance/CONTEXT_POLICY.md` (`DEC-P02-CONTEXT-POLICY-001`). Required sections present: Draft Status, Purpose, Relationship to Context Policy, Budget Principles, Context Mode Budgets, Runtime/Task/Audit/Emergency Context Budgets, File Reading Budget Rules, High-Traffic File Size Thresholds, Token-Waste Warning Thresholds, Audit Mode Trigger Conditions, Non-Scope, Future Work, Acceptance Criteria for Ratification.
+- `governance/DOCUMENT_REGISTRY.md` updated with a new row for `governance/CONTEXT_BUDGET.md` (`Proposed Draft / Not Ratified` / `NOT_RATIFIED`).
+- `governance/tasks/CONT-P02-ONB-001.md` appended with `## P02 Context Budget Proposed Draft Evidence` section.
+- `governance/HANDOFF.md` frontmatter and body updated to record the proposed-draft status and next expected action (Product Owner review of proposed `CONTEXT_BUDGET.md`).
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
+- No `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` created.
+- No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
+- No staging, commit, or push performed.
+- No hooks, adapter-rule, architecture, implementation, dependency, settings, or project-code changes.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
