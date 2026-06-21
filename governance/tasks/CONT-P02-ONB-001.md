@@ -390,3 +390,14 @@ This draft plan has been **approved** under `DEC-P02-CONTEXT-DRAFT-PLAN-001`. Th
 - No context-policy files (`CONTEXT_POLICY.md`, `CONTEXT_BUDGET.md`, `CONTEXT_RETRIEVAL_PROTOCOL.md`, or any equivalent) created under this approval.
 - No runtime context pack generated under this approval.
 - No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes occur under this approval.
+
+## P02 Context Policy Proposed Draft Evidence
+
+- proposed file: `governance/CONTEXT_POLICY.md`.
+- status: `PROPOSED_DRAFT`.
+- ratification status: `NOT_RATIFIED`.
+- created under approved draft plan `DEC-P02-CONTEXT-DRAFT-PLAN-001` within active task `CONT-P02-ONB-001`.
+- No `CONTEXT_BUDGET.md` created.
+- No `CONTEXT_RETRIEVAL_PROTOCOL.md` created.
+- No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
+- No hooks, adapter-rule, architecture, implementation, dependency, settings, or project-code changes.
