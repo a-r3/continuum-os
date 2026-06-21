@@ -33,6 +33,7 @@ Only explicit Product Owner decisions are recorded here.
 | DEC-P02-CONTEXT-BUDGET-001 | Ratified | Ratify `governance/CONTEXT_BUDGET.md` as the canonical Context Budget for Continuum OS context mode budgets, file reading budget rules, high-traffic file thresholds, token-waste warning thresholds, audit-mode triggers, and emergency stop budgeting. See `## DEC-P02-CONTEXT-BUDGET-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `520775728d1fa8521fb4f7badc68f8ac5855b9af` (proposed Context Budget draft) + Context Budget ratification diff |
 | DEC-P02-CONTEXT-RETRIEVAL-001 | Ratified | Ratify `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` as the canonical Context Retrieval Protocol for Continuum OS retrieval-mode selection, source authority order, file-category rules, freshness checks, generated-context handling, escalation rules, and emergency stop conditions. See `## DEC-P02-CONTEXT-RETRIEVAL-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `585773d4591f1c97b49e70f494fcc7a5daaff6fe` (proposed Context Retrieval Protocol draft) + Context Retrieval Protocol ratification diff |
 | DEC-P02-CONTEXT-SET-CLOSEOUT-001 | Ratified | Close the P02 context-policy set after ratification of `governance/CONTEXT_POLICY.md`, `governance/CONTEXT_BUDGET.md`, and `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`. Closes the context-policy set only; does not close P02 or `CONT-P02-ONB-001`. See `## DEC-P02-CONTEXT-SET-CLOSEOUT-001` below for full provenance fields. | Product Owner | 2026-06-21 | commits `26bd1217a4e324ed736fabdda54ee2263ddd7279`, `8bf9990ebafd5ce87d05a5e4a58e636d2efecd1c`, and `1a0cfdaeb7da78a087ba43d18dbe0a27999b4a94` + P02 context-policy set closeout diff |
+| DEC-P02-DISCOVERY-PLAN-002 | Ratified | Approve `P02 Discovery Plan 002 - Remaining P02 Discovery Scope` for drafting preparation under `CONT-P02-ONB-001`. Changes the plan from `PROPOSED_INACTIVE` / `NOT_APPROVED` to `APPROVED_FOR_DRAFTING` / `APPROVED`. See `## DEC-P02-DISCOVERY-PLAN-002` below for full provenance fields. | Product Owner | 2026-06-21 | commit `8a3fe920ca89895eaeb71570d6a0e917b21a4702` (proposed P02 Discovery Plan 002) + P02 Discovery Plan 002 approval diff |
 
 ## DEC-P01-B1-001
 
@@ -267,3 +268,16 @@ Only explicit Product Owner decisions are recorded here.
 - reviewed_by: `Product Owner`
 - evidence: commits `26bd1217a4e324ed736fabdda54ee2263ddd7279`, `8bf9990ebafd5ce87d05a5e4a58e636d2efecd1c`, and `1a0cfdaeb7da78a087ba43d18dbe0a27999b4a94` plus the P02 context-policy set closeout diff.
 - scope_note: Closes the P02 context-policy set only. Does not close P02 or `CONT-P02-ONB-001`; P02 remains active and `CONT-P02-ONB-001` remains the single active task. Confirms `governance/CONTEXT_POLICY.md`, `governance/CONTEXT_BUDGET.md`, and `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` are ratified context-governance documents. Does not generate runtime context packs; does not authorize runtime pack generation; does not modify Claude cold-start reading order; does not authorize hooks, adapter-rule changes, architecture, implementation, license, dependency, settings, project-code changes, or P03/P04/P05 activation.
+
+## DEC-P02-DISCOVERY-PLAN-002
+
+- decision_id: `DEC-P02-DISCOVERY-PLAN-002`
+- status: `RATIFIED`
+- decision: Approve `P02 Discovery Plan 002 - Remaining P02 Discovery Scope` for drafting preparation under `CONT-P02-ONB-001`.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-21`
+- source_task: `CONT-P02-ONB-001`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- evidence: commit `8a3fe920ca89895eaeb71570d6a0e917b21a4702` (proposed P02 Discovery Plan 002) plus the P02 Discovery Plan 002 approval diff.
+- scope_note: Approves P02 Discovery Plan 002 only and changes it from `PROPOSED_INACTIVE` / `NOT_APPROVED` to `APPROVED_FOR_DRAFTING` / `APPROVED`. Does not draft or ratify any domain, governance, security, data-classification, open-questions, or token-efficiency deliverable; does not update `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, or `governance/DOCUMENT_REGISTRY.md`; does not close P02 or `CONT-P02-ONB-001`; P02 remains active and `CONT-P02-ONB-001` remains the single active task. Does not generate runtime context packs; does not authorize hooks, adapter-rule changes, architecture, implementation, license, dependency, settings, project-code changes, or P03/P04/P05 activation.

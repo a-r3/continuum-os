@@ -485,19 +485,23 @@ This draft plan has been **approved** under `DEC-P02-CONTEXT-DRAFT-PLAN-001`. Th
 
 - plan_id: `P02-DISCOVERY-PLAN-002`
 - title: `Remaining P02 Discovery Scope`
-- status: `PROPOSED_INACTIVE`
-- approval_status: `NOT_APPROVED`
+- status: `APPROVED_FOR_DRAFTING`
+- approval_status: `APPROVED`
+- approval_decision: `DEC-P02-DISCOVERY-PLAN-002`
+- approved_by: `Rauf Alizada`
+- approved_at: `2026-06-21`
 - source_task: `CONT-P02-ONB-001`
 - proposed_after: `DEC-P02-CONTEXT-SET-CLOSEOUT-001`
 - product_owner: `Rauf Alizada`
 
 ### Plan Status
 
-- This is a proposed inactive plan only.
-- It is not approved.
-- It does not authorize execution.
-- It does not create or modify any deliverable outside this plan evidence.
-- Separate Product Owner approval is required before drafting any remaining P02 deliverable.
+- This plan is **approved for drafting preparation** under `DEC-P02-DISCOVERY-PLAN-002`.
+- It authorizes planning and prepare-diff work for the listed remaining P02 workstreams only after a separate Product Owner-approved verb.
+- It does not itself draft any deliverable.
+- It does not approve architecture, implementation, runtime packs, hooks, adapter rules, dependencies, settings, license, or project code.
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task.
 
 ### Completed P02 Scope
 
@@ -620,3 +624,15 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - no runtime pack is generated;
 - no architecture/implementation/project-code work is authorized;
 - next deliverable type is clear.
+
+### Approval Evidence
+
+- proposed plan commit: `8a3fe920ca89895eaeb71570d6a0e917b21a4702`.
+- approval decision: `DEC-P02-DISCOVERY-PLAN-002`.
+- approved by: `Rauf Alizada`.
+- source task: `CONT-P02-ONB-001`.
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
+- No `governance/OPEN_QUESTIONS.md` update occurred.
+- No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
+- No hooks, adapter-rule, architecture, implementation, dependency, settings, license, or project-code changes.
