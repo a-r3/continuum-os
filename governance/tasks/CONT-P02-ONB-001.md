@@ -828,3 +828,21 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No architecture, schema, implementation, hooks, adapter rules, dependencies, settings, license, or project-code changes occurred.
+
+## P02 Security and Trust Requirements Draft - Proposed Draft Prepared
+
+- draft file: `governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md`.
+- status: `PROPOSED_INACTIVE` / `NOT_RATIFIED`.
+- source decision: `DEC-P02-DISCOVERY-PLAN-002`.
+- related domain discovery: `DEC-P02-DOMAIN-DISCOVERY-001`.
+- source task: `CONT-P02-ONB-001`.
+- drafted by: `Claude Code`.
+- reviewed by: `Product Owner` (pending).
+- No ratification occurred.
+- No `governance/OPEN_QUESTIONS.md` update occurred.
+- No `governance/RISK_REGISTER.md` update occurred.
+- No `governance/ROADMAP.md` or `governance/DOCUMENT_REGISTRY.md` update occurred.
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
+- No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
+- No implementation, hooks, adapter rules, dependencies, settings, license, or project-code changes occurred.
