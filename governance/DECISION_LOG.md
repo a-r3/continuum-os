@@ -30,6 +30,7 @@ Only explicit Product Owner decisions are recorded here.
 | DEC-P02-DISCOVERY-PLAN-001 | Ratified | Approve `P02 Discovery Plan 001 - Token-Efficiency and Context Policy Discovery` for drafting preparation under `CONT-P02-ONB-001`. See `## DEC-P02-DISCOVERY-PLAN-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `4a66193344e4151d411964ec047ad7ba3f181536` (proposed P02 Discovery Plan 001) + P02 Discovery Plan 001 approval diff |
 | DEC-P02-CONTEXT-DRAFT-PLAN-001 | Ratified | Approve `P02 Context-Policy Deliverable Draft Plan 001` for preparing proposed context-policy deliverable drafts under `CONT-P02-ONB-001`. See `## DEC-P02-CONTEXT-DRAFT-PLAN-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `0d0d44b5cec57e0d61941e660349da27613c30cc` (proposed P02 Context-Policy Deliverable Draft Plan 001) + P02 Context-Policy Deliverable Draft Plan 001 approval diff |
 | DEC-P02-CONTEXT-POLICY-001 | Ratified | Ratify `governance/CONTEXT_POLICY.md` as the canonical Context Policy for Continuum OS context loading, authority separation, context modes, generated-pack limits, staleness handling, and escalation rules. See `## DEC-P02-CONTEXT-POLICY-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `7176ddf6d7b94ad8cfb2f46377fb2d649a01eadd` (proposed Context Policy draft) + Context Policy ratification diff |
+| DEC-P02-CONTEXT-BUDGET-001 | Ratified | Ratify `governance/CONTEXT_BUDGET.md` as the canonical Context Budget for Continuum OS context mode budgets, file reading budget rules, high-traffic file thresholds, token-waste warning thresholds, audit-mode triggers, and emergency stop budgeting. See `## DEC-P02-CONTEXT-BUDGET-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `520775728d1fa8521fb4f7badc68f8ac5855b9af` (proposed Context Budget draft) + Context Budget ratification diff |
 
 ## DEC-P01-B1-001
 
@@ -225,3 +226,16 @@ Only explicit Product Owner decisions are recorded here.
 - reviewed_by: `Product Owner`
 - evidence: commit `7176ddf6d7b94ad8cfb2f46377fb2d649a01eadd` (proposed Context Policy draft) and the Context Policy ratification diff.
 - scope_note: Ratifies `governance/CONTEXT_POLICY.md` only and makes it canonical governance authority for context policy. Does not ratify `governance/CONTEXT_BUDGET.md` or `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`; does not create sibling context-policy deliverables; does not generate runtime context packs; does not modify Claude cold-start reading order; does not authorize runtime pack generator implementation, hooks, adapter-rule changes, architecture, implementation, license, dependency, settings, project-code changes, or P03/P04/P05 activation.
+
+## DEC-P02-CONTEXT-BUDGET-001
+
+- decision_id: `DEC-P02-CONTEXT-BUDGET-001`
+- status: `RATIFIED`
+- decision: Ratify `governance/CONTEXT_BUDGET.md` as the canonical Context Budget for Continuum OS context mode budgets, file reading budget rules, high-traffic file thresholds, token-waste warning thresholds, audit-mode triggers, and emergency stop budgeting.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-21`
+- source_task: `CONT-P02-ONB-001`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- evidence: commit `520775728d1fa8521fb4f7badc68f8ac5855b9af` (proposed Context Budget draft) and the Context Budget ratification diff.
+- scope_note: Ratifies `governance/CONTEXT_BUDGET.md` only and makes it canonical governance authority for context-budget rules, subordinate to ratified `governance/CONTEXT_POLICY.md`. Does not ratify or create `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`; does not generate runtime context packs; does not modify Claude cold-start reading order; does not authorize token measurement tooling, hooks, adapter-rule changes, architecture, implementation, license, dependency, settings, project-code changes, or P03/P04/P05 activation.

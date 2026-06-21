@@ -1,7 +1,7 @@
 ---
 session_log_status: ACTIVE
 latest_session_date: 2026-06-21
-latest_session_scope: P02_ACTIVATION_DIFF_PREPARED
+latest_session_scope: P02_CONTEXT_BUDGET_RATIFICATION_DIFF_PREPARED
 ---
 
 # Session Log
@@ -653,6 +653,24 @@ Append-only summaries of completed sessions belong here.
 - `governance/HANDOFF.md` frontmatter and body updated to record the proposed-draft status and next expected action (Product Owner review of proposed `CONTEXT_BUDGET.md`).
 - P02 remains active under `DEC-P02-ACTIVATION-001`.
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
+- No `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` created.
+- No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
+- No staging, commit, or push performed.
+- No hooks, adapter-rule, architecture, implementation, dependency, settings, or project-code changes.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
+
+## 2026-06-21 - Context Budget Ratified
+
+- Product Owner accepted proposed Context Budget commit `520775728d1fa8521fb4f7badc68f8ac5855b9af`.
+- Product Owner approved prepare-diff-only ratification of `governance/CONTEXT_BUDGET.md`.
+- `governance/CONTEXT_BUDGET.md` frontmatter changed to `lifecycle_status: RATIFIED`, `ratification_status: RATIFIED`, `ratified_by: Rauf Alizada`, `ratified_at: 2026-06-21`, `ratification_decision: DEC-P02-CONTEXT-BUDGET-001`. Its Draft-Status section was rewritten as a Ratification-Status section, and a Ratification Evidence section was appended.
+- `DEC-P02-CONTEXT-BUDGET-001` was added to `governance/DECISION_LOG.md` (table row and provenance block) as the ratification decision for `governance/CONTEXT_BUDGET.md`, subordinate to ratified `governance/CONTEXT_POLICY.md` (`DEC-P02-CONTEXT-POLICY-001`).
+- `governance/DOCUMENT_REGISTRY.md` row for `governance/CONTEXT_BUDGET.md` updated from `Proposed Draft / Not Ratified` / `NOT_RATIFIED` / decision `—` to `Ratified` / `RATIFIED` / `DEC-P02-CONTEXT-BUDGET-001` with updated description and notes.
+- `governance/tasks/CONT-P02-ONB-001.md` appended with `## P02 Context Budget Ratification Evidence` section.
+- `governance/HANDOFF.md` frontmatter and body updated to record ratified status and the next expected Product Owner action.
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
+- `governance/CONTEXT_POLICY.md` remains ratified under `DEC-P02-CONTEXT-POLICY-001`.
 - No `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` created.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No staging, commit, or push performed.

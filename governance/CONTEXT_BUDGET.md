@@ -2,8 +2,11 @@
 document_id: CONTEXT_BUDGET
 title: Context Budget
 document_type: Governance
-lifecycle_status: PROPOSED_DRAFT
-ratification_status: NOT_RATIFIED
+lifecycle_status: RATIFIED
+ratification_status: RATIFIED
+ratified_by: Rauf Alizada
+ratified_at: 2026-06-21
+ratification_decision: DEC-P02-CONTEXT-BUDGET-001
 source_task: CONT-P02-ONB-001
 source_policy: DEC-P02-CONTEXT-POLICY-001
 product_owner: Rauf Alizada
@@ -12,18 +15,20 @@ created_at: 2026-06-21
 
 # Context Budget
 
-## Draft Status
+## Ratification Status
 
-This document is a **proposed draft only**. It is **not ratified**. It is **not canonical authority** until the Product Owner (`Rauf Alizada`) ratifies it under a separately approved governance change. This draft follows ratified `governance/CONTEXT_POLICY.md` (`DEC-P02-CONTEXT-POLICY-001`) and is subordinate to it.
+This document is **ratified** under `DEC-P02-CONTEXT-BUDGET-001` and is **canonical governance authority** for context-budget rules in Continuum OS. The Product Owner (`Rauf Alizada`) is the sole ratification authority. This document remains **subordinate** to ratified `governance/CONTEXT_POLICY.md` (`DEC-P02-CONTEXT-POLICY-001`): on any conflict, the Context Policy wins.
 
-Until ratification:
+Generated summaries, runtime context packs, indexes, and token-audit artifacts remain **derived evidence only** and are never governance authority unless separately and explicitly ratified as governance documents by the Product Owner.
 
-- this document does not create or generate any runtime context pack;
-- this document does not implement token measurement tooling, indexers, or generators;
-- this document does not modify the Claude cold-start reading order;
-- this document does not modify hooks, `.claude/hooks/**`, `.claude/settings.json`, `.claude/settings.local.example.json`, or adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`);
-- this document does not authorize architecture evaluation, implementation, dependency installation, license selection, settings changes, or project-code changes;
-- this document does not activate P03, P04, or P05.
+Ratification of this document does **not**:
+
+- create or generate any runtime context pack;
+- implement token-measurement tooling, indexers, or generators;
+- modify the Claude cold-start reading order;
+- modify hooks, `.claude/hooks/**`, `.claude/settings.json`, `.claude/settings.local.example.json`, or adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`);
+- authorize architecture evaluation, implementation, dependency installation, license selection, settings changes, or project-code changes;
+- activate P03, P04, or P05.
 
 ## Purpose
 
@@ -199,3 +204,16 @@ Before this document may be ratified by the Product Owner, the following must ho
 - a clear emergency-stop rule is preserved;
 - ratification recorded as a separate decision in `governance/DECISION_LOG.md` with full provenance fields;
 - registry entry in `governance/DOCUMENT_REGISTRY.md` updated from `Proposed Draft / Not Ratified` to `Ratified` under the same separately approved governance change.
+
+## Ratification Evidence
+
+- proposed draft commit: `520775728d1fa8521fb4f7badc68f8ac5855b9af`.
+- ratification decision: `DEC-P02-CONTEXT-BUDGET-001`.
+- ratified by: `Rauf Alizada`.
+- source task: `CONT-P02-ONB-001`.
+- parent policy: `governance/CONTEXT_POLICY.md` / `DEC-P02-CONTEXT-POLICY-001`.
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task.
+- No `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` created.
+- No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
+- No hooks, adapter-rule, architecture, implementation, dependency, settings, or project-code changes.

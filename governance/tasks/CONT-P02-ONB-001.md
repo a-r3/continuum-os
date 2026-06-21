@@ -426,3 +426,17 @@ This draft plan has been **approved** under `DEC-P02-CONTEXT-DRAFT-PLAN-001`. Th
 - No `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` created.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No hooks, adapter-rule, architecture, implementation, dependency, settings, or project-code changes.
+
+## P02 Context Budget Ratification Evidence
+
+- ratified file: `governance/CONTEXT_BUDGET.md`.
+- lifecycle status: `RATIFIED`.
+- ratification status: `RATIFIED`.
+- ratification decision: `DEC-P02-CONTEXT-BUDGET-001`.
+- proposed draft commit: `520775728d1fa8521fb4f7badc68f8ac5855b9af`.
+- parent policy: `governance/CONTEXT_POLICY.md` / `DEC-P02-CONTEXT-POLICY-001`.
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task.
+- No `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` created.
+- No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
+- No hooks, adapter-rule, architecture, implementation, dependency, settings, or project-code changes.
