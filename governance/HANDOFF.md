@@ -1,8 +1,8 @@
 ---
-handoff_status: P02_DOMAIN_DISCOVERY_DRAFT_PLAN_001_APPROVED_AWAITING_DOMAIN_DISCOVERY_DRAFT_PREPARE_DIFF
+handoff_status: P02_DOMAIN_DISCOVERY_DRAFT_PROPOSED_AWAITING_PRODUCT_OWNER_REVIEW
 current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY
 gate_status: ACTIVATED
-next_action: PRODUCT_OWNER_REVIEW_OF_P02_DOMAIN_DISCOVERY_DRAFT_PREPARATION
+next_action: PRODUCT_OWNER_REVIEW_OF_P02_DOMAIN_DISCOVERY_DRAFT
 known_blockers: []
 ---
 
@@ -26,9 +26,11 @@ The P02 context-policy set is **closed** under `DEC-P02-CONTEXT-SET-CLOSEOUT-001
 
 `P02 Discovery Plan 002 - Remaining P02 Discovery Scope` is **approved** under `DEC-P02-DISCOVERY-PLAN-002` (`status: APPROVED_FOR_DRAFTING` / `approval_status: APPROVED` in `CONT-P02-ONB-001`). The plan does not by itself draft any deliverable; remaining drafting still requires a separately approved Product Owner verb. Remaining workstreams identified by the plan: domain discovery, governance refinement, security and trust requirements, data classification and sensitive-boundary analysis, open-questions projection, and deferred token-efficiency sibling work (Reading Policy Table, tag vocabulary, baseline token-cost measurement method). No `governance/OPEN_QUESTIONS.md` update occurred.
 
-`P02 Domain Discovery Draft Plan 001` is **approved** under `DEC-P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001` (`status: APPROVED_FOR_DRAFTING` / `approval_status: APPROVED` in `CONT-P02-ONB-001`). The plan does not by itself draft any domain discovery deliverable. No `P02 Domain Discovery Draft` was created. No `governance/OPEN_QUESTIONS.md` update occurred. No `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, or `governance/DOCUMENT_REGISTRY.md` update occurred. No runtime context pack has been generated. No hooks, adapter-rule, architecture, implementation, dependency, settings, license, or project-code changes have occurred.
+`P02 Domain Discovery Draft Plan 001` is **approved** under `DEC-P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001` (`status: APPROVED_FOR_DRAFTING` / `approval_status: APPROVED` in `CONT-P02-ONB-001`). The plan does not by itself draft any domain discovery deliverable.
 
-The next expected work is **Product Owner review of P02 Domain Discovery Draft preparation**. P02 is not closed. `CONT-P02-ONB-001` remains the single active task. No drafting of the `P02 Domain Discovery Draft` is authorized until a separate Product Owner-approved verb. No runtime pack generation, sibling-deliverable creation, or further ratification is authorized until separately approved by the Product Owner.
+`governance/P02_DOMAIN_DISCOVERY_DRAFT.md` has been **created as `PROPOSED_INACTIVE` / `NOT_RATIFIED`** under `DEC-P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001`, sourced from `CONT-P02-ONB-001`. The draft is not ratified. No domain concepts are final. No `governance/OPEN_QUESTIONS.md` update occurred. No `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, or `governance/DOCUMENT_REGISTRY.md` update occurred. No runtime context pack has been generated. No hooks, adapter-rule, architecture, schema, implementation, dependency, settings, license, or project-code changes have occurred. P02 remains active and `CONT-P02-ONB-001` remains the single active task.
+
+The next expected work is **Product Owner review of `governance/P02_DOMAIN_DISCOVERY_DRAFT.md`**. P02 is not closed. `CONT-P02-ONB-001` remains the single active task. No ratification of the `P02 Domain Discovery Draft` is authorized until a separate Product Owner-approved verb. No runtime pack generation, sibling-deliverable creation, or further ratification is authorized until separately approved by the Product Owner.
 
 No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes have occurred.
 
@@ -36,7 +38,7 @@ The Product Owner / sole project authority / sole ratification authority for v1 
 
 ## Next Action
 
-- Product Owner review of P02 Domain Discovery Draft preparation. `P02 Domain Discovery Draft Plan 001` is approved under `DEC-P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001` (`APPROVED_FOR_DRAFTING` / `APPROVED` in `CONT-P02-ONB-001`). No `P02 Domain Discovery Draft` was created. No domain discovery deliverable drafting is authorized until a separate Product Owner-approved verb. No `governance/OPEN_QUESTIONS.md` update occurred. P02 remains active under `DEC-P02-ACTIVATION-001`; `CONT-P02-ONB-001` remains the single active task. The context-policy set remains closed under `DEC-P02-CONTEXT-SET-CLOSEOUT-001`. `P02 Discovery Plan 002` remains approved under `DEC-P02-DISCOVERY-PLAN-002`. No runtime context pack generation, further sibling-deliverable creation, or additional ratification is authorized until separately approved by the Product Owner. No hooks, adapter-rule, architecture, implementation, dependency, settings, license, or project-code changes have occurred.
+- Product Owner review of `governance/P02_DOMAIN_DISCOVERY_DRAFT.md`. The draft was created as `PROPOSED_INACTIVE` / `NOT_RATIFIED` under `DEC-P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001`. No ratification has occurred. No domain concepts are final. No `governance/OPEN_QUESTIONS.md` update occurred. No `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, or `governance/DOCUMENT_REGISTRY.md` update occurred. P02 remains active under `DEC-P02-ACTIVATION-001`; `CONT-P02-ONB-001` remains the single active task. The context-policy set remains closed under `DEC-P02-CONTEXT-SET-CLOSEOUT-001`. `P02 Discovery Plan 002` remains approved under `DEC-P02-DISCOVERY-PLAN-002`. `P02 Domain Discovery Draft Plan 001` remains approved under `DEC-P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001`. No runtime context pack generation, sibling-deliverable creation, or further ratification is authorized until separately approved by the Product Owner. No hooks, adapter-rule, architecture, schema, implementation, dependency, settings, license, or project-code changes have occurred.
 
 ## Actions Not Yet Authorized
 
