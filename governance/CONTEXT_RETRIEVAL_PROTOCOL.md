@@ -2,8 +2,11 @@
 document_id: CONTEXT_RETRIEVAL_PROTOCOL
 title: Context Retrieval Protocol
 document_type: Governance
-lifecycle_status: PROPOSED_DRAFT
-ratification_status: NOT_RATIFIED
+lifecycle_status: RATIFIED
+ratification_status: RATIFIED
+ratified_by: Rauf Alizada
+ratified_at: 2026-06-21
+ratification_decision: DEC-P02-CONTEXT-RETRIEVAL-001
 source_task: CONT-P02-ONB-001
 source_policy: DEC-P02-CONTEXT-POLICY-001
 source_budget: DEC-P02-CONTEXT-BUDGET-001
@@ -13,14 +16,15 @@ created_at: 2026-06-21
 
 # Context Retrieval Protocol
 
-## Draft Status
+## Ratification Status
 
-This document is a **proposed draft only**. It is **not ratified**. It is **not canonical authority** until the Product Owner (`Rauf Alizada`) ratifies it under a separately recorded decision in `governance/DECISION_LOG.md` with a registry update in `governance/DOCUMENT_REGISTRY.md` from `Proposed Draft / Not Ratified` to `Ratified`.
+This document is **ratified** under `DEC-P02-CONTEXT-RETRIEVAL-001` and is **canonical governance authority** for context-retrieval rules in Continuum OS. The Product Owner (`Rauf Alizada`) is the sole ratification authority. This document remains **subordinate** to ratified `governance/CONTEXT_POLICY.md` (`DEC-P02-CONTEXT-POLICY-001`) and ratified `governance/CONTEXT_BUDGET.md` (`DEC-P02-CONTEXT-BUDGET-001`): on any conflict, the Context Policy wins first, then the Context Budget, then this Context Retrieval Protocol.
 
-This draft follows ratified `governance/CONTEXT_POLICY.md` (`DEC-P02-CONTEXT-POLICY-001`) and ratified `governance/CONTEXT_BUDGET.md` (`DEC-P02-CONTEXT-BUDGET-001`). It does **not**:
+Generated summaries, runtime context packs, indexes, and token-audit artifacts remain **derived evidence only** and are never governance authority unless separately and explicitly ratified as governance documents by the Product Owner.
 
-- create any runtime context pack;
-- create `.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, or `.continuum/token-audit.md`;
+Ratification of this document does **not**:
+
+- create or generate any runtime context pack;
 - implement any retrieval, indexing, freshness, or token-audit tooling;
 - modify the Claude cold-start reading order;
 - modify hooks, `.claude/hooks/**`, `.claude/settings.json`, `.claude/settings.local.example.json`, or adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`);
@@ -210,3 +214,16 @@ Before this document may be ratified by the Product Owner, the following must ho
 - clear emergency-stop rule;
 - ratification recorded as a separate decision in `governance/DECISION_LOG.md` with full provenance fields;
 - registry entry in `governance/DOCUMENT_REGISTRY.md` updated from `Proposed Draft / Not Ratified` to `Ratified` under the same separately approved governance change.
+
+## Ratification Evidence
+
+- proposed draft commit: `585773d4591f1c97b49e70f494fcc7a5daaff6fe`.
+- ratification decision: `DEC-P02-CONTEXT-RETRIEVAL-001`.
+- ratified by: `Rauf Alizada`.
+- source task: `CONT-P02-ONB-001`.
+- parent policy: `governance/CONTEXT_POLICY.md` / `DEC-P02-CONTEXT-POLICY-001`.
+- parent budget: `governance/CONTEXT_BUDGET.md` / `DEC-P02-CONTEXT-BUDGET-001`.
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task.
+- No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
+- No hooks, adapter-rule, architecture, implementation, dependency, settings, license, or project-code changes.

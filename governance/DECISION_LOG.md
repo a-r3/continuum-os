@@ -31,6 +31,7 @@ Only explicit Product Owner decisions are recorded here.
 | DEC-P02-CONTEXT-DRAFT-PLAN-001 | Ratified | Approve `P02 Context-Policy Deliverable Draft Plan 001` for preparing proposed context-policy deliverable drafts under `CONT-P02-ONB-001`. See `## DEC-P02-CONTEXT-DRAFT-PLAN-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `0d0d44b5cec57e0d61941e660349da27613c30cc` (proposed P02 Context-Policy Deliverable Draft Plan 001) + P02 Context-Policy Deliverable Draft Plan 001 approval diff |
 | DEC-P02-CONTEXT-POLICY-001 | Ratified | Ratify `governance/CONTEXT_POLICY.md` as the canonical Context Policy for Continuum OS context loading, authority separation, context modes, generated-pack limits, staleness handling, and escalation rules. See `## DEC-P02-CONTEXT-POLICY-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `7176ddf6d7b94ad8cfb2f46377fb2d649a01eadd` (proposed Context Policy draft) + Context Policy ratification diff |
 | DEC-P02-CONTEXT-BUDGET-001 | Ratified | Ratify `governance/CONTEXT_BUDGET.md` as the canonical Context Budget for Continuum OS context mode budgets, file reading budget rules, high-traffic file thresholds, token-waste warning thresholds, audit-mode triggers, and emergency stop budgeting. See `## DEC-P02-CONTEXT-BUDGET-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `520775728d1fa8521fb4f7badc68f8ac5855b9af` (proposed Context Budget draft) + Context Budget ratification diff |
+| DEC-P02-CONTEXT-RETRIEVAL-001 | Ratified | Ratify `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` as the canonical Context Retrieval Protocol for Continuum OS retrieval-mode selection, source authority order, file-category rules, freshness checks, generated-context handling, escalation rules, and emergency stop conditions. See `## DEC-P02-CONTEXT-RETRIEVAL-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `585773d4591f1c97b49e70f494fcc7a5daaff6fe` (proposed Context Retrieval Protocol draft) + Context Retrieval Protocol ratification diff |
 
 ## DEC-P01-B1-001
 
@@ -239,3 +240,16 @@ Only explicit Product Owner decisions are recorded here.
 - reviewed_by: `Product Owner`
 - evidence: commit `520775728d1fa8521fb4f7badc68f8ac5855b9af` (proposed Context Budget draft) and the Context Budget ratification diff.
 - scope_note: Ratifies `governance/CONTEXT_BUDGET.md` only and makes it canonical governance authority for context-budget rules, subordinate to ratified `governance/CONTEXT_POLICY.md`. Does not ratify or create `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`; does not generate runtime context packs; does not modify Claude cold-start reading order; does not authorize token measurement tooling, hooks, adapter-rule changes, architecture, implementation, license, dependency, settings, project-code changes, or P03/P04/P05 activation.
+
+## DEC-P02-CONTEXT-RETRIEVAL-001
+
+- decision_id: `DEC-P02-CONTEXT-RETRIEVAL-001`
+- status: `RATIFIED`
+- decision: Ratify `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` as the canonical Context Retrieval Protocol for Continuum OS retrieval-mode selection, source authority order, file-category rules, freshness checks, generated-context handling, escalation rules, and emergency stop conditions.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-21`
+- source_task: `CONT-P02-ONB-001`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- evidence: commit `585773d4591f1c97b49e70f494fcc7a5daaff6fe` (proposed Context Retrieval Protocol draft) and the Context Retrieval Protocol ratification diff.
+- scope_note: Ratifies `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` only and makes it canonical governance authority for context-retrieval rules, subordinate to ratified `governance/CONTEXT_POLICY.md` and ratified `governance/CONTEXT_BUDGET.md`. Does not generate runtime context packs; does not modify Claude cold-start reading order; does not authorize retrieval tooling, indexing, freshness tooling, token-audit tooling, hooks, adapter-rule changes, architecture, implementation, license, dependency, settings, project-code changes, or P03/P04/P05 activation.

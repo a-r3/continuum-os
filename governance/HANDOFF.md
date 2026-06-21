@@ -1,8 +1,8 @@
 ---
-handoff_status: P02_CONTEXT_RETRIEVAL_PROTOCOL_PROPOSED_DRAFT_AWAITING_PRODUCT_OWNER_REVIEW
+handoff_status: P02_CONTEXT_RETRIEVAL_PROTOCOL_RATIFIED_AWAITING_P02_CLOSEOUT_REVIEW
 current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY
 gate_status: ACTIVATED
-next_action: PRODUCT_OWNER_REVIEW_OF_PROPOSED_CONTEXT_RETRIEVAL_PROTOCOL_DRAFT
+next_action: PRODUCT_OWNER_REVIEW_OF_P02_CONTEXT_POLICY_SET_CLOSEOUT
 known_blockers: []
 ---
 
@@ -20,9 +20,9 @@ P02 — Domain, Governance, and Security Discovery is **active** under `DEC-P02-
 
 `governance/CONTEXT_BUDGET.md` is **ratified** under `DEC-P02-CONTEXT-BUDGET-001` and is **canonical governance authority** for context-budget rules in Continuum OS, subordinate to ratified `governance/CONTEXT_POLICY.md` (`DEC-P02-CONTEXT-POLICY-001`); on any conflict the Context Policy wins. `governance/DOCUMENT_REGISTRY.md` records it as `Ratified` / `RATIFIED` / `DEC-P02-CONTEXT-BUDGET-001`.
 
-`governance/CONTEXT_RETRIEVAL_PROTOCOL.md` has been prepared as a **proposed draft** (`lifecycle_status: PROPOSED_DRAFT`, `ratification_status: NOT_RATIFIED`) subordinate to ratified `governance/CONTEXT_POLICY.md` and ratified `governance/CONTEXT_BUDGET.md`. It is **not ratified** and **not canonical authority yet**. `governance/DOCUMENT_REGISTRY.md` records it as `Proposed Draft / Not Ratified` / `NOT_RATIFIED` / decision `—`. No runtime context pack was generated.
+`governance/CONTEXT_RETRIEVAL_PROTOCOL.md` is **ratified** under `DEC-P02-CONTEXT-RETRIEVAL-001` and is **canonical governance authority** for context-retrieval rules in Continuum OS — governing retrieval-mode selection, source authority order, file-category rules, freshness checks, generated-context handling, escalation rules, and emergency stop conditions — subordinate to ratified `governance/CONTEXT_POLICY.md` (`DEC-P02-CONTEXT-POLICY-001`) and ratified `governance/CONTEXT_BUDGET.md` (`DEC-P02-CONTEXT-BUDGET-001`); on any conflict the Context Policy wins first, then the Context Budget, then this Retrieval Protocol. `governance/DOCUMENT_REGISTRY.md` records it as `Ratified` / `RATIFIED` / `DEC-P02-CONTEXT-RETRIEVAL-001`. No runtime context pack was generated.
 
-The next expected action is **Product Owner review of proposed `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`**. No ratification, further sibling-deliverable creation, or runtime pack generation is authorized until that review and a separately approved Product Owner verb.
+The next expected work is **Product Owner review of P02 context-policy set closeout or remaining P02 discovery scope**. No runtime pack generation, sibling-deliverable creation, or further ratification is authorized until separately approved by the Product Owner.
 
 No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes have occurred.
 
@@ -30,7 +30,7 @@ The Product Owner / sole project authority / sole ratification authority for v1 
 
 ## Next Action
 
-- Product Owner review of proposed `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` (`lifecycle_status: PROPOSED_DRAFT`, `ratification_status: NOT_RATIFIED`) prepared under ratified `governance/CONTEXT_POLICY.md` (`DEC-P02-CONTEXT-POLICY-001`) and ratified `governance/CONTEXT_BUDGET.md` (`DEC-P02-CONTEXT-BUDGET-001`). No ratification, further sibling-deliverable creation, or runtime context pack generation is authorized until separately approved by the Product Owner.
+- Product Owner review of P02 context-policy set closeout or remaining P02 discovery scope, given the ratified context-policy trio: `governance/CONTEXT_POLICY.md` (`DEC-P02-CONTEXT-POLICY-001`), `governance/CONTEXT_BUDGET.md` (`DEC-P02-CONTEXT-BUDGET-001`), and `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` (`DEC-P02-CONTEXT-RETRIEVAL-001`). No runtime context pack generation, further sibling-deliverable creation, or additional ratification is authorized until separately approved by the Product Owner.
 
 ## Actions Not Yet Authorized
 
@@ -74,9 +74,9 @@ The Product Owner / sole project authority / sole ratification authority for v1 
 - Bundle 1, Bundle 2, Bundle 3, Bundle 4, and Bundle 5 are closed/completed.
 - P01 is **closed/completed** under `DEC-P01-CLOSEOUT-001`.
 - P02 is **active** under `DEC-P02-ACTIVATION-001`.
-- `governance/DECISION_LOG.md` records `DEC-P01-B1-001`, `DEC-P01-B1-002`, `DEC-P01-B2-001`, `DEC-P01-B3-001`, `DEC-P01-B3-002`, `DEC-P01-B4-001`, `DEC-P01-B4-002`, `DEC-P01-B5-001`, `DEC-P01-B5-002`, `DEC-P01-B5-003`, `DEC-P01-CLOSEOUT-001`, `DEC-P02-ACTIVATION-001`, `DEC-P02-DISCOVERY-PLAN-001`, `DEC-P02-CONTEXT-DRAFT-PLAN-001`, `DEC-P02-CONTEXT-POLICY-001`, and `DEC-P02-CONTEXT-BUDGET-001`.
+- `governance/DECISION_LOG.md` records `DEC-P01-B1-001`, `DEC-P01-B1-002`, `DEC-P01-B2-001`, `DEC-P01-B3-001`, `DEC-P01-B3-002`, `DEC-P01-B4-001`, `DEC-P01-B4-002`, `DEC-P01-B5-001`, `DEC-P01-B5-002`, `DEC-P01-B5-003`, `DEC-P01-CLOSEOUT-001`, `DEC-P02-ACTIVATION-001`, `DEC-P02-DISCOVERY-PLAN-001`, `DEC-P02-CONTEXT-DRAFT-PLAN-001`, `DEC-P02-CONTEXT-POLICY-001`, `DEC-P02-CONTEXT-BUDGET-001`, and `DEC-P02-CONTEXT-RETRIEVAL-001`.
 - Exactly one active task: `CONT-P02-ONB-001`. Execution is authorized only within its scope.
-- `governance/CONTEXT_POLICY.md` is ratified under `DEC-P02-CONTEXT-POLICY-001` and is canonical governance authority for context policy. `governance/CONTEXT_BUDGET.md` is ratified under `DEC-P02-CONTEXT-BUDGET-001` and is canonical governance authority for context-budget rules, subordinate to the ratified Context Policy. `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` has been prepared as `PROPOSED_DRAFT` / `NOT_RATIFIED`, subordinate to both ratified parents, and is not canonical authority yet. No runtime context pack has been generated.
+- `governance/CONTEXT_POLICY.md` is ratified under `DEC-P02-CONTEXT-POLICY-001` and is canonical governance authority for context policy. `governance/CONTEXT_BUDGET.md` is ratified under `DEC-P02-CONTEXT-BUDGET-001` and is canonical governance authority for context-budget rules, subordinate to the ratified Context Policy. `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` is ratified under `DEC-P02-CONTEXT-RETRIEVAL-001` and is canonical governance authority for retrieval-mode and source-authority rules, subordinate to both ratified parents. No runtime context pack has been generated.
 - Adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) have not been modified.
 - Product Owner remains sole ratification authority. The Product Owner is `Rauf Alizada`.
 - The active-task invariant holds as exactly one active task.
