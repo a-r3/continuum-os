@@ -160,3 +160,83 @@ Each subsequent P02 deliverable requires a separately approved Product Owner del
 - No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes occur under this diff.
 - Decision recorded by this activation: `DEC-P02-ACTIVATION-001`.
 - Product Owner / sole ratification authority for v1: `Rauf Alizada`.
+
+## P02 Discovery Plan 001 - Token-Efficiency and Context Policy Discovery
+
+- status: `PROPOSED_PLAN`.
+- This plan is for Product Owner review only.
+- This plan is **not yet approved for drafting**.
+- This plan does **not** ratify any P02 deliverable.
+- This plan does **not** create any context-policy file.
+- This plan does **not** generate any runtime context pack.
+- This plan does **not** authorize architecture, implementation, hooks, adapter-rule changes, license, dependency, settings, or project-code changes.
+
+### Plan Objective
+
+Define the first P02 discovery workstream for making Continuum OS token-efficient by design while preserving governance safety, Product Owner authority, local-first Git-native operation, and the rule that generated summaries are never canonical authority.
+
+### Research Basis
+
+Continuum OS does not have a token problem because it has too much governance. It has a token problem because it treats canonical files as if they must be auto-read every time.
+
+### Plan Scope
+
+Discovery and drafting preparation only, for:
+
+- context-efficiency governance principles;
+- layered context architecture;
+- Runtime Context Pack policy;
+- Task / Audit / Emergency context modes;
+- reading policy table;
+- token-budget rules;
+- freshness and staleness guards;
+- summary-vs-authority rule (generated summaries never become canonical authority);
+- derived/generated context rules;
+- token-waste risk register;
+- future proposed canonical files:
+  - `governance/CONTEXT_POLICY.md`;
+  - `governance/CONTEXT_BUDGET.md`;
+  - `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`;
+- future derived/generated files:
+  - `.continuum/RUNTIME_CONTEXT.md`;
+  - `.continuum/context-index.yaml`;
+  - `.continuum/context-budget.yaml`;
+  - `.continuum/context-freshness.yaml`;
+  - `.continuum/token-audit.md`.
+
+### Plan Non-Scope
+
+This plan explicitly prohibits:
+
+- creating the context-policy files now;
+- creating runtime context packs now;
+- changing the Claude cold-start reading order now;
+- modifying `CLAUDE.md`, `AGENTS.md`, or `.claude/rules/`;
+- implementing a generator;
+- selecting implementation language or architecture;
+- creating hooks;
+- activating hooks;
+- modifying `.claude/hooks/**`;
+- ratifying context policy;
+- ratifying context budget;
+- ratifying retrieval protocol;
+- ratifying any P02 deliverable;
+- modifying project code;
+- modifying dependencies;
+- modifying settings;
+- activating P03/P04/P05.
+
+### Planned Future Deliverables
+
+After separate Product Owner approval, future deliverables under this discovery workstream may include:
+
+1. proposed `governance/CONTEXT_POLICY.md`;
+2. proposed `governance/CONTEXT_BUDGET.md`;
+3. proposed `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`;
+4. proposed Reading Policy Table;
+5. proposed tag vocabulary for decisions, risks, and open questions;
+6. baseline token-cost measurement method.
+
+### Approval Requirement
+
+The Product Owner must separately approve this discovery plan before any P02 context-policy deliverable drafting begins.

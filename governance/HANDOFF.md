@@ -1,8 +1,8 @@
 ---
-handoff_status: P02_ACTIVE_AWAITING_FIRST_DISCOVERY_PLAN
+handoff_status: P02_FIRST_DISCOVERY_PLAN_AWAITING_PRODUCT_OWNER_REVIEW
 current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY
 gate_status: ACTIVATED
-next_action: PRODUCT_OWNER_REVIEW_OF_FIRST_P02_DISCOVERY_PLAN
+next_action: PRODUCT_OWNER_REVIEW_OF_P02_DISCOVERY_PLAN_001
 known_blockers: []
 ---
 
@@ -10,19 +10,19 @@ known_blockers: []
 
 ## Current Handoff State
 
-P01 — Founder Discovery and Product Definition is **closed/completed** under `DEC-P01-CLOSEOUT-001`. P01 closeout commit `a7d77ce457e33326ea413223b8f27996b084a403`. Proposed inactive P02 task commit `120a20d10387d83e0e0dc425903f97108c84c4ad`.
+P01 — Founder Discovery and Product Definition is **closed/completed** under `DEC-P01-CLOSEOUT-001`. P01 closeout commit `a7d77ce457e33326ea413223b8f27996b084a403`. Proposed inactive P02 task commit `120a20d10387d83e0e0dc425903f97108c84c4ad`. P02 activation commit `61942fe48045b9b6eb8835cc2da4521768004ff8`.
 
 P02 — Domain, Governance, and Security Discovery is **active** under `DEC-P02-ACTIVATION-001`. `CONT-P02-ONB-001` is the **single active task** (`lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `ratification_status: APPROVED_FOR_EXECUTION`, `active: true`, `execution_authorized: true`). Exactly one active task exists. The active-task invariant holds.
 
-No P02 deliverables are ratified yet. The first suggested P02 discovery focus is token-efficiency / context-policy discovery based on prior research output; this is suggestive only and requires a separately approved Product Owner deliverable plan before any drafting begins.
+The first proposed discovery plan is **`P02 Discovery Plan 001 - Token-Efficiency and Context Policy Discovery`**, appended to `CONT-P02-ONB-001` for Product Owner review. It is **for review only**; no P02 deliverable has been drafted or ratified under it. The plan does not authorize drafting context-policy files, generating runtime context packs, changing the Claude cold-start reading order, modifying adapter rules, modifying hooks, selecting architecture or implementation, changing license, dependencies, settings, or project code, or activating P03/P04/P05.
 
-No context-policy files (e.g. `CONTEXT_POLICY.md`, `CONTEXT_BUDGET.md`, `CONTEXT_RETRIEVAL_PROTOCOL.md`) have been created. No runtime context pack has been generated. No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes have occurred under this activation.
+No P02 deliverables are ratified yet. No context-policy files (`CONTEXT_POLICY.md`, `CONTEXT_BUDGET.md`, `CONTEXT_RETRIEVAL_PROTOCOL.md`, or any equivalent) have been created. No runtime context pack has been generated. No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes have occurred.
 
 The Product Owner / sole project authority / sole ratification authority for v1 is **Rauf Alizada**. No other identity is valid for project governance, participation, approval, ratification, or authority. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` does not participate in this project in any form and must not be encoded as a project identity; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
 
 ## Next Action
 
-- Product Owner review and approval of the **first P02 discovery deliverable plan**. No drafting of any P02 deliverable, context-policy file, or runtime context pack is authorized until that separately approved plan is recorded.
+- Product Owner review of **`P02 Discovery Plan 001 - Token-Efficiency and Context Policy Discovery`** appended to `CONT-P02-ONB-001`. No drafting of any P02 deliverable, context-policy file, or runtime context pack is authorized until that plan is separately approved.
 
 ## Actions Not Yet Authorized
 
