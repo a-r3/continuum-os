@@ -1,8 +1,8 @@
 ---
-handoff_status: P02_DISCOVERY_PLAN_001_APPROVED_AWAITING_FIRST_DELIVERABLE_DRAFT_PLAN
+handoff_status: P02_CONTEXT_POLICY_DELIVERABLE_DRAFT_PLAN_AWAITING_PRODUCT_OWNER_REVIEW
 current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY
 gate_status: ACTIVATED
-next_action: PRODUCT_OWNER_REVIEW_OF_FIRST_P02_CONTEXT_POLICY_DELIVERABLE_DRAFT_PLAN
+next_action: PRODUCT_OWNER_REVIEW_OF_P02_CONTEXT_POLICY_DELIVERABLE_DRAFT_PLAN_001
 known_blockers: []
 ---
 
@@ -16,7 +16,7 @@ P02 — Domain, Governance, and Security Discovery is **active** under `DEC-P02-
 
 `P02 Discovery Plan 001 - Token-Efficiency and Context Policy Discovery` is **approved** under `DEC-P02-DISCOVERY-PLAN-001` (`status: APPROVED_FOR_DRAFTING` in `CONT-P02-ONB-001`). Approval authorizes future preparation of proposed context-policy deliverable drafts under separate Product Owner approval verbs. No P02 deliverable has been drafted or ratified. No context-policy files have been created. No runtime context pack has been generated.
 
-The next expected work is a **separate Product Owner-approved plan to prepare the first proposed context-policy deliverable draft**. No drafting begins until that separately approved plan is recorded.
+A new proposed draft plan, `P02 Context-Policy Deliverable Draft Plan 001`, has been appended to `CONT-P02-ONB-001` with `status: PROPOSED_DRAFT_PLAN`. This draft plan is for Product Owner review only and is not yet approved for drafting. The next expected action is Product Owner review of `P02 Context-Policy Deliverable Draft Plan 001`. No context-policy file has been created. No runtime context pack has been generated. No P02 deliverable has been drafted or ratified. No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes have occurred.
 
 No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes have occurred.
 
@@ -24,7 +24,7 @@ The Product Owner / sole project authority / sole ratification authority for v1 
 
 ## Next Action
 
-- Product Owner review and approval of a **plan to prepare the first proposed P02 context-policy deliverable draft** under approved `P02 Discovery Plan 001`. No deliverable drafting, context-policy file creation, or runtime context pack generation is authorized until that separately approved deliverable-draft plan is recorded.
+- Product Owner review of `P02 Context-Policy Deliverable Draft Plan 001` (proposed in `CONT-P02-ONB-001` with `status: PROPOSED_DRAFT_PLAN`). No deliverable drafting, context-policy file creation, or runtime context pack generation is authorized until this proposed draft plan is separately approved by the Product Owner.
 
 ## Actions Not Yet Authorized
 

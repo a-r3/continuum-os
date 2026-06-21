@@ -252,3 +252,129 @@ This discovery plan has been **approved** under `DEC-P02-DISCOVERY-PLAN-001`. Th
 - No context-policy files (`CONTEXT_POLICY.md`, `CONTEXT_BUDGET.md`, `CONTEXT_RETRIEVAL_PROTOCOL.md`, or any equivalent) created under this approval.
 - No runtime context pack generated under this approval.
 - No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes occur under this approval.
+
+## P02 Context-Policy Deliverable Draft Plan 001
+
+- status: `PROPOSED_DRAFT_PLAN`.
+- This plan is for Product Owner review only.
+- This plan is not yet approved for drafting.
+- This plan does not create context-policy files.
+- This plan does not generate runtime context packs.
+- This plan does not ratify any P02 deliverable.
+- This plan does not authorize architecture, implementation, hooks, adapter-rule changes, license, dependency, settings, or project-code changes.
+
+### Plan Objective
+
+Prepare a reviewable drafting plan for the first P02 context-policy deliverables that will later define how Continuum OS prevents token waste while preserving governance safety, Product Owner authority, local-first Git-native operation, and the rule that generated summaries are never canonical authority.
+
+### Planned Deliverable Set
+
+After separate Product Owner approval, the planned deliverable set may include proposed drafts of:
+
+1. `governance/CONTEXT_POLICY.md`;
+2. `governance/CONTEXT_BUDGET.md`;
+3. `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`;
+4. a Reading Policy Table;
+5. a tag vocabulary proposal for decisions, risks, and open questions;
+6. a baseline token-cost measurement method.
+
+### Intended Role of Each Future Draft
+
+#### Future `governance/CONTEXT_POLICY.md`
+
+Purpose:
+
+- define layered context architecture;
+- separate canonical authority from auto-loaded runtime context;
+- define Runtime / Task / Audit / Emergency context modes;
+- state that summaries and generated packs are never authority;
+- define stale-context halt behavior;
+- define escalation rules.
+
+Must not:
+
+- implement generator logic;
+- modify Claude startup rules directly;
+- ratify generated context packs;
+- authorize architecture or implementation.
+
+#### Future `governance/CONTEXT_BUDGET.md`
+
+Purpose:
+
+- define token budgets per context layer;
+- define per-file reading budget rules;
+- define size thresholds for `HANDOFF`, `PROJECT_STATE`, `SESSION_LOG`;
+- define when audit mode is required;
+- define token-waste warning thresholds.
+
+Must not:
+
+- collect conversation content;
+- create telemetry files;
+- implement token-audit tooling.
+
+#### Future `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`
+
+Purpose:
+
+- define when agents may read full canonical files;
+- define when agents may load only filtered task context;
+- define audit-mode justification requirements;
+- define emergency-mode triggers;
+- define source-hash and freshness expectations for future derived packs.
+
+Must not:
+
+- implement source-hash validation;
+- create `.continuum/RUNTIME_CONTEXT.md`;
+- activate hooks;
+- change adapter rules.
+
+#### Future Reading Policy Table
+
+Purpose:
+
+- classify current governance files as always-read, runtime-read, task-only, conflict-only, audit-only, or never-auto-read;
+- define escalation conditions for each file;
+- define stale-risk level for each file.
+
+#### Future Tag Vocabulary Proposal
+
+Purpose:
+
+- propose tags for `DECISION_LOG.md`, `RISK_REGISTER.md`, and `OPEN_QUESTIONS.md`;
+- enable future filtered retrieval;
+- prevent full-file reads when only task-specific decisions or risks are needed.
+
+#### Future Baseline Token-Cost Measurement Method
+
+Purpose:
+
+- define how to measure current cold-start context cost;
+- define what counts as runtime, task, audit, and emergency context cost;
+- define evidence expectations before any optimization is ratified.
+
+### Plan Non-Scope
+
+This plan explicitly prohibits:
+
+- creating any of the future deliverable files now;
+- editing `governance/DOCUMENT_REGISTRY.md` now;
+- editing `governance/DECISION_LOG.md` now;
+- ratifying any context-policy deliverable now;
+- generating runtime context packs;
+- changing the Claude cold-start reading order;
+- modifying `CLAUDE.md`, `AGENTS.md`, or `.claude/rules/`;
+- implementing a generator;
+- selecting implementation language or architecture;
+- creating or activating hooks;
+- modifying `.claude/hooks/**`;
+- modifying project code;
+- modifying dependencies;
+- modifying settings;
+- activating P03/P04/P05.
+
+### Approval Requirement
+
+The Product Owner must separately approve this draft plan before any context-policy deliverable file is created.
