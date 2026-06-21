@@ -1,6 +1,9 @@
 ---
-document_status: PROPOSED_INACTIVE
-ratification_status: NOT_RATIFIED
+document_status: RATIFIED
+ratification_status: RATIFIED
+ratification_decision: DEC-P02-DOMAIN-DISCOVERY-001
+ratified_by: Rauf Alizada
+ratified_at: 2026-06-21
 source_task: CONT-P02-ONB-001
 source_plan: P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001
 source_decision: DEC-P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001
@@ -11,12 +14,15 @@ product_owner: Rauf Alizada
 
 ## Status and Authority
 
-- document_status: `PROPOSED_INACTIVE`.
-- ratification_status: `NOT_RATIFIED`.
-- This draft is a Product Owner-review candidate. It does not ratify, define, or amend any domain concept, glossary term, decision, risk, roadmap entry, registry entry, or open question.
+- document_status: `RATIFIED`.
+- ratification_status: `RATIFIED`.
+- ratification_decision: `DEC-P02-DOMAIN-DISCOVERY-001`.
+- This document is ratified as a P02 domain discovery artifact under `DEC-P02-DOMAIN-DISCOVERY-001`, ratified by the Product Owner `Rauf Alizada` on `2026-06-21`.
+- Candidate concepts recorded in this document remain candidate concepts and are not promoted into the canonical glossary or canonical domain model unless separately ratified by the Product Owner.
+- Ratification of this document does not create architecture, schema, storage, implementation, or project-code authority. No architecture/schema/implementation authority is created by this ratification.
 - Authority remains with the Product Owner `Rauf Alizada` as sole ratification authority. The spellings `Raauf Alizada` and the identity `Tural Rahmanli` are not valid project authorities.
 - Source basis is the approved `P02 Domain Discovery Draft Plan 001` under `DEC-P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001`, drafted within `CONT-P02-ONB-001`.
-- No content in this draft selects architecture, schema, storage, implementation stack, dependencies, settings, hooks, adapter rules, or license.
+- No content in this document selects architecture, schema, storage, implementation stack, dependencies, settings, hooks, adapter rules, or license.
 
 ## Purpose
 

@@ -35,6 +35,7 @@ Only explicit Product Owner decisions are recorded here.
 | DEC-P02-CONTEXT-SET-CLOSEOUT-001 | Ratified | Close the P02 context-policy set after ratification of `governance/CONTEXT_POLICY.md`, `governance/CONTEXT_BUDGET.md`, and `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`. Closes the context-policy set only; does not close P02 or `CONT-P02-ONB-001`. See `## DEC-P02-CONTEXT-SET-CLOSEOUT-001` below for full provenance fields. | Product Owner | 2026-06-21 | commits `26bd1217a4e324ed736fabdda54ee2263ddd7279`, `8bf9990ebafd5ce87d05a5e4a58e636d2efecd1c`, and `1a0cfdaeb7da78a087ba43d18dbe0a27999b4a94` + P02 context-policy set closeout diff |
 | DEC-P02-DISCOVERY-PLAN-002 | Ratified | Approve `P02 Discovery Plan 002 - Remaining P02 Discovery Scope` for drafting preparation under `CONT-P02-ONB-001`. Changes the plan from `PROPOSED_INACTIVE` / `NOT_APPROVED` to `APPROVED_FOR_DRAFTING` / `APPROVED`. See `## DEC-P02-DISCOVERY-PLAN-002` below for full provenance fields. | Product Owner | 2026-06-21 | commit `8a3fe920ca89895eaeb71570d6a0e917b21a4702` (proposed P02 Discovery Plan 002) + P02 Discovery Plan 002 approval diff |
 | DEC-P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001 | Ratified | Approve `P02 Domain Discovery Draft Plan 001` for preparing a future `P02 Domain Discovery Draft` under `CONT-P02-ONB-001`. Changes the plan from `PROPOSED_INACTIVE` / `NOT_APPROVED` to `APPROVED_FOR_DRAFTING` / `APPROVED`. See `## DEC-P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `b371b77fcd290cc329a5f53f44c95bf58eaaab70` (proposed P02 Domain Discovery Draft Plan 001) + P02 Domain Discovery Draft Plan 001 approval diff |
+| DEC-P02-DOMAIN-DISCOVERY-001 | Ratified | Ratify `governance/P02_DOMAIN_DISCOVERY_DRAFT.md` as the canonical P02 Domain Discovery Draft. See `## DEC-P02-DOMAIN-DISCOVERY-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `43e3a3e62385c6c201ac25e63b0fb20275d2c869` (proposed P02 Domain Discovery Draft) + P02 Domain Discovery Draft ratification diff |
 
 ## DEC-P01-B1-001
 
@@ -295,3 +296,16 @@ Only explicit Product Owner decisions are recorded here.
 - reviewed_by: `Product Owner`
 - evidence: commit `b371b77fcd290cc329a5f53f44c95bf58eaaab70` (proposed P02 Domain Discovery Draft Plan 001) plus the P02 Domain Discovery Draft Plan 001 approval diff.
 - scope_note: Approves the draft plan only. Changes `P02 Domain Discovery Draft Plan 001` from `PROPOSED_INACTIVE` / `NOT_APPROVED` to `APPROVED_FOR_DRAFTING` / `APPROVED`. Does not create `P02 Domain Discovery Draft`; does not update `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, or `governance/DOCUMENT_REGISTRY.md`; does not draft or ratify any domain concept, term, entity, relationship, lifecycle, or constraint; does not define architecture, schema, implementation, or project code; does not close P02 or `CONT-P02-ONB-001`; P02 remains active and `CONT-P02-ONB-001` remains the single active task; does not generate runtime context packs; does not activate P03, P04, or P05; does not authorize hooks, adapter-rule changes, license, dependency, settings, or project-code changes.
+
+## DEC-P02-DOMAIN-DISCOVERY-001
+
+- decision_id: `DEC-P02-DOMAIN-DISCOVERY-001`
+- status: `RATIFIED`
+- decision: Ratify `governance/P02_DOMAIN_DISCOVERY_DRAFT.md` as the canonical P02 Domain Discovery Draft.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-21`
+- source_task: `CONT-P02-ONB-001`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- evidence: commit `43e3a3e62385c6c201ac25e63b0fb20275d2c869` (proposed P02 Domain Discovery Draft) plus the P02 Domain Discovery Draft ratification diff.
+- scope_note: Ratifies `governance/P02_DOMAIN_DISCOVERY_DRAFT.md` as a P02 discovery artifact. Records candidate domain concepts, candidate entity groups, candidate relationship groups, candidate lifecycle and state concepts, candidate authority-sensitive concepts, candidate evidence and source-of-truth concepts, candidate generated-vs-canonical context concepts, and Product Owner ambiguities. Does not make every candidate concept a final domain model; candidate concepts remain candidate concepts unless separately ratified into `governance/GLOSSARY.md` or a future canonical domain model. Does not modify `governance/GLOSSARY.md`. Does not create or update `governance/OPEN_QUESTIONS.md`. Does not update `governance/RISK_REGISTER.md` or `governance/ROADMAP.md`. Updates `governance/DOCUMENT_REGISTRY.md` only to register the ratified document. Does not authorize architecture, schema, storage, implementation, dependencies, settings, hooks, adapter rules, license, or project code. Does not close P02 or `CONT-P02-ONB-001`; P02 remains active under `DEC-P02-ACTIVATION-001`; `CONT-P02-ONB-001` remains the single active task. Does not generate runtime context packs. Does not activate P03, P04, or P05.

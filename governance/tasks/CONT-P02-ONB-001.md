@@ -808,3 +808,23 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No architecture, schema, implementation, hooks, adapter rules, dependencies, settings, license, or project-code changes occurred.
+
+## P02 Domain Discovery Draft - Ratification Prepared
+
+- document: `governance/P02_DOMAIN_DISCOVERY_DRAFT.md`.
+- ratification decision: `DEC-P02-DOMAIN-DISCOVERY-001`.
+- status: `RATIFIED` / `RATIFIED`.
+- source task: `CONT-P02-ONB-001`.
+- source plan: `P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001`.
+- source decision: `DEC-P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001`.
+- drafted by: `Claude Code`.
+- reviewed by: `Product Owner`.
+- Candidate concepts surfaced in the document remain candidate concepts unless separately ratified.
+- No `governance/OPEN_QUESTIONS.md` update occurred.
+- No `governance/GLOSSARY.md` update occurred.
+- No `governance/RISK_REGISTER.md` or `governance/ROADMAP.md` update occurred.
+- `governance/DOCUMENT_REGISTRY.md` updated only to register the ratified document.
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
+- No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
+- No architecture, schema, implementation, hooks, adapter rules, dependencies, settings, license, or project-code changes occurred.
