@@ -636,3 +636,138 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - No `governance/OPEN_QUESTIONS.md` update occurred.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No hooks, adapter-rule, architecture, implementation, dependency, settings, license, or project-code changes.
+
+## P02 Domain Discovery Draft Plan 001
+
+- plan_id: `P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001`
+- title: `P02 Domain Discovery Draft Plan 001`
+- status: `PROPOSED_INACTIVE`
+- approval_status: `NOT_APPROVED`
+- source_task: `CONT-P02-ONB-001`
+- source_plan: `P02-DISCOVERY-PLAN-002`
+- source_decision: `DEC-P02-DISCOVERY-PLAN-002`
+- product_owner: `Rauf Alizada`
+
+### Plan Status
+
+- This is a proposed inactive draft plan only.
+- It is not approved.
+- It does not authorize execution.
+- It does not create a domain model deliverable.
+- It does not modify canonical domain/governance documents.
+- Separate Product Owner approval is required before drafting any domain discovery deliverable.
+
+### Purpose
+
+This plan prepares the first workstream under approved `P02 Discovery Plan 002` (`DEC-P02-DISCOVERY-PLAN-002`): **domain discovery**. The purpose is to plan a future domain discovery draft that will identify Continuum OS domain concepts, entity candidates, relationships, lifecycle concepts, and terminology risks before architecture or implementation begins. Domain discovery is a P02 activity and remains independent of architecture (P03) and implementation (P04). This plan does not itself produce a domain discovery deliverable; it scopes a future approval-gated drafting step.
+
+### Read-Only Source Inputs
+
+The following inputs are read-only for this plan and any future domain discovery drafting step. None of them may be modified by this diff.
+
+- `governance/PRODUCT_CHARTER.md`
+- `governance/GLOSSARY.md`
+- `governance/CHANGE_PROTOCOL.md`
+- `governance/TRUST_BOUNDARIES.md`
+- `governance/NEVER_AUTOMATIC.md`
+- `governance/ROADMAP.md`
+- `governance/DECISION_LOG.md`
+- `governance/tasks/CONT-P02-ONB-001.md`
+
+These inputs anchor the domain vocabulary, lifecycle, ratification authority, and trust-boundary concepts that the future draft must respect.
+
+### Target Future Deliverable
+
+The future deliverable is a proposed domain discovery draft. It is **not created in this diff**.
+
+- suggested future deliverable name: `P02 Domain Discovery Draft`
+- target location: to be proposed in a separate approved draft-plan execution step (likely `governance/` under a name confirmed by the Product Owner at drafting time)
+- target deliverable status at first creation: `PROPOSED_INACTIVE` / `NOT_APPROVED`
+
+The future draft should likely cover:
+
+- core domain concepts;
+- entity candidates;
+- relationship candidates;
+- lifecycle concepts;
+- state transitions;
+- authority-sensitive domain boundaries;
+- ambiguous terms needing Product Owner review;
+- non-architecture domain constraints.
+
+The future draft must not select architecture, schema, storage, framework, or implementation language. It must remain a P02 domain artifact.
+
+### Proposed Domain Surfaces
+
+The future domain discovery step should investigate the following surfaces. They are listed here as proposed scope only and are not themselves modeled in this plan.
+
+1. Project and workspace concepts.
+2. Phase, gate, and lifecycle concepts.
+3. Task, active-task, and execution-authorization concepts.
+4. Decision, ratification, and approval concepts.
+5. Evidence, session log, handoff, and registry concepts.
+6. Product Owner authority and agent-boundary concepts.
+7. Context-governance concepts already ratified in the context-policy set (`DEC-P02-CONTEXT-POLICY-001`, `DEC-P02-CONTEXT-BUDGET-001`, `DEC-P02-CONTEXT-RETRIEVAL-001`).
+8. Open questions and unresolved ambiguity concepts.
+9. Generated/derived evidence versus canonical source concepts.
+10. Future architecture-sensitive concepts that must remain non-implementation at this stage.
+
+### Proposed Drafting Method
+
+A future approved drafting step (separately verbed by the Product Owner) should:
+
+- read the source inputs in task/audit context;
+- extract candidate domain terms;
+- group concepts into entities, lifecycle states, relationships, and constraints;
+- flag ambiguities without resolving them automatically;
+- avoid schema/database/code design;
+- avoid implementation architecture;
+- produce a reviewable draft for Product Owner approval.
+
+The drafting step must not ratify terminology, must not modify `governance/GLOSSARY.md`, and must not pre-empt Product Owner choices on ambiguous terms.
+
+### Non-Scope
+
+This plan explicitly does not:
+
+- approve execution;
+- draft the domain discovery deliverable;
+- change `governance/PRODUCT_CHARTER.md`;
+- change `governance/GLOSSARY.md`;
+- change `governance/OPEN_QUESTIONS.md`;
+- change `governance/RISK_REGISTER.md`;
+- change `governance/ROADMAP.md`;
+- change `governance/DOCUMENT_REGISTRY.md`;
+- add a decision to `governance/DECISION_LOG.md`;
+- define architecture;
+- define database schema;
+- define implementation tasks;
+- close P02;
+- close `CONT-P02-ONB-001`;
+- create runtime context packs;
+- modify hooks, adapter rules, dependencies, settings, license, or project code;
+- activate P03/P04/P05.
+
+### Required Next Approval
+
+The next Product Owner decision should be one of:
+
+- approve `P02 Domain Discovery Draft Plan 001`;
+- revise `P02 Domain Discovery Draft Plan 001`;
+- run another read-only audit;
+- choose a different first workstream.
+
+No domain discovery drafting is authorized until the Product Owner issues a separate approval verb.
+
+### Acceptance Criteria for Plan Approval
+
+Before this plan may be approved by the Product Owner, the following must hold:
+
+- domain discovery scope is explicit;
+- target future deliverable is clear;
+- source inputs are listed;
+- non-scope prevents architecture/implementation drift;
+- Product Owner ambiguities remain explicit;
+- P02 remains active;
+- `CONT-P02-ONB-001` remains the single active task;
+- no runtime pack is generated.
