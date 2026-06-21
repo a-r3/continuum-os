@@ -1,8 +1,8 @@
 ---
-handoff_status: P02_CONTEXT_POLICY_SET_CLOSED_AWAITING_REMAINING_P02_DISCOVERY_REVIEW
+handoff_status: P02_DISCOVERY_PLAN_002_PROPOSED_AWAITING_PRODUCT_OWNER_REVIEW
 current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY
 gate_status: ACTIVATED
-next_action: PRODUCT_OWNER_REVIEW_OF_REMAINING_P02_DISCOVERY_SCOPE
+next_action: PRODUCT_OWNER_REVIEW_OF_P02_DISCOVERY_PLAN_002
 known_blockers: []
 ---
 
@@ -24,7 +24,9 @@ P02 — Domain, Governance, and Security Discovery is **active** under `DEC-P02-
 
 The P02 context-policy set is **closed** under `DEC-P02-CONTEXT-SET-CLOSEOUT-001`. The set closeout closes the context-policy deliverable set only; P02 remains **active** under `DEC-P02-ACTIVATION-001` and `CONT-P02-ONB-001` remains the **single active task** with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`. The ratified context-policy set consists of `governance/CONTEXT_POLICY.md` (`DEC-P02-CONTEXT-POLICY-001`), `governance/CONTEXT_BUDGET.md` (`DEC-P02-CONTEXT-BUDGET-001`), and `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` (`DEC-P02-CONTEXT-RETRIEVAL-001`). No runtime context pack has been generated. No hooks, adapter-rule, architecture, implementation, dependency, settings, license, or project-code changes have occurred.
 
-The next expected work is **Product Owner review of remaining P02 discovery scope**. P02 is not closed. No runtime pack generation, sibling-deliverable creation, or further ratification is authorized until separately approved by the Product Owner.
+`P02 Discovery Plan 002 - Remaining P02 Discovery Scope` has been **prepared** in `governance/tasks/CONT-P02-ONB-001.md` as `status: PROPOSED_INACTIVE` / `approval_status: NOT_APPROVED`. The plan **does not authorize execution**, does not draft any deliverable, and does not modify `governance/OPEN_QUESTIONS.md`. Remaining workstreams identified by the plan: domain discovery, governance refinement, security and trust requirements, data classification and sensitive-boundary analysis, open-questions projection, and deferred token-efficiency sibling work (Reading Policy Table, tag vocabulary, baseline token-cost measurement method).
+
+The next expected work is **Product Owner review of `P02 Discovery Plan 002`**. P02 is not closed. No runtime pack generation, sibling-deliverable creation, or further ratification is authorized until separately approved by the Product Owner.
 
 No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes have occurred.
 
@@ -32,7 +34,7 @@ The Product Owner / sole project authority / sole ratification authority for v1 
 
 ## Next Action
 
-- Product Owner review of remaining P02 discovery scope, given the closed P02 context-policy set under `DEC-P02-CONTEXT-SET-CLOSEOUT-001` (ratified set: `governance/CONTEXT_POLICY.md` / `DEC-P02-CONTEXT-POLICY-001`, `governance/CONTEXT_BUDGET.md` / `DEC-P02-CONTEXT-BUDGET-001`, `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` / `DEC-P02-CONTEXT-RETRIEVAL-001`). P02 remains active under `DEC-P02-ACTIVATION-001`; `CONT-P02-ONB-001` remains the single active task. No runtime context pack generation, further sibling-deliverable creation, or additional ratification is authorized until separately approved by the Product Owner.
+- Product Owner review of `P02 Discovery Plan 002 - Remaining P02 Discovery Scope` (`PROPOSED_INACTIVE` / `NOT_APPROVED`) appended to `governance/tasks/CONT-P02-ONB-001.md`. The plan does not authorize execution. No `governance/OPEN_QUESTIONS.md` update occurred. P02 remains active under `DEC-P02-ACTIVATION-001`; `CONT-P02-ONB-001` remains the single active task. The context-policy set remains closed under `DEC-P02-CONTEXT-SET-CLOSEOUT-001`. No runtime context pack generation, further sibling-deliverable creation, or additional ratification is authorized until separately approved by the Product Owner.
 
 ## Actions Not Yet Authorized
 

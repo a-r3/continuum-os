@@ -480,3 +480,143 @@ This draft plan has been **approved** under `DEC-P02-CONTEXT-DRAFT-PLAN-001`. Th
   - `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` / `DEC-P02-CONTEXT-RETRIEVAL-001`.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No hooks, adapter-rule, architecture, implementation, dependency, settings, license, or project-code changes.
+
+## P02 Discovery Plan 002 - Remaining P02 Discovery Scope
+
+- plan_id: `P02-DISCOVERY-PLAN-002`
+- title: `Remaining P02 Discovery Scope`
+- status: `PROPOSED_INACTIVE`
+- approval_status: `NOT_APPROVED`
+- source_task: `CONT-P02-ONB-001`
+- proposed_after: `DEC-P02-CONTEXT-SET-CLOSEOUT-001`
+- product_owner: `Rauf Alizada`
+
+### Plan Status
+
+- This is a proposed inactive plan only.
+- It is not approved.
+- It does not authorize execution.
+- It does not create or modify any deliverable outside this plan evidence.
+- Separate Product Owner approval is required before drafting any remaining P02 deliverable.
+
+### Completed P02 Scope
+
+- P02 activation under `DEC-P02-ACTIVATION-001`.
+- Discovery Plan 001 approved under `DEC-P02-DISCOVERY-PLAN-001`.
+- Context-Policy Deliverable Draft Plan 001 approved under `DEC-P02-CONTEXT-DRAFT-PLAN-001`.
+- `governance/CONTEXT_POLICY.md` ratified under `DEC-P02-CONTEXT-POLICY-001`.
+- `governance/CONTEXT_BUDGET.md` ratified under `DEC-P02-CONTEXT-BUDGET-001`.
+- `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` ratified under `DEC-P02-CONTEXT-RETRIEVAL-001`.
+- Context-policy set closed under `DEC-P02-CONTEXT-SET-CLOSEOUT-001`.
+
+### Closed Context-Policy Set
+
+- The context-policy set (`governance/CONTEXT_POLICY.md`, `governance/CONTEXT_BUDGET.md`, `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`) is complete and closed only as a deliverable subset under `DEC-P02-CONTEXT-SET-CLOSEOUT-001`.
+- P02 itself remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
+- The closed set is not reopened by this plan.
+
+### Remaining Discovery Workstreams
+
+1. **Domain discovery**:
+   - core product/domain entities;
+   - relationships;
+   - lifecycle concepts;
+   - continuation/session/project/task concepts that affect architecture later.
+
+2. **Governance refinement**:
+   - authority model refinements beyond P01;
+   - change-protocol clarifications;
+   - never-automatic boundaries;
+   - trust-boundary refinements;
+   - what can be decided by agents vs Product Owner.
+
+3. **Security and trust requirements**:
+   - local-first security assumptions;
+   - Git-native evidence risks;
+   - AI-agent execution boundaries;
+   - repository mutation boundaries;
+   - threat surface and misuse cases.
+
+4. **Data classification and sensitive-boundary analysis**:
+   - governance data;
+   - operational logs;
+   - generated summaries;
+   - user/project identity data;
+   - secrets and credentials;
+   - what must never be stored in generated runtime packs.
+
+5. **Open-questions projection**:
+   - review existing stale `OQ-P01-*` rows;
+   - decide whether to retain, supersede, archive, or retarget them;
+   - prepare P02-specific open questions only after separate Product Owner approval.
+
+6. **Remaining token-efficiency sibling work**:
+   - Reading Policy Table;
+   - tag vocabulary;
+   - baseline token-cost measurement method;
+   - decide whether these remain in P02 Discovery Plan 001 continuation or move into a separate sibling plan.
+
+### Recommended Workstream Order
+
+Proposed order (not approved yet):
+
+1. domain discovery;
+2. security and trust requirements;
+3. data classification and sensitive-boundary analysis;
+4. governance refinement;
+5. open-questions projection;
+6. deferred token-efficiency sibling decision.
+
+This order is proposed and not approved. The Product Owner may revise the order before approving the plan.
+
+### Open Questions Projection
+
+- `governance/OPEN_QUESTIONS.md` is **not modified** in this diff.
+- Existing `OQ-P01-*` rows appear stale for P02 purposes (target phase recorded as P01; P01 is closed under `DEC-P01-CLOSEOUT-001`).
+- The Product Owner must decide whether those rows should be retained, superseded, archived, or retargeted.
+- P02-specific open questions should be added only through a separate approved diff.
+
+### Deferred Token-Efficiency Sibling Work
+
+- Reading Policy Table, tag vocabulary, and baseline token-cost measurement method are **not executed here**.
+- The Product Owner must decide whether they belong inside this plan or in a separate sibling plan.
+- This plan does not select either option.
+
+### Non-Scope
+
+This proposed inactive plan explicitly does not:
+
+- approve execution;
+- draft domain/security/data-classification deliverables;
+- update `governance/OPEN_QUESTIONS.md`;
+- update `governance/RISK_REGISTER.md`;
+- update `governance/ROADMAP.md`;
+- update `governance/DOCUMENT_REGISTRY.md`;
+- add a decision to `governance/DECISION_LOG.md`;
+- close P02;
+- close `CONT-P02-ONB-001`;
+- create runtime context packs;
+- modify hooks, adapter rules, architecture, implementation, license, dependencies, settings, or project code;
+- activate P03/P04/P05.
+
+### Required Next Approval
+
+The next Product Owner decision should be one of:
+
+- approve P02 Discovery Plan 002 for drafting preparation;
+- revise P02 Discovery Plan 002;
+- split token-efficiency sibling work into a separate plan;
+- run another read-only audit.
+
+### Acceptance Criteria for Plan Approval
+
+Before this plan may be approved by the Product Owner, the following must hold:
+
+- remaining P02 workstreams are explicit;
+- context-policy set is not reopened;
+- P02 remains active;
+- `CONT-P02-ONB-001` remains the single active task;
+- no runtime pack is generated;
+- no architecture/implementation/project-code work is authorized;
+- next deliverable type is clear.
