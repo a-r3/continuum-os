@@ -467,3 +467,16 @@ This draft plan has been **approved** under `DEC-P02-CONTEXT-DRAFT-PLAN-001`. Th
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No hooks, adapter-rule, architecture, implementation, dependency, settings, license, or project-code changes.
+
+## P02 Context Policy Set Closeout Evidence
+
+- Closeout decision: `DEC-P02-CONTEXT-SET-CLOSEOUT-001`.
+- Context-policy set closed only.
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
+- Ratified context-policy set:
+  - `governance/CONTEXT_POLICY.md` / `DEC-P02-CONTEXT-POLICY-001`;
+  - `governance/CONTEXT_BUDGET.md` / `DEC-P02-CONTEXT-BUDGET-001`;
+  - `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` / `DEC-P02-CONTEXT-RETRIEVAL-001`.
+- No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
+- No hooks, adapter-rule, architecture, implementation, dependency, settings, license, or project-code changes.
