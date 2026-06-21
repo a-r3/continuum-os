@@ -1,8 +1,8 @@
 ---
-handoff_status: P02_CONTEXT_POLICY_PROPOSED_DRAFT_AWAITING_PRODUCT_OWNER_REVIEW
+handoff_status: P02_CONTEXT_POLICY_RATIFIED_AWAITING_NEXT_CONTEXT_DELIVERABLE
 current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY
 gate_status: ACTIVATED
-next_action: PRODUCT_OWNER_REVIEW_OF_PROPOSED_CONTEXT_POLICY_DRAFT
+next_action: PRODUCT_OWNER_REVIEW_OF_NEXT_P02_CONTEXT_DELIVERABLE_PLAN
 known_blockers: []
 ---
 
@@ -14,13 +14,11 @@ P01 — Founder Discovery and Product Definition is **closed/completed** under `
 
 P02 — Domain, Governance, and Security Discovery is **active** under `DEC-P02-ACTIVATION-001`. `CONT-P02-ONB-001` is the **single active task** (`lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `ratification_status: APPROVED_FOR_EXECUTION`, `active: true`, `execution_authorized: true`). Exactly one active task exists. The active-task invariant holds.
 
-`P02 Discovery Plan 001 - Token-Efficiency and Context Policy Discovery` is **approved** under `DEC-P02-DISCOVERY-PLAN-001` (`status: APPROVED_FOR_DRAFTING` in `CONT-P02-ONB-001`). Approval authorizes future preparation of proposed context-policy deliverable drafts under separate Product Owner approval verbs. No P02 deliverable has been ratified. The only context-policy deliverable file prepared so far is `governance/CONTEXT_POLICY.md`, and it remains `PROPOSED_DRAFT` / `NOT_RATIFIED`; it is not canonical authority yet. `governance/CONTEXT_BUDGET.md` and `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` have not been created. No runtime context pack has been generated.
+`P02 Discovery Plan 001 - Token-Efficiency and Context Policy Discovery` is **approved** under `DEC-P02-DISCOVERY-PLAN-001` (`status: APPROVED_FOR_DRAFTING` in `CONT-P02-ONB-001`). `P02 Context-Policy Deliverable Draft Plan 001` is **approved** under `DEC-P02-CONTEXT-DRAFT-PLAN-001` (`status: APPROVED_FOR_DRAFTING` in `CONT-P02-ONB-001`).
 
-`P02 Context-Policy Deliverable Draft Plan 001` is **approved** under `DEC-P02-CONTEXT-DRAFT-PLAN-001` (`status: APPROVED_FOR_DRAFTING` in `CONT-P02-ONB-001`).
+`governance/CONTEXT_POLICY.md` is **ratified** under `DEC-P02-CONTEXT-POLICY-001` (`lifecycle_status: RATIFIED`, `ratification_status: RATIFIED`, `ratified_by: Rauf Alizada`, `ratified_at: 2026-06-21`). It is now **canonical governance authority** for context policy in Continuum OS — governing context authority separation, context modes (Runtime/Task/Audit/Emergency), generated-pack limits, staleness handling, and escalation rules. `governance/DOCUMENT_REGISTRY.md` records it as `Ratified`. `governance/CONTEXT_BUDGET.md` was **not** created. `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` was **not** created. No runtime context pack was generated.
 
-`governance/CONTEXT_POLICY.md` has been prepared as a **proposed draft** (`lifecycle_status: PROPOSED_DRAFT`, `ratification_status: NOT_RATIFIED`) under approved draft plan `DEC-P02-CONTEXT-DRAFT-PLAN-001`. It is **not ratified**. It is **not canonical authority yet**. `governance/DOCUMENT_REGISTRY.md` records it as `Proposed Draft / Not Ratified`. `governance/CONTEXT_BUDGET.md` and `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` were **not** created. No runtime context pack was generated.
-
-The next expected action is **Product Owner review of proposed `governance/CONTEXT_POLICY.md`**. No further file-creation, ratification, or context-policy expansion is authorized until that review and a separately approved Product Owner verb.
+The next expected action is **Product Owner review of the next P02 context deliverable plan**, likely `governance/CONTEXT_BUDGET.md` or `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`. No further file-creation, ratification, sibling-deliverable creation, or runtime pack generation is authorized until that review and a separately approved Product Owner verb.
 
 No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes have occurred.
 
@@ -28,7 +26,7 @@ The Product Owner / sole project authority / sole ratification authority for v1 
 
 ## Next Action
 
-- Product Owner review of proposed `governance/CONTEXT_POLICY.md` (`lifecycle_status: PROPOSED_DRAFT`, `ratification_status: NOT_RATIFIED`) prepared under approved draft plan `DEC-P02-CONTEXT-DRAFT-PLAN-001`. No ratification, sibling deliverable creation (`CONTEXT_BUDGET.md`, `CONTEXT_RETRIEVAL_PROTOCOL.md`), or runtime context pack generation is authorized until separately approved by the Product Owner.
+- Product Owner review of the next P02 context deliverable plan (likely `governance/CONTEXT_BUDGET.md` or `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`). No sibling-deliverable creation, runtime context pack generation, generator implementation, adapter-rule change, or architecture/implementation work is authorized until separately approved by the Product Owner.
 
 ## Actions Not Yet Authorized
 
@@ -72,9 +70,9 @@ The Product Owner / sole project authority / sole ratification authority for v1 
 - Bundle 1, Bundle 2, Bundle 3, Bundle 4, and Bundle 5 are closed/completed.
 - P01 is **closed/completed** under `DEC-P01-CLOSEOUT-001`.
 - P02 is **active** under `DEC-P02-ACTIVATION-001`.
-- `governance/DECISION_LOG.md` records `DEC-P01-B1-001`, `DEC-P01-B1-002`, `DEC-P01-B2-001`, `DEC-P01-B3-001`, `DEC-P01-B3-002`, `DEC-P01-B4-001`, `DEC-P01-B4-002`, `DEC-P01-B5-001`, `DEC-P01-B5-002`, `DEC-P01-B5-003`, `DEC-P01-CLOSEOUT-001`, `DEC-P02-ACTIVATION-001`, `DEC-P02-DISCOVERY-PLAN-001`, and `DEC-P02-CONTEXT-DRAFT-PLAN-001`.
+- `governance/DECISION_LOG.md` records `DEC-P01-B1-001`, `DEC-P01-B1-002`, `DEC-P01-B2-001`, `DEC-P01-B3-001`, `DEC-P01-B3-002`, `DEC-P01-B4-001`, `DEC-P01-B4-002`, `DEC-P01-B5-001`, `DEC-P01-B5-002`, `DEC-P01-B5-003`, `DEC-P01-CLOSEOUT-001`, `DEC-P02-ACTIVATION-001`, `DEC-P02-DISCOVERY-PLAN-001`, `DEC-P02-CONTEXT-DRAFT-PLAN-001`, and `DEC-P02-CONTEXT-POLICY-001`.
 - Exactly one active task: `CONT-P02-ONB-001`. Execution is authorized only within its scope.
-- No P02 deliverable has been ratified. The only context-policy deliverable file prepared so far is `governance/CONTEXT_POLICY.md`, and it remains `PROPOSED_DRAFT` / `NOT_RATIFIED`; it is not canonical authority yet. `governance/CONTEXT_BUDGET.md` and `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` have not been created. No runtime context pack has been generated.
+- `governance/CONTEXT_POLICY.md` is ratified under `DEC-P02-CONTEXT-POLICY-001` and is canonical governance authority for context policy. `governance/CONTEXT_BUDGET.md` was not created. `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` was not created. No runtime context pack has been generated.
 - Adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) have not been modified.
 - Product Owner remains sole ratification authority. The Product Owner is `Rauf Alizada`.
 - The active-task invariant holds as exactly one active task.

@@ -2,8 +2,11 @@
 document_id: CONTEXT_POLICY
 title: Context Policy
 document_type: Governance
-lifecycle_status: PROPOSED_DRAFT
-ratification_status: NOT_RATIFIED
+lifecycle_status: RATIFIED
+ratification_status: RATIFIED
+ratified_by: Rauf Alizada
+ratified_at: 2026-06-21
+ratification_decision: DEC-P02-CONTEXT-POLICY-001
 source_task: CONT-P02-ONB-001
 source_plan: P02 Context-Policy Deliverable Draft Plan 001
 product_owner: Rauf Alizada
@@ -12,19 +15,22 @@ created_at: 2026-06-21
 
 # Context Policy
 
-## Draft Status
+## Ratification Status
 
-This document is a **proposed draft only**. It is **not ratified**. It is **not canonical authority** until the Product Owner (`Rauf Alizada`) ratifies it under a separately approved governance change. Until ratification:
+This document is **ratified** under `DEC-P02-CONTEXT-POLICY-001` and is **canonical governance authority** for context policy in Continuum OS. The Product Owner (`Rauf Alizada`) is the sole ratification authority.
 
-- this document does not change the Claude cold-start reading order;
-- this document does not create or authorize any runtime context pack;
-- this document does not implement any generator;
-- this document does not modify hooks, `.claude/hooks/**`, `.claude/settings.json`, `.claude/settings.local.example.json`, or adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`);
-- this document does not authorize architecture evaluation or implementation work;
-- this document does not modify license, dependencies, project code, or settings;
-- this document does not activate P03, P04, or P05.
+Generated summaries, runtime context packs, indexes, and token-audit artifacts remain **derived evidence only** and are never governance authority unless separately and explicitly ratified as governance documents by the Product Owner.
 
-The draft is prepared under approved plan chain `DEC-P02-DISCOVERY-PLAN-001` → `DEC-P02-CONTEXT-DRAFT-PLAN-001` within active task `CONT-P02-ONB-001`. Each subsequent revision, sibling deliverable, or ratification step requires a separate Product Owner approval verb (`prepare diff` / `commit only` / `commit and push`).
+Ratification of this document does **not**:
+
+- create or generate any runtime context pack;
+- modify the Claude cold-start reading order;
+- implement any generator, indexer, or token-audit tool;
+- modify hooks, `.claude/hooks/**`, `.claude/settings.json`, `.claude/settings.local.example.json`, or adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`);
+- authorize architecture evaluation, implementation, dependency installation, license selection, settings changes, or project-code changes;
+- activate P03, P04, or P05.
+
+This document was prepared and ratified under approved plan chain `DEC-P02-DISCOVERY-PLAN-001` → `DEC-P02-CONTEXT-DRAFT-PLAN-001` → `DEC-P02-CONTEXT-POLICY-001` within active task `CONT-P02-ONB-001`. Each subsequent revision, sibling deliverable (e.g. `governance/CONTEXT_BUDGET.md`, `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`), or runtime pack generation requires a separate Product Owner approval verb (`prepare diff` / `commit only` / `commit and push`).
 
 ## Purpose
 
@@ -172,3 +178,16 @@ Before this document may be ratified by the Product Owner, the following must ho
 - clear mode escalation rules are preserved (Runtime / Task / Audit / Emergency);
 - ratification recorded as a separate decision in `governance/DECISION_LOG.md` with full provenance fields;
 - registry entry in `governance/DOCUMENT_REGISTRY.md` updated from `Proposed Draft / Not Ratified` to `Ratified` under the same separately approved governance change.
+
+## Ratification Evidence
+
+- proposed draft commit: `7176ddf6d7b94ad8cfb2f46377fb2d649a01eadd`.
+- ratification decision: `DEC-P02-CONTEXT-POLICY-001`.
+- ratified by: `Rauf Alizada`.
+- source task: `CONT-P02-ONB-001`.
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task.
+- No `governance/CONTEXT_BUDGET.md` created.
+- No `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` created.
+- No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
+- No hooks, adapter-rule, architecture, implementation, dependency, settings, or project-code changes.
