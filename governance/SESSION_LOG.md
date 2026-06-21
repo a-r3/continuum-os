@@ -1,7 +1,7 @@
 ---
 session_log_status: ACTIVE
 latest_session_date: 2026-06-21
-latest_session_scope: P02_PROPOSED_TASK_PREPARED
+latest_session_scope: P02_ACTIVATION_DIFF_PREPARED
 ---
 
 # Session Log
@@ -517,4 +517,27 @@ Append-only summaries of completed sessions belong here.
 - No hook scripts (`.claude/hooks/**`), settings, architecture, implementation, license, dependency, or project-code changes.
 - No unauthorized files modified or created.
 - Active-task invariant preserved as zero active tasks in an explicit approval-wait state.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
+
+## 2026-06-21 - P02 Activation Diff Prepared
+
+- Product Owner accepted the proposed P02 task commit `120a20d10387d83e0e0dc425903f97108c84c4ad`.
+- Product Owner approved preparation of the P02 activation diff as prepare-diff-only.
+- `governance/tasks/CONT-P02-ONB-001.md` activated in working-tree diff: frontmatter flipped to `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `ratification_status: APPROVED_FOR_EXECUTION`, `active: true`, `execution_authorized: true`; `## P02 Activation Diff Evidence` section appended.
+- `governance/ACTIVE_TASK.md` updated to record `CONT-P02-ONB-001` as the single active task (`active_task_id: CONT-P02-ONB-001`, `active_task_status: IN_PROGRESS`, `execution_authorized: true`).
+- `governance/CURRENT_PHASE.md` updated to P02 active under gate `P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`; P01 closed; P03/P04/P05 not active; prohibited-work list preserved.
+- `governance/PROJECT_STATE.md` Current Snapshot updated to P02 active with active task `CONT-P02-ONB-001`; P01 closeout commit, P02 proposed-task commit, P02 activation decision, and P02 activation date recorded.
+- `governance/ROADMAP.md` Phase Model P02 row updated to active under `DEC-P02-ACTIVATION-001`; `## P02 Status` rewritten to reflect activation; P03/P04/P05 remain not active.
+- `governance/DOCUMENT_REGISTRY.md` updated: `CONT-P02-ONB-001` task row added as Active / In Progress with decision reference `DEC-P02-ACTIVATION-001`; state-doc rows updated to reflect P02 active; ratified decision references list extended.
+- `governance/DECISION_LOG.md` records exactly one new decision `DEC-P02-ACTIVATION-001` (table row + extended provenance block); no other decision added.
+- `governance/HANDOFF.md` updated to `handoff_status: P02_ACTIVE_AWAITING_FIRST_DISCOVERY_PLAN`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `next_action: PRODUCT_OWNER_REVIEW_OF_FIRST_P02_DISCOVERY_PLAN`; body and Current Constraints reflect the activated state.
+- Exactly one active task after activation: `CONT-P02-ONB-001`.
+- No P02 deliverables ratified.
+- No context-policy files (`CONTEXT_POLICY.md`, `CONTEXT_BUDGET.md`, `CONTEXT_RETRIEVAL_PROTOCOL.md`, or equivalent) created.
+- No runtime context pack generated.
+- No staging, commit, or push performed.
+- No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes.
+- No `governance/PRODUCT_CHARTER.md`, `governance/GLOSSARY.md`, `governance/CHANGE_PROTOCOL.md`, `governance/NEVER_AUTOMATIC.md`, `governance/TRUST_BOUNDARIES.md`, `governance/RISK_REGISTER.md`, `docs/REFERENCE_STRUCTURE.md`, or `governance/PRODUCT_OWNER.md` modifications.
+- No unauthorized files modified or created.
+- Active-task invariant preserved (zero → one active task on this activation diff).
 - Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.

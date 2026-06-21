@@ -12,14 +12,14 @@ product_owner_identity_last_ratified_at: 2026-06-20
 ## Current Snapshot
 
 - Project working title: Continuum OS.
-- Repository status: P00 complete; **P01 closed/completed**; P02 not active.
-- Current phase: P01 — Founder Discovery and Product Definition (closed/completed).
-- Current P01 sub-state: none (P01 closed).
-- Active task: **none**.
-- Lifecycle status: no active lifecycle.
-- Current gate: none.
-- Gate status: closed.
-- Execution authorized: `false`.
+- Repository status: P00 complete; **P01 closed/completed**; **P02 active**.
+- Current phase: P02 — Domain, Governance, and Security Discovery (active).
+- Current P02 sub-state: active under gate `P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`.
+- Active task: **`CONT-P02-ONB-001`**.
+- Lifecycle status: `IN_PROGRESS`.
+- Current gate: `P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`.
+- Gate status: `ACTIVATED`.
+- Execution authorized: `true` (scoped to the active P02 discovery task boundaries only).
 - P00 status: complete.
 - P01 status: **closed/completed**.
 - P01 founder onboarding: completed (`CONT-P01-ONB-001` closed).
@@ -30,15 +30,15 @@ product_owner_identity_last_ratified_at: 2026-06-20
 - P01 Bundle 4 Trust Boundaries and Risk Register: completed (`CONT-P01-BUNDLE-004` closed/completed); Bundle 4 deliverables ratified — `governance/TRUST_BOUNDARIES.md` is `ratified_evolving` / `RATIFIED` and `governance/RISK_REGISTER.md` Bundle 4 P01 top-risk update is `ratified_evolving` / `RATIFIED`; `DEC-P01-B4-001` and `DEC-P01-B4-002` recorded in `governance/DECISION_LOG.md`.
 - P01 Bundle 5 Reference Structure, Roadmap, Adapter Alignment, and P01 Closeout: completed (`CONT-P01-BUNDLE-005` closed/completed); Bundle 5 deliverables ratified — `docs/REFERENCE_STRUCTURE.md` is `ratified_evolving` / `RATIFIED`, `governance/ROADMAP.md` Bundle 5 update is `ratified_evolving` / `RATIFIED`, `governance/DOCUMENT_REGISTRY.md` Bundle 5 update is `ratified_evolving` / `RATIFIED`; `DEC-P01-B5-001`, `DEC-P01-B5-002`, and `DEC-P01-B5-003` recorded in `governance/DECISION_LOG.md`.
 - P01 closeout decision `DEC-P01-CLOSEOUT-001` recorded in `governance/DECISION_LOG.md`.
-- P02 status: **not active**. P02 activation requires separate explicit Product Owner approval.
+- P02 status: **active**. P02 activated under `DEC-P02-ACTIVATION-001`; active task `CONT-P02-ONB-001`. No P02 deliverables are ratified yet. No context policy is ratified. No runtime context pack exists or is authorized yet.
 - Product Owner / sole project authority / sole ratification authority for v1: `Rauf Alizada`. Product Charter ratified. Product Owner identity encoding ratified. Glossary ratified. Change Protocol ratified. Never-Automatic Guardrail ratified. Trust Boundaries ratified. Risk Register Bundle 4 P01 top-risk update ratified. Reference Structure ratified. Roadmap Bundle 5 update ratified. Document Registry Bundle 5 update ratified.
-- Adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) have not been modified under P01 closeout.
-- Next action: Product Owner decision on P02 proposal or next phase. No execution authorized in the meantime.
+- Adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) have not been modified under P02 activation. No context-policy files have been created and no runtime context pack has been generated.
+- Next action: Product Owner review/approval for the first P02 discovery deliverable plan, likely token-efficiency / context-policy discovery.
 
 ## Ratified Boundaries
 
 - Codex authority is limited to P00 bootstrap and closeout unless explicitly reassigned by the Product Owner.
-- Claude Code is the primary project agent. No active task exists after P01 closeout; Claude Code's next authorized work requires explicit Product Owner approval of a P02 activation task.
+- Claude Code is the primary project agent. P02 is active under `DEC-P02-ACTIVATION-001`; the single active task is `CONT-P02-ONB-001` and execution is authorized only within its scope.
 - Product and domain discovery occur in approved P01/P02 work.
 - Architecture evaluation, tradeoff analysis, technical spikes, and ADR preparation occur only in approved P03 tasks.
 - Architecture decisions may be proposed during P03, but only the Product Owner may ratify them.
@@ -86,8 +86,12 @@ product_owner_identity_last_ratified_at: 2026-06-20
 - P01 Bundle 5 Reference Structure, Roadmap, Adapter Alignment, and P01 Closeout activation date: 2026-06-20.
 - P01 Bundle 5 deliverable drafts commit: `0dcb7cf7ac982cc4ade0b6993a9dc44683dcf572`.
 - P01 Bundle 5 deliverable ratification commit: `4a4529e5dc40d6d807cc22eab2c18f70aafb8ef5`.
-- P01 closeout decision: `DEC-P01-CLOSEOUT-001` (prepared in this diff).
+- P01 closeout decision: `DEC-P01-CLOSEOUT-001`.
 - P01 closeout date: 2026-06-21.
+- P01 closeout commit: `a7d77ce457e33326ea413223b8f27996b084a403`.
+- P02 proposed-task commit: `120a20d10387d83e0e0dc425903f97108c84c4ad`.
+- P02 activation decision: `DEC-P02-ACTIVATION-001` (prepared in this diff).
+- P02 activation date: 2026-06-21.
 
 ## Product Owner Identity Encoding
 

@@ -21,7 +21,7 @@ This Bundle 5 roadmap update is **ratified** as `ratified_evolving` governance r
 |---|---|---|---|
 | P00 | Baseline and Project Control Foundation | Complete | Closeout commit and push authorized by Product Owner |
 | P01 | Founder Discovery and Product Definition | Closed/Completed; Bundles 1-5 ratified; closed under `DEC-P01-CLOSEOUT-001` | Closed |
-| P02 | Domain, Governance, and Security | Not active | Gated on a separately proposed and Product Owner-approved P02 activation task |
+| P02 | Domain, Governance, and Security | Active under `DEC-P02-ACTIVATION-001`; active task `CONT-P02-ONB-001`; gate `P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY` | Domain, Governance, and Security Discovery |
 | P03 | Architecture Evaluation and ADRs | Not started | Requires P02 closeout and approved P03 task |
 | P04 | Implementation Readiness Gate | Not started | Requires architecture consistency review |
 | P05 | Core MVP Implementation | Not started | Requires explicit P04 GO |
@@ -42,12 +42,7 @@ P01 is **closed/completed** under `DEC-P01-CLOSEOUT-001`. P01 Bundles 1–5 are 
 
 ## P02 Status
 
-P02 is **not active**. P02 activation is gated on:
-
-- a separately proposed and Product Owner-approved P02 activation task;
-- preservation of the active-task invariant (zero or one active task) during transition.
-
-P02 activation is not authorized by this roadmap update or by P01 closeout.
+P02 is **active** under `DEC-P02-ACTIVATION-001`. The single active task is `CONT-P02-ONB-001` under gate `P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`. No P02 deliverables are ratified yet. Context-efficiency governance (including context-policy and runtime-context discovery) may be discovered in P02 under separately approved Product Owner-approved deliverable plans. Architecture and generator implementation remain P03/P04-gated. P03, P04, and P05 remain not active.
 
 ## Phase Boundaries
 
@@ -82,5 +77,5 @@ This roadmap update does not authorize:
 - Ratification is recorded in `governance/DECISION_LOG.md` as `DEC-P01-B5-002`.
 - Document status is `ratified_evolving`; frontmatter records `ratification_status: RATIFIED`, `last_ratified_by: Rauf Alizada`, and `last_ratified_at: 2026-06-21`.
 - Future changes to this roadmap require a separately approved Product Owner-ratified governance change.
-- Ratification of this roadmap update does not authorize P01 closeout, P02 activation, architecture evaluation or selection, implementation work, implementation-stack selection, license selection or creation, dependency installation, hook activation, settings changes, adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), or project-code work; each of those requires separate explicit Product Owner approval.
-- P01 closeout is recorded separately as `DEC-P01-CLOSEOUT-001`. P01 closeout does not authorize P02 activation, P02 task creation, architecture, implementation, license, dependency, hook activation, settings, adapter-rule changes, or project-code work.
+- The Bundle 5 roadmap ratification did not itself authorize P01 closeout or P02 activation; those transitions are recorded separately under `DEC-P01-CLOSEOUT-001` and `DEC-P02-ACTIVATION-001`.
+- P02 is active under `DEC-P02-ACTIVATION-001`. This activation does not authorize P03/P04/P05, architecture evaluation, implementation, license, dependency, hook activation, settings changes, adapter-rule changes, runtime context pack generation, context-policy ratification, or project-code work.

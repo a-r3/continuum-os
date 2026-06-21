@@ -2,64 +2,59 @@
 
 ## Phase
 
-P01 — Founder Discovery and Product Definition (closed/completed)
+P02 — Domain, Governance, and Security Discovery
 
-## Current P01 Sub-State
+## Current P02 Sub-State
 
-P01 closed/completed; no current active sub-state.
+P02 active under gate `P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`; active task `CONT-P02-ONB-001`.
 
 ## Status
 
-- P01 is **closed/completed**.
-- Founder onboarding (`CONT-P01-ONB-001`) is complete.
-- Consolidation planning task `CONT-P01-CONSOL-001` is closed/completed.
-- P01 consolidation and ratification plan is ratified.
-- Bundle 1 task `CONT-P01-BUNDLE-001` is closed/completed. Bundle 1 deliverables (`governance/PRODUCT_CHARTER.md` and the Product Owner identity encoding in `governance/PROJECT_STATE.md`) are ratified.
-- Bundle 2 task `CONT-P01-BUNDLE-002` is closed/completed. Bundle 2 deliverable (`governance/GLOSSARY.md`) is ratified (`ratified_evolving` / `RATIFIED`); `DEC-P01-B2-001` recorded.
-- Bundle 3 task `CONT-P01-BUNDLE-003` is closed/completed. Bundle 3 deliverables (`governance/CHANGE_PROTOCOL.md` and `governance/NEVER_AUTOMATIC.md`) are ratified (`ratified_evolving` / `RATIFIED`); `DEC-P01-B3-001` and `DEC-P01-B3-002` recorded.
-- Bundle 4 task `CONT-P01-BUNDLE-004` is closed/completed. Bundle 4 deliverables (`governance/TRUST_BOUNDARIES.md` and `governance/RISK_REGISTER.md` Bundle 4 P01 top-risk update) are ratified (`ratified_evolving` / `RATIFIED`); `DEC-P01-B4-001` and `DEC-P01-B4-002` recorded.
-- Bundle 5 task `CONT-P01-BUNDLE-005` is **closed/completed**. Bundle 5 deliverables (`docs/REFERENCE_STRUCTURE.md`, `governance/ROADMAP.md` Bundle 5 update, `governance/DOCUMENT_REGISTRY.md` Bundle 5 update) are ratified (`ratified_evolving` / `RATIFIED`); `DEC-P01-B5-001`, `DEC-P01-B5-002`, and `DEC-P01-B5-003` recorded.
-- P01 closeout decision `DEC-P01-CLOSEOUT-001` is recorded.
-- **No active task** exists after P01 closeout. Execution is **not authorized**.
-- **P02 is not active.** P02 activation requires separate explicit Product Owner approval.
-- P03, P04, and P05 are not active.
+- P01 is **closed/completed** under `DEC-P01-CLOSEOUT-001`.
+- P02 is **active**.
+- `CONT-P02-ONB-001` is the **single active task** (`lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `ratification_status: APPROVED_FOR_EXECUTION`, `active: true`, `execution_authorized: true`).
+- Current gate: `P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`.
+- P02 activation decision `DEC-P02-ACTIVATION-001` is recorded.
+- First P02 focus is discovery and planning around domain, governance, security, trust requirements, and token-efficiency governance (including context-policy and runtime-context discovery to be scoped under future Product Owner-approved deliverable plans).
+- No P02 deliverables are ratified yet.
+- P03, P04, and P05 are **not active**.
 - No architecture, implementation, license, dependency, hook, settings, adapter-rule, or project-code work is authorized.
-- Adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) have not been modified.
+- Adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) have not been modified under this activation.
 - Hooks remain unregistered and inactive.
+- No context-policy files have been ratified or created. No runtime context pack has been generated.
 
 ## Objective
 
-No phase objective is currently active. P01 closeout has occurred. The next phase objective will be defined when the Product Owner explicitly approves P02 activation under a separately approved P02 task.
+P02 objective: prepare and ratify domain, governance, and security discovery deliverables that resolve open questions blocking architecture evaluation, including token-efficiency / context-policy discovery. Each deliverable requires a separately approved Product Owner ratification.
 
 ## Current Gate
 
-- Current gate: none
-- Gate status: closed
+- Current gate: `P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`
+- Gate status: `ACTIVATED`
 
 ## Prohibited Work
 
-- Activating P02 without explicit Product Owner approval.
-- Creating a P02 task without explicit Product Owner approval.
-- Starting P03, P04, or P05.
-- Modifying adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`).
-- Modifying hooks (`.claude/hooks/**`).
-- Modifying `.claude/settings.json` or `.claude/settings.local.example.json`.
-- Modifying ratified governance documents (`PRODUCT_CHARTER.md`, `GLOSSARY.md`, `CHANGE_PROTOCOL.md`, `NEVER_AUTOMATIC.md`, `TRUST_BOUNDARIES.md`, `RISK_REGISTER.md`, `ROADMAP.md`, `DOCUMENT_REGISTRY.md`, `REFERENCE_STRUCTURE.md`) outside a separately approved gate.
-- Creating `governance/PRODUCT_OWNER.md`.
-- Architecture evaluation outside approved P03 tasks.
-- Implementation work.
+- Architecture evaluation or selection.
+- Implementation.
 - Implementation-stack selection.
-- License selection without Product Owner decision.
+- License selection or creation.
 - ADR creation.
 - Dependency installation.
-- Hook registration or activation.
+- Hook registration, modification, or activation.
 - Settings changes.
 - Project-code changes.
-- Ratifying product or governance decisions; only the Product Owner ratifies.
+- Adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`).
+- Runtime context pack generation.
+- Context-policy ratification.
+- Product Owner identity changes.
+- Creating `governance/PRODUCT_OWNER.md`.
+- Modifying ratified governance documents (`PRODUCT_CHARTER.md`, `GLOSSARY.md`, `CHANGE_PROTOCOL.md`, `NEVER_AUTOMATIC.md`, `TRUST_BOUNDARIES.md`, `RISK_REGISTER.md`, `ROADMAP.md`, `DOCUMENT_REGISTRY.md`, `docs/REFERENCE_STRUCTURE.md`) outside a separately approved gate.
+- Activating P03, P04, or P05.
+- Ratifying any P02 deliverable without explicit Product Owner approval.
 
 ## Phase Boundary
 
-- Product and domain discovery occur in P01/P02 as authorized. P01 is now closed; P02 is not active.
+- Product and domain discovery occur in P01/P02 as authorized. P01 is closed; P02 is now active.
 - Architecture evaluation, tradeoff analysis, technical spikes, recommendations, and ADR preparation occur only within approved P03 tasks.
 - P04 is the implementation-readiness gate.
 - P05 is implementation.
@@ -67,11 +62,11 @@ No phase objective is currently active. P01 closeout has occurred. The next phas
 
 ## Exit Conditions
 
-P01 exit conditions are satisfied:
+P02 exit conditions (future):
 
-- Consolidation and ratification plan ratified.
-- Bundle 1 through Bundle 5 deliverables ratified.
-- P01 closeout is recorded by `DEC-P01-CLOSEOUT-001`; this document records the closed/completed P01 state with no active task remaining.
-- Product Owner approved P01 closeout via `DEC-P01-CLOSEOUT-001`.
+- P02 discovery deliverables drafted and ratified under explicit Product Owner approval.
+- Each ratified deliverable recorded as a distinct decision in `governance/DECISION_LOG.md`.
+- Active-task invariant preserved across every transition.
+- P02 closeout decision recorded when the Product Owner closes P02.
 
-Transition to P02 requires a separately approved Product Owner P02 activation task.
+Transition to P03 requires a separately approved Product Owner P03 activation task following P02 closeout.

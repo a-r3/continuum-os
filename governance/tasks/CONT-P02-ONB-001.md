@@ -2,12 +2,12 @@
 task_id: CONT-P02-ONB-001
 title: P02 Domain, Governance, and Security Discovery
 lane: Strict
-lifecycle_status: PROPOSED
-current_gate: NONE
-gate_status: NOT_REQUESTED
-ratification_status: NOT_RATIFIED
-active: false
-execution_authorized: false
+lifecycle_status: IN_PROGRESS
+current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY
+gate_status: ACTIVATED
+ratification_status: APPROVED_FOR_EXECUTION
+active: true
+execution_authorized: true
 predecessor_task: CONT-P01-BUNDLE-005
 source_decision: DEC-P01-CLOSEOUT-001
 product_owner: Rauf Alizada
@@ -19,20 +19,20 @@ product_owner: Rauf Alizada
 
 The sole Product Owner / sole project authority / sole ratification authority for v1 is `Rauf Alizada`. No other identity is valid for project governance, participation, approval, ratification, or authority. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` does not participate in this project in any form and must not be encoded as a project identity; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority. Only `Rauf Alizada` may activate, ratify, or close P02 work. This task does not change Product Owner identity and does not delegate ratification authority.
 
-## Proposal Notice
+## Activation Notice
 
-This task is **proposed only and inactive**. It has not been activated. Execution is **not authorized**. Frontmatter records `lifecycle_status: PROPOSED`, `gate_status: NOT_REQUESTED`, `ratification_status: NOT_RATIFIED`, `active: false`, `execution_authorized: false`. The task exists for Product Owner review prior to a separately approved activation transition.
+This task is **active**. It was proposed and inactive in commit `120a20d10387d83e0e0dc425903f97108c84c4ad` and is activated under `DEC-P02-ACTIVATION-001`. Frontmatter records `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `ratification_status: APPROVED_FOR_EXECUTION`, `active: true`, `execution_authorized: true`. Execution is authorized **only within the scope boundaries defined below**. Drafting and ratifying any P02 deliverable still requires a separately approved Product Owner deliverable plan and approval-verb invocation.
 
 ## Status
 
-- Repository state: P01 closed/completed under `DEC-P01-CLOSEOUT-001`; no active task; execution not authorized; P02 not active.
-- This task: proposed/inactive. No P02 sub-state is active. No gate is open. No deliverable drafts exist yet.
+- Repository state: P01 closed/completed under `DEC-P01-CLOSEOUT-001`; P02 active under `DEC-P02-ACTIVATION-001`.
+- This task: active and authorized as the single active task under gate `P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`. No P02 deliverables are ratified yet. No deliverable drafts exist yet. No context-policy files exist. No runtime context pack exists.
 - Predecessor `CONT-P01-BUNDLE-005` is closed/completed (`lifecycle_status: DONE`, `gate_status: COMPLETED`, `ratification_status: RATIFIED`, `active: false`, `execution_authorized: false`).
-- Active-task invariant: preserved as zero active tasks in an explicit approval-wait state.
+- Active-task invariant: preserved as exactly one active task (`CONT-P02-ONB-001`).
 
 ## Objective
 
-Prepare P02 discovery work after P01 closeout, focused on:
+Conduct P02 discovery work after P01 closeout, covering:
 
 - domain model discovery;
 - governance model refinement;
@@ -41,34 +41,30 @@ Prepare P02 discovery work after P01 closeout, focused on:
 - open questions for Product Owner review;
 - P02 evidence and validation expectations.
 
-The objective of this proposed task is to define and stage the discovery surface for Product Owner review. The objective is not execution; execution is gated on a separately approved activation.
+This task carries the P02 discovery surface under explicit Product Owner approval. Each individual deliverable still requires a separately approved Product Owner deliverable plan before drafting begins.
 
 ## Scope
 
-Future P02 work, **only after separate Product Owner activation approval**, may include:
+P02 discovery work authorized under this task, executed only under separately approved Product Owner deliverable plans and approval verbs, includes:
 
 - identifying core product/domain entities and their relationships;
-- defining governance concepts that must remain enforceable across future phases;
+- refining governance concepts that must remain enforceable across future phases;
 - identifying security boundaries, sensitive data classes, and trust assumptions;
 - defining open questions that must be resolved before architecture evaluation;
 - preparing reviewable P02 deliverable drafts;
 - updating handoff/session evidence under the active-task invariant;
 - preserving the approval-verb discipline (`prepare diff` / `commit only` / `commit and push`).
 
-No scope item above is authorized until activation. Listing the item here does not authorize the item.
+Each scope item above requires a separately approved Product Owner deliverable plan before any drafting begins. Activation of this task does not by itself authorize any specific deliverable.
 
 ## Non-Scope
 
-This task **explicitly prohibits**:
+This active P02 discovery task explicitly does not authorize:
 
-- activating P02 now;
-- creating an active task now;
-- modifying `governance/ACTIVE_TASK.md`;
-- modifying `governance/CURRENT_PHASE.md`;
-- modifying `governance/PROJECT_STATE.md`;
-- modifying `governance/ROADMAP.md`;
-- modifying `governance/DOCUMENT_REGISTRY.md`;
-- modifying `governance/DECISION_LOG.md`;
+- drafting any P02 deliverable without a separately approved Product Owner deliverable plan;
+- ratifying any P02 deliverable without explicit Product Owner ratification;
+- creating context-policy files (`CONTEXT_POLICY.md`, `CONTEXT_BUDGET.md`, `CONTEXT_RETRIEVAL_PROTOCOL.md`, or equivalents) without a separately approved Product Owner deliverable plan;
+- generating any runtime context pack;
 - architecture evaluation or selection;
 - implementation or implementation-stack selection;
 - license selection or creation;
@@ -85,20 +81,20 @@ This task **explicitly prohibits**:
 
 ## Target Outputs
 
-The following are **target outputs of future activated work**, not deliverables of this proposed-only state:
+Target outputs for this active P02 discovery task, each produced only under a separately approved Product Owner deliverable plan:
 
 - a domain-model discovery surface covering entities, relationships, and lifecycle concepts;
 - a governance-model refinement surface covering authority, change protocol, never-automatic guardrail, and trust boundaries as they evolve from P01;
 - a security and trust-requirements surface covering data classes, sensitive boundaries, and threat assumptions;
 - a data-classification and sensitive-boundary analysis suitable for downstream architecture work;
 - an updated `governance/OPEN_QUESTIONS.md` projection of unresolved questions blocking architecture evaluation;
-- P02 evidence and validation expectations encoded into the task record and session log on activation.
+- P02 evidence and validation expectations encoded into the task record and session log per deliverable.
 
-No target output above is produced under this proposed-only state. Each target output requires a separately approved drafting and ratification transition after activation.
+Each target output requires a separately approved drafting plan and a separate ratification transition. No target output is authorized by activation alone.
 
 ## Acceptance Criteria
 
-Acceptance criteria for **future activated P02 work** (not this proposed state):
+Acceptance criteria for this active P02 task:
 
 - P02 deliverables drafted and ratified under explicit Product Owner approval verbs;
 - each ratified deliverable recorded as a distinct decision in `governance/DECISION_LOG.md`;
@@ -107,7 +103,7 @@ Acceptance criteria for **future activated P02 work** (not this proposed state):
 - no architecture, implementation, license, dependency, hook, settings, adapter-rule, or project-code change occurs without separate explicit Product Owner approval;
 - Product Owner identity `Rauf Alizada` preserved as sole authority throughout.
 
-Acceptance criteria for **this proposed state** are limited to: frontmatter encodes proposed/inactive status, required sections are present, identity encoding is correct, and no prohibited mutation occurred during preparation.
+Closeout of this task requires a separately approved Product Owner closeout decision after all approved P02 deliverables are ratified.
 
 ## Stop Conditions
 
@@ -125,28 +121,42 @@ Stop and escalate to the Product Owner on any of:
 
 ## Evidence Requirements
 
-For this proposed-only state:
+For this active P02 discovery task:
 
-- task file `governance/tasks/CONT-P02-ONB-001.md` exists with required frontmatter and sections;
-- `governance/HANDOFF.md` reflects `P02_PROPOSED_TASK_AWAITING_PRODUCT_OWNER_REVIEW`;
-- `governance/SESSION_LOG.md` contains a dated entry recording proposed-task preparation;
-- no other file modified or created;
-- no staging, commit, or push performed;
+- task file `governance/tasks/CONT-P02-ONB-001.md` reflects activated frontmatter and sections consistent with the activated state;
+- `governance/ACTIVE_TASK.md` records `CONT-P02-ONB-001` as the single active task with `execution_authorized: true`;
+- `governance/CURRENT_PHASE.md` reflects P02 as the active phase under gate `P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`;
+- `governance/PROJECT_STATE.md` reflects the active P02 state and the activation decision `DEC-P02-ACTIVATION-001`;
+- `governance/HANDOFF.md` reflects `P02_ACTIVE_AWAITING_FIRST_DISCOVERY_PLAN`;
+- `governance/SESSION_LOG.md` contains a dated entry recording P02 activation;
+- `governance/DECISION_LOG.md` records `DEC-P02-ACTIVATION-001`;
+- the active-task invariant holds with exactly one active task;
 - validation suite passes (`git diff --check` clean; no path leakage; no pycache; JSON OK; bash syntax OK; AST OK; hook fixture suite `54 pass / 0 fail`).
 
-For future activated work, evidence requirements are defined per the Change Protocol and recorded into this task record on activation.
+Evidence requirements for each subsequent P02 deliverable are defined per the Change Protocol and appended to this task record on the deliverable's approval transition.
 
-## Activation Requirement
+## Activation Status
 
-Activation requires a **separate explicit Product Owner approval** that:
+This task is **active** under `DEC-P02-ACTIVATION-001`. Activation:
 
-- activates `CONT-P02-ONB-001` (flips `lifecycle_status` to `IN_PROGRESS`, `active: true`, `execution_authorized: true`, and assigns `current_gate` / `gate_status` as required);
-- updates `governance/ACTIVE_TASK.md` to record `CONT-P02-ONB-001` as the single active task and `execution_authorized: true`;
-- updates `governance/CURRENT_PHASE.md` to reflect P02 as the active phase;
-- updates `governance/PROJECT_STATE.md` to reflect active P02 state;
-- updates `governance/HANDOFF.md` to the activated state;
-- updates `governance/SESSION_LOG.md` with the activation entry;
-- preserves the active-task invariant (exactly one active task after activation);
-- does not authorize architecture, implementation, license, dependency, hook, settings, adapter-rule, or project-code work unless separately approved.
+- flipped frontmatter to `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `ratification_status: APPROVED_FOR_EXECUTION`, `active: true`, `execution_authorized: true`;
+- recorded `CONT-P02-ONB-001` as the single active task in `governance/ACTIVE_TASK.md`;
+- updated `governance/CURRENT_PHASE.md`, `governance/PROJECT_STATE.md`, `governance/HANDOFF.md`, `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, and `governance/SESSION_LOG.md` to the activated state;
+- preserved the active-task invariant (zero → one);
+- did **not** authorize drafting any P02 deliverable, creating context-policy files (`CONTEXT_POLICY.md`, `CONTEXT_BUDGET.md`, `CONTEXT_RETRIEVAL_PROTOCOL.md`, or any equivalent), generating any runtime context pack, modifying adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), modifying hooks, modifying `.claude/settings.json`, changing architecture, implementation, license, dependencies, settings, or project code, or starting P03/P04/P05.
 
-Until that separately approved activation transition occurs, this task remains proposed/inactive and execution is not authorized.
+Each subsequent P02 deliverable requires a separately approved Product Owner deliverable plan and approval-verb invocation. Closeout of this task requires a separately approved Product Owner closeout decision.
+
+## P02 Activation Diff Evidence
+
+- P01 is closed/completed under `DEC-P01-CLOSEOUT-001`.
+- The proposed inactive `CONT-P02-ONB-001` task was committed in `120a20d10387d83e0e0dc425903f97108c84c4ad`.
+- This diff activates `CONT-P02-ONB-001`: frontmatter flipped to `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `ratification_status: APPROVED_FOR_EXECUTION`, `active: true`, `execution_authorized: true`.
+- `CONT-P02-ONB-001` becomes the single active task. The active-task invariant transitions from zero active tasks to exactly one active task.
+- P02 becomes active. P01 remains closed/completed. P03, P04, and P05 remain not active.
+- No P02 deliverables are ratified under this diff.
+- No context-policy files (`CONTEXT_POLICY.md`, `CONTEXT_BUDGET.md`, `CONTEXT_RETRIEVAL_PROTOCOL.md`, or any equivalent) are created under this diff.
+- No runtime context pack is generated under this diff.
+- No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes occur under this diff.
+- Decision recorded by this activation: `DEC-P02-ACTIVATION-001`.
+- Product Owner / sole ratification authority for v1: `Rauf Alizada`.
