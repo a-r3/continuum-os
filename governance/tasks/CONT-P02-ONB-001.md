@@ -255,13 +255,14 @@ This discovery plan has been **approved** under `DEC-P02-DISCOVERY-PLAN-001`. Th
 
 ## P02 Context-Policy Deliverable Draft Plan 001
 
-- status: `PROPOSED_DRAFT_PLAN`.
-- This plan is for Product Owner review only.
-- This plan is not yet approved for drafting.
-- This plan does not create context-policy files.
-- This plan does not generate runtime context packs.
-- This plan does not ratify any P02 deliverable.
-- This plan does not authorize architecture, implementation, hooks, adapter-rule changes, license, dependency, settings, or project-code changes.
+- status: `APPROVED_FOR_DRAFTING`.
+- This draft plan was proposed in commit `0d0d44b5cec57e0d61941e660349da27613c30cc` and is approved under `DEC-P02-CONTEXT-DRAFT-PLAN-001`.
+- Approval authorizes future preparation of proposed context-policy deliverable draft files under `CONT-P02-ONB-001`.
+- Each actual file-creation or drafting step still requires explicit Product Owner approval using the approval-verb vocabulary (`prepare diff` / `commit only` / `commit and push`).
+- This approval does **not** ratify any P02 deliverable.
+- This approval diff does **not** create any context-policy file.
+- This approval does **not** generate any runtime context pack.
+- This approval does **not** authorize architecture, implementation, hooks, adapter-rule changes, license, dependency, settings, or project-code changes.
 
 ### Plan Objective
 
@@ -377,4 +378,15 @@ This plan explicitly prohibits:
 
 ### Approval Requirement
 
-The Product Owner must separately approve this draft plan before any context-policy deliverable file is created.
+This draft plan has been **approved** under `DEC-P02-CONTEXT-DRAFT-PLAN-001`. The next step requires a separate Product Owner approval to prepare the first proposed context-policy deliverable file draft. No file-creation or drafting begins until that separately approved plan is recorded.
+
+### Draft Plan Approval Evidence
+
+- draft-plan proposal commit: `0d0d44b5cec57e0d61941e660349da27613c30cc`.
+- approval decision: `DEC-P02-CONTEXT-DRAFT-PLAN-001`.
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task.
+- No P02 deliverable ratified under this approval.
+- No context-policy files (`CONTEXT_POLICY.md`, `CONTEXT_BUDGET.md`, `CONTEXT_RETRIEVAL_PROTOCOL.md`, or any equivalent) created under this approval.
+- No runtime context pack generated under this approval.
+- No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes occur under this approval.

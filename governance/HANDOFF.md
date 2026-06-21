@@ -1,8 +1,8 @@
 ---
-handoff_status: P02_CONTEXT_POLICY_DELIVERABLE_DRAFT_PLAN_AWAITING_PRODUCT_OWNER_REVIEW
+handoff_status: P02_CONTEXT_POLICY_DRAFT_PLAN_APPROVED_AWAITING_FIRST_FILE_DRAFT
 current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY
 gate_status: ACTIVATED
-next_action: PRODUCT_OWNER_REVIEW_OF_P02_CONTEXT_POLICY_DELIVERABLE_DRAFT_PLAN_001
+next_action: PRODUCT_OWNER_REVIEW_OF_FIRST_P02_CONTEXT_POLICY_FILE_DRAFT_PLAN
 known_blockers: []
 ---
 
@@ -16,7 +16,9 @@ P02 — Domain, Governance, and Security Discovery is **active** under `DEC-P02-
 
 `P02 Discovery Plan 001 - Token-Efficiency and Context Policy Discovery` is **approved** under `DEC-P02-DISCOVERY-PLAN-001` (`status: APPROVED_FOR_DRAFTING` in `CONT-P02-ONB-001`). Approval authorizes future preparation of proposed context-policy deliverable drafts under separate Product Owner approval verbs. No P02 deliverable has been drafted or ratified. No context-policy files have been created. No runtime context pack has been generated.
 
-A new proposed draft plan, `P02 Context-Policy Deliverable Draft Plan 001`, has been appended to `CONT-P02-ONB-001` with `status: PROPOSED_DRAFT_PLAN`. This draft plan is for Product Owner review only and is not yet approved for drafting. The next expected action is Product Owner review of `P02 Context-Policy Deliverable Draft Plan 001`. No context-policy file has been created. No runtime context pack has been generated. No P02 deliverable has been drafted or ratified. No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes have occurred.
+`P02 Context-Policy Deliverable Draft Plan 001` is **approved** under `DEC-P02-CONTEXT-DRAFT-PLAN-001` (`status: APPROVED_FOR_DRAFTING` in `CONT-P02-ONB-001`). Approval authorizes future preparation of proposed context-policy deliverable draft files under separate Product Owner approval verbs. No P02 deliverable has been drafted or ratified. No context-policy files have been created. No runtime context pack has been generated.
+
+The next expected work is a **separate Product Owner-approved prepare-diff plan to create the first proposed context-policy file draft**. No file-creation or drafting begins until that separately approved plan is recorded.
 
 No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes have occurred.
 
@@ -24,7 +26,7 @@ The Product Owner / sole project authority / sole ratification authority for v1 
 
 ## Next Action
 
-- Product Owner review of `P02 Context-Policy Deliverable Draft Plan 001` (proposed in `CONT-P02-ONB-001` with `status: PROPOSED_DRAFT_PLAN`). No deliverable drafting, context-policy file creation, or runtime context pack generation is authorized until this proposed draft plan is separately approved by the Product Owner.
+- Product Owner review and approval of a **separate prepare-diff plan to create the first proposed P02 context-policy file draft** under approved `P02 Context-Policy Deliverable Draft Plan 001`. No file-creation, context-policy file creation, or runtime context pack generation is authorized until that separately approved file-draft plan is recorded.
 
 ## Actions Not Yet Authorized
 
@@ -68,7 +70,7 @@ The Product Owner / sole project authority / sole ratification authority for v1 
 - Bundle 1, Bundle 2, Bundle 3, Bundle 4, and Bundle 5 are closed/completed.
 - P01 is **closed/completed** under `DEC-P01-CLOSEOUT-001`.
 - P02 is **active** under `DEC-P02-ACTIVATION-001`.
-- `governance/DECISION_LOG.md` records `DEC-P01-B1-001`, `DEC-P01-B1-002`, `DEC-P01-B2-001`, `DEC-P01-B3-001`, `DEC-P01-B3-002`, `DEC-P01-B4-001`, `DEC-P01-B4-002`, `DEC-P01-B5-001`, `DEC-P01-B5-002`, `DEC-P01-B5-003`, `DEC-P01-CLOSEOUT-001`, `DEC-P02-ACTIVATION-001`, and `DEC-P02-DISCOVERY-PLAN-001`.
+- `governance/DECISION_LOG.md` records `DEC-P01-B1-001`, `DEC-P01-B1-002`, `DEC-P01-B2-001`, `DEC-P01-B3-001`, `DEC-P01-B3-002`, `DEC-P01-B4-001`, `DEC-P01-B4-002`, `DEC-P01-B5-001`, `DEC-P01-B5-002`, `DEC-P01-B5-003`, `DEC-P01-CLOSEOUT-001`, `DEC-P02-ACTIVATION-001`, `DEC-P02-DISCOVERY-PLAN-001`, and `DEC-P02-CONTEXT-DRAFT-PLAN-001`.
 - Exactly one active task: `CONT-P02-ONB-001`. Execution is authorized only within its scope.
 - No P02 deliverables ratified. No context-policy files created. No runtime context pack generated.
 - Adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) have not been modified.

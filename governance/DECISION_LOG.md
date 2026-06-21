@@ -28,6 +28,7 @@ Only explicit Product Owner decisions are recorded here.
 | DEC-P01-CLOSEOUT-001 | Ratified | Close P01 Founder Discovery and Product Definition after completion and ratification of Bundles 1–5. See `## DEC-P01-CLOSEOUT-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `4a4529e5dc40d6d807cc22eab2c18f70aafb8ef5` + P01 closeout diff |
 | DEC-P02-ACTIVATION-001 | Ratified | Activate P02 Domain, Governance, and Security Discovery by activating `CONT-P02-ONB-001` as the single active task. See `## DEC-P02-ACTIVATION-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `120a20d10387d83e0e0dc425903f97108c84c4ad` (proposed inactive P02 task) + P02 activation diff |
 | DEC-P02-DISCOVERY-PLAN-001 | Ratified | Approve `P02 Discovery Plan 001 - Token-Efficiency and Context Policy Discovery` for drafting preparation under `CONT-P02-ONB-001`. See `## DEC-P02-DISCOVERY-PLAN-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `4a66193344e4151d411964ec047ad7ba3f181536` (proposed P02 Discovery Plan 001) + P02 Discovery Plan 001 approval diff |
+| DEC-P02-CONTEXT-DRAFT-PLAN-001 | Ratified | Approve `P02 Context-Policy Deliverable Draft Plan 001` for preparing proposed context-policy deliverable drafts under `CONT-P02-ONB-001`. See `## DEC-P02-CONTEXT-DRAFT-PLAN-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `0d0d44b5cec57e0d61941e660349da27613c30cc` (proposed P02 Context-Policy Deliverable Draft Plan 001) + P02 Context-Policy Deliverable Draft Plan 001 approval diff |
 
 ## DEC-P01-B1-001
 
@@ -197,3 +198,16 @@ Only explicit Product Owner decisions are recorded here.
 - reviewed_by: `Product Owner`
 - evidence: commit `4a66193344e4151d411964ec047ad7ba3f181536` (proposed P02 Discovery Plan 001) and the P02 Discovery Plan 001 approval diff.
 - scope_note: Approves the discovery plan only. Authorizes future preparation of proposed context-policy deliverable drafts under separate Product Owner approval verbs. Does not ratify `CONTEXT_POLICY.md`, `CONTEXT_BUDGET.md`, or `CONTEXT_RETRIEVAL_PROTOCOL.md`; does not create context-policy files in this diff; does not generate runtime context packs; does not authorize architecture evaluation, implementation, hooks, adapter-rule changes, license, dependency, settings, project-code changes, or P03/P04/P05 activation.
+
+## DEC-P02-CONTEXT-DRAFT-PLAN-001
+
+- decision_id: `DEC-P02-CONTEXT-DRAFT-PLAN-001`
+- status: `RATIFIED`
+- decision: Approve `P02 Context-Policy Deliverable Draft Plan 001` for preparing proposed context-policy deliverable drafts under `CONT-P02-ONB-001`.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-21`
+- source_task: `CONT-P02-ONB-001`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- evidence: commit `0d0d44b5cec57e0d61941e660349da27613c30cc` (proposed P02 Context-Policy Deliverable Draft Plan 001) and the P02 Context-Policy Deliverable Draft Plan 001 approval diff.
+- scope_note: Approves the draft plan only. Authorizes future preparation of proposed context-policy deliverable draft files under separate Product Owner approval verbs. Does not ratify `CONTEXT_POLICY.md`, `CONTEXT_BUDGET.md`, or `CONTEXT_RETRIEVAL_PROTOCOL.md`; does not create context-policy files in this diff; does not generate runtime context packs; does not authorize architecture evaluation, implementation, hooks, adapter-rule changes, license, dependency, settings, project-code changes, or P03/P04/P05 activation.

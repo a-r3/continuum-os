@@ -590,3 +590,20 @@ Append-only summaries of completed sessions belong here.
 - No staging, commit, or push performed.
 - No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes.
 - Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
+
+## 2026-06-21 - P02 Context-Policy Deliverable Draft Plan 001 Approved
+
+- Product Owner accepted P02 Context-Policy Deliverable Draft Plan 001 commit `0d0d44b5cec57e0d61941e660349da27613c30cc`.
+- Product Owner approved preparation of a draft-plan approval diff as prepare-diff-only.
+- `P02 Context-Policy Deliverable Draft Plan 001` marked `APPROVED_FOR_DRAFTING` in `governance/tasks/CONT-P02-ONB-001.md`.
+- `DEC-P02-CONTEXT-DRAFT-PLAN-001` added to `governance/DECISION_LOG.md` (table row + provenance block).
+- `governance/HANDOFF.md` updated to `handoff_status: P02_CONTEXT_POLICY_DRAFT_PLAN_APPROVED_AWAITING_FIRST_FILE_DRAFT` and `next_action: PRODUCT_OWNER_REVIEW_OF_FIRST_P02_CONTEXT_POLICY_FILE_DRAFT_PLAN`.
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task. The active-task invariant holds.
+- No context-policy files created (`CONTEXT_POLICY.md`, `CONTEXT_BUDGET.md`, `CONTEXT_RETRIEVAL_PROTOCOL.md`, or any equivalent).
+- No runtime context pack generated.
+- No P02 deliverable drafted.
+- No P02 deliverable ratified.
+- No staging, commit, or push performed.
+- No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes.
+- Canonical Product Owner / sole ratification authority for v1: `Rauf Alizada`.
