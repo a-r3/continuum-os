@@ -919,3 +919,22 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No implementation, hooks, adapter rules, dependencies, settings, license, or project-code changes occurred.
+
+## P02 Risk Register Projection - Prepared
+
+- updated file: `governance/RISK_REGISTER.md`.
+- source decisions:
+  - `DEC-P02-DOMAIN-DISCOVERY-001`;
+  - `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`;
+  - `DEC-P02-DATA-CLASSIFICATION-001`.
+- source open-questions projection commit: `e0dba07e759bfded5e4f7bc1222f2b79c8a50a7f`.
+- purpose: project P02 governance, security, data-classification, and context risks into the canonical risk register.
+- new risk IDs added: `P02-RISK-001..019` (19 P02 risks total, all `Proposed; open`).
+- no risk resolved, accepted, mitigated, or closed.
+- no ratification occurred.
+- no `governance/OPEN_QUESTIONS.md` update occurred.
+- no `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, or `governance/DECISION_LOG.md` update occurred.
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
+- No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
+- No implementation, hooks, adapter rules, dependencies, settings, license, architecture, schema, storage, or project-code changes occurred.
