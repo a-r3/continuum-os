@@ -901,3 +901,21 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No hook, adapter-rule, architecture, schema, storage, implementation, dependency, settings, license, or project-code changes occurred.
+
+## P02 Open Questions Projection - Prepared
+
+- updated file: `governance/OPEN_QUESTIONS.md`.
+- source decisions: `DEC-P02-DOMAIN-DISCOVERY-001`, `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DATA-CLASSIFICATION-001`.
+- source task: `CONT-P02-ONB-001`.
+- drafted by: `Claude Code`.
+- reviewed by: `Product Owner` (pending).
+- purpose: project unresolved Product Owner ambiguities surfaced by the ratified P02 discovery artifacts into the canonical open-questions tracker.
+- new question IDs added: `OQ-P02-D-001..009`, `OQ-P02-S-001..009`, `OQ-P02-C-001..010` (28 P02 questions total, all `Open`).
+- no question resolved.
+- no ratification occurred.
+- no `governance/RISK_REGISTER.md` update occurred.
+- no `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, or `governance/DECISION_LOG.md` update occurred.
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
+- No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
+- No implementation, hooks, adapter rules, dependencies, settings, license, or project-code changes occurred.
