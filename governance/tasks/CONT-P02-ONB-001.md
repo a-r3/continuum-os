@@ -846,3 +846,21 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No implementation, hooks, adapter rules, dependencies, settings, license, or project-code changes occurred.
+
+## P02 Security and Trust Requirements Draft - Ratification Prepared
+
+- document: `governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md`.
+- ratification decision: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`.
+- status: `RATIFIED` / `RATIFIED`.
+- ratified_by: `Rauf Alizada` (Product Owner).
+- ratified_at: `2026-06-21`.
+- evidence: commit `5f65e952ae5c8322654166cb298009286e69a8f4` (proposed draft) plus this ratification diff.
+- Candidate authority, mutation, evidence, generated-context, secret-handling, agent-behavior, and misuse/failure requirements remain candidate requirements unless separately converted into binding controls, policies, hooks, or implementation work via a future Product Owner-approved gate.
+- No `governance/OPEN_QUESTIONS.md` update occurred.
+- No `governance/GLOSSARY.md` update occurred.
+- No `governance/RISK_REGISTER.md` or `governance/ROADMAP.md` update occurred.
+- `governance/DOCUMENT_REGISTRY.md` updated only to register the ratified document.
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
+- No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
+- No hook, adapter-rule, architecture, schema, storage, implementation, dependency, settings, license, or project-code changes occurred.

@@ -1,6 +1,9 @@
 ---
-document_status: PROPOSED_INACTIVE
-ratification_status: NOT_RATIFIED
+document_status: RATIFIED
+ratification_status: RATIFIED
+ratification_decision: DEC-P02-SECURITY-TRUST-REQUIREMENTS-001
+ratified_by: Rauf Alizada
+ratified_at: 2026-06-21
 source_task: CONT-P02-ONB-001
 source_plan: P02-DISCOVERY-PLAN-002
 source_decision: DEC-P02-DISCOVERY-PLAN-002
@@ -12,9 +15,11 @@ product_owner: Rauf Alizada
 
 ## Status and Authority
 
-- document_status: `PROPOSED_INACTIVE`.
-- ratification_status: `NOT_RATIFIED`.
-- This draft is a Product Owner-review candidate. It does not ratify, define, or amend any security requirement, trust boundary, risk, open question, or registry entry.
+- document_status: `RATIFIED`.
+- ratification_status: `RATIFIED`.
+- ratification_decision: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`.
+- This document is ratified as a P02 security/trust discovery artifact under `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`. Candidate requirements recorded here remain candidate requirements unless separately converted into binding controls, policies, hooks, or implementation work via a future Product Owner-approved gate.
+- Ratification of this document does not create hook, adapter, or implementation authority. No control, policy, hook, settings change, adapter-rule change, dependency, schema, or project code is authorized by this ratification.
 - Authority remains with the Product Owner `Rauf Alizada` as sole ratification authority. The spellings `Raauf Alizada` and the identity `Tural Rahmanli` are not valid project authorities.
 - Source basis is the approved `P02 Discovery Plan 002` under `DEC-P02-DISCOVERY-PLAN-002`, drafted within `CONT-P02-ONB-001`, with related domain discovery context from `DEC-P02-DOMAIN-DISCOVERY-001`.
 - No content in this draft selects implementation, hook code, adapter implementation, database/schema/storage, dependencies, settings, license, or project code.

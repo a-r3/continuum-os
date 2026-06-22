@@ -1,8 +1,8 @@
 ---
-handoff_status: P02_SECURITY_TRUST_REQUIREMENTS_DRAFT_PROPOSED_AWAITING_PRODUCT_OWNER_REVIEW
+handoff_status: P02_SECURITY_TRUST_REQUIREMENTS_DRAFT_RATIFICATION_PREPARED_AWAITING_PRODUCT_OWNER_REVIEW
 current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY
 gate_status: ACTIVATED
-next_action: PRODUCT_OWNER_REVIEW_OF_P02_SECURITY_TRUST_REQUIREMENTS_DRAFT
+next_action: PRODUCT_OWNER_REVIEW_OF_P02_SECURITY_TRUST_REQUIREMENTS_DRAFT_RATIFICATION
 known_blockers: []
 ---
 
@@ -30,9 +30,9 @@ The P02 context-policy set is **closed** under `DEC-P02-CONTEXT-SET-CLOSEOUT-001
 
 `governance/P02_DOMAIN_DISCOVERY_DRAFT.md` is **ratified** under `DEC-P02-DOMAIN-DISCOVERY-001` (`document_status: RATIFIED` / `ratification_status: RATIFIED`) and registered in `governance/DOCUMENT_REGISTRY.md`. Candidate concepts recorded in that document remain candidate concepts unless separately ratified into `governance/GLOSSARY.md` or a future canonical domain model.
 
-`governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md` has been **created as `PROPOSED_INACTIVE` / `NOT_RATIFIED`** under `DEC-P02-DISCOVERY-PLAN-002` (next approved P02 Discovery Plan 002 workstream — security and trust requirements), with related domain discovery context from `DEC-P02-DOMAIN-DISCOVERY-001`, sourced from `CONT-P02-ONB-001`. The draft is not ratified. No security requirements are final. No `governance/OPEN_QUESTIONS.md` or `governance/RISK_REGISTER.md` update occurred. No `governance/ROADMAP.md` or `governance/DOCUMENT_REGISTRY.md` update occurred. No runtime context pack has been generated. No implementation, hooks, adapter-rule, dependency, settings, license, or project-code changes have occurred. P02 remains active and `CONT-P02-ONB-001` remains the single active task.
+The `governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md` ratification diff is **prepared** under `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`. The document becomes `RATIFIED` / `RATIFIED` after Product Owner approval and commit. Candidate authority, mutation, evidence, generated-context, secret-handling, agent-behavior, and misuse/failure requirements remain candidate requirements unless separately converted into binding controls, policies, hooks, or implementation work via a future Product Owner-approved gate. No `governance/OPEN_QUESTIONS.md`, `governance/GLOSSARY.md`, `governance/RISK_REGISTER.md`, or `governance/ROADMAP.md` update occurred. `governance/DOCUMENT_REGISTRY.md` is updated only to register the ratified document. No runtime context pack has been generated. No hooks, adapter-rule, architecture, schema, implementation, dependency, settings, license, or project-code changes have occurred. P02 remains active and `CONT-P02-ONB-001` remains the single active task.
 
-The next expected work is **Product Owner review of `governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md`**. P02 is not closed. `CONT-P02-ONB-001` remains the single active task. No ratification of the security and trust requirements draft is authorized until a separate Product Owner-approved verb. No runtime pack generation, sibling-deliverable creation, or further ratification is authorized until separately approved by the Product Owner.
+The next expected work is **Product Owner review of the `governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md` ratification diff** under `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`. P02 is not closed. `CONT-P02-ONB-001` remains the single active task. No further ratification is authorized until a separate Product Owner-approved verb. No runtime pack generation, sibling-deliverable creation, or further ratification is authorized until separately approved by the Product Owner.
 
 No architecture, implementation, hooks, adapter-rule, license, dependency, settings, or project-code changes have occurred.
 
@@ -40,7 +40,7 @@ The Product Owner / sole project authority / sole ratification authority for v1 
 
 ## Next Action
 
-- Product Owner review of `governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md`. The draft was created as `PROPOSED_INACTIVE` / `NOT_RATIFIED` under `DEC-P02-DISCOVERY-PLAN-002` with related domain discovery context from `DEC-P02-DOMAIN-DISCOVERY-001`. No ratification has occurred. No security requirements are final. No `governance/OPEN_QUESTIONS.md` or `governance/RISK_REGISTER.md` update occurred. No `governance/ROADMAP.md` or `governance/DOCUMENT_REGISTRY.md` update occurred. P02 remains active under `DEC-P02-ACTIVATION-001`; `CONT-P02-ONB-001` remains the single active task. The context-policy set remains closed under `DEC-P02-CONTEXT-SET-CLOSEOUT-001`. `P02 Discovery Plan 002` remains approved under `DEC-P02-DISCOVERY-PLAN-002`. `governance/P02_DOMAIN_DISCOVERY_DRAFT.md` remains ratified under `DEC-P02-DOMAIN-DISCOVERY-001`. No runtime context pack generation, sibling-deliverable creation, or further ratification is authorized until separately approved by the Product Owner. No implementation, hooks, adapter-rule, dependency, settings, license, or project-code changes have occurred.
+- Product Owner review of the `governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md` ratification diff under `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`. The document becomes `RATIFIED` / `RATIFIED` after Product Owner approval and commit. Candidate requirements remain candidate requirements unless separately converted into binding controls, policies, hooks, or implementation work. No `governance/OPEN_QUESTIONS.md`, `governance/GLOSSARY.md`, `governance/RISK_REGISTER.md`, or `governance/ROADMAP.md` update occurred. `governance/DOCUMENT_REGISTRY.md` is updated only to register the ratified document. P02 remains active under `DEC-P02-ACTIVATION-001`; `CONT-P02-ONB-001` remains the single active task. The context-policy set remains closed under `DEC-P02-CONTEXT-SET-CLOSEOUT-001`. `P02 Discovery Plan 002` remains approved under `DEC-P02-DISCOVERY-PLAN-002`. `governance/P02_DOMAIN_DISCOVERY_DRAFT.md` remains ratified under `DEC-P02-DOMAIN-DISCOVERY-001`. No runtime context pack generation, sibling-deliverable creation, or further ratification is authorized until separately approved by the Product Owner. No hooks, adapter-rule, architecture, schema, implementation, dependency, settings, license, or project-code changes have occurred.
 
 ## Actions Not Yet Authorized
 
