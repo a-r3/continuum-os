@@ -1,6 +1,9 @@
 ---
-document_status: PROPOSED_INACTIVE
-ratification_status: NOT_RATIFIED
+document_status: RATIFIED
+ratification_status: RATIFIED
+ratification_decision: DEC-P02-DATA-CLASSIFICATION-001
+ratified_by: Rauf Alizada
+ratified_at: 2026-06-21
 source_task: CONT-P02-ONB-001
 source_plan: P02-DISCOVERY-PLAN-002
 source_decision: DEC-P02-DISCOVERY-PLAN-002
@@ -13,12 +16,15 @@ product_owner: Rauf Alizada
 
 ## Status and Authority
 
-- document_status: `PROPOSED_INACTIVE`.
-- ratification_status: `NOT_RATIFIED`.
-- This draft is a Product Owner-review candidate. It does not ratify, define, or amend any data classification rule, sensitivity level, handling requirement, risk, open question, or registry entry.
+- document_status: `RATIFIED`.
+- ratification_status: `RATIFIED`.
+- ratification_decision: `DEC-P02-DATA-CLASSIFICATION-001`.
+- This document is ratified as a P02 data-classification/sensitive-boundary discovery artifact. It records candidate data classes, candidate sensitivity levels, candidate secret/credential boundaries, candidate identity/authority boundaries, candidate evidence boundaries, candidate generated-context boundaries, candidate repository file-scope boundaries, candidate external/client data boundaries, and candidate handling requirements.
+- Candidate data classes, sensitivity levels, boundaries, and handling requirements recorded in this document remain candidate concepts unless separately converted into binding policy, controls, hooks, settings, adapter rules, or implementation work via a future Product Owner-approved gate.
+- No hook, adapter, settings, dependency, license, architecture, schema, storage, or implementation authority is created by this ratification.
 - Authority remains with the Product Owner `Rauf Alizada` as sole ratification authority. The spellings `Raauf Alizada` and the identity `Tural Rahmanli` are not valid project authorities.
 - Source basis is the approved `P02 Discovery Plan 002` under `DEC-P02-DISCOVERY-PLAN-002`, drafted within `CONT-P02-ONB-001`, with related domain discovery context from `DEC-P02-DOMAIN-DISCOVERY-001` and related security/trust requirements context from `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`.
-- No content in this draft selects implementation, hook code, adapter implementation, database/schema/storage, dependencies, settings, license, or project code.
+- No content in this document selects implementation, hook code, adapter implementation, database/schema/storage, dependencies, settings, license, or project code.
 
 ## Purpose
 
