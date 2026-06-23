@@ -1,8 +1,8 @@
 ---
-handoff_status: P03_ACTIVE_AWAITING_ARCHITECTURE_EVALUATION_PACKAGE
+handoff_status: P03_ARCHITECTURE_EVALUATION_PACKAGE_PREPARED_AWAITING_PRODUCT_OWNER_REVIEW
 current_gate: P03_ARCHITECTURE_EVALUATION
 gate_status: ACTIVATED
-next_action: PRODUCE_P03_ARCHITECTURE_EVALUATION_PACKAGE_UNDER_CONT_P03_ARCH_001
+next_action: PRODUCT_OWNER_REVIEW_OF_P03_ARCHITECTURE_EVALUATION_PACKAGE
 known_blockers: []
 ---
 
@@ -15,6 +15,8 @@ P01 — Founder Discovery and Product Definition is **closed/completed** under `
 P02 — Domain, Governance, and Security Discovery is **closed/completed** under `DEC-P02-CLOSEOUT-001`. P02 closeout commit `f0662cef096890bbb5e333793442e567cb9b0321`. `CONT-P02-ONB-001` is **closed/completed** under the same closeout decision.
 
 P03 — Architecture Evaluation is **active (architecture-only)** under `DEC-P03-ACTIVATION-001`. Single active task: `CONT-P03-ARCH-001` — P03 Architecture Evaluation and Decision Framework. Current gate: `P03_ARCHITECTURE_EVALUATION` (`gate_status: ACTIVATED`). P04 and P05 are **not active**. No P04 or P05 task is proposed or activated by this P03 activation.
+
+The proposed P03 Architecture Evaluation Package (`governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`) has been **prepared as a proposed P03 architecture evaluation package** under `CONT-P03-ARCH-001` and `DEC-P03-ACTIVATION-001`. Document status: `PROPOSED_INACTIVE`. Ratification status: `NOT_RATIFIED`. No architecture decision is ratified by this package. No row was added to `governance/DECISION_LOG.md`. No `OQ-P02-*` / `P02-RISK-*` / `P02-ROAD-*` status was changed. No hooks, adapter rules, settings, dependencies, license, project code, or runtime context packs were changed. The package is awaiting Product Owner review.
 
 ## Ratified P02 Discovery Package (carried forward)
 
@@ -61,7 +63,8 @@ Each deferred item requires a separately approved Product Owner plan and approva
 
 ## Next Action
 
-- Produce the P03 architecture-evaluation package under `CONT-P03-ARCH-001`: options enumeration, tradeoff analysis, technical-spike notes captured as governance artifacts, architecture recommendations, and ADR-ready drafts. Each architecture proposal, recommendation, or ADR-ready draft prepared in P03 must be recorded in the relevant P03 governance artifact with explicit proposed status. Only explicit Product Owner-ratified architecture decisions are recorded in `governance/DECISION_LOG.md`.
+- Product Owner review of the proposed P03 architecture-evaluation package `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` under `CONT-P03-ARCH-001` / `DEC-P03-ACTIVATION-001`. Review surface covers §1 Authority and Status Notice, §2 Canonical Inputs, §3 Evaluation Dimensions, §4 Candidate Architecture Options (D-A/B/C, S-A/B/C, C-A/B/C, X-A/B/C, B-A/B/C, A-A/B/C), §5 Tradeoff Comparison, §6 Architecture Recommendations (R-1..R-6), §7 ADR-Ready Drafts (ADR-DRAFT-P03-001..006), §8 Implementation-Readiness Criteria (I-1..I-8), §9 Unresolved Architecture Questions and Risks (candidate `OQ-P03-ARCH-001..010`, candidate `P03-ARCH-RISK-001..007`; not registered), §10 Required Product Owner Review Gates (G-1..G-8). All recommendations, ADR drafts, and criteria remain `status: proposed`; nothing is ratified by this package.
+- After Product Owner review, separately approved Product Owner gates may (per §10) (a) ratify one or more recommendations as `DEC-P03-ARCH-RECO-*` rows in `governance/DECISION_LOG.md`, (b) ratify one or more ADR drafts as `DEC-P03-ARCH-ADR-*` (or equivalent), (c) classify which `OQ-P02-*` / `P02-RISK-*` / `P02-ROAD-*` items are P03-blocking / P04-blocking / deferred-with-acceptance and project a small set of P03-specific rows where appropriate, (d) authorize hook activation per ratified fixture-evidence and activation discipline, (e) authorize runtime context pack generation, and (f) approve P03 closeout. None of these is authorized by this package.
 - The Product Owner may also separately approve diffs to (a) dispose `OQ-P01-*` rows, or (b) plan deferred token-efficiency sibling work (Reading Policy Table, tag vocabulary, baseline token-cost measurement method). These are independent of P03 and require their own approval verbs.
 
 The Product Owner / sole project authority / sole ratification authority for v1 is **Rauf Alizada**. No other identity is valid for project governance, participation, approval, ratification, or authority. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` does not participate in this project in any form and must not be encoded as a project identity; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
