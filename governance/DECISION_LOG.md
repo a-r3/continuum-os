@@ -39,6 +39,7 @@ Only explicit Product Owner decisions are recorded here.
 | DEC-P02-SECURITY-TRUST-REQUIREMENTS-001 | Ratified | Ratify `governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md` as the canonical P02 Security and Trust Requirements Draft. See `## DEC-P02-SECURITY-TRUST-REQUIREMENTS-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `5f65e952ae5c8322654166cb298009286e69a8f4` (proposed P02 Security and Trust Requirements Draft) + P02 Security and Trust Requirements Draft ratification diff |
 | DEC-P02-DATA-CLASSIFICATION-001 | Ratified | Ratify `governance/P02_DATA_CLASSIFICATION_SENSITIVE_BOUNDARY_DRAFT.md` as the canonical P02 Data Classification and Sensitive Boundary Analysis Draft. See `## DEC-P02-DATA-CLASSIFICATION-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `9828a8e26cd7f1c85b8e3f858a2632bcdf560f60` (proposed P02 Data Classification and Sensitive Boundary Analysis Draft) + P02 Data Classification and Sensitive Boundary Analysis Draft ratification diff |
 | DEC-P02-CLOSEOUT-001 | Ratified | Close P02 Domain, Governance, and Security Discovery and close `CONT-P02-ONB-001` after acceptance of the ratified P02 discovery package (context-policy set under `DEC-P02-CONTEXT-SET-CLOSEOUT-001`, `DEC-P02-DOMAIN-DISCOVERY-001`, `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DATA-CLASSIFICATION-001`) and the P02 closeout readiness audit `P02-CLOSEOUT-READINESS-AUDIT-001`. Repository transitions to zero-active-task state awaiting separately approved P03 activation. See `## DEC-P02-CLOSEOUT-001` below for full provenance fields. | Product Owner | 2026-06-23 | commit `7eee4f956844ae3cd7409f04f7c531c4c5bb2936` (P02 closeout readiness audit) + P02 closeout diff |
+| DEC-P03-ACTIVATION-001 | Ratified | Activate P03 Architecture Evaluation phase (architecture-only) and `CONT-P03-ARCH-001` (P03 Architecture Evaluation and Decision Framework) as the single active task under gate `P03_ARCHITECTURE_EVALUATION`. Constraints: no implementation, no code changes, no dependencies, no hooks or adapter rules, no runtime context packs, no license changes, no P04/P05 activation. See `## DEC-P03-ACTIVATION-001` below for full provenance fields. | Product Owner | 2026-06-23 | predecessor commit `f0662cef096890bbb5e333793442e567cb9b0321` (P02 closeout) + P03 activation diff |
 
 ## DEC-P01-B1-001
 
@@ -372,3 +373,42 @@ Only explicit Product Owner decisions are recorded here.
   - the three projections (open questions, risk register, roadmap) remained unratified under P02.
   - invalid identities `Raauf Alizada` and `Tural Rahmanli` were not introduced as project authority.
 - scope_note: Closes P02 and closes `CONT-P02-ONB-001` only. Does **not** activate P03, P04, or P05. Does **not** create any P03 task. Does **not** ratify any deferred item. Does **not** modify `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, `governance/GLOSSARY.md`, `governance/CONTEXT_POLICY.md`, `governance/CONTEXT_BUDGET.md`, `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`, `governance/P02_DOMAIN_DISCOVERY_DRAFT.md`, `governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md`, or `governance/P02_DATA_CLASSIFICATION_SENSITIVE_BOUNDARY_DRAFT.md`. Does **not** generate runtime context packs. Does **not** modify hooks, adapter rules, architecture, schema, storage, implementation, dependencies, settings, license, or project code. P03 activation requires a separately approved Product Owner decision and a separately approved P03 task.
+
+## DEC-P03-ACTIVATION-001
+
+- decision_id: `DEC-P03-ACTIVATION-001`
+- status: `RATIFIED`
+- decision: Activate P03 Architecture Evaluation phase (architecture-only) and `CONT-P03-ARCH-001` (P03 Architecture Evaluation and Decision Framework) as the single active task under gate `P03_ARCHITECTURE_EVALUATION` (`gate_status: ACTIVATED`).
+- scope: architecture-only phase. Authorized work under `CONT-P03-ARCH-001`: architecture evaluation, tradeoff analysis, option comparison, technical-spike notes captured as governance artifacts, architecture recommendations, and ADR preparation. Architecture recommendations may be proposed; only the Product Owner may ratify architecture decisions.
+- constraints:
+  - no implementation
+  - no code changes
+  - no dependencies (installation, lockfile changes, manifest changes)
+  - no hooks or adapter rules (`.claude/hooks/**`, `CLAUDE.md`, `AGENTS.md`, `.claude/rules/**`)
+  - no settings changes (`.claude/settings.json`, `.claude/settings.local.example.json`)
+  - no runtime context packs (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md`)
+  - no license changes
+  - no P04/P05 activation
+  - no P04 or P05 task creation
+  - no modification of ratified P02 discovery package or P02 task files
+  - no modification of `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, or `governance/DOCUMENT_REGISTRY.md` under P03 activation
+  - no Product Owner identity change
+  - no creation of `governance/PRODUCT_OWNER.md`
+- authority: Product Owner (`Rauf Alizada`). Sole ratification authority for v1.
+- predecessor_decisions: `DEC-P02-CLOSEOUT-001`, `DEC-P02-DATA-CLASSIFICATION-001`, `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DOMAIN-DISCOVERY-001`, `DEC-P02-CONTEXT-SET-CLOSEOUT-001`, `DEC-P02-ACTIVATION-001`, `DEC-P01-CLOSEOUT-001`.
+- predecessor_task: `CONT-P02-ONB-001` (closed/completed under `DEC-P02-CLOSEOUT-001`).
+- active_task_created: `CONT-P03-ARCH-001` — P03 Architecture Evaluation and Decision Framework. Single active task. Active-task invariant preserved (exactly one active task across the transition).
+- evidence:
+  - P02 closeout commit `f0662cef096890bbb5e333793442e567cb9b0321`.
+  - Ratified P02 discovery package carried forward unchanged.
+  - P03 activation diff.
+- activation_invariants:
+  - exactly one active task during P03: `CONT-P03-ARCH-001`.
+  - Product Owner identity `Rauf Alizada` preserved as sole project authority and sole ratification authority for v1.
+  - P04 and P05 remain not active; no P04 or P05 task is proposed or activated.
+  - no runtime context pack generated by this activation.
+  - no architecture decision is ratified by this activation; ratification of any architecture decision proposed under `CONT-P03-ARCH-001` requires explicit Product Owner approval.
+  - ratified context-policy set remains canonical and is not superseded.
+  - projected P02 artifacts (open questions, risk register, roadmap, document registry) remain unchanged.
+  - invalid identities `Raauf Alizada` and `Tural Rahmanli` are not introduced as project authority.
+- scope_note: Activates P03 (architecture-only) and creates `CONT-P03-ARCH-001` as the single active task. Does **not** activate P04 or P05. Does **not** create any P04 or P05 task. Does **not** ratify any architecture decision. Does **not** modify P02 artifacts. Does **not** modify `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, `governance/GLOSSARY.md`, ratified context-policy set, or ratified P02 discovery drafts. Does **not** generate runtime context packs. Does **not** modify hooks, adapter rules, settings, dependencies, license, or project code.
