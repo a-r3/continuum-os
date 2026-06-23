@@ -1,36 +1,36 @@
 ---
-active_task_id: CONT-P02-ONB-001
-active_task_title: P02 Domain, Governance, and Security Discovery
-active_task_lane: Strict
-active_task_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY
-active_task_status: IN_PROGRESS
-execution_authorized: true
+active_task_id: none
+active_task_title: none
+active_task_lane: none
+active_task_gate: none
+active_task_status: none
+execution_authorized: false
 ---
 
 # Active Task
 
 ## Invariant
 
-The repository may have zero or one active task, but never more than one. Any mutating execution work requires exactly one Product Owner-approved active task and `execution_authorized: true`. After P02 activation under `DEC-P02-ACTIVATION-001`, the invariant holds with exactly one active task.
+The repository may have zero or one active task, but never more than one. Any mutating execution work requires exactly one Product Owner-approved active task and `execution_authorized: true`. A zero-active-task state is allowed only during transition, approval wait, suspension, or closed-project state. After P02 closeout under `DEC-P02-CLOSEOUT-001`, the invariant holds with zero active tasks while the repository awaits a separately approved P03 activation decision and a separately approved P03 task.
 
 ## Current Active Task
 
-Exactly **one active task** exists. The active task is `CONT-P02-ONB-001`. P02 is **active**. P01 is **closed/completed** under `DEC-P01-CLOSEOUT-001`.
+**No active task.** Repository is in zero-active-task state awaiting separately approved P03 activation.
 
-- Active task ID: `CONT-P02-ONB-001`
-- Active task title: P02 Domain, Governance, and Security Discovery
-- Lane: Strict
-- Current gate: `P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`
-- Gate status: `ACTIVATED`
-- Ratification status: `APPROVED_FOR_EXECUTION`
-- Execution authorized: `true`
-- Predecessor task: `CONT-P01-BUNDLE-005` (closed/completed)
-- Source decision: `DEC-P02-ACTIVATION-001`
+- Active task ID: `none`
+- Active task title: `none`
+- Lane: `none`
+- Current gate: `none`
+- Gate status: `none`
+- Ratification status: `none`
+- Execution authorized: `false`
+- Predecessor task: `CONT-P02-ONB-001` (closed/completed)
+- Source decision: `DEC-P02-CLOSEOUT-001`
 
-`CONT-P01-BUNDLE-005`, `CONT-P01-BUNDLE-004`, `CONT-P01-BUNDLE-003`, `CONT-P01-BUNDLE-002`, `CONT-P01-BUNDLE-001`, `CONT-P01-CONSOL-001`, and `CONT-P01-ONB-001` remain closed/completed. P03, P04, and P05 are not active. The Product Owner / sole ratification authority for v1 is `Rauf Alizada`.
+`CONT-P02-ONB-001` is closed/completed under `DEC-P02-CLOSEOUT-001`. `CONT-P01-BUNDLE-005`, `CONT-P01-BUNDLE-004`, `CONT-P01-BUNDLE-003`, `CONT-P01-BUNDLE-002`, `CONT-P01-BUNDLE-001`, `CONT-P01-CONSOL-001`, and `CONT-P01-ONB-001` remain closed/completed. P03, P04, and P05 are not active. The Product Owner / sole ratification authority for v1 is `Rauf Alizada`.
 
 ## Scope Boundaries
 
-- Authorized under the current active task: P02 discovery work as scoped in `governance/tasks/CONT-P02-ONB-001.md` (domain model discovery, governance model refinement, security and trust requirements, data classification and sensitive-boundary analysis, open questions, P02 evidence and validation expectations), under explicit Product Owner approval verbs (`prepare diff` / `commit only` / `commit and push`).
-- Prohibited under this state: architecture evaluation or selection, implementation work, implementation-stack selection, license selection or creation, ADR creation, dependency installation, hook registration, modification, or activation, settings changes, project-code changes, adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), runtime context pack generation, context-policy ratification, modification of ratified governance documents outside a separately approved gate, creating `governance/PRODUCT_OWNER.md`, P03/P04/P05 activation, ratifying any P02 deliverable without explicit Product Owner approval, and encoding any identity other than `Rauf Alizada` as valid project identity.
-- Product Owner remains the sole ratification authority for any semantic decision. Activation of this task does not authorize any of the prohibited items above.
+- No ordinary execution work is authorized while no active task exists. File mutations are prohibited unless they are part of a separately approved Product Owner transition/activation diff, such as a future P03 activation decision and P03 task proposal.
+- Prohibited under this state: architecture evaluation or selection, implementation work, implementation-stack selection, license selection or creation, ADR creation, dependency installation, hook registration, modification, or activation, settings changes, project-code changes, adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), runtime context pack generation, ratifying any deliverable, modifying ratified governance documents outside a separately approved gate, creating `governance/PRODUCT_OWNER.md`, P03/P04/P05 activation, creating a P03 task, and encoding any identity other than `Rauf Alizada` as valid project identity.
+- The Product Owner remains the sole ratification authority for any semantic decision. P03 activation requires a separately approved Product Owner decision and a separately approved P03 task.

@@ -2,14 +2,15 @@
 task_id: CONT-P02-ONB-001
 title: P02 Domain, Governance, and Security Discovery
 lane: Strict
-lifecycle_status: IN_PROGRESS
+lifecycle_status: DONE
 current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY
-gate_status: ACTIVATED
-ratification_status: APPROVED_FOR_EXECUTION
-active: true
-execution_authorized: true
+gate_status: COMPLETED
+ratification_status: RATIFIED
+active: false
+execution_authorized: false
 predecessor_task: CONT-P01-BUNDLE-005
 source_decision: DEC-P01-CLOSEOUT-001
+closeout_decision: DEC-P02-CLOSEOUT-001
 product_owner: Rauf Alizada
 ---
 
@@ -246,7 +247,7 @@ This discovery plan has been **approved** under `DEC-P02-DISCOVERY-PLAN-001`. Th
 
 - proposed-plan commit: `4a66193344e4151d411964ec047ad7ba3f181536`.
 - approval decision: `DEC-P02-DISCOVERY-PLAN-001`.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task.
 - No P02 deliverable ratified under this approval.
 - No context-policy files (`CONTEXT_POLICY.md`, `CONTEXT_BUDGET.md`, `CONTEXT_RETRIEVAL_PROTOCOL.md`, or any equivalent) created under this approval.
@@ -384,7 +385,7 @@ This draft plan has been **approved** under `DEC-P02-CONTEXT-DRAFT-PLAN-001`. Th
 
 - draft-plan proposal commit: `0d0d44b5cec57e0d61941e660349da27613c30cc`.
 - approval decision: `DEC-P02-CONTEXT-DRAFT-PLAN-001`.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task.
 - No P02 deliverable ratified under this approval.
 - No context-policy files (`CONTEXT_POLICY.md`, `CONTEXT_BUDGET.md`, `CONTEXT_RETRIEVAL_PROTOCOL.md`, or any equivalent) created under this approval.
@@ -409,7 +410,7 @@ This draft plan has been **approved** under `DEC-P02-CONTEXT-DRAFT-PLAN-001`. Th
 - ratification status: `RATIFIED`.
 - ratification decision: `DEC-P02-CONTEXT-POLICY-001`.
 - proposed draft commit: `7176ddf6d7b94ad8cfb2f46377fb2d649a01eadd`.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task.
 - No `governance/CONTEXT_BUDGET.md` created.
 - No `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` created.
@@ -435,7 +436,7 @@ This draft plan has been **approved** under `DEC-P02-CONTEXT-DRAFT-PLAN-001`. Th
 - ratification decision: `DEC-P02-CONTEXT-BUDGET-001`.
 - proposed draft commit: `520775728d1fa8521fb4f7badc68f8ac5855b9af`.
 - parent policy: `governance/CONTEXT_POLICY.md` / `DEC-P02-CONTEXT-POLICY-001`.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task.
 - No `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` created.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
@@ -448,7 +449,7 @@ This draft plan has been **approved** under `DEC-P02-CONTEXT-DRAFT-PLAN-001`. Th
 - Ratification status: `NOT_RATIFIED`.
 - Prepared after ratified `governance/CONTEXT_POLICY.md` (`DEC-P02-CONTEXT-POLICY-001`) and ratified `governance/CONTEXT_BUDGET.md` (`DEC-P02-CONTEXT-BUDGET-001`); subordinate to both.
 - `governance/DOCUMENT_REGISTRY.md` updated with a new row marking `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` as `Proposed Draft / Not Ratified` / `NOT_RATIFIED` / decision `—`.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No staging, commit, or push performed.
@@ -463,7 +464,7 @@ This draft plan has been **approved** under `DEC-P02-CONTEXT-DRAFT-PLAN-001`. Th
 - Proposed draft commit: `585773d4591f1c97b49e70f494fcc7a5daaff6fe`.
 - Parent policy: `governance/CONTEXT_POLICY.md` / `DEC-P02-CONTEXT-POLICY-001`.
 - Parent budget: `governance/CONTEXT_BUDGET.md` / `DEC-P02-CONTEXT-BUDGET-001`.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No hooks, adapter-rule, architecture, implementation, dependency, settings, license, or project-code changes.
@@ -472,7 +473,7 @@ This draft plan has been **approved** under `DEC-P02-CONTEXT-DRAFT-PLAN-001`. Th
 
 - Closeout decision: `DEC-P02-CONTEXT-SET-CLOSEOUT-001`.
 - Context-policy set closed only.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - Ratified context-policy set:
   - `governance/CONTEXT_POLICY.md` / `DEC-P02-CONTEXT-POLICY-001`;
@@ -500,7 +501,7 @@ This draft plan has been **approved** under `DEC-P02-CONTEXT-DRAFT-PLAN-001`. Th
 - It authorizes planning and prepare-diff work for the listed remaining P02 workstreams only after a separate Product Owner-approved verb.
 - It does not itself draft any deliverable.
 - It does not approve architecture, implementation, runtime packs, hooks, adapter rules, dependencies, settings, license, or project code.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task.
 
 ### Completed P02 Scope
@@ -631,7 +632,7 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - approval decision: `DEC-P02-DISCOVERY-PLAN-002`.
 - approved by: `Rauf Alizada`.
 - source task: `CONT-P02-ONB-001`.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - No `governance/OPEN_QUESTIONS.md` update occurred.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
@@ -659,7 +660,7 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - It does not modify canonical domain/governance documents (`PRODUCT_CHARTER.md`, `GLOSSARY.md`, `CHANGE_PROTOCOL.md`, `TRUST_BOUNDARIES.md`, `NEVER_AUTOMATIC.md`, `ROADMAP.md`).
 - It does not draft or ratify domain concepts, terms, entities, relationships, lifecycle states, or constraints.
 - It does not approve architecture, schema, implementation, runtime packs, hooks, adapter rules, dependencies, settings, license, or project code.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task.
 
 ### Purpose
@@ -784,7 +785,7 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - approved by: `Rauf Alizada`.
 - source task: `CONT-P02-ONB-001`.
 - source plan: `P02-DISCOVERY-PLAN-002` (approved under `DEC-P02-DISCOVERY-PLAN-002`).
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - No `P02 Domain Discovery Draft` was created.
 - No `governance/OPEN_QUESTIONS.md` update occurred.
@@ -804,7 +805,7 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - No ratification occurred.
 - No `governance/OPEN_QUESTIONS.md` update occurred.
 - No `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, or `governance/DOCUMENT_REGISTRY.md` update occurred.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No architecture, schema, implementation, hooks, adapter rules, dependencies, settings, license, or project-code changes occurred.
@@ -824,7 +825,7 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - No `governance/GLOSSARY.md` update occurred.
 - No `governance/RISK_REGISTER.md` or `governance/ROADMAP.md` update occurred.
 - `governance/DOCUMENT_REGISTRY.md` updated only to register the ratified document.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No architecture, schema, implementation, hooks, adapter rules, dependencies, settings, license, or project-code changes occurred.
@@ -842,7 +843,7 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - No `governance/OPEN_QUESTIONS.md` update occurred.
 - No `governance/RISK_REGISTER.md` update occurred.
 - No `governance/ROADMAP.md` or `governance/DOCUMENT_REGISTRY.md` update occurred.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No implementation, hooks, adapter rules, dependencies, settings, license, or project-code changes occurred.
@@ -860,7 +861,7 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - No `governance/GLOSSARY.md` update occurred.
 - No `governance/RISK_REGISTER.md` or `governance/ROADMAP.md` update occurred.
 - `governance/DOCUMENT_REGISTRY.md` updated only to register the ratified document.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No hook, adapter-rule, architecture, schema, storage, implementation, dependency, settings, license, or project-code changes occurred.
@@ -879,7 +880,7 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - No `governance/OPEN_QUESTIONS.md` update occurred.
 - No `governance/RISK_REGISTER.md` update occurred.
 - No `governance/DOCUMENT_REGISTRY.md` or `governance/DECISION_LOG.md` update occurred.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No implementation, hooks, adapter rules, dependencies, settings, license, or project-code changes occurred.
@@ -897,7 +898,7 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - No `governance/GLOSSARY.md` update occurred.
 - No `governance/RISK_REGISTER.md` or `governance/ROADMAP.md` update occurred.
 - `governance/DOCUMENT_REGISTRY.md` updated only to register the ratified document.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No hook, adapter-rule, architecture, schema, storage, implementation, dependency, settings, license, or project-code changes occurred.
@@ -915,7 +916,7 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - no ratification occurred.
 - no `governance/RISK_REGISTER.md` update occurred.
 - no `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, or `governance/DECISION_LOG.md` update occurred.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No implementation, hooks, adapter rules, dependencies, settings, license, or project-code changes occurred.
@@ -934,7 +935,7 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - no ratification occurred.
 - no `governance/OPEN_QUESTIONS.md` update occurred.
 - no `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, or `governance/DECISION_LOG.md` update occurred.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No implementation, hooks, adapter rules, dependencies, settings, license, architecture, schema, storage, or project-code changes occurred.
@@ -957,7 +958,7 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - no `governance/OPEN_QUESTIONS.md` update occurred.
 - no `governance/RISK_REGISTER.md` update occurred.
 - no `governance/DOCUMENT_REGISTRY.md` or `governance/DECISION_LOG.md` update occurred.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No implementation, hooks, adapter rules, dependencies, settings, license, architecture, schema, storage, or project-code changes occurred.
@@ -986,7 +987,7 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - It does **not** modify any ratified governance document (`PRODUCT_CHARTER.md`, `GLOSSARY.md`, `CHANGE_PROTOCOL.md`, `NEVER_AUTOMATIC.md`, `TRUST_BOUNDARIES.md`, `CONTEXT_POLICY.md`, `CONTEXT_BUDGET.md`, `CONTEXT_RETRIEVAL_PROTOCOL.md`, `P02_DOMAIN_DISCOVERY_DRAFT.md`, `P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md`, `P02_DATA_CLASSIFICATION_SENSITIVE_BOUNDARY_DRAFT.md`, `OPEN_QUESTIONS.md`, `RISK_REGISTER.md`, `ROADMAP.md`, `DOCUMENT_REGISTRY.md`, `DECISION_LOG.md`, `docs/REFERENCE_STRUCTURE.md`).
 - It only **appends** this audit/plan section to the active task record `governance/tasks/CONT-P02-ONB-001.md`.
 - It does **not** stage, commit, or push under this diff. A separate Product Owner approval verb is required to commit or push.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- At audit preparation time, P02 was active under `DEC-P02-ACTIVATION-001`; this state is superseded by `DEC-P02-CLOSEOUT-001`.
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 
 ### Purpose
@@ -1170,10 +1171,9 @@ Before this audit/plan may be approved by the Product Owner, the following must 
 ### Audit Evidence
 
 - audit prepared at HEAD: `fdfeeddff01589467ec251c68adf616c0eb813ad`.
-- audit decision: **none yet**.
-- approval status: **pending Product Owner review**.
-- P02 remains active under `DEC-P02-ACTIVATION-001`.
-- `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
+- audit decision: **accepted** (Product Owner accepted the audit as the basis for P02 closeout).
+- approval status: **accepted as basis for P02 closeout under `DEC-P02-CLOSEOUT-001`**.
+- At audit preparation time, P02 remained active under `DEC-P02-ACTIVATION-001` and `CONT-P02-ONB-001` remained the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`. This closeout diff supersedes that audit-time state: P02 is closed/completed under `DEC-P02-CLOSEOUT-001`, `CONT-P02-ONB-001` is closed/completed, and the repository transitions to zero active tasks awaiting separately approved P03 activation.
 - The ratified P02 discovery package (context-policy set under `DEC-P02-CONTEXT-SET-CLOSEOUT-001`, `DEC-P02-DOMAIN-DISCOVERY-001`, `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DATA-CLASSIFICATION-001`) is unchanged by this audit.
 - The three projection artifacts (`governance/OPEN_QUESTIONS.md` at `e0dba07e759bfded5e4f7bc1222f2b79c8a50a7f`, `governance/RISK_REGISTER.md` at `e0b18ac125e8a03b5f445040d44a9145821d5be9`, `governance/ROADMAP.md` at `fdfeeddff01589467ec251c68adf616c0eb813ad`) are unchanged by this audit.
 - `governance/HANDOFF.md` is not modified by this audit; its known lag is recorded in finding 8.
@@ -1181,3 +1181,70 @@ Before this audit/plan may be approved by the Product Owner, the following must 
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No hook, adapter-rule, architecture, schema, storage, implementation, dependency, settings, license, or project-code changes occurred.
 - No staging, commit, or push performed.
+
+## P02 Closeout Evidence
+
+- closeout decision: `DEC-P02-CLOSEOUT-001`.
+- ratified by: `Rauf Alizada` (Product Owner / sole ratification authority for v1).
+- ratified at: `2026-06-23`.
+- audit basis: `P02-CLOSEOUT-READINESS-AUDIT-001` committed at `7eee4f956844ae3cd7409f04f7c531c4c5bb2936` and accepted by the Product Owner.
+- task frontmatter flipped: `lifecycle_status: IN_PROGRESS` → `DONE`; `gate_status: ACTIVATED` → `COMPLETED`; `ratification_status: APPROVED_FOR_EXECUTION` → `RATIFIED`; `active: true` → `false`; `execution_authorized: true` → `false`; `closeout_decision: DEC-P02-CLOSEOUT-001` added.
+- active-task invariant: transitions from exactly one active task (`CONT-P02-ONB-001`) to zero active tasks. Repository is in zero-active-task state awaiting separately approved P03 activation.
+- phase transition: P02 closed/completed under `DEC-P02-CLOSEOUT-001`; P03 not activated. No P03 task created.
+
+### P02 Closeout Decisions Accepted by Product Owner
+
+1. Ratified P02 discovery package accepted as complete for closeout purposes.
+2. Reading Policy Table, tag vocabulary, and baseline token-cost measurement method remain deferred beyond P02 closeout.
+3. Existing `OQ-P01-*` rows remain unchanged; their disposition is deferred to a separate future Product Owner-approved diff.
+4. 28 `OQ-P02-*` questions, 19 `P02-RISK-*` risks, and 15 `P02-ROAD-*` roadmap items remain unchanged across P02 closeout.
+5. `governance/HANDOFF.md` refreshed in the same closeout diff.
+6. `governance/DOCUMENT_REGISTRY.md` not modified (no P02-package row added; existing registry format does not clearly require one).
+7. Single closeout decision id used: `DEC-P02-CLOSEOUT-001`.
+8. P02 and `CONT-P02-ONB-001` closed in the same closeout diff.
+9. Repository transitions to zero-active-task state awaiting separately approved P03 activation.
+10. Closeout decision explicitly asserts: no architecture, implementation, license, dependency, hook, settings, adapter-rule, runtime-pack, or project-code change occurred during P02.
+
+### Ratified P02 Discovery Package (at closeout)
+
+- `governance/CONTEXT_POLICY.md` — ratified under `DEC-P02-CONTEXT-POLICY-001`.
+- `governance/CONTEXT_BUDGET.md` — ratified under `DEC-P02-CONTEXT-BUDGET-001`.
+- `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` — ratified under `DEC-P02-CONTEXT-RETRIEVAL-001`.
+- Context-policy set closed under `DEC-P02-CONTEXT-SET-CLOSEOUT-001`.
+- `governance/P02_DOMAIN_DISCOVERY_DRAFT.md` — ratified under `DEC-P02-DOMAIN-DISCOVERY-001`.
+- `governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md` — ratified under `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`.
+- `governance/P02_DATA_CLASSIFICATION_SENSITIVE_BOUNDARY_DRAFT.md` — ratified under `DEC-P02-DATA-CLASSIFICATION-001`.
+
+### Projection Artifacts Unchanged Across Closeout
+
+- `governance/OPEN_QUESTIONS.md` projection commit `e0dba07e759bfded5e4f7bc1222f2b79c8a50a7f` — 28 `OQ-P02-*` questions, all `Open`.
+- `governance/RISK_REGISTER.md` projection commit `e0b18ac125e8a03b5f445040d44a9145821d5be9` — 19 `P02-RISK-*` risks, all `Proposed; open`.
+- `governance/ROADMAP.md` projection commit `fdfeeddff01589467ec251c68adf616c0eb813ad` — 15 `P02-ROAD-*` roadmap items, all `Proposed; not started`.
+
+### Closeout Invariants
+
+- exactly one active task remained throughout P02 (`CONT-P02-ONB-001`).
+- Product Owner identity `Rauf Alizada` preserved as sole project authority and sole ratification authority for v1 across all P02 transitions.
+- no architecture decision, ADR, schema, storage, implementation, dependency, settings, license, hook, adapter-rule, runtime-pack, or project-code change occurred during P02.
+- no runtime context pack was generated during P02 (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
+- every P02 ratification carries a distinct decision id in `governance/DECISION_LOG.md`.
+- the ratified context-policy set remained canonical and was not superseded.
+- the three projections (open questions, risk register, roadmap) remained unratified under P02.
+- invalid identities `Raauf Alizada` and `Tural Rahmanli` were not introduced as project authority.
+
+### Non-Scope (P02 Closeout Diff)
+
+This closeout diff does **not**:
+
+- activate P03, P04, or P05;
+- create a P03 task;
+- ratify the deferred items (Reading Policy Table, tag vocabulary, baseline token-cost measurement method);
+- triage `OQ-P02-*` questions, `P02-RISK-*` risks, or `P02-ROAD-*` roadmap items;
+- triage stale `OQ-P01-*` rows;
+- modify `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, `governance/GLOSSARY.md`, `governance/CONTEXT_POLICY.md`, `governance/CONTEXT_BUDGET.md`, `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`, `governance/P02_DOMAIN_DISCOVERY_DRAFT.md`, `governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md`, or `governance/P02_DATA_CLASSIFICATION_SENSITIVE_BOUNDARY_DRAFT.md`;
+- generate runtime context packs;
+- modify hooks, adapter rules, architecture, schema, storage, implementation, dependencies, settings, license, or project code.
+
+### Required Next Approval
+
+P03 activation requires a separately approved Product Owner decision and a separately approved P03 task. No P03 activation is authorized by this closeout.

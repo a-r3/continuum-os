@@ -2,35 +2,38 @@
 
 ## Phase
 
-P02 — Domain, Governance, and Security Discovery
+No phase is currently active. P02 — Domain, Governance, and Security Discovery is **closed/completed** under `DEC-P02-CLOSEOUT-001`. P03 is **not active**; P03 activation requires a separately approved Product Owner decision and a separately approved P03 task.
 
 ## Current P02 Sub-State
 
-P02 active under gate `P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`; active task `CONT-P02-ONB-001`.
+P02 closed/completed under gate `P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY` (`gate_status: COMPLETED`). `CONT-P02-ONB-001` is closed/completed under `DEC-P02-CLOSEOUT-001`.
 
 ## Status
 
 - P01 is **closed/completed** under `DEC-P01-CLOSEOUT-001`.
-- P02 is **active**.
-- `CONT-P02-ONB-001` is the **single active task** (`lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `ratification_status: APPROVED_FOR_EXECUTION`, `active: true`, `execution_authorized: true`).
-- Current gate: `P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`.
+- P02 is **closed/completed** under `DEC-P02-CLOSEOUT-001`.
+- `CONT-P02-ONB-001` is **closed/completed** under `DEC-P02-CLOSEOUT-001`.
+- Active task: **none**. Repository is in zero-active-task state awaiting separately approved P03 activation.
+- Closed gate: `P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY` / `gate_status: COMPLETED`.
 - P02 activation decision `DEC-P02-ACTIVATION-001` is recorded.
-- First P02 focus is discovery and planning around domain, governance, security, trust requirements, and token-efficiency governance (including context-policy and runtime-context discovery to be scoped under future Product Owner-approved deliverable plans).
-- No P02 deliverables are ratified yet.
+- P02 closeout decision `DEC-P02-CLOSEOUT-001` is recorded.
+- Ratified P02 discovery package: `governance/CONTEXT_POLICY.md` (`DEC-P02-CONTEXT-POLICY-001`), `governance/CONTEXT_BUDGET.md` (`DEC-P02-CONTEXT-BUDGET-001`), `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` (`DEC-P02-CONTEXT-RETRIEVAL-001`), context-policy set closed under `DEC-P02-CONTEXT-SET-CLOSEOUT-001`, `governance/P02_DOMAIN_DISCOVERY_DRAFT.md` (`DEC-P02-DOMAIN-DISCOVERY-001`), `governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md` (`DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`), `governance/P02_DATA_CLASSIFICATION_SENSITIVE_BOUNDARY_DRAFT.md` (`DEC-P02-DATA-CLASSIFICATION-001`).
+- Projected P02 artifacts unchanged across closeout: 28 `OQ-P02-*` questions (`Open`), 19 `P02-RISK-*` risks (`Proposed; open`), 15 `P02-ROAD-*` roadmap items (`Proposed; not started`).
+- Deferred-beyond-P02 items: Reading Policy Table, tag vocabulary, baseline token-cost measurement method, and `OQ-P01-*` row disposition.
 - P03, P04, and P05 are **not active**.
-- No architecture, implementation, license, dependency, hook, settings, adapter-rule, or project-code work is authorized.
-- Adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) have not been modified under this activation.
+- No architecture, implementation, license, dependency, hook, settings, adapter-rule, runtime-pack, or project-code change occurred during P02 and none is authorized in the zero-active-task state.
+- Adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) were not modified during P02.
 - Hooks remain unregistered and inactive.
-- No context-policy files have been ratified or created. No runtime context pack has been generated.
+- No context-policy files modified by this closeout. No runtime context pack has been generated.
 
 ## Objective
 
-P02 objective: prepare and ratify domain, governance, and security discovery deliverables that resolve open questions blocking architecture evaluation, including token-efficiency / context-policy discovery. Each deliverable requires a separately approved Product Owner ratification.
+No active phase objective. P02 closeout transitions the repository to a zero-active-task state awaiting Product Owner P03 activation decision. P02 closeout itself is not an architecture, implementation, or P03 activation step.
 
 ## Current Gate
 
-- Current gate: `P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`
-- Gate status: `ACTIVATED`
+- Closed gate: `P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`
+- Gate status: `COMPLETED`
 
 ## Prohibited Work
 
@@ -62,11 +65,11 @@ P02 objective: prepare and ratify domain, governance, and security discovery del
 
 ## Exit Conditions
 
-P02 exit conditions (future):
+P02 exit conditions (achieved):
 
-- P02 discovery deliverables drafted and ratified under explicit Product Owner approval.
+- P02 discovery deliverables drafted and ratified under explicit Product Owner approval (context-policy set, domain discovery, security/trust requirements, data classification and sensitive-boundary analysis).
 - Each ratified deliverable recorded as a distinct decision in `governance/DECISION_LOG.md`.
-- Active-task invariant preserved across every transition.
-- P02 closeout decision recorded when the Product Owner closes P02.
+- Active-task invariant preserved across every transition (exactly one active task throughout P02).
+- P02 closeout decision `DEC-P02-CLOSEOUT-001` recorded by the Product Owner.
 
-Transition to P03 requires a separately approved Product Owner P03 activation task following P02 closeout.
+Transition to P03 requires a separately approved Product Owner P03 activation decision and a separately approved P03 task. No P03 task is proposed or activated by P02 closeout.

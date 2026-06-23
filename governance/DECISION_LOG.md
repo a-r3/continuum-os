@@ -38,6 +38,7 @@ Only explicit Product Owner decisions are recorded here.
 | DEC-P02-DOMAIN-DISCOVERY-001 | Ratified | Ratify `governance/P02_DOMAIN_DISCOVERY_DRAFT.md` as the canonical P02 Domain Discovery Draft. See `## DEC-P02-DOMAIN-DISCOVERY-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `43e3a3e62385c6c201ac25e63b0fb20275d2c869` (proposed P02 Domain Discovery Draft) + P02 Domain Discovery Draft ratification diff |
 | DEC-P02-SECURITY-TRUST-REQUIREMENTS-001 | Ratified | Ratify `governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md` as the canonical P02 Security and Trust Requirements Draft. See `## DEC-P02-SECURITY-TRUST-REQUIREMENTS-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `5f65e952ae5c8322654166cb298009286e69a8f4` (proposed P02 Security and Trust Requirements Draft) + P02 Security and Trust Requirements Draft ratification diff |
 | DEC-P02-DATA-CLASSIFICATION-001 | Ratified | Ratify `governance/P02_DATA_CLASSIFICATION_SENSITIVE_BOUNDARY_DRAFT.md` as the canonical P02 Data Classification and Sensitive Boundary Analysis Draft. See `## DEC-P02-DATA-CLASSIFICATION-001` below for full provenance fields. | Product Owner | 2026-06-21 | commit `9828a8e26cd7f1c85b8e3f858a2632bcdf560f60` (proposed P02 Data Classification and Sensitive Boundary Analysis Draft) + P02 Data Classification and Sensitive Boundary Analysis Draft ratification diff |
+| DEC-P02-CLOSEOUT-001 | Ratified | Close P02 Domain, Governance, and Security Discovery and close `CONT-P02-ONB-001` after acceptance of the ratified P02 discovery package (context-policy set under `DEC-P02-CONTEXT-SET-CLOSEOUT-001`, `DEC-P02-DOMAIN-DISCOVERY-001`, `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DATA-CLASSIFICATION-001`) and the P02 closeout readiness audit `P02-CLOSEOUT-READINESS-AUDIT-001`. Repository transitions to zero-active-task state awaiting separately approved P03 activation. See `## DEC-P02-CLOSEOUT-001` below for full provenance fields. | Product Owner | 2026-06-23 | commit `7eee4f956844ae3cd7409f04f7c531c4c5bb2936` (P02 closeout readiness audit) + P02 closeout diff |
 
 ## DEC-P01-B1-001
 
@@ -337,3 +338,37 @@ Only explicit Product Owner decisions are recorded here.
 - reviewed_by: `Product Owner`
 - evidence: commit `9828a8e26cd7f1c85b8e3f858a2632bcdf560f60` (proposed P02 Data Classification and Sensitive Boundary Analysis Draft) plus the P02 Data Classification and Sensitive Boundary Analysis Draft ratification diff.
 - scope_note: Ratifies `governance/P02_DATA_CLASSIFICATION_SENSITIVE_BOUNDARY_DRAFT.md` as a P02 data-classification/sensitive-boundary discovery artifact. Records candidate data classes, candidate sensitivity levels, candidate secret/credential boundaries, candidate identity/authority boundaries, candidate evidence boundaries, candidate generated-context boundaries, candidate repository file-scope boundaries, candidate external/client data boundaries, and candidate handling requirements. Does not convert every candidate class, level, boundary, or handling requirement into binding policy, control, hook, settings change, adapter-rule change, or implementation work; candidate concepts remain candidate concepts unless separately converted into binding policy/controls/hooks/implementation via a future Product Owner-approved gate. Does not modify `governance/GLOSSARY.md`. Does not create or update `governance/OPEN_QUESTIONS.md`. Does not update `governance/RISK_REGISTER.md` or `governance/ROADMAP.md`. Updates `governance/DOCUMENT_REGISTRY.md` only to register the ratified document. Does not authorize hook implementation, adapter changes, architecture, schema, storage, dependencies, settings, license, or project code. Does not close P02 or `CONT-P02-ONB-001`; P02 remains active under `DEC-P02-ACTIVATION-001`; `CONT-P02-ONB-001` remains the single active task. Does not generate runtime context packs. Does not activate P03, P04, or P05.
+
+## DEC-P02-CLOSEOUT-001
+
+- decision_id: `DEC-P02-CLOSEOUT-001`
+- status: `RATIFIED`
+- decision: Close P02 Domain, Governance, and Security Discovery and close `CONT-P02-ONB-001` after acceptance of the ratified P02 discovery package and the P02 closeout readiness audit. Repository transitions to zero-active-task state awaiting separately approved P03 activation.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-23`
+- source_task: `CONT-P02-ONB-001`
+- predecessor_decisions: `DEC-P02-ACTIVATION-001`, `DEC-P02-DISCOVERY-PLAN-001`, `DEC-P02-CONTEXT-DRAFT-PLAN-001`, `DEC-P02-CONTEXT-POLICY-001`, `DEC-P02-CONTEXT-BUDGET-001`, `DEC-P02-CONTEXT-RETRIEVAL-001`, `DEC-P02-CONTEXT-SET-CLOSEOUT-001`, `DEC-P02-DISCOVERY-PLAN-002`, `DEC-P02-DOMAIN-DISCOVERY-DRAFT-PLAN-001`, `DEC-P02-DOMAIN-DISCOVERY-001`, `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DATA-CLASSIFICATION-001`.
+- audit_basis: `P02-CLOSEOUT-READINESS-AUDIT-001` (committed at `7eee4f956844ae3cd7409f04f7c531c4c5bb2936`).
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- evidence:
+  - Context-policy set closed under `DEC-P02-CONTEXT-SET-CLOSEOUT-001` (`governance/CONTEXT_POLICY.md`, `governance/CONTEXT_BUDGET.md`, `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`).
+  - Domain discovery ratified under `DEC-P02-DOMAIN-DISCOVERY-001` (`governance/P02_DOMAIN_DISCOVERY_DRAFT.md`).
+  - Security and trust requirements ratified under `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001` (`governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md`).
+  - Data classification and sensitive-boundary analysis ratified under `DEC-P02-DATA-CLASSIFICATION-001` (`governance/P02_DATA_CLASSIFICATION_SENSITIVE_BOUNDARY_DRAFT.md`).
+  - Open-questions projection committed at `e0dba07e759bfded5e4f7bc1222f2b79c8a50a7f` (28 `OQ-P02-*` questions, all `Open`).
+  - Risk-register projection committed at `e0b18ac125e8a03b5f445040d44a9145821d5be9` (19 `P02-RISK-*` risks, all `Proposed; open`).
+  - Roadmap projection committed at `fdfeeddff01589467ec251c68adf616c0eb813ad` (15 `P02-ROAD-*` items, all `Proposed; not started`).
+  - P02 closeout readiness audit committed at `7eee4f956844ae3cd7409f04f7c531c4c5bb2936`.
+  - This P02 closeout diff.
+- deferred_items: Reading Policy Table, tag vocabulary, and baseline token-cost measurement method remain deferred beyond P02 closeout. Existing `OQ-P01-*` rows in `governance/OPEN_QUESTIONS.md` remain unchanged; their disposition is deferred to a separate future Product Owner-approved diff. The 28 `OQ-P02-*` questions, 19 `P02-RISK-*` risks, and 15 `P02-ROAD-*` roadmap items remain in their current `Open` / `Proposed; open` / `Proposed; not started` states across P02 closeout.
+- closeout_invariants:
+  - exactly one active task remained throughout P02 (`CONT-P02-ONB-001`).
+  - Product Owner identity `Rauf Alizada` preserved as sole project authority and sole ratification authority for v1 across all P02 transitions.
+  - no architecture decision, ADR, schema, storage, implementation, dependency, settings, license, hook, adapter-rule, runtime-pack, or project-code change occurred during P02.
+  - no runtime context pack was generated during P02 (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
+  - every P02 ratification carries a distinct decision id in `governance/DECISION_LOG.md`.
+  - the ratified context-policy set remained canonical and was not superseded.
+  - the three projections (open questions, risk register, roadmap) remained unratified under P02.
+  - invalid identities `Raauf Alizada` and `Tural Rahmanli` were not introduced as project authority.
+- scope_note: Closes P02 and closes `CONT-P02-ONB-001` only. Does **not** activate P03, P04, or P05. Does **not** create any P03 task. Does **not** ratify any deferred item. Does **not** modify `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, `governance/GLOSSARY.md`, `governance/CONTEXT_POLICY.md`, `governance/CONTEXT_BUDGET.md`, `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`, `governance/P02_DOMAIN_DISCOVERY_DRAFT.md`, `governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md`, or `governance/P02_DATA_CLASSIFICATION_SENSITIVE_BOUNDARY_DRAFT.md`. Does **not** generate runtime context packs. Does **not** modify hooks, adapter rules, architecture, schema, storage, implementation, dependencies, settings, license, or project code. P03 activation requires a separately approved Product Owner decision and a separately approved P03 task.
