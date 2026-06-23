@@ -961,3 +961,223 @@ Before this plan may be approved by the Product Owner, the following must hold:
 - `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
 - No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
 - No implementation, hooks, adapter rules, dependencies, settings, license, architecture, schema, storage, or project-code changes occurred.
+
+## P02 Discovery Package Closeout Readiness Audit / P02 Closeout Candidate Plan
+
+- audit_id: `P02-CLOSEOUT-READINESS-AUDIT-001`
+- title: `P02 Discovery Package Closeout Readiness Audit / P02 Closeout Candidate Plan`
+- status: `PROPOSED_INACTIVE` / `NOT_APPROVED`
+- approval_status: `PENDING`
+- approval_decision: `none`
+- proposed_by: `Claude Code`
+- proposed_at: `2026-06-23`
+- source_task: `CONT-P02-ONB-001`
+- source_plan: `P02-DISCOVERY-PLAN-002`
+- source_decision: `DEC-P02-DISCOVERY-PLAN-002`
+- product_owner: `Rauf Alizada`
+
+### Audit Status
+
+- This is a **read-only audit and candidate closeout plan**.
+- It does **not** close P02.
+- It does **not** close `CONT-P02-ONB-001`.
+- It does **not** activate P03, P04, or P05.
+- It does **not** ratify any document.
+- It does **not** modify any ratified governance document (`PRODUCT_CHARTER.md`, `GLOSSARY.md`, `CHANGE_PROTOCOL.md`, `NEVER_AUTOMATIC.md`, `TRUST_BOUNDARIES.md`, `CONTEXT_POLICY.md`, `CONTEXT_BUDGET.md`, `CONTEXT_RETRIEVAL_PROTOCOL.md`, `P02_DOMAIN_DISCOVERY_DRAFT.md`, `P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md`, `P02_DATA_CLASSIFICATION_SENSITIVE_BOUNDARY_DRAFT.md`, `OPEN_QUESTIONS.md`, `RISK_REGISTER.md`, `ROADMAP.md`, `DOCUMENT_REGISTRY.md`, `DECISION_LOG.md`, `docs/REFERENCE_STRUCTURE.md`).
+- It only **appends** this audit/plan section to the active task record `governance/tasks/CONT-P02-ONB-001.md`.
+- It does **not** stage, commit, or push under this diff. A separate Product Owner approval verb is required to commit or push.
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
+
+### Purpose
+
+This audit assesses whether the ratified P02 discovery package and its three downstream projections (open questions, risk register, roadmap) constitute a coherent, complete, and reviewable basis for a future Product Owner-approved P02 closeout. It also proposes a candidate closeout plan describing what a future closeout diff would and would not do. Closeout itself is **not** authorized by this audit; closeout requires a separately approved Product Owner verb after explicit acceptance of this audit and the candidate plan.
+
+### Read-Only Inputs
+
+Inputs read for this audit. None modified.
+
+- `CLAUDE.md`
+- `governance/PROJECT_STATE.md`
+- `governance/CURRENT_PHASE.md`
+- `governance/ACTIVE_TASK.md`
+- `governance/HANDOFF.md`
+- `governance/tasks/CONT-P02-ONB-001.md`
+- `governance/CHANGE_PROTOCOL.md`
+- `governance/DECISION_LOG.md`
+- `governance/RISK_REGISTER.md`
+- `governance/OPEN_QUESTIONS.md`
+- `governance/ROADMAP.md`
+- `governance/DOCUMENT_REGISTRY.md`
+- `governance/CONTEXT_POLICY.md`
+- `governance/CONTEXT_BUDGET.md`
+- `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`
+- `governance/P02_DOMAIN_DISCOVERY_DRAFT.md`
+- `governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md`
+- `governance/P02_DATA_CLASSIFICATION_SENSITIVE_BOUNDARY_DRAFT.md`
+- `docs/REFERENCE_STRUCTURE.md`
+- `.continuum/manifest.yaml`
+- `.continuum/index.md`
+
+### Ratified P02 Discovery Package
+
+The ratified P02 discovery package as of HEAD `fdfeeddff01589467ec251c68adf616c0eb813ad`:
+
+1. Context-policy set, closed under `DEC-P02-CONTEXT-SET-CLOSEOUT-001`:
+   - `governance/CONTEXT_POLICY.md` ratified under `DEC-P02-CONTEXT-POLICY-001`.
+   - `governance/CONTEXT_BUDGET.md` ratified under `DEC-P02-CONTEXT-BUDGET-001`.
+   - `governance/CONTEXT_RETRIEVAL_PROTOCOL.md` ratified under `DEC-P02-CONTEXT-RETRIEVAL-001`.
+2. Domain discovery: `governance/P02_DOMAIN_DISCOVERY_DRAFT.md` ratified under `DEC-P02-DOMAIN-DISCOVERY-001`.
+3. Security and trust requirements: `governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md` ratified under `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`.
+4. Data classification and sensitive-boundary analysis: `governance/P02_DATA_CLASSIFICATION_SENSITIVE_BOUNDARY_DRAFT.md` ratified under `DEC-P02-DATA-CLASSIFICATION-001`.
+
+### Projected P02 Artifacts
+
+Projected (proposed/open) artifacts already committed and pushed to `origin/main`:
+
+- `governance/OPEN_QUESTIONS.md` — 28 P02 questions (`OQ-P02-D-001..009`, `OQ-P02-S-001..009`, `OQ-P02-C-001..010`), all `Open`. Projection commit `e0dba07e759bfded5e4f7bc1222f2b79c8a50a7f`.
+- `governance/RISK_REGISTER.md` — 19 P02 risks (`P02-RISK-001..019`), all `Proposed; open`. Projection commit `e0b18ac125e8a03b5f445040d44a9145821d5be9`.
+- `governance/ROADMAP.md` — 15 P02 roadmap items (`P02-ROAD-001..015`), all `Proposed; not started`. Projection commit `fdfeeddff01589467ec251c68adf616c0eb813ad`.
+
+### Coverage Check
+
+P02 active-task target outputs from `CONT-P02-ONB-001` mapped to ratified or projected artifacts:
+
+- Domain-model discovery surface — covered by `governance/P02_DOMAIN_DISCOVERY_DRAFT.md` (`DEC-P02-DOMAIN-DISCOVERY-001`).
+- Governance-model refinement surface — covered by ratified context-policy set, `governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md` authority requirements, and continued reliance on already-ratified `governance/CHANGE_PROTOCOL.md`, `governance/NEVER_AUTOMATIC.md`, and `governance/TRUST_BOUNDARIES.md` from P01.
+- Security and trust-requirements surface — covered by `governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md` (`DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`).
+- Data-classification and sensitive-boundary analysis — covered by `governance/P02_DATA_CLASSIFICATION_SENSITIVE_BOUNDARY_DRAFT.md` (`DEC-P02-DATA-CLASSIFICATION-001`).
+- Updated `governance/OPEN_QUESTIONS.md` projection — covered by projection commit `e0dba07e759bfded5e4f7bc1222f2b79c8a50a7f`.
+- P02 evidence and validation expectations — encoded into this task record's evidence sections per ratified deliverable.
+
+Sibling token-efficiency items deferred under `P02 Discovery Plan 002` (Reading Policy Table, tag vocabulary, baseline token-cost measurement method) are **not** included in the ratified P02 package. The audit treats them as **explicitly deferred**, not missing. The Product Owner must decide whether they (a) remain deferred and follow a separate post-P02 sibling plan, or (b) block P02 closeout until completed in P02.
+
+### Audit Findings
+
+1. **Single active task invariant** — preserved. Exactly one active task (`CONT-P02-ONB-001`).
+2. **Authority encoding** — `Rauf Alizada` consistently encoded as sole Product Owner and sole ratification authority across `governance/PROJECT_STATE.md`, `governance/ACTIVE_TASK.md`, `governance/tasks/CONT-P02-ONB-001.md`, `governance/HANDOFF.md`, and ratified P02 documents. No reappearance of `Raauf Alizada` or `Tural Rahmanli` as project authority.
+3. **Phase-state consistency** — P01 closed under `DEC-P01-CLOSEOUT-001`; P02 active under `DEC-P02-ACTIVATION-001`; P03/P04/P05 not active. Consistent across `PROJECT_STATE.md`, `CURRENT_PHASE.md`, `ACTIVE_TASK.md`, `HANDOFF.md`, and this task file.
+4. **Ratification chain** — every P02 deliverable carries a distinct decision id in `governance/DECISION_LOG.md` and an evidence section in this task file. The audit confirms no P02 ratification occurred without a corresponding decision id.
+5. **Projection chain** — open-questions, risk-register, and roadmap projections each cite ratified P02 discovery decisions as source and remain unratified (`Open` / `Proposed; open` / `Proposed; not started`). No projection silently ratified itself.
+6. **Non-encroachment** — no architecture decision, ADR, schema, storage, implementation, dependency, settings, license, hook, or adapter-rule change has occurred in P02. The audit confirms `.claude/rules/`, `CLAUDE.md`, `AGENTS.md`, `.claude/hooks/**`, and `.claude/settings.json` remain unmodified under P02.
+7. **Runtime pack non-creation** — no runtime context pack file exists (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` all absent). The ratified Context Policy's non-authority rule for generated packs is intact.
+8. **HANDOFF lag** — `governance/HANDOFF.md` `handoff_status` and `next_action` still reference the prior roadmap-projection review step. Since the roadmap projection has since been committed and pushed (`fdfeeddff01589467ec251c68adf616c0eb813ad`), the handoff is **stale** with respect to the latest commit. Treated as a documentation lag, not a governance defect; a future Product Owner-approved diff should refresh handoff state before closeout.
+9. **Document registry coverage** — `governance/DOCUMENT_REGISTRY.md` records the ratified P02 documents per their ratification evidence sections in this task file. Audit confirms no projection-only artifact was registered as canonical authority.
+10. **Stale `OQ-P01-*` rows** — pre-existing `OQ-P01-*` rows in `governance/OPEN_QUESTIONS.md` reference P01, which is closed. `P02 Discovery Plan 002` already flagged that the Product Owner must decide retain/supersede/archive/retarget. The audit treats this as an **unresolved closeout question**, not a defect.
+11. **Deferred sibling items** — Reading Policy Table, tag vocabulary, and baseline token-cost measurement method remain deferred. The audit treats this as an **unresolved closeout question**.
+
+### Open Closeout Questions for Product Owner
+
+These questions must be resolved by the Product Owner before a future P02 closeout diff may be approved. They are listed here as audit questions only and are **not** added to `governance/OPEN_QUESTIONS.md` by this diff.
+
+1. Are the four ratified P02 discovery artifacts (`CONTEXT_POLICY.md`, `CONTEXT_BUDGET.md`, `CONTEXT_RETRIEVAL_PROTOCOL.md`, `P02_DOMAIN_DISCOVERY_DRAFT.md`, `P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md`, `P02_DATA_CLASSIFICATION_SENSITIVE_BOUNDARY_DRAFT.md`) — together with the three projections (open questions, risk register, roadmap) — accepted as the **complete P02 discovery package** for closeout purposes?
+2. Do the Reading Policy Table, tag vocabulary, and baseline token-cost measurement method remain **deferred** beyond P02 closeout (handled by a future post-P02 sibling plan), or must they be completed inside P02 before closeout?
+3. Should pre-existing `OQ-P01-*` rows in `governance/OPEN_QUESTIONS.md` be **retained**, **superseded**, **archived**, or **retargeted** before P02 closeout, or should that disposition be deferred to a separate sibling diff after closeout?
+4. Should the 28 `OQ-P02-*` questions, 19 `P02-RISK-*` risks, and 15 `P02-ROAD-*` roadmap items remain in their current `Open` / `Proposed; open` / `Proposed; not started` states across the P02→P03 boundary, or must any be triaged to a different status (accepted, mitigated, resolved, scheduled, deferred) before closeout?
+5. Should a future P02 closeout diff also **refresh `governance/HANDOFF.md`** (currently lagging at `P02_ROADMAP_PROJECTION_PREPARED_AWAITING_PRODUCT_OWNER_REVIEW`) as part of the same diff, or in a separate Product Owner-approved diff prior to closeout?
+6. Does P02 closeout require any **registry update in `governance/DOCUMENT_REGISTRY.md`** beyond what is already recorded for ratified P02 documents (for example, a P02-package closeout row)?
+7. Does the Product Owner want the future closeout decision recorded as a **single `DEC-P02-CLOSEOUT-001`** decision in `governance/DECISION_LOG.md`, or as a different decision shape?
+8. After P02 closeout, should `CONT-P02-ONB-001` be closed in the **same closeout diff**, or in a **separate task-closeout diff** following the P01 pattern (where task closeout followed phase closeout)?
+9. After P02 closeout, should the repository transition to a **zero-active-task state awaiting P03 activation**, or remain in P02 closed/awaiting-P03 state with no successor task proposed in the closeout diff?
+10. Does P02 closeout require any explicit confirmation that **no architecture, implementation, license, dependency, hook, settings, adapter-rule, or project-code change** occurred during P02 (i.e., a closeout invariant assertion in the closeout decision body)?
+
+### Candidate P02 Closeout Plan
+
+The following is a **candidate plan only**. It is not approved. Each step requires a separately approved Product Owner verb.
+
+1. **Pre-closeout disposition** (separately approved): Product Owner resolves the open closeout questions above, in particular the disposition of `OQ-P01-*` rows and the deferred sibling items (Reading Policy Table, tag vocabulary, baseline token-cost measurement method).
+2. **Handoff refresh** (separately approved): Product Owner approves either folding the `governance/HANDOFF.md` refresh into the closeout diff or a prior standalone refresh diff.
+3. **P02 closeout decision draft** (separately approved): a candidate `DEC-P02-CLOSEOUT-001` is prepared in `governance/DECISION_LOG.md`, citing the ratified P02 package, the three projections, the disposition of deferred items, and the explicit non-encroachment invariant.
+4. **P02 closeout file edits**, scoped to the following file allowlist (proposed only; the Product Owner may amend the allowlist before approving):
+   - `governance/PROJECT_STATE.md` — phase status flipped to P02 closed/completed; current phase becomes the closed phase; next-action note updated.
+   - `governance/CURRENT_PHASE.md` — current phase reflects P02 closed/completed and absence of an active successor phase.
+   - `governance/ACTIVE_TASK.md` — recorded according to whether `CONT-P02-ONB-001` is closed in the same diff or a follow-up diff (per closeout question 8).
+   - `governance/tasks/CONT-P02-ONB-001.md` — closeout evidence section appended; frontmatter updated only if closing the task in the same diff and only as approved.
+   - `governance/HANDOFF.md` — refreshed to reflect closed P02 state (subject to closeout question 5).
+   - `governance/SESSION_LOG.md` — dated entry recording P02 closeout.
+   - `governance/DECISION_LOG.md` — adds `DEC-P02-CLOSEOUT-001`.
+   - `governance/DOCUMENT_REGISTRY.md` — updated only if closeout question 6 requires it.
+   - `governance/ROADMAP.md` — touched only if Product Owner explicitly approves a status change for any `P02-ROAD-*` item or P02 lane marker; otherwise untouched.
+5. **Closeout invariants** to be asserted in the closeout decision body:
+   - exactly one active task remained throughout P02;
+   - Product Owner identity `Rauf Alizada` preserved as sole ratification authority;
+   - no architecture, implementation, license, dependency, hook, settings, adapter-rule, or project-code change occurred during P02;
+   - no runtime context pack was generated during P02;
+   - every P02 ratification has a distinct decision id in `governance/DECISION_LOG.md`;
+   - the ratified context-policy set remained canonical and was not superseded;
+   - the three projections (open questions, risk register, roadmap) remained unratified (`Open` / `Proposed; open` / `Proposed; not started`) under P02.
+6. **Post-closeout (out of P02 scope)**: Product Owner separately decides whether to (a) propose a P03 activation task, (b) propose a sibling token-efficiency plan covering deferred items, (c) propose an `OQ-P01-*` disposition diff, or (d) remain in zero-active-task state. None of these are part of P02 closeout.
+
+### Non-Scope (Audit and Candidate Plan)
+
+This audit/plan explicitly does not:
+
+- close P02;
+- close `CONT-P02-ONB-001`;
+- modify ratified governance documents;
+- modify projection artifacts (`governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`);
+- add a decision to `governance/DECISION_LOG.md`;
+- update `governance/DOCUMENT_REGISTRY.md`;
+- update `governance/HANDOFF.md`, `governance/PROJECT_STATE.md`, `governance/CURRENT_PHASE.md`, or `governance/ACTIVE_TASK.md`;
+- update `governance/SESSION_LOG.md`;
+- create a successor task or proposed P03 task;
+- activate P03/P04/P05;
+- create runtime context packs;
+- modify hooks, adapter rules, architecture, schema, storage, implementation, dependency, settings, license, or project-code;
+- ratify the deferred sibling items (Reading Policy Table, tag vocabulary, baseline token-cost measurement method);
+- triage any `OQ-P02-*` question, `P02-RISK-*` risk, or `P02-ROAD-*` roadmap item;
+- triage stale `OQ-P01-*` rows;
+- stage, commit, or push any change.
+
+### File Allowlist (This Audit Diff)
+
+The audit diff touches exactly one file:
+
+- `governance/tasks/CONT-P02-ONB-001.md` — appends this `## P02 Discovery Package Closeout Readiness Audit / P02 Closeout Candidate Plan` section only.
+
+No other file is created, modified, deleted, staged, committed, or pushed by this diff.
+
+### Required Next Approval
+
+The next Product Owner decision should be one of:
+
+- approve this audit and candidate closeout plan and authorize a separate P02 closeout draft diff;
+- revise the audit findings or the candidate closeout plan;
+- request another read-only audit pass;
+- defer P02 closeout pending resolution of one or more open closeout questions;
+- direct that the deferred sibling items (Reading Policy Table, tag vocabulary, baseline token-cost measurement method) be completed inside P02 before any closeout diff is prepared;
+- direct that `OQ-P01-*` row disposition be resolved before any closeout diff is prepared.
+
+No closeout drafting is authorized until the Product Owner issues a separate approval verb.
+
+### Acceptance Criteria for Audit/Plan Approval
+
+Before this audit/plan may be approved by the Product Owner, the following must hold:
+
+- the ratified P02 discovery package is enumerated;
+- the three projections (open questions, risk register, roadmap) are enumerated with their commit ids;
+- coverage of the active-task target outputs is explicit;
+- the deferred sibling items are explicitly identified as deferred, not silently dropped;
+- the stale `OQ-P01-*` row disposition is surfaced as an open closeout question;
+- the candidate closeout plan lists a proposed file allowlist that the Product Owner may amend;
+- closeout invariants are explicit;
+- the audit does not itself close P02 or `CONT-P02-ONB-001`;
+- the audit does not activate P03/P04/P05;
+- the audit touches only `governance/tasks/CONT-P02-ONB-001.md`;
+- no runtime context pack is generated;
+- the single active-task invariant remains preserved.
+
+### Audit Evidence
+
+- audit prepared at HEAD: `fdfeeddff01589467ec251c68adf616c0eb813ad`.
+- audit decision: **none yet**.
+- approval status: **pending Product Owner review**.
+- P02 remains active under `DEC-P02-ACTIVATION-001`.
+- `CONT-P02-ONB-001` remains the single active task with `lifecycle_status: IN_PROGRESS`, `current_gate: P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY`, `gate_status: ACTIVATED`, `active: true`, `execution_authorized: true`.
+- The ratified P02 discovery package (context-policy set under `DEC-P02-CONTEXT-SET-CLOSEOUT-001`, `DEC-P02-DOMAIN-DISCOVERY-001`, `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DATA-CLASSIFICATION-001`) is unchanged by this audit.
+- The three projection artifacts (`governance/OPEN_QUESTIONS.md` at `e0dba07e759bfded5e4f7bc1222f2b79c8a50a7f`, `governance/RISK_REGISTER.md` at `e0b18ac125e8a03b5f445040d44a9145821d5be9`, `governance/ROADMAP.md` at `fdfeeddff01589467ec251c68adf616c0eb813ad`) are unchanged by this audit.
+- `governance/HANDOFF.md` is not modified by this audit; its known lag is recorded in finding 8.
+- No `governance/PROJECT_STATE.md`, `governance/CURRENT_PHASE.md`, `governance/ACTIVE_TASK.md`, `governance/DECISION_LOG.md`, `governance/DOCUMENT_REGISTRY.md`, `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, or `governance/SESSION_LOG.md` update occurred.
+- No runtime context pack generated (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md` absent).
+- No hook, adapter-rule, architecture, schema, storage, implementation, dependency, settings, license, or project-code changes occurred.
+- No staging, commit, or push performed.
