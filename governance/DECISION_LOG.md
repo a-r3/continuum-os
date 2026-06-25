@@ -528,3 +528,68 @@ Only explicit Product Owner decisions are recorded here.
 - authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
 - predecessor_decisions: `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`, `DEC-P02-CLOSEOUT-001`, `DEC-P02-DATA-CLASSIFICATION-001`, `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DOMAIN-DISCOVERY-001`, `DEC-P02-CONTEXT-SET-CLOSEOUT-001`.
 - scope_note: Ratifies the procedural row-uniqueness rule `I-1` only. Does **not** ratify any recommendation, ADR, or other criterion. Does **not** modify the proposed P03 evaluation package or proposed P03 ratification plan. Does **not** mutate any source register. Does **not** open P03 closeout or P04 GO. Subsequent per-recommendation, per-ADR, and per-criterion ratification gates remain separately required.
+
+## DEC-P03-ARCH-CRIT-002
+
+- decision_id: `DEC-P03-ARCH-CRIT-002`
+- status: `RATIFIED`
+- decision: Ratify P03 implementation-readiness criterion `I-7` from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8 as canonical procedural discipline under `CONT-P03-ARCH-001`. Ratified criterion text: "Ratified architecture decisions explicitly state what they do **not** authorize (e.g. they do not authorize code, dependencies, hook activation, settings changes, license selection, runtime context pack generation, or P04/P05 activation unless separately approved)." Every future ratified P03 architecture decision row in `governance/DECISION_LOG.md` (under the `DEC-P03-ARCH-RECO-NNN`, `DEC-P03-ARCH-ADR-NNN`, `DEC-P03-ARCH-CRIT-NNN`, or `DEC-P03-ARCH-REVISION-NNN` families) must therefore include an explicit non-authorization / non-scope section enumerating what the decision does **not** authorize; ratification rows that omit a non-authorization / non-scope section are not permitted.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-25`
+- source_task: `CONT-P03-ARCH-001`
+- source_activation: `DEC-P03-ACTIVATION-001`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- criterion_ratified: `I-7` (`governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8).
+- decision_family: `DEC-P03-ARCH-CRIT-NNN` (per `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md` §9). This decision is the second row in the `DEC-P03-ARCH-CRIT-NNN` family and is sequenced after `DEC-P03-ARCH-CRIT-001` (which ratified `I-1`).
+- related_prior_decisions: `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`.
+- safety_basis:
+  - `I-7` is a procedural/governance disclosure rule. It carries no direct content dependency on any unresolved `OQ-P02-*`, `P02-RISK-*`, or `P02-ROAD-*` row.
+  - `I-7` does not require modifying `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, or `governance/ROADMAP.md`.
+  - `I-7` does not require revising `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` or `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md`; both remain `PROPOSED_INACTIVE` / `NOT_RATIFIED` as canonical reference framing only.
+  - `I-7` does not require modifying or reclassifying any row of `DEC-P03-ARCH-CLASS-001`.
+  - Ratifying `I-7` does not by itself ratify any recommendation, ADR, or other criterion; it only codifies the explicit-non-authorization disclosure discipline that each future ratification row must satisfy.
+  - `I-7` strengthens the row-uniqueness rule ratified by `DEC-P03-ARCH-CRIT-001` (`I-1`) by binding each unique ratification row to also carry an explicit non-authorization / non-scope statement. `I-1` and `I-7` are complementary procedural disciplines and do not conflict.
+- forward_application:
+  - Every future ratification row in `governance/DECISION_LOG.md` under the `DEC-P03-ARCH-RECO-NNN`, `DEC-P03-ARCH-ADR-NNN`, `DEC-P03-ARCH-CRIT-NNN`, or `DEC-P03-ARCH-REVISION-NNN` families must include an explicit non-authorization / non-scope section (e.g. a `non_authorizations:` or equivalent block) enumerating what the decision does **not** authorize.
+  - The non-authorization section must, where applicable, explicitly state that the decision does not authorize implementation, project code, dependencies, hook activation, settings changes, adapter-rule changes, license changes, runtime context pack generation, or P04/P05 activation; and must explicitly state which recommendations, ADRs, criteria, or source-register rows it does **not** ratify or mutate.
+  - This forward-application clause restates and binds `I-7`; it does not authorize the ratification of any specific recommendation, ADR, or other criterion.
+- evidence:
+  - `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8 carries `I-7` as a proposed implementation-readiness criterion (status: `proposed`; document remains `PROPOSED_INACTIVE` / `NOT_RATIFIED`).
+  - `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md` §5 lists `I-7` among items ready for procedural ratification planning (document remains `PROPOSED_INACTIVE` / `NOT_RATIFIED`).
+  - `governance/P03_G4_CLASSIFICATION_PLAN.md` is `Ratified / RATIFIED` under `DEC-P03-ARCH-CLASS-001`.
+  - `DEC-P03-ARCH-CRIT-001` (ratifies `I-1`) is canonical at HEAD `411e560793b0416362c80c30c316e8f02b6bd714`.
+  - This `I-7` ratification diff.
+- non_authorizations:
+  - Does **not** ratify any architecture recommendation `R-1..R-6` from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`.
+  - Does **not** ratify any `ADR-DRAFT-P03-001..006` from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`.
+  - Does **not** ratify any other implementation-readiness criterion (`I-2`, `I-3`, `I-4`, `I-5`, `I-6`, `I-8`).
+  - Does **not** modify `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`.
+  - Does **not** modify `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md`.
+  - Does **not** modify `governance/P03_G4_CLASSIFICATION_PLAN.md`.
+  - Does **not** mutate `governance/OPEN_QUESTIONS.md`.
+  - Does **not** mutate `governance/RISK_REGISTER.md`.
+  - Does **not** mutate `governance/ROADMAP.md`.
+  - Does **not** resolve any `OQ-P02-*` row.
+  - Does **not** accept, dispose, or otherwise transition any `P02-RISK-*` row.
+  - Does **not** schedule any `P02-ROAD-*` roadmap item.
+  - Does **not** reclassify or otherwise alter any `DEC-P03-ARCH-CLASS-001` classification choice.
+  - Does **not** modify or supersede `DEC-P03-ARCH-CRIT-001` (the `I-1` ratification); the row-uniqueness rule remains canonical.
+  - Does **not** authorize implementation, project code, dependency installation, lockfile or manifest changes, license selection, hook registration or activation, settings changes (`.claude/settings.json`, `.claude/settings.local.example.json`), adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/**`), runtime context pack generation (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md`), or P04/P05 activation.
+  - Does **not** create any P04 or P05 task.
+  - Does **not** open P03 closeout (source-package Gate G-7) or P04 GO (source-package Gate G-8).
+  - Does **not** create or modify `governance/PRODUCT_OWNER.md` (absent and remains absent).
+- invariants_preserved:
+  - Exactly one active task: `CONT-P03-ARCH-001` (active-task invariant preserved).
+  - P04 and P05 remain not active; no P04 or P05 task is proposed or activated by this decision.
+  - `DEC-P03-ARCH-CLASS-001` remains canonical; the G-4 classification set is unchanged.
+  - `DEC-P03-ARCH-CRIT-001` (`I-1` row-uniqueness rule) remains canonical and is not superseded.
+  - Ratified context-policy set remains canonical and is not superseded.
+  - Ratified P02 discovery package and all other ratified governance documents remain canonical and are not superseded.
+  - No runtime context pack is generated by this decision.
+  - Canonical-wins discipline (P-4): no derived or generated artifact is elevated by this decision.
+  - Never-automatic surface (P-9): no automation, hook activation, settings change, or adapter-rule change is implied.
+- reversibility: A future Product Owner decision may supersede `DEC-P03-ARCH-CRIT-002` by introducing a successor `DEC-P03-ARCH-CRIT-NNN` row that explicitly supersedes this decision and restates the explicit-non-authorization disclosure rule (or replaces it with a successor procedural rule). Until such supersession is ratified, the explicit-non-authorization disclosure rule binds every future ratification gate under the listed decision-id families.
+- authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
+- predecessor_decisions: `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`, `DEC-P02-CLOSEOUT-001`, `DEC-P02-DATA-CLASSIFICATION-001`, `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DOMAIN-DISCOVERY-001`, `DEC-P02-CONTEXT-SET-CLOSEOUT-001`.
+- scope_note: Ratifies the explicit-non-authorization disclosure rule `I-7` only. Does **not** ratify any recommendation, ADR, or other criterion. Does **not** modify the proposed P03 evaluation package or proposed P03 ratification plan. Does **not** mutate any source register. Does **not** open P03 closeout or P04 GO. Subsequent per-recommendation, per-ADR, and per-criterion ratification gates remain separately required.
