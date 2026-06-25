@@ -593,3 +593,71 @@ Only explicit Product Owner decisions are recorded here.
 - authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
 - predecessor_decisions: `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`, `DEC-P02-CLOSEOUT-001`, `DEC-P02-DATA-CLASSIFICATION-001`, `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DOMAIN-DISCOVERY-001`, `DEC-P02-CONTEXT-SET-CLOSEOUT-001`.
 - scope_note: Ratifies the explicit-non-authorization disclosure rule `I-7` only. Does **not** ratify any recommendation, ADR, or other criterion. Does **not** modify the proposed P03 evaluation package or proposed P03 ratification plan. Does **not** mutate any source register. Does **not** open P03 closeout or P04 GO. Subsequent per-recommendation, per-ADR, and per-criterion ratification gates remain separately required.
+
+## DEC-P03-ARCH-CRIT-003
+
+- decision_id: `DEC-P03-ARCH-CRIT-003`
+- status: `RATIFIED`
+- decision: Ratify P03 implementation-readiness criterion `I-8` from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8 as canonical procedural / phase-boundary discipline under `CONT-P03-ARCH-001`. Ratified criterion text: "P03 closeout requires a separately approved Product Owner P03 closeout decision, which flips `CONT-P03-ARCH-001` frontmatter to `lifecycle_status: DONE`, `gate_status: COMPLETED`, `ratification_status: RATIFIED`, `active: false`, `execution_authorized: false`, and records `closeout_decision`. P04 GO is a separately approved decision; closing P03 does not by itself activate P04." P03 closeout therefore requires a distinct Product Owner-approved closeout decision (anticipated under the `DEC-P03-CLOSEOUT-NNN` family); closing P03 does not by itself activate P04; and P04 activation requires its own separately approved Product Owner activation decision, single-active-task gate, and task creation.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-25`
+- source_task: `CONT-P03-ARCH-001`
+- source_activation: `DEC-P03-ACTIVATION-001`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- criterion_ratified: `I-8` (`governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8).
+- decision_family: `DEC-P03-ARCH-CRIT-NNN` (per `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md` §9). This decision is the third row in the `DEC-P03-ARCH-CRIT-NNN` family and is sequenced after `DEC-P03-ARCH-CRIT-001` (which ratified `I-1`) and `DEC-P03-ARCH-CRIT-002` (which ratified `I-7`).
+- related_prior_decisions: `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`.
+- safety_basis:
+  - `I-8` is a procedural / phase-boundary discipline rule. It carries no direct content dependency on any unresolved `OQ-P02-*`, `P02-RISK-*`, or `P02-ROAD-*` row.
+  - `I-8` does not require modifying `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, or `governance/ROADMAP.md`.
+  - `I-8` does not require revising `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` or `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md`; both remain `PROPOSED_INACTIVE` / `NOT_RATIFIED` as canonical reference framing only.
+  - `I-8` does not require modifying or reclassifying any row of `DEC-P03-ARCH-CLASS-001`.
+  - `I-8` does not by itself ratify any recommendation, ADR, or other criterion; it only codifies the P03 closeout / P04 activation separation discipline that each future closeout or activation gate must satisfy.
+  - `I-8` is complementary to `DEC-P03-ARCH-CRIT-001` (`I-1` row-uniqueness rule) and `DEC-P03-ARCH-CRIT-002` (`I-7` explicit-non-authorization disclosure rule) and does not conflict with either; the three procedural rules co-bind every future P03 ratification gate and every future phase-boundary gate.
+- forward_application:
+  - Closing P03 requires a distinct Product Owner-approved closeout decision recorded as a row in `governance/DECISION_LOG.md` under the `DEC-P03-CLOSEOUT-NNN` family (per `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md` §9). That closeout decision flips `governance/tasks/CONT-P03-ARCH-001.md` frontmatter to `lifecycle_status: DONE`, `gate_status: COMPLETED`, `ratification_status: RATIFIED`, `active: false`, `execution_authorized: false`, and records the `closeout_decision` reference; it does not by itself activate P04.
+  - Activating P04 requires a separately approved Product Owner P04 activation decision (anticipated under a future `DEC-P04-ACTIVATION-NNN` family), a separately created P04 task that satisfies the single-active-task invariant, and a separately approved P04 GO gate. Closing P03 does not implicitly create or authorize a P04 task.
+  - This forward-application clause restates and binds `I-8`; it does not authorize any P03 closeout, any P04 activation, or any P04 task.
+- evidence:
+  - `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8 carries `I-8` as a proposed implementation-readiness criterion (status: `proposed`; document remains `PROPOSED_INACTIVE` / `NOT_RATIFIED`).
+  - `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md` §5 lists `I-8` among items ready for procedural ratification planning (document remains `PROPOSED_INACTIVE` / `NOT_RATIFIED`).
+  - `governance/P03_G4_CLASSIFICATION_PLAN.md` is `Ratified / RATIFIED` under `DEC-P03-ARCH-CLASS-001`.
+  - `DEC-P03-ARCH-CRIT-001` (ratifies `I-1`) and `DEC-P03-ARCH-CRIT-002` (ratifies `I-7`) are canonical at HEAD `1bd5edf8427d7022e141b6a301f96bc2df5fb6b5`.
+  - This `I-8` ratification diff.
+- non_authorizations:
+  - Does **not** ratify any architecture recommendation `R-1..R-6` from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`.
+  - Does **not** ratify any `ADR-DRAFT-P03-001..006` from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`.
+  - Does **not** ratify any other implementation-readiness criterion (`I-2`, `I-3`, `I-4`, `I-5`, `I-6`, `I-7`). (Note: `I-1` and `I-7` are already ratified under `DEC-P03-ARCH-CRIT-001` and `DEC-P03-ARCH-CRIT-002` respectively; this decision does not modify or supersede either.)
+  - Does **not** modify or supersede `DEC-P03-ARCH-CRIT-001` (the `I-1` row-uniqueness rule).
+  - Does **not** modify or supersede `DEC-P03-ARCH-CRIT-002` (the `I-7` explicit-non-authorization disclosure rule).
+  - Does **not** modify or reclassify any row of `DEC-P03-ARCH-CLASS-001`; the G-4 classification set is unchanged.
+  - Does **not** modify `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`.
+  - Does **not** modify `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md`.
+  - Does **not** modify `governance/P03_G4_CLASSIFICATION_PLAN.md`.
+  - Does **not** mutate `governance/OPEN_QUESTIONS.md`.
+  - Does **not** mutate `governance/RISK_REGISTER.md`.
+  - Does **not** mutate `governance/ROADMAP.md`.
+  - Does **not** resolve any `OQ-P02-*` row.
+  - Does **not** accept, dispose, or otherwise transition any `P02-RISK-*` row.
+  - Does **not** schedule any `P02-ROAD-*` roadmap item.
+  - Does **not** authorize implementation, project code, dependency installation, lockfile or manifest changes, license selection, hook registration or activation, settings changes (`.claude/settings.json`, `.claude/settings.local.example.json`), adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/**`), runtime context pack generation (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md`), or P04/P05 activation.
+  - Does **not** create any P04 or P05 task.
+  - Does **not** open P03 closeout (source-package Gate G-7). Ratifying `I-8` codifies the closeout discipline; it does not by itself constitute, schedule, approve, or initiate the P03 closeout decision.
+  - Does **not** open P04 GO (source-package Gate G-8). Ratifying `I-8` codifies the P03/P04 separation; it does not authorize, schedule, or initiate P04 activation.
+  - Does **not** create or modify `governance/PRODUCT_OWNER.md` (absent and remains absent).
+- invariants_preserved:
+  - Exactly one active task: `CONT-P03-ARCH-001` (active-task invariant preserved). `I-8` codifies the future closeout-time transition pathway but does not execute that transition.
+  - P04 and P05 remain not active; no P04 or P05 task is proposed or activated by this decision.
+  - `DEC-P03-ARCH-CLASS-001` remains canonical; the G-4 classification set is unchanged.
+  - `DEC-P03-ARCH-CRIT-001` (`I-1` row-uniqueness rule) remains canonical and is not superseded.
+  - `DEC-P03-ARCH-CRIT-002` (`I-7` explicit-non-authorization disclosure rule) remains canonical and is not superseded.
+  - Ratified context-policy set remains canonical and is not superseded.
+  - Ratified P02 discovery package and all other ratified governance documents remain canonical and are not superseded.
+  - No runtime context pack is generated by this decision.
+  - Canonical-wins discipline (P-4): no derived or generated artifact is elevated by this decision.
+  - Never-automatic surface (P-9): no automation, hook activation, settings change, or adapter-rule change is implied.
+- reversibility: A future Product Owner decision may supersede `DEC-P03-ARCH-CRIT-003` by introducing a successor `DEC-P03-ARCH-CRIT-NNN` row that explicitly supersedes this decision and restates the P03 closeout / P04 activation separation rule (or replaces it with a successor procedural rule). Until such supersession is ratified, the P03 closeout / P04 activation separation discipline binds every future P03 closeout gate and every future P04 activation gate.
+- authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
+- predecessor_decisions: `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`, `DEC-P02-CLOSEOUT-001`, `DEC-P02-DATA-CLASSIFICATION-001`, `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DOMAIN-DISCOVERY-001`, `DEC-P02-CONTEXT-SET-CLOSEOUT-001`.
+- scope_note: Ratifies the P03 closeout / P04 activation separation rule `I-8` only. Does **not** ratify any recommendation, ADR, or other criterion. Does **not** modify the proposed P03 evaluation package or proposed P03 ratification plan. Does **not** mutate any source register. Does **not** open P03 closeout or P04 GO. Subsequent per-recommendation, per-ADR, per-criterion, P03-closeout, and P04-activation ratification gates remain separately required.
