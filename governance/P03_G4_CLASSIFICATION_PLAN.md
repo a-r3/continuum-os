@@ -1,10 +1,12 @@
 ---
 document_id: P03_G4_CLASSIFICATION_PLAN
-title: P03 G-4 Classification Planning Artifact
-document_type: Governance (Proposed)
-document_status: PROPOSED_INACTIVE
-ratification_status: NOT_RATIFIED
-ratification_decision: none
+title: P03 G-4 Classification Record
+document_type: Governance
+document_status: Ratified
+ratification_status: RATIFIED
+ratification_decision: DEC-P03-ARCH-CLASS-001
+ratified_by: Rauf Alizada
+ratified_at: 2026-06-24
 proposed_by: Claude Code (advisory; under task `CONT-P03-ARCH-001`)
 proposed_at: 2026-06-24
 source_task: CONT-P03-ARCH-001
@@ -22,15 +24,17 @@ related_inputs:
   - DEC-P02-CONTEXT-RETRIEVAL-001
 ---
 
-# P03 G-4 Classification Planning Artifact
+# P03 G-4 Classification Record
 
 ## 1. Authority and Status Notice
 
-- document_status: `PROPOSED_INACTIVE`.
-- ratification_status: `NOT_RATIFIED`.
-- This document is a **proposed** G-4 classification planning artifact prepared under active task `CONT-P03-ARCH-001` and activation decision `DEC-P03-ACTIVATION-001`. It is **not ratified**.
-- This document is **not a `governance/DECISION_LOG.md` entry**. It adds no row to `governance/DECISION_LOG.md`.
-- This document is **not a ratification**. It does not ratify any classification choice. Each row carries a *proposed* classification only.
+- document_status: `Ratified`.
+- ratification_status: `RATIFIED`.
+- ratification_decision: `DEC-P03-ARCH-CLASS-001`.
+- ratified_by: `Rauf Alizada`.
+- ratified_at: `2026-06-24`.
+- **Ratification note.** The G-4 classification set in §5/§6/§7 is ratified by the Product Owner (`Rauf Alizada`) on 2026-06-24 under `DEC-P03-ARCH-CLASS-001`. The ratification covers the classification set only (every `OQ-P02-*`, `P02-RISK-*`, and `P02-ROAD-*` row classified as `P03-blocking`, `P04-blocking`, or `deferred-with-acceptance`). The ratification does **not** ratify any architecture recommendation (`R-1..R-6`), any ADR draft (`ADR-DRAFT-P03-001..006`), or any criterion (`I-1..I-8`) from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`; does **not** mutate `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, or `governance/ROADMAP.md`; does **not** resolve, dispose, or schedule any source row; does **not** modify `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` or `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md`; does **not** authorize implementation, project code, dependencies, hooks, adapter rules, settings, license, runtime context packs, or P04/P05 activation. Forward application is defined by `DEC-P03-ARCH-CLASS-001`: `P03-blocking` rows must be resolved, disposed, or explicitly deferred-with-acceptance under a separately approved Product Owner gate before P03 closeout; `P04-blocking` rows must be resolved or explicitly accepted before P04 GO; `deferred-with-acceptance` rows may remain open unless reclassified by a later Product Owner decision under the reclassification clause of `DEC-P03-ARCH-CLASS-001`. Per-row classification tables in §5/§6/§7 are the authoritative classification surface; §8/§9/§10 summary counts are reading aids.
+- This document is now a ratified G-4 classification record under `DEC-P03-ARCH-CLASS-001`. The ratification of the classification set does **not** by itself ratify any architecture recommendation or ADR.
 - This document **does not mutate** `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, or `governance/ROADMAP.md`. Source-register row status and content remain unchanged.
 - This document **does not resolve** any `OQ-P02-*` row. Resolution requires a separately approved Product Owner gate per `governance/CHANGE_PROTOCOL.md` that records the resolution in `governance/DECISION_LOG.md` and (if appropriate) updates `governance/OPEN_QUESTIONS.md`.
 - This document **does not accept** any `P02-RISK-*` row. Risk disposition (accepted-with-mitigation / transferred / mitigated) requires a separately approved Product Owner gate.
@@ -61,18 +65,18 @@ No source outside the above is treated as authority by this artifact. Hidden age
 
 ## 3. Classification Vocabulary
 
-Each row in §5..§7 carries exactly one of the three values below. The vocabulary is **proposed**; it becomes binding only when a future ratified `DEC-P03-ARCH-CLASS-NNN` decision adopts it.
+Each row in §5..§7 carries exactly one of the three values below. This vocabulary and the per-row classification set are ratified by `DEC-P03-ARCH-CLASS-001`.
 
 - **`P03-blocking`** — The row affects whether a P03 architecture ratification can safely proceed. The Product Owner is expected to resolve, dispose, or explicitly defer-with-acceptance the row before any architecture decision that depends on it is ratified. P03 closeout (source-package Gate G-7) may not proceed while any `P03-blocking` row remains unresolved.
 - **`P04-blocking`** — The row does not need to be resolved for safe P03 architecture ratification, but does need to be resolved before P04 implementation-readiness (source-package Gate G-8) is granted. P03 closeout may proceed with `P04-blocking` rows remaining open, provided the dependency is explicitly recorded in each ratified P03 decision that touches the row.
-- **`deferred-with-acceptance`** — The row may remain open into P04 and possibly P05 with explicit Product Owner acceptance of the deferral. The row is neither resolved nor scheduled; the Product Owner accepts the residual ambiguity or the deferred work. A `deferred-with-acceptance` choice is itself a proposed Product Owner posture and requires ratification under the G-4 gate to become binding.
+- **`deferred-with-acceptance`** — The row may remain open into P04 and possibly P05 with explicit Product Owner acceptance of the deferral. The row is neither resolved nor scheduled; the Product Owner accepts the residual ambiguity or the deferred work. For rows listed as `deferred-with-acceptance` in §5..§7, the deferral posture is ratified by `DEC-P03-ARCH-CLASS-001` unless reclassified by a later Product Owner decision.
 
 A row may be reclassified by a future separately approved Product Owner diff; reclassification is itself a governance edit and is not authorized by this artifact.
 
 ## 4. Classification Method
 
 - Each row appears exactly once with its source id and a short title or description.
-- Each row carries exactly one proposed classification from §3.
+- Each row carries exactly one ratified classification from §3.
 - Each row carries a short rationale tied to ratified P02 inputs and (where applicable) to the P03 evaluation package dimensions:
   - **Domain** (R-1 / ADR-DRAFT-P03-001).
   - **Security/Trust** (R-2 / ADR-DRAFT-P03-002).
@@ -82,15 +86,15 @@ A row may be reclassified by a future separately approved Product Owner diff; re
   - **Agent-Adapter Boundary** (R-6 / ADR-DRAFT-P03-006).
   - **Cross-cutting** when the row spans multiple dimensions.
 - Each row indicates the next gate required to act on the classification, if any.
-- Where source-row content is ambiguous, the proposed classification is made conservatively (favoring `P04-blocking` over `deferred-with-acceptance` when implementation-readiness might be affected, and favoring `P03-blocking` when architecture-ratification safety might be affected) and the rationale records that the choice requires Product Owner confirmation.
+- Where source-row content is ambiguous, the classification was prepared conservatively (favoring `P04-blocking` over `deferred-with-acceptance` when implementation-readiness might be affected, and favoring `P03-blocking` when architecture-ratification safety might be affected) and the rationale records that the choice requires Product Owner confirmation.
 - Where a row appears to require implementation work, it is classified `P04-blocking` unless safe architecture ratification cannot proceed without it, in which case it is `P03-blocking`.
 - Candidate P03-specific projection rows in the source registers are mentioned only as future options; no projection row is created by this artifact.
 
 ## 5. OQ-P02 Classification Table
 
-| Source ID | Short description | Proposed classification | Rationale | P03 dimension | Required next gate |
+| Source ID | Short description | Ratified classification | Rationale | P03 dimension | Required next gate |
 |---|---|---|---|---|---|
-| `OQ-P02-D-001` | Project vs Workspace as distinct domain concepts | `P03-blocking` | Affects scoping of tasks, decisions, evidence, generated context; directly conditions R-1 / ADR-DRAFT-P03-001 wording on domain projection scope. | Domain | Per-row resolution gate (`DEC-P03-ARCH-CLASS-NNN` adopts classification; later `DEC-P03-*` resolves the question itself). |
+| `OQ-P02-D-001` | Project vs Workspace as distinct domain concepts | `P03-blocking` | Affects scoping of tasks, decisions, evidence, generated context; directly conditions R-1 / ADR-DRAFT-P03-001 wording on domain projection scope. | Domain | Later Product Owner resolution gate; classification already adopted by `DEC-P03-ARCH-CLASS-001`. |
 | `OQ-P02-D-002` | `Plan` as task-internal vs first-class artifact | `deferred-with-acceptance` | Lifecycle wording can remain task-internal without blocking architecture ratification; promotion to first-class is a future Product Owner posture. Requires Product Owner confirmation. | Domain | Optional later Product Owner posture gate. |
 | `OQ-P02-D-003` | `Deliverable Draft` as distinct concept | `deferred-with-acceptance` | Draft-vs-document boundary remains workable per-task convention; no architecture ratification depends on it. Requires Product Owner confirmation. | Domain | Optional later Product Owner posture gate. |
 | `OQ-P02-D-004` | Canonical granularity of `Evidence` | `P04-blocking` | Uniform evidence granularity is an implementation-discipline concern more than an architecture-ratification concern; should be resolved before P04 GO. | Cross-cutting (Domain + Security/Trust) | Pre-P04 resolution gate. |
@@ -121,7 +125,7 @@ A row may be reclassified by a future separately approved Product Owner diff; re
 
 ## 6. P02-RISK Classification Table
 
-| Source ID | Short description | Proposed classification | Rationale | P03 dimension | Required next gate |
+| Source ID | Short description | Ratified classification | Rationale | P03 dimension | Required next gate |
 |---|---|---|---|---|---|
 | `P02-RISK-001` | Product Owner Authority Confusion / Invalid Identity | `P03-blocking` | Identity discipline (`Rauf Alizada` only) must be reaffirmed in every ratified P03 architecture decision per principle P-6 of the ratification plan; the risk is structurally blocking for architecture ratification. | Cross-cutting | Each P03 ratification row restates identity discipline; risk disposition gate is itself separate. |
 | `P02-RISK-002` | Active-Task Invariant Violation in P02 | `P03-blocking` | Active-task invariant must be preserved across every ratification step per principle P-7; structurally blocking. | Cross-cutting | Each P03 ratification row preserves invariant; risk disposition gate is itself separate. |
@@ -145,7 +149,7 @@ A row may be reclassified by a future separately approved Product Owner diff; re
 
 ## 7. P02-ROAD Classification Table
 
-| Source ID | Short description | Proposed classification | Rationale | P03 dimension | Required next gate |
+| Source ID | Short description | Ratified classification | Rationale | P03 dimension | Required next gate |
 |---|---|---|---|---|---|
 | `P02-ROAD-001` | Resolve Domain-Model Open Questions | `P03-blocking` | Covers `OQ-P02-D-*` items classified `P03-blocking` in §5; ratification of R-1 / R-5 / R-6 depends on it. | Cross-cutting (Domain + Governance-Code + Agent-Adapter) | Scheduling aligned with R-1 / R-5 / R-6 ratifications. |
 | `P02-ROAD-002` | Ratify Canonical Data Classes and Sensitivity Levels | `P03-blocking` | Drives R-3 / ADR-DRAFT-P03-003 (registry shape) and addresses `P02-RISK-016`. | Data Classification | Scheduling aligned with R-3 / ADR-DRAFT-P03-003 ratification. |
@@ -165,7 +169,7 @@ A row may be reclassified by a future separately approved Product Owner diff; re
 
 ## 8. P03-Blocking Summary
 
-Rows proposed as `P03-blocking` (must be resolved, disposed, or explicitly deferred-with-acceptance under a separately approved Product Owner gate before P03 closeout):
+Rows ratified as `P03-blocking` (must be resolved, disposed, or explicitly deferred-with-acceptance under a separately approved Product Owner gate before P03 closeout):
 
 - Open questions (11): `OQ-P02-D-001`, `OQ-P02-D-005`, `OQ-P02-D-007`, `OQ-P02-D-008`, `OQ-P02-S-001`, `OQ-P02-S-005`, `OQ-P02-S-009`, `OQ-P02-C-001`, `OQ-P02-C-004`, `OQ-P02-C-009`, `OQ-P02-C-010`.
 - Risks (10): `P02-RISK-001`, `P02-RISK-002`, `P02-RISK-003`, `P02-RISK-004`, `P02-RISK-005`, `P02-RISK-006`, `P02-RISK-007`, `P02-RISK-016`, `P02-RISK-017`, `P02-RISK-018`.
@@ -175,7 +179,7 @@ Rows proposed as `P03-blocking` (must be resolved, disposed, or explicitly defer
 
 ## 9. P04-Blocking Summary
 
-Rows proposed as `P04-blocking` (need not be resolved for P03 closeout but must be resolved or explicitly accepted before P04 GO under source-package Gate G-8):
+Rows ratified as `P04-blocking` (need not be resolved for P03 closeout but must be resolved or explicitly accepted before P04 GO under source-package Gate G-8):
 
 - Open questions (5): `OQ-P02-D-004`, `OQ-P02-S-002`, `OQ-P02-S-006`, `OQ-P02-C-005`, `OQ-P02-C-007`.
 - Risks (5): `P02-RISK-008`, `P02-RISK-009`, `P02-RISK-010`, `P02-RISK-011`, `P02-RISK-012`.
@@ -185,7 +189,7 @@ Rows proposed as `P04-blocking` (need not be resolved for P03 closeout but must 
 
 ## 10. Deferred-With-Acceptance Summary
 
-Rows proposed as `deferred-with-acceptance` (Product Owner accepts the deferral; no scheduled resolution required by P03 closeout or P04 GO unless reclassified):
+Rows ratified as `deferred-with-acceptance` (Product Owner accepts the deferral; no scheduled resolution required by P03 closeout or P04 GO unless reclassified):
 
 - Open questions (12): `OQ-P02-D-002`, `OQ-P02-D-003`, `OQ-P02-D-006`, `OQ-P02-D-009`, `OQ-P02-S-003`, `OQ-P02-S-004`, `OQ-P02-S-007`, `OQ-P02-S-008`, `OQ-P02-C-002`, `OQ-P02-C-003`, `OQ-P02-C-006`, `OQ-P02-C-008`.
 - Risks (4): `P02-RISK-013`, `P02-RISK-014`, `P02-RISK-015`, `P02-RISK-019`.
@@ -193,19 +197,19 @@ Rows proposed as `deferred-with-acceptance` (Product Owner accepts the deferral;
 
 (Counts reflect the rows enumerated in this summary; per-row classifications in §5..§7 are authoritative.)
 
-## 11. Required Product Owner Review Gates
+## 11. Required Product Owner Follow-Up Gates
 
-The gates below are **required** before any classification choice becomes binding. None is opened by this artifact.
+The G-4 classification set is ratified under `DEC-P03-ARCH-CLASS-001`. The gates below describe follow-up actions after ratification; none is opened by this document itself.
 
-- **Gate CG-1: Product Owner review of this G-4 planning artifact.** Outcome: accept-as-is, accept-with-modifications, or reject-and-resubmit. Acceptance does not by itself ratify the classification set.
-- **Gate CG-2: G-4 ratification.** Adopts the (possibly modified) classification set as canonical under a single new `governance/DECISION_LOG.md` row. Proposed decision id for naming purposes only (not allocated by this artifact): `DEC-P03-ARCH-CLASS-001`. Allocation occurs at the time of the gate; this artifact adds no row to `governance/DECISION_LOG.md`.
-- **Gate CG-3: Optional P03-specific projection diff.** If the Product Owner desires, a separately approved diff may project a small set of P03-specific rows tagged with their G-4 classification into `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, and/or `governance/ROADMAP.md`, using the existing schemas. This artifact does not project any such rows.
-- **Gate CG-4: Per-row follow-up resolution / disposition / scheduling gates.** Each P03-blocking row needs a follow-up gate that resolves the question, disposes the risk, or schedules the roadmap item before P03 closeout. P04-blocking rows have analogous follow-up gates before P04 GO. Deferred-with-acceptance rows do not require follow-up unless reclassified.
-- **Gate CG-5: Reclassification.** Any later change to a row's proposed classification requires a separately approved Product Owner diff and either supersedes `DEC-P03-ARCH-CLASS-001` or amends it under a new decision id; this artifact does not authorize reclassification.
+- **Gate CG-1: Product Owner review of this G-4 planning artifact.** Completed as the review surface prior to `DEC-P03-ARCH-CLASS-001`.
+- **Gate CG-2: G-4 ratification.** Completed by `DEC-P03-ARCH-CLASS-001`. The decision ratifies the classification set only and does not mutate the source registers.
+- **Gate CG-3: Optional P03-specific projection diff.** If the Product Owner desires, a separately approved diff may project a small set of P03-specific rows tagged with their G-4 classification into `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, and/or `governance/ROADMAP.md`, using the existing schemas. This document does not project any such rows.
+- **Gate CG-4: Per-row follow-up resolution / disposition / scheduling gates.** Each `P03-blocking` row needs a follow-up gate that resolves the question, disposes the risk, schedules the roadmap item, or explicitly defers it with Product Owner acceptance before P03 closeout. `P04-blocking` rows have analogous follow-up gates before P04 GO. `deferred-with-acceptance` rows do not require follow-up unless reclassified.
+- **Gate CG-5: Reclassification.** Any later change to a row's ratified classification requires a separately approved Product Owner diff and either supersedes `DEC-P03-ARCH-CLASS-001` or amends it under a new decision id; this document does not authorize reclassification.
 
-Future ratification of this classification plan may use the decision id `DEC-P03-ARCH-CLASS-001`. It is **not allocated** and **not added to `governance/DECISION_LOG.md`** by this artifact.
+`DEC-P03-ARCH-CLASS-001` is the allocated ratification decision for this classification set.
 
-A future Product Owner decision may also introduce a separate decision-id family for formal rejection/disposition of architecture items, such as `DEC-P03-ARCH-REJECT-NNN`. This is only a future naming consideration and is not allocated or used by this artifact. No row in this artifact is presently classified as rejected.
+A future Product Owner decision may also introduce a separate decision-id family for formal rejection/disposition of architecture items, such as `DEC-P03-ARCH-REJECT-NNN`. This remains only a future naming consideration. No row in this document is presently classified as rejected.
 
 ## 12. Non-Scope and Stop Conditions
 

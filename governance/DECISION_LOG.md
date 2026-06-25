@@ -412,3 +412,59 @@ Only explicit Product Owner decisions are recorded here.
   - projected P02 artifacts (open questions, risk register, roadmap, document registry) remain unchanged.
   - invalid identities `Raauf Alizada` and `Tural Rahmanli` are not introduced as project authority.
 - scope_note: Activates P03 (architecture-only) and creates `CONT-P03-ARCH-001` as the single active task. Does **not** activate P04 or P05. Does **not** create any P04 or P05 task. Does **not** ratify any architecture decision. Does **not** modify P02 artifacts. Does **not** modify `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, `governance/GLOSSARY.md`, ratified context-policy set, or ratified P02 discovery drafts. Does **not** generate runtime context packs. Does **not** modify hooks, adapter rules, settings, dependencies, license, or project code.
+
+## DEC-P03-ARCH-CLASS-001
+
+- decision_id: `DEC-P03-ARCH-CLASS-001`
+- status: `RATIFIED`
+- decision: Ratify the P03 G-4 classification set from `governance/P03_G4_CLASSIFICATION_PLAN.md` as the canonical G-4 classification of every carried-forward P02 row (`OQ-P02-*`, `P02-RISK-*`, `P02-ROAD-*`) into `P03-blocking`, `P04-blocking`, or `deferred-with-acceptance` for the sole purpose of P03 architecture-ratification sequencing under `CONT-P03-ARCH-001` and the proposed P03 Architecture Ratification Plan.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-24`
+- source_task: `CONT-P03-ARCH-001`
+- source_activation: `DEC-P03-ACTIVATION-001`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- scope:
+  - Classifies carried-forward P02 rows as `P03-blocking`, `P04-blocking`, or `deferred-with-acceptance`.
+  - Ratified distribution:
+    - `P03-blocking`: 27 rows.
+    - `P04-blocking`: 14 rows.
+    - `deferred-with-acceptance`: 21 rows.
+  - Total: 62 rows.
+  - Coverage:
+    - 28 `OQ-P02-*` rows (`OQ-P02-D-001..009`, `OQ-P02-S-001..009`, `OQ-P02-C-001..010`).
+    - 19 `P02-RISK-*` rows (`P02-RISK-001..019`).
+    - 15 `P02-ROAD-*` rows (`P02-ROAD-001..015`).
+  - Per-row classification tables in §5/§6/§7 of `governance/P03_G4_CLASSIFICATION_PLAN.md` are the authoritative classification surface; §8/§9/§10 summary counts are reading aids.
+- forward_application:
+  - `P03-blocking` rows must be resolved, disposed, or explicitly deferred-with-acceptance under a separately approved Product Owner gate before P03 closeout.
+  - `P04-blocking` rows need not be resolved for P03 closeout but must be resolved or explicitly accepted before P04 GO (source-package Gate G-8).
+  - `deferred-with-acceptance` rows may remain open into P04 and possibly P05 with explicit Product Owner acceptance and require no scheduled resolution unless reclassified by a later Product Owner decision.
+- reclassification: Any later change to a row's ratified classification requires a separately approved Product Owner diff that either supersedes this decision or amends it under a new decision id.
+- evidence:
+  - Proposed P03 G-4 Classification Planning Artifact committed at `e7654c2574644a9284e9f62cdc4e544b678c3c59` (`governance/P03_G4_CLASSIFICATION_PLAN.md`, `document_status: PROPOSED_INACTIVE`, `ratification_status: NOT_RATIFIED` before this decision).
+  - This G-4 ratification diff.
+- non_authorizations:
+  - Does **not** mutate `governance/OPEN_QUESTIONS.md`.
+  - Does **not** mutate `governance/RISK_REGISTER.md`.
+  - Does **not** mutate `governance/ROADMAP.md`.
+  - Does **not** resolve any `OQ-P02-*` row.
+  - Does **not** accept, dispose, or otherwise transition any `P02-RISK-*` row.
+  - Does **not** schedule any `P02-ROAD-*` roadmap item.
+  - Does **not** ratify any architecture recommendation `R-1..R-6` from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`.
+  - Does **not** ratify any `ADR-DRAFT-P03-001..006` from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`.
+  - Does **not** modify `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`.
+  - Does **not** modify `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md`.
+  - Does **not** authorize implementation, project code, dependency installation, lockfile or manifest changes, license selection, hook registration or activation, settings changes (`.claude/settings.json`, `.claude/settings.local.example.json`), adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/**`), runtime context pack generation (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md`), or P04/P05 activation.
+  - Does **not** create any P04 or P05 task.
+  - Does **not** create or modify `governance/PRODUCT_OWNER.md` (absent and remains absent).
+  - Does **not** project any P03-specific row into `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, or `governance/ROADMAP.md`.
+- invariants_preserved:
+  - Exactly one active task: `CONT-P03-ARCH-001` (active-task invariant preserved).
+  - P04 and P05 remain not active; no P04 or P05 task is proposed or activated by this decision.
+  - Ratified context-policy set remains canonical and is not superseded.
+  - Ratified P02 discovery package and all other ratified governance documents remain canonical and are not superseded.
+  - No runtime context pack is generated by this decision.
+- authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
+- predecessor_decisions: `DEC-P03-ACTIVATION-001`, `DEC-P02-CLOSEOUT-001`, `DEC-P02-DATA-CLASSIFICATION-001`, `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DOMAIN-DISCOVERY-001`, `DEC-P02-CONTEXT-SET-CLOSEOUT-001`.
+- scope_note: Ratifies the G-4 classification set only. Does **not** ratify any architecture recommendation, ADR, criterion, or revision. Does **not** open P03 closeout or P04 GO. Each `P03-blocking`, `P04-blocking`, or `deferred-with-acceptance` row remains pending its own future Product Owner gate per the forward-application clause above.
