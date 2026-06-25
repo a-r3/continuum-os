@@ -82,6 +82,7 @@ The following decision IDs from `governance/DECISION_LOG.md` are referenced by r
 - `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001` — P02 Security and Trust Requirements Draft (`governance/P02_SECURITY_TRUST_REQUIREMENTS_DRAFT.md`) ratification.
 - `DEC-P02-DATA-CLASSIFICATION-001` — P02 Data Classification and Sensitive Boundary Analysis Draft (`governance/P02_DATA_CLASSIFICATION_SENSITIVE_BOUNDARY_DRAFT.md`) ratification.
 - `DEC-P03-ARCH-CLASS-001` — P03 G-4 Classification Plan (`governance/P03_G4_CLASSIFICATION_PLAN.md`) ratification: ratifies the G-4 classification of every `OQ-P02-*`, `P02-RISK-*`, and `P02-ROAD-*` row as `P03-blocking`, `P04-blocking`, or `deferred-with-acceptance`; does not ratify any architecture recommendation or ADR; does not mutate source registers.
+- `DEC-P03-ARCH-CRIT-001` — P03 implementation-readiness criterion `I-1` ratification (first row in the `DEC-P03-ARCH-CRIT-NNN` family): ratifies the procedural row-uniqueness rule that every ratified architecture recommendation carried forward from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` must be recorded as a distinct `governance/DECISION_LOG.md` row; does not ratify any recommendation (`R-1..R-6`), any ADR (`ADR-DRAFT-P03-001..006`), or any other criterion (`I-2..I-8`); does not modify the proposed P03 evaluation package or proposed P03 ratification plan; does not mutate source registers; does not authorize implementation, adapter-rule changes, hooks, settings, dependencies, license, runtime context packs, or P04/P05.
 
 ## Duplicate Authority Rule
 

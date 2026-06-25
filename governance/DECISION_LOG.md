@@ -468,3 +468,63 @@ Only explicit Product Owner decisions are recorded here.
 - authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
 - predecessor_decisions: `DEC-P03-ACTIVATION-001`, `DEC-P02-CLOSEOUT-001`, `DEC-P02-DATA-CLASSIFICATION-001`, `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DOMAIN-DISCOVERY-001`, `DEC-P02-CONTEXT-SET-CLOSEOUT-001`.
 - scope_note: Ratifies the G-4 classification set only. Does **not** ratify any architecture recommendation, ADR, criterion, or revision. Does **not** open P03 closeout or P04 GO. Each `P03-blocking`, `P04-blocking`, or `deferred-with-acceptance` row remains pending its own future Product Owner gate per the forward-application clause above.
+
+## DEC-P03-ARCH-CRIT-001
+
+- decision_id: `DEC-P03-ARCH-CRIT-001`
+- status: `RATIFIED`
+- decision: Ratify P03 implementation-readiness criterion `I-1` from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8 as canonical procedural discipline under `CONT-P03-ARCH-001`. Ratified criterion text: "Every ratified architecture recommendation carried forward from the P03 Architecture Evaluation Package must be recorded as a distinct `governance/DECISION_LOG.md` row." Each future per-recommendation ratification gate (`R-1..R-6`) must therefore produce exactly one distinct ratification row in `governance/DECISION_LOG.md`; merged-row ratifications across multiple recommendations are not permitted.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-25`
+- source_task: `CONT-P03-ARCH-001`
+- source_activation: `DEC-P03-ACTIVATION-001`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- criterion_ratified: `I-1` (`governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8).
+- decision_family: `DEC-P03-ARCH-CRIT-NNN` (per `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md` §9). This decision is the first row in the `DEC-P03-ARCH-CRIT-NNN` family.
+- related_prior_decisions: `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`.
+- safety_basis:
+  - `I-1` is a procedural/governance sequencing rule. It carries no direct content dependency on any unresolved `OQ-P02-*`, `P02-RISK-*`, or `P02-ROAD-*` row.
+  - `I-1` does not require modifying `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, or `governance/ROADMAP.md`.
+  - `I-1` does not require revising `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` or `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md`; both remain `PROPOSED_INACTIVE` / `NOT_RATIFIED` as canonical reference framing only.
+  - Ratifying `I-1` does not by itself ratify any recommendation, ADR, or other criterion; it only codifies the row-uniqueness rule that each future recommendation-ratification row must satisfy.
+- forward_application:
+  - Every future ratification of `R-1`, `R-2`, `R-3`, `R-4`, `R-5`, or `R-6` (under the `DEC-P03-ARCH-RECO-NNN` family) must produce a distinct `governance/DECISION_LOG.md` row dedicated to that single recommendation.
+  - A single ratification row may not bundle multiple recommendations together. Splitting a recommendation across multiple rows is permitted only when a later superseding decision records the split explicitly.
+  - This forward-application clause restates and binds `I-1`; it does not authorize the ratification of any specific recommendation.
+- evidence:
+  - `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8 carries `I-1` as a proposed implementation-readiness criterion (status: `proposed`; document remains `PROPOSED_INACTIVE` / `NOT_RATIFIED`).
+  - `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md` §5 lists `I-1` as "ready for procedural ratification planning; sequencing rule; independent of any specific R-N" (document remains `PROPOSED_INACTIVE` / `NOT_RATIFIED`).
+  - `governance/P03_G4_CLASSIFICATION_PLAN.md` is `Ratified / RATIFIED` under `DEC-P03-ARCH-CLASS-001` (HEAD `0c72a502e3ba31a2eea87252769e5fa43043ede3`).
+  - This `I-1` ratification diff.
+- non_authorizations:
+  - Does **not** ratify any architecture recommendation `R-1..R-6` from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`.
+  - Does **not** ratify any `ADR-DRAFT-P03-001..006` from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`.
+  - Does **not** ratify any other implementation-readiness criterion (`I-2`, `I-3`, `I-4`, `I-5`, `I-6`, `I-7`, `I-8`).
+  - Does **not** modify `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`.
+  - Does **not** modify `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md`.
+  - Does **not** modify `governance/P03_G4_CLASSIFICATION_PLAN.md`.
+  - Does **not** mutate `governance/OPEN_QUESTIONS.md`.
+  - Does **not** mutate `governance/RISK_REGISTER.md`.
+  - Does **not** mutate `governance/ROADMAP.md`.
+  - Does **not** resolve any `OQ-P02-*` row.
+  - Does **not** accept, dispose, or otherwise transition any `P02-RISK-*` row.
+  - Does **not** schedule any `P02-ROAD-*` roadmap item.
+  - Does **not** reclassify or otherwise alter any `DEC-P03-ARCH-CLASS-001` classification choice.
+  - Does **not** authorize implementation, project code, dependency installation, lockfile or manifest changes, license selection, hook registration or activation, settings changes (`.claude/settings.json`, `.claude/settings.local.example.json`), adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/**`), runtime context pack generation (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md`), or P04/P05 activation.
+  - Does **not** create any P04 or P05 task.
+  - Does **not** open P03 closeout (source-package Gate G-7) or P04 GO (source-package Gate G-8).
+  - Does **not** create or modify `governance/PRODUCT_OWNER.md` (absent and remains absent).
+- invariants_preserved:
+  - Exactly one active task: `CONT-P03-ARCH-001` (active-task invariant preserved).
+  - P04 and P05 remain not active; no P04 or P05 task is proposed or activated by this decision.
+  - `DEC-P03-ARCH-CLASS-001` remains canonical; the G-4 classification set is unchanged.
+  - Ratified context-policy set remains canonical and is not superseded.
+  - Ratified P02 discovery package and all other ratified governance documents remain canonical and are not superseded.
+  - No runtime context pack is generated by this decision.
+  - Canonical-wins discipline (P-4): no derived or generated artifact is elevated by this decision.
+  - Never-automatic surface (P-9): no automation, hook activation, settings change, or adapter-rule change is implied.
+- reversibility: A future Product Owner decision may supersede `DEC-P03-ARCH-CRIT-001` by introducing a successor `DEC-P03-ARCH-CRIT-NNN` row that explicitly supersedes this decision and restates the row-uniqueness rule (or replaces it with a successor procedural rule). Until such supersession is ratified, the row-uniqueness rule binds every per-recommendation ratification gate.
+- authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
+- predecessor_decisions: `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`, `DEC-P02-CLOSEOUT-001`, `DEC-P02-DATA-CLASSIFICATION-001`, `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DOMAIN-DISCOVERY-001`, `DEC-P02-CONTEXT-SET-CLOSEOUT-001`.
+- scope_note: Ratifies the procedural row-uniqueness rule `I-1` only. Does **not** ratify any recommendation, ADR, or other criterion. Does **not** modify the proposed P03 evaluation package or proposed P03 ratification plan. Does **not** mutate any source register. Does **not** open P03 closeout or P04 GO. Subsequent per-recommendation, per-ADR, and per-criterion ratification gates remain separately required.
