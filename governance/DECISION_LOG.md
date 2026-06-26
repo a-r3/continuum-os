@@ -810,3 +810,82 @@ Only explicit Product Owner decisions are recorded here.
 - authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
 - predecessor_decisions: `DEC-P03-ARCH-CRIT-004`, `DEC-P03-ARCH-CRIT-003`, `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`, `DEC-P02-CLOSEOUT-001`, `DEC-P02-DATA-CLASSIFICATION-001`, `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DOMAIN-DISCOVERY-001`, `DEC-P02-CONTEXT-SET-CLOSEOUT-001`.
 - scope_note: Ratifies architecture recommendation `R-5` (Governance-Code Boundary) with Option `B-B` (governance-as-contract) only. Does **not** ratify `ADR-DRAFT-P03-005` or any other ADR. Does **not** ratify any other recommendation or criterion. Does **not** modify the proposed P03 evaluation package or proposed P03 ratification plan. Does **not** mutate any source register; `OQ-P02-D-008` is **bounded** at the architecture-posture level but not mutated. Does **not** open P03 closeout or P04 GO. Subsequent per-recommendation, per-ADR, per-criterion, per-row, P03-closeout, and P04-activation ratification gates remain separately required.
+
+## DEC-P03-ARCH-ADR-001
+
+- decision_id: `DEC-P03-ARCH-ADR-001`
+- status: `RATIFIED`
+- decision: Ratify `ADR-DRAFT-P03-005` (**Governance-Code Boundary**) from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §7 as the canonical Governance-Code Boundary ADR under `CONT-P03-ARCH-001`. The ADR canonicalizes the already-ratified `R-5` posture (`DEC-P03-ARCH-RECO-001`) as an ADR decision row, preserving the selected option **Option B-B (governance-as-contract)**. Canonical ADR content (per package §7): context — "when code arrives post-ratified-P04, the boundary between `governance/` and code/runtime/implementation artifacts must be explicit"; decision — "adopt Option B-B (governance-as-contract) per Recommendation R-5"; consequences — "code may read and validate against governance but may not write to `governance/`; governance remains canonical authority; future code references governance contracts explicitly"; alternatives considered — Option B-A (hard separation, no code reference) and Option B-C (governance-native annotations), neither of which is adopted. This decision is the first row in the `DEC-P03-ARCH-ADR-NNN` family. Governance documents are contract / policy authority only; project code remains separate and requires later explicit implementation authorization (no implementation is authorized by this decision).
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-26`
+- source_task: `CONT-P03-ARCH-001`
+- source_activation: `DEC-P03-ACTIVATION-001`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- adr_ratified: `ADR-DRAFT-P03-005` — Governance-Code Boundary — Option B-B (governance-as-contract) (`governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §7).
+- decision_family: `DEC-P03-ARCH-ADR-NNN` (per `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md` §9). This decision is the first row in the `DEC-P03-ARCH-ADR-NNN` family.
+- related_prior_decisions: `DEC-P03-ARCH-RECO-001`, `DEC-P03-ARCH-CRIT-004`, `DEC-P03-ARCH-CRIT-003`, `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`.
+- consistency_with_DEC_P03_ARCH_RECO_001: This ADR is the canonical ADR row corresponding to the already-ratified architecture recommendation `R-5` (Governance-Code Boundary) ratified under `DEC-P03-ARCH-RECO-001`. It is **consistent with** `DEC-P03-ARCH-RECO-001` and preserves the selected option `B-B` (governance-as-contract). It does not re-ratify `R-5` as a new recommendation row, and it does not modify or supersede `DEC-P03-ARCH-RECO-001`.
+- safety_basis:
+  - `ADR-DRAFT-P03-005` carries the same dependency surface as the already-ratified `R-5`: exactly one `P03-blocking` `OQ-P02-*` row under `DEC-P03-ARCH-CLASS-001` — `OQ-P02-D-008` (`Reserved Directory` as domain vs repository-mechanics), already **bounded** at the architecture-posture level by `DEC-P03-ARCH-RECO-001`. This ADR ratification reinforces the same architecture-level bound for `OQ-P02-D-008` (canonical contract surface is `governance/`) but does **not** mutate the row in `governance/OPEN_QUESTIONS.md`. Source-register row status remains unchanged unless a separately approved Product Owner source-register follow-up decision mutates it.
+  - `ADR-DRAFT-P03-005` carries no `P02-RISK-*` `P03-blocking` dependency and no `P02-ROAD-*` `P03-blocking` dependency under `DEC-P03-ARCH-CLASS-001`.
+  - `ADR-DRAFT-P03-005` aligns with ratified `governance/TRUST_BOUNDARIES.md` (Mutation / Scope-Bound boundary rules) and ratified `governance/CONTEXT_POLICY.md` (canonical-wins discipline P-4); this ratification reinforces and does not supersede those boundaries.
+  - `I-1` is satisfied: this row is the unique `governance/DECISION_LOG.md` row for the Governance-Code Boundary ADR; no prior `DEC-P03-ARCH-ADR-NNN` row for `ADR-DRAFT-P03-005` exists.
+  - `I-2` is satisfied: this row is the canonical `governance/DECISION_LOG.md` row for `ADR-DRAFT-P03-005`, recording its final canonical form per the ADR-canonicalization rule ratified under `DEC-P03-ARCH-CRIT-004`.
+  - `I-7` is satisfied: this row carries an explicit `non_authorizations:` section (below) enumerating what this ADR ratification does not authorize.
+  - `I-8` is preserved: this ADR ratification does not by itself open P03 closeout (Gate G-7) or P04 GO (Gate G-8); the phase-boundary separation rule ratified under `DEC-P03-ARCH-CRIT-003` continues to bind.
+  - `ADR-DRAFT-P03-005` is the formally unmodified form of the package §7 draft; no formal modification, split, or merge is performed by this ratification.
+- forward_application:
+  - The Governance-Code Boundary ADR is canonically `DEC-P03-ARCH-ADR-001` and selects Option `B-B` (governance-as-contract), consistent with `DEC-P03-ARCH-RECO-001`. When code arrives post-ratified-P04, code may read `governance/` as a contract surface and validate against it but may not write to `governance/`; `governance/` remains canonical authority and the canonical-wins rule continues to apply on any conflict between code and `governance/`.
+  - Any future revision that adopts a different governance-code boundary posture (`B-A`, `B-C`, or any other) requires a separately approved superseding decision under the `DEC-P03-ARCH-REVISION-NNN` family that explicitly supersedes both `DEC-P03-ARCH-RECO-001` and `DEC-P03-ARCH-ADR-001`.
+  - The bounded posture for `OQ-P02-D-008` (canonical contract surface = `governance/`) is reinforced by this ADR. Final per-row disposition of `OQ-P02-D-008` (resolution, disposition, or acceptance) remains a separately approved Product Owner gate per the G-4 reclassification clause of `DEC-P03-ARCH-CLASS-001` and the `OQ-P02-*` resolution discipline; this ADR does not perform that disposition.
+  - No code, runtime, hook, settings, adapter-rule, dependency, license, or runtime context pack is authorized to act on this boundary at this time. Implementation remains gated by a separately approved P04 GO decision.
+- evidence:
+  - `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §7 carries `ADR-DRAFT-P03-005` with `status: proposed` and Option `B-B` content (document remains `PROPOSED_INACTIVE` / `NOT_RATIFIED`).
+  - `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §6 carries `R-5` (Governance-Code Boundary) with Option `B-B` rationale (document remains `PROPOSED_INACTIVE` / `NOT_RATIFIED`); `R-5` is already ratified under `DEC-P03-ARCH-RECO-001`.
+  - `governance/P03_G4_CLASSIFICATION_PLAN.md` is `Ratified / RATIFIED` under `DEC-P03-ARCH-CLASS-001`; the `OQ-P02-D-008` row is classified `P03-blocking` with "Resolved jointly with R-5 / ADR-DRAFT-P03-005 ratification."
+  - `DEC-P03-ARCH-RECO-001` (ratifies `R-5` with Option `B-B`) is canonical at HEAD `9f3c5e97101123345135a2e49a0a2b9ff1bf7a84` and procedurally / semantically anchors this ADR ratification.
+  - `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-003`, and `DEC-P03-ARCH-CRIT-004` are canonical at HEAD `9f3c5e97101123345135a2e49a0a2b9ff1bf7a84` and procedurally bind this ADR ratification (satisfied by `I-1`, `I-7`, `I-2`; preserved by `I-8`).
+  - `governance/TRUST_BOUNDARIES.md` and `governance/CONTEXT_POLICY.md` are ratified canonical authorities; this ADR aligns with and reinforces both.
+  - This `ADR-DRAFT-P03-005` ratification diff.
+- non_authorizations:
+  - Does **not** ratify any architecture recommendation `R-1`, `R-2`, `R-3`, `R-4`, or `R-6` from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §6.
+  - Does **not** re-ratify `R-5` as a new recommendation row; `R-5` remains ratified under `DEC-P03-ARCH-RECO-001`, which this decision does not modify or supersede.
+  - Does **not** ratify any other ADR draft (`ADR-DRAFT-P03-001`, `ADR-DRAFT-P03-002`, `ADR-DRAFT-P03-003`, `ADR-DRAFT-P03-004`, `ADR-DRAFT-P03-006`).
+  - Does **not** ratify any implementation-readiness criterion (`I-3`, `I-4`, `I-5`, `I-6`). (Note: `I-1`, `I-2`, `I-7`, and `I-8` are already ratified under `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CRIT-004`, `DEC-P03-ARCH-CRIT-002`, and `DEC-P03-ARCH-CRIT-003` respectively; this decision does not modify or supersede any of them.)
+  - Does **not** modify or supersede `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-003`, `DEC-P03-ARCH-CRIT-004`, `DEC-P03-ARCH-CLASS-001`, or `DEC-P03-ARCH-RECO-001`.
+  - Does **not** modify or reclassify any row of `DEC-P03-ARCH-CLASS-001`; the G-4 classification set is unchanged.
+  - Does **not** modify `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`.
+  - Does **not** modify `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md`.
+  - Does **not** modify `governance/P03_G4_CLASSIFICATION_PLAN.md`.
+  - Does **not** mutate `governance/OPEN_QUESTIONS.md`. `OQ-P02-D-008` remains **bounded** at the architecture-posture level (by `DEC-P03-ARCH-RECO-001`, reinforced by this ADR) but the row itself is not resolved, disposed, or otherwise mutated; final per-row disposition remains a separately approved Product Owner gate.
+  - Does **not** mutate `governance/RISK_REGISTER.md`.
+  - Does **not** mutate `governance/ROADMAP.md`.
+  - Does **not** resolve any other `OQ-P02-*` row in the source register.
+  - Does **not** accept, dispose, or otherwise transition any `P02-RISK-*` row in the source register.
+  - Does **not** schedule any `P02-ROAD-*` roadmap item in the source register.
+  - Does **not** authorize implementation, project code, dependency installation, lockfile or manifest changes, license selection, hook registration or activation, settings changes (`.claude/settings.json`, `.claude/settings.local.example.json`), adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/**`), runtime context pack generation (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md`), or P04/P05 activation.
+  - Does **not** create any P04 or P05 task.
+  - Does **not** open P03 closeout (source-package Gate G-7). Ratifying `ADR-DRAFT-P03-005` does not by itself constitute, schedule, approve, or initiate the P03 closeout decision.
+  - Does **not** open P04 GO (source-package Gate G-8). Ratifying `ADR-DRAFT-P03-005` does not authorize, schedule, or initiate P04 activation.
+  - Does **not** create or modify `governance/PRODUCT_OWNER.md` (absent and remains absent).
+- invariants_preserved:
+  - Exactly one active task: `CONT-P03-ARCH-001` (active-task invariant preserved). Ratifying the ADR does not by itself execute any P04 activation or closeout transition.
+  - P04 and P05 remain not active; no P04 or P05 task is proposed or activated by this decision.
+  - `DEC-P03-ARCH-CLASS-001` remains canonical; the G-4 classification set is unchanged.
+  - `DEC-P03-ARCH-CRIT-001` (`I-1` row-uniqueness rule) remains canonical and is not superseded; this row is the unique `governance/DECISION_LOG.md` row for the Governance-Code Boundary ADR.
+  - `DEC-P03-ARCH-CRIT-002` (`I-7` explicit-non-authorization disclosure rule) remains canonical and is not superseded; this row carries the required `non_authorizations` block.
+  - `DEC-P03-ARCH-CRIT-003` (`I-8` P03 closeout / P04 activation separation rule) remains canonical and is not superseded; ratifying the ADR does not by itself open P03 closeout or P04 GO.
+  - `DEC-P03-ARCH-CRIT-004` (`I-2` ADR-canonicalization rule) remains canonical and is not superseded; this row is the canonical recording of `ADR-DRAFT-P03-005` per the rule.
+  - `DEC-P03-ARCH-RECO-001` (`R-5` Option B-B ratification) remains canonical and is not superseded; this ADR is consistent with and anchored to `DEC-P03-ARCH-RECO-001`.
+  - Ratified context-policy set (`governance/CONTEXT_POLICY.md`, `governance/CONTEXT_BUDGET.md`, `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`) remains canonical and is not superseded; this ADR aligns with the canonical-wins discipline.
+  - Ratified `governance/TRUST_BOUNDARIES.md` remains canonical and is not superseded; this ADR aligns with the Mutation / Scope-Bound boundary rules.
+  - Ratified P02 discovery package and all other ratified governance documents remain canonical and are not superseded.
+  - No runtime context pack is generated by this decision.
+  - Canonical-wins discipline (P-4): no derived or generated artifact is elevated by this decision.
+  - Never-automatic surface (P-9): no automation, hook activation, settings change, or adapter-rule change is implied.
+  - Governance documents are contract / policy authority only; project code remains separate. No implementation is authorized.
+- reversibility: A future Product Owner decision may supersede `DEC-P03-ARCH-ADR-001` only by a successor `DEC-P03-ARCH-REVISION-NNN` row (or a successor `DEC-P03-ARCH-ADR-NNN` row that explicitly supersedes this decision) that adopts a different governance-code boundary ADR posture; such a revision must also supersede (or be paired with a separately approved superseding decision for) `DEC-P03-ARCH-RECO-001`, because the ADR and the recommendation must remain consistent. Until such supersession is ratified, the canonical Governance-Code Boundary ADR is `ADR-DRAFT-P03-005` with Option `B-B` (governance-as-contract).
+- authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
+- predecessor_decisions: `DEC-P03-ARCH-RECO-001`, `DEC-P03-ARCH-CRIT-004`, `DEC-P03-ARCH-CRIT-003`, `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`, `DEC-P02-CLOSEOUT-001`, `DEC-P02-DATA-CLASSIFICATION-001`, `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DOMAIN-DISCOVERY-001`, `DEC-P02-CONTEXT-SET-CLOSEOUT-001`.
+- scope_note: Ratifies `ADR-DRAFT-P03-005` (Governance-Code Boundary) only, consistent with `DEC-P03-ARCH-RECO-001` and preserving Option `B-B` (governance-as-contract). Does **not** re-ratify `R-5`, ratify any other recommendation, ratify any other ADR, ratify any other criterion, modify the proposed P03 evaluation package or proposed P03 ratification plan, mutate any source register (`OQ-P02-D-008` reinforced-bounded but not mutated), open P03 closeout, or open P04 GO. Subsequent per-recommendation, per-ADR, per-criterion, per-row, P03-closeout, and P04-activation ratification gates remain separately required.
