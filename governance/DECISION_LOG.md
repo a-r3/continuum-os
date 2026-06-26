@@ -661,3 +661,75 @@ Only explicit Product Owner decisions are recorded here.
 - authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
 - predecessor_decisions: `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`, `DEC-P02-CLOSEOUT-001`, `DEC-P02-DATA-CLASSIFICATION-001`, `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DOMAIN-DISCOVERY-001`, `DEC-P02-CONTEXT-SET-CLOSEOUT-001`.
 - scope_note: Ratifies the P03 closeout / P04 activation separation rule `I-8` only. Does **not** ratify any recommendation, ADR, or other criterion. Does **not** modify the proposed P03 evaluation package or proposed P03 ratification plan. Does **not** mutate any source register. Does **not** open P03 closeout or P04 GO. Subsequent per-recommendation, per-ADR, per-criterion, P03-closeout, and P04-activation ratification gates remain separately required.
+
+## DEC-P03-ARCH-CRIT-004
+
+- decision_id: `DEC-P03-ARCH-CRIT-004`
+- status: `RATIFIED`
+- decision: Ratify P03 implementation-readiness criterion `I-2` from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8 as canonical procedural / ADR-canonicalization discipline under `CONT-P03-ARCH-001`. Ratified criterion text: "every ADR draft in §7 that the Product Owner intends to carry forward has been ratified (or formally modified/split/merged) and its final form is recorded as canonical." Every ADR draft (`ADR-DRAFT-P03-001..006`) that the Product Owner intends to carry forward must therefore be ratified (or formally modified/split/merged) under a separately approved Product Owner gate, and its final canonical form must be recorded as its own canonical `governance/DECISION_LOG.md` row under the `DEC-P03-ARCH-ADR-NNN` family (or equivalent ratified ADR decision row); ratifying `I-2` does not by itself ratify, modify, split, or merge any ADR draft.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-26`
+- source_task: `CONT-P03-ARCH-001`
+- source_activation: `DEC-P03-ACTIVATION-001`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- criterion_ratified: `I-2` (`governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8).
+- decision_family: `DEC-P03-ARCH-CRIT-NNN` (per `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md` §9). This decision is the fourth row in the `DEC-P03-ARCH-CRIT-NNN` family and is sequenced after `DEC-P03-ARCH-CRIT-001` (which ratified `I-1`), `DEC-P03-ARCH-CRIT-002` (which ratified `I-7`), and `DEC-P03-ARCH-CRIT-003` (which ratified `I-8`).
+- related_prior_decisions: `DEC-P03-ARCH-CRIT-003`, `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`.
+- safety_basis:
+  - `I-2` is a procedural / ADR-canonicalization discipline rule. It carries no direct content dependency on any unresolved `OQ-P02-*`, `P02-RISK-*`, or `P02-ROAD-*` row.
+  - `I-2` does not require modifying `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, or `governance/ROADMAP.md`.
+  - `I-2` does not require revising `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` or `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md`; both remain `PROPOSED_INACTIVE` / `NOT_RATIFIED` as canonical reference framing only.
+  - `I-2` does not require modifying or reclassifying any row of `DEC-P03-ARCH-CLASS-001`.
+  - `I-2` does not by itself ratify, modify, split, or merge any ADR draft (`ADR-DRAFT-P03-001..006`); it only codifies the canonicalization discipline that every ratified ADR carried forward must be recorded as its own canonical decision row under the `DEC-P03-ARCH-ADR-NNN` family (or equivalent ratified ADR decision row).
+  - `I-2` is complementary to `DEC-P03-ARCH-CRIT-001` (`I-1` recommendation row-uniqueness rule), `DEC-P03-ARCH-CRIT-002` (`I-7` explicit-non-authorization disclosure rule), and `DEC-P03-ARCH-CRIT-003` (`I-8` P03 closeout / P04 activation separation rule) and does not conflict with any of them; the four procedural rules co-bind every future P03 ratification gate and every future phase-boundary gate.
+- forward_application:
+  - Every `ADR-DRAFT-P03-001..006` draft that the Product Owner intends to carry forward must be ratified (or formally modified/split/merged) by a separately approved Product Owner gate, and the ratified ADR must be recorded as its own canonical `governance/DECISION_LOG.md` row under the `DEC-P03-ARCH-ADR-NNN` family (per `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md` §9), or as an equivalent ratified ADR decision row that the Product Owner separately approves. Where a draft is formally modified, split, or merged, the resulting final ADR form (after the formal modification/split/merge) is the canonical form recorded under the same family. A draft that the Product Owner does not intend to carry forward requires no row; ratifying `I-2` does not by itself elevate any draft.
+  - The `DEC-P03-ARCH-ADR-NNN` family rows (or equivalent ratified ADR decision rows) co-apply with `DEC-P03-ARCH-CRIT-001` (`I-1`): the ADR row is itself an architecture decision row and is therefore subject to the row-uniqueness rule.
+  - The `DEC-P03-ARCH-ADR-NNN` family rows (or equivalent ratified ADR decision rows) co-apply with `DEC-P03-ARCH-CRIT-002` (`I-7`): each such row must include an explicit non-authorization / non-scope section enumerating what the ADR decision does not authorize.
+  - The `DEC-P03-ARCH-ADR-NNN` family rows (or equivalent ratified ADR decision rows) co-apply with `DEC-P03-ARCH-CRIT-003` (`I-8`): ratifying an ADR does not by itself open P03 closeout or P04 GO.
+  - This forward-application clause restates and binds `I-2`; it does not by itself ratify, modify, split, merge, or carry forward any ADR draft.
+- evidence:
+  - `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8 carries `I-2` as a proposed implementation-readiness criterion (status: `proposed`; document remains `PROPOSED_INACTIVE` / `NOT_RATIFIED`).
+  - `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md` §5 lists `I-2` among items ready for procedural ratification planning (document remains `PROPOSED_INACTIVE` / `NOT_RATIFIED`).
+  - `governance/P03_G4_CLASSIFICATION_PLAN.md` is `Ratified / RATIFIED` under `DEC-P03-ARCH-CLASS-001`.
+  - `DEC-P03-ARCH-CRIT-001` (ratifies `I-1`), `DEC-P03-ARCH-CRIT-002` (ratifies `I-7`), and `DEC-P03-ARCH-CRIT-003` (ratifies `I-8`) are canonical at HEAD `a47d5abfaa5c9283dbd3e691dcc62792d3988db0`.
+  - This `I-2` ratification diff.
+- non_authorizations:
+  - Does **not** ratify any architecture recommendation `R-1..R-6` from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`.
+  - Does **not** ratify, modify, split, or merge any `ADR-DRAFT-P03-001..006` from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`. Ratifying `I-2` codifies the ADR-canonicalization discipline only; it does not by itself elevate any draft to ratified status.
+  - Does **not** ratify any other implementation-readiness criterion (`I-1`, `I-3`, `I-4`, `I-5`, `I-6`, `I-7`, `I-8`). (Note: `I-1`, `I-7`, and `I-8` are already ratified under `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CRIT-002`, and `DEC-P03-ARCH-CRIT-003` respectively; this decision does not modify or supersede any of them.)
+  - Does **not** modify or supersede `DEC-P03-ARCH-CRIT-001` (the `I-1` row-uniqueness rule).
+  - Does **not** modify or supersede `DEC-P03-ARCH-CRIT-002` (the `I-7` explicit-non-authorization disclosure rule).
+  - Does **not** modify or supersede `DEC-P03-ARCH-CRIT-003` (the `I-8` P03 closeout / P04 activation separation rule).
+  - Does **not** modify or reclassify any row of `DEC-P03-ARCH-CLASS-001`; the G-4 classification set is unchanged.
+  - Does **not** modify `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`.
+  - Does **not** modify `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md`.
+  - Does **not** modify `governance/P03_G4_CLASSIFICATION_PLAN.md`.
+  - Does **not** mutate `governance/OPEN_QUESTIONS.md`.
+  - Does **not** mutate `governance/RISK_REGISTER.md`.
+  - Does **not** mutate `governance/ROADMAP.md`.
+  - Does **not** resolve any `OQ-P02-*` row.
+  - Does **not** accept, dispose, or otherwise transition any `P02-RISK-*` row.
+  - Does **not** schedule any `P02-ROAD-*` roadmap item.
+  - Does **not** authorize implementation, project code, dependency installation, lockfile or manifest changes, license selection, hook registration or activation, settings changes (`.claude/settings.json`, `.claude/settings.local.example.json`), adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/**`), runtime context pack generation (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md`), or P04/P05 activation.
+  - Does **not** create any P04 or P05 task.
+  - Does **not** open P03 closeout (source-package Gate G-7). Ratifying `I-2` codifies the ADR-canonicalization discipline; it does not by itself constitute, schedule, approve, or initiate the P03 closeout decision.
+  - Does **not** open P04 GO (source-package Gate G-8). Ratifying `I-2` codifies the ADR-canonicalization discipline; it does not authorize, schedule, or initiate P04 activation.
+  - Does **not** create or modify `governance/PRODUCT_OWNER.md` (absent and remains absent).
+- invariants_preserved:
+  - Exactly one active task: `CONT-P03-ARCH-001` (active-task invariant preserved). `I-2` codifies the future ADR-canonicalization discipline but does not execute any ADR ratification, modification, split, or merge.
+  - P04 and P05 remain not active; no P04 or P05 task is proposed or activated by this decision.
+  - `DEC-P03-ARCH-CLASS-001` remains canonical; the G-4 classification set is unchanged.
+  - `DEC-P03-ARCH-CRIT-001` (`I-1` row-uniqueness rule) remains canonical and is not superseded.
+  - `DEC-P03-ARCH-CRIT-002` (`I-7` explicit-non-authorization disclosure rule) remains canonical and is not superseded.
+  - `DEC-P03-ARCH-CRIT-003` (`I-8` P03 closeout / P04 activation separation rule) remains canonical and is not superseded.
+  - Ratified context-policy set remains canonical and is not superseded.
+  - Ratified P02 discovery package and all other ratified governance documents remain canonical and are not superseded.
+  - No runtime context pack is generated by this decision.
+  - Canonical-wins discipline (P-4): no derived or generated artifact is elevated by this decision.
+  - Never-automatic surface (P-9): no automation, hook activation, settings change, or adapter-rule change is implied.
+- reversibility: A future Product Owner decision may supersede `DEC-P03-ARCH-CRIT-004` by introducing a successor `DEC-P03-ARCH-CRIT-NNN` row that explicitly supersedes this decision and restates the ADR-canonicalization rule (or replaces it with a successor procedural rule). Until such supersession is ratified, the ADR-canonicalization discipline binds every future per-ADR ratification gate.
+- authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
+- predecessor_decisions: `DEC-P03-ARCH-CRIT-003`, `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`, `DEC-P02-CLOSEOUT-001`, `DEC-P02-DATA-CLASSIFICATION-001`, `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DOMAIN-DISCOVERY-001`, `DEC-P02-CONTEXT-SET-CLOSEOUT-001`.
+- scope_note: Ratifies the ADR-canonicalization rule `I-2` only. Does **not** ratify any recommendation, ADR, or other criterion. Does **not** modify the proposed P03 evaluation package or proposed P03 ratification plan. Does **not** mutate any source register. Does **not** open P03 closeout or P04 GO. Subsequent per-recommendation, per-ADR, per-criterion, P03-closeout, and P04-activation ratification gates remain separately required.
