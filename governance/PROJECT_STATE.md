@@ -13,8 +13,9 @@ product_owner_identity_last_ratified_at: 2026-06-20
 
 - Project working title: Continuum OS.
 - Repository status: P00 complete; **P01 closed/completed**; **P02 closed/completed**; **P03 closed/completed**; **P04 not active**; **P05 not active**.
-- Current phase: none. P03 — Architecture Evaluation closed/completed under `DEC-P03-CLOSEOUT-001`.
+- Current phase: none. P03 — Architecture Evaluation closed/completed under `DEC-P03-CLOSEOUT-001`. A bounded Pre-P04 zero-active-task transition task, `CONT-PRE-P04-CKF-001`, has since closed/completed under `DEC-PRE-P04-CKF-DEF-001`.
 - Current P03 sub-state: closed/completed under gate `P03_ARCHITECTURE_EVALUATION` (`gate_status: COMPLETED`).
+- Current Pre-P04 sub-state: `CONT-PRE-P04-CKF-001` closed/completed under gate `PRE_P04_CKF_DEFINITION` (`gate_status: COMPLETED`), ratified by `DEC-PRE-P04-CKF-DEF-001`; defines `CKF` as `Canonical Knowledge Format`, a planned specification layer, adds the term to `governance/GLOSSARY.md`, and registers the task and glossary addition in `governance/DOCUMENT_REGISTRY.md`. Does not activate P04 or P05.
 - Active task: **none**. Repository is in zero-active-task state awaiting separately approved P04 activation.
 - Lifecycle status: zero active tasks (allowed transition state).
 - Current gate: `none`.
@@ -34,6 +35,7 @@ product_owner_identity_last_ratified_at: 2026-06-20
 - Product Owner / sole project authority / sole ratification authority for v1: `Rauf Alizada`. Product Charter ratified. Product Owner identity encoding ratified. Glossary ratified. Change Protocol ratified. Never-Automatic Guardrail ratified. Trust Boundaries ratified. Risk Register Bundle 4 P01 top-risk update ratified. Reference Structure ratified. Roadmap Bundle 5 update ratified. Document Registry Bundle 5 update ratified.
 - Adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) have not been modified under P02 activation. The context-policy set has been ratified: `governance/CONTEXT_POLICY.md`, `governance/CONTEXT_BUDGET.md`, and `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`. No runtime context pack has been generated.
 - P03 status: **closed/completed** under `DEC-P03-CLOSEOUT-001`. P03 was activated under `DEC-P03-ACTIVATION-001` and closed under `DEC-P03-CLOSEOUT-001`. `CONT-P03-ARCH-001` is closed/completed under the same closeout decision. Ratified P03 architecture package: 6/6 recommendations (`R-1..R-6`), 6/6 ADR drafts (`ADR-DRAFT-P03-001..006`), 8/8 implementation-readiness criteria (`I-1..I-8`), classification `governance/P03_G4_CLASSIFICATION_PLAN.md` (`DEC-P03-ARCH-CLASS-001`), and 27/27 `P03-blocking` rows dispositioned (`DEC-P03-ARCH-DISP-001..007`, `DEC-P03-ARCH-RISKDISP-001`). Open residual scope carried forward unchanged: 14 `P04-blocking` rows and 21 `deferred-with-acceptance` rows remain open. No implementation, code, dependency, hook, adapter-rule, settings, license, or runtime-context-pack change occurred during P03.
+- Pre-P04 CKF term definition: `CONT-PRE-P04-CKF-001` closed/completed under `DEC-PRE-P04-CKF-DEF-001`, ratified by the Product Owner (`Rauf Alizada`) on `2026-07-01`. Defines `CKF` as `Canonical Knowledge Format`, a planned specification layer, not implementation. No implementation, schema, code, dependency, hook, adapter-rule, settings, license, or runtime-context-pack change occurred. P04 and P05 remain not active.
 - Next action: Repository is in zero-active-task state. The next action is a separately approved Product Owner decision on P04 activation and a separately approved P04 task; no P04 task is proposed or activated by this closeout.
 
 ## Ratified Boundaries
@@ -104,6 +106,9 @@ product_owner_identity_last_ratified_at: 2026-06-20
 - P03 single active task (closed/completed): `CONT-P03-ARCH-001` — P03 Architecture Evaluation and Decision Framework.
 - P03 closeout decision: `DEC-P03-CLOSEOUT-001`.
 - P03 closeout date: 2026-07-01.
+- Pre-P04 CKF term-definition task (closed/completed): `CONT-PRE-P04-CKF-001` — Pre-P04 CKF (Canonical Knowledge Format) Term Definition.
+- Pre-P04 CKF definition decision: `DEC-PRE-P04-CKF-DEF-001`.
+- Pre-P04 CKF definition date: 2026-07-01.
 
 ## Product Owner Identity Encoding
 

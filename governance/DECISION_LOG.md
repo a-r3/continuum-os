@@ -2567,3 +2567,36 @@ Only explicit Product Owner decisions are recorded here.
 - authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
 - predecessor_decisions: `DEC-P03-ARCH-RISKDISP-001`, `DEC-P03-ARCH-DISP-007`, `DEC-P03-ARCH-DISP-006`, `DEC-P03-ARCH-DISP-005`, `DEC-P03-ARCH-DISP-004`, `DEC-P03-ARCH-DISP-003`, `DEC-P03-ARCH-DISP-002`, `DEC-P03-ARCH-DISP-001`, `DEC-P03-ARCH-CRIT-008`, `DEC-P03-ARCH-CRIT-007`, `DEC-P03-ARCH-CRIT-006`, `DEC-P03-ARCH-CRIT-005`, `DEC-P03-ARCH-ADR-006`, `DEC-P03-ARCH-RECO-006`, `DEC-P03-ARCH-REVISION-002`, `DEC-P03-ARCH-ADR-005`, `DEC-P03-ARCH-RECO-005`, `DEC-P03-ARCH-REVISION-001`, `DEC-P03-ARCH-ADR-004`, `DEC-P03-ARCH-RECO-004`, `DEC-P03-ARCH-ADR-003`, `DEC-P03-ARCH-RECO-003`, `DEC-P03-ARCH-ADR-002`, `DEC-P03-ARCH-RECO-002`, `DEC-P03-ARCH-ADR-001`, `DEC-P03-ARCH-RECO-001`, `DEC-P03-ARCH-CRIT-004`, `DEC-P03-ARCH-CRIT-003`, `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CLASS-001`, `DEC-P02-CLOSEOUT-001`, `DEC-P03-ACTIVATION-001`.
 - scope_note: Closes P03 and `CONT-P03-ARCH-001` only, on the basis that all 27 `P03-blocking` rows are dispositioned and all `R-1..R-6`, `ADR-DRAFT-P03-001..006`, and `I-1..I-8` are ratified. Does **not** activate P04. Does **not** resolve, schedule, or reclassify any of the 14 `P04-blocking` or 21 `deferred-with-acceptance` rows, which remain open by design pending future Product Owner disposition. Does **not** mutate `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, or `governance/DOCUMENT_REGISTRY.md`. The repository is in zero-active-task state after this decision; P04 activation is a separate, future Product Owner decision.
+
+## DEC-PRE-P04-CKF-DEF-001
+
+- decision_id: `DEC-PRE-P04-CKF-DEF-001`
+- status: `RATIFIED`
+- decision: Define and canonicalize the term `CKF` as `Canonical Knowledge Format` in `governance/GLOSSARY.md`, as a planned specification layer, not an implementation. Create and close a bounded zero-active-task transition task, `CONT-PRE-P04-CKF-001`, within this same diff to carry the definition, and register the new task and the glossary addition in `governance/DOCUMENT_REGISTRY.md`. This decision does not activate P04, does not authorize implementation, does not authorize runtime context pack generation, and does not modify `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, or `governance/ROADMAP.md`. The repository remains in zero-active-task state before and after this decision, awaiting a separately approved Product Owner P04 activation decision.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-07-01`
+- source_task: `CONT-PRE-P04-CKF-001`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- coverage_confirmed:
+  - `CKF` term added to `governance/GLOSSARY.md` under a new "Planned Specification Terms" section, provenance-stamped to this decision and to `CONT-PRE-P04-CKF-001`, without rewriting the Glossary's original Bundle 2 frontmatter (`last_ratified_by: Rauf Alizada`, `last_ratified_at: 2026-06-20`, `source_task: CONT-P01-BUNDLE-002` unchanged).
+  - `governance/tasks/CONT-PRE-P04-CKF-001.md` created and closed within this same diff (`lifecycle_status: DONE`, `gate_status: COMPLETED`, `ratification_status: RATIFIED`, `active: false`, `execution_authorized: false`, `closeout_decision: DEC-PRE-P04-CKF-DEF-001`).
+  - `governance/DOCUMENT_REGISTRY.md` is updated only with CKF-scoped registry updates: the existing Glossary row is updated, the new CKF task row is added, and the `DEC-PRE-P04-CKF-DEF-001` decision-reference bullet is added; no unrelated registry row is altered.
+- evidence:
+  - This `DEC-PRE-P04-CKF-DEF-001` ratification diff, limited to `governance/DECISION_LOG.md`, `governance/GLOSSARY.md`, `governance/DOCUMENT_REGISTRY.md`, `governance/tasks/CONT-PRE-P04-CKF-001.md`, `governance/ACTIVE_TASK.md`, `governance/CURRENT_PHASE.md`, `governance/PROJECT_STATE.md`, `governance/HANDOFF.md`, and `governance/SESSION_LOG.md`.
+  - `governance/tasks/CONT-PRE-P04-CKF-001.md` Closeout section, recording the same ratification in task-record form.
+- non_authorizations:
+  - Does **not** activate P04 or P05. P04 GO remains a separately approved Product Owner decision, distinct from this definition.
+  - Does **not** create a P04 or P05 task.
+  - Does **not** mutate `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, or `governance/ROADMAP.md`.
+  - Does **not** create any CKF schema, file format specification, storage design, or CKF artifact beyond the glossary term itself.
+  - Does **not** authorize implementation, project code, dependencies, hooks, hook activation, adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), settings changes, license selection or creation, or runtime context pack generation.
+  - Does **not** modify `governance/PRODUCT_CHARTER.md`, `governance/CHANGE_PROTOCOL.md`, `governance/NEVER_AUTOMATIC.md`, `governance/TRUST_BOUNDARIES.md`, `docs/REFERENCE_STRUCTURE.md`, the ratified context-policy set, or the ratified P02 discovery drafts.
+  - Does **not** rewrite the Glossary's original ratification frontmatter (Bundle 2 provenance fields remain unchanged).
+  - Does **not** resolve, reclassify, or dispose any `OQ-P02-*`, `P02-RISK-*`, or `P02-ROAD-*` row.
+  - Does **not** reopen P03 or modify `DEC-P03-CLOSEOUT-001` or any `DEC-P03-ARCH-*` row.
+  - No runtime context pack is generated by this decision.
+- reversibility: A future Product Owner decision may supersede or revise this definition by ratifying a successor `DEC-PRE-P04-CKF-DEF-NNN` or `DEC-PRE-P04-CKF-REVISION-NNN` row that explicitly supersedes `DEC-PRE-P04-CKF-DEF-001` and restates or revises the CKF term. Until such a decision, the definition recorded here stands.
+- authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
+- predecessor_decisions: `DEC-P03-CLOSEOUT-001`, `DEC-P03-ARCH-RISKDISP-001`, `DEC-P02-CLOSEOUT-001`.
+- scope_note: Defines the `CKF` term only, as a planned specification layer, not implementation. Does **not** design, schema, or specify CKF content. Does **not** activate P04 or P05, create a P04/P05 task, or mutate any source register. `governance/DOCUMENT_REGISTRY.md` is updated only with CKF-scoped registry updates: the existing Glossary row is updated, the new CKF task row is added, and the `DEC-PRE-P04-CKF-DEF-001` decision-reference bullet is added; no unrelated registry row is altered. The repository remains in zero-active-task state after this decision, awaiting a separately approved Product Owner P04 activation decision.

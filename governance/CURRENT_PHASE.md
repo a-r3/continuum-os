@@ -2,11 +2,15 @@
 
 ## Phase
 
-No phase is currently active. P03 — Architecture Evaluation is **closed/completed** under `DEC-P03-CLOSEOUT-001`. P04 is **not active**; P04 activation requires a separately approved Product Owner decision and a separately approved P04 task.
+No phase is currently active. P03 — Architecture Evaluation is **closed/completed** under `DEC-P03-CLOSEOUT-001`. A bounded Pre-P04 zero-active-task transition task, `CONT-PRE-P04-CKF-001`, has since closed/completed under `DEC-PRE-P04-CKF-DEF-001`. P04 is **not active**; P04 activation requires a separately approved Product Owner decision and a separately approved P04 task.
 
 ## Current P03 Sub-State
 
 P03 closed/completed under gate `P03_ARCHITECTURE_EVALUATION` (`gate_status: COMPLETED`). `CONT-P03-ARCH-001` is closed/completed under `DEC-P03-CLOSEOUT-001`.
+
+## Current Pre-P04 Sub-State
+
+The bounded Pre-P04 CKF (Canonical Knowledge Format) term-definition transition task `CONT-PRE-P04-CKF-001` closed/completed under gate `PRE_P04_CKF_DEFINITION` (`gate_status: COMPLETED`), ratified by decision `DEC-PRE-P04-CKF-DEF-001`. This task defined `CKF` as `Canonical Knowledge Format`, a planned specification layer, added the term to `governance/GLOSSARY.md`, and registered the task and glossary addition in `governance/DOCUMENT_REGISTRY.md`. It did not activate P04 or P05 and did not authorize implementation, runtime context packs, or any other prohibited work. The repository remains in zero-active-task state.
 
 ## Status
 
@@ -51,7 +55,7 @@ No active phase objective. P03 closeout transitions the repository to a zero-act
 - Project-code changes.
 - Adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`).
 - Runtime context pack generation.
-- Modifying `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, `governance/ROADMAP.md`, or `governance/DOCUMENT_REGISTRY.md`.
+- Modifying `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, or `governance/ROADMAP.md`.
 - Product Owner identity changes.
 - Creating `governance/PRODUCT_OWNER.md`.
 - Modifying ratified governance documents (`PRODUCT_CHARTER.md`, `GLOSSARY.md`, `CHANGE_PROTOCOL.md`, `NEVER_AUTOMATIC.md`, `TRUST_BOUNDARIES.md`, `RISK_REGISTER.md`, `ROADMAP.md`, `DOCUMENT_REGISTRY.md`, `docs/REFERENCE_STRUCTURE.md`, `CONTEXT_POLICY.md`, `CONTEXT_BUDGET.md`, `CONTEXT_RETRIEVAL_PROTOCOL.md`, P02 discovery drafts) outside a separately approved gate.

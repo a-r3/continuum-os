@@ -90,6 +90,12 @@ Knowledge is held in canonical governance files. Chat memory, hidden assistant m
 
 Ratification authority for v1 belongs solely to `Rauf Alizada`. It is non-delegable. No other identity is a valid Product Owner, project authority, approver, ratifier, owner, or participant for v1. Invalid identities (`Raauf Alizada`, `Tural Rahmanli`, or any other) may appear in governance documents only as explicit invalidation or stop-condition references, never as a valid project identity or authority.
 
+## Planned Specification Terms
+
+This section holds terms ratified after the original Bundle 2 Glossary ratification, via a separately approved Product Owner-ratified governance change. Adding a term here does not amend the Glossary's original Bundle 2 frontmatter provenance (`last_ratified_by: Rauf Alizada`, `last_ratified_at: 2026-06-20`, `source_task: CONT-P01-BUNDLE-002`); each term entry carries its own provenance instead.
+
+- **CKF (Canonical Knowledge Format)** — *Ratified under `DEC-PRE-P04-CKF-DEF-001` / `CONT-PRE-P04-CKF-001` on 2026-07-01.* A planned future specification layer for representing Continuum OS canonical knowledge (claims, decisions, evidence, and their statuses) in a defined, non-narrative format. CKF is **not yet designed, schematized, or implemented**. This term definition does not create, authorize, or imply any file format, schema, storage mechanism, database, or implementation for CKF; it records only that the name and expansion are canonical. Any future CKF specification, schema, or implementation requires its own separately approved Product Owner-ratified governance change and, where implementation is involved, a Product Owner-ratified P04 GO decision. CKF does not supersede or modify the knowledge-model terms (`fact`, `assumption`, `proposal`, `decision`, `open question`) defined above; it is a candidate future representation of them, not a redefinition.
+
 ## Cross-Reference Rules
 
 - Facts, assumptions, proposals, ratified decisions, and open questions must not be collapsed into a single category in any governance document, task record, handoff, or decision entry.
