@@ -17,7 +17,7 @@ Do not invent answers. Resolve only through Product Owner ratification.
 | OQ-P02-D-008 | Open | Is `Reserved Directory` a domain concept or a repository-mechanics concept only? | P02 | Source: `DEC-P02-DOMAIN-DISCOVERY-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
 | OQ-P02-D-009 | Open | How does deferred token-efficiency sibling work (reading-policy table, tag vocabulary, baseline token-cost method) relate to the domain model? | P02 | Source: `DEC-P02-DOMAIN-DISCOVERY-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
 | OQ-P02-S-001 | Open | Which candidate security/trust requirements should become canonical P02 requirements vs deferred to P03/P04? | P02 | Source: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
-| OQ-P02-S-002 | Open | Should hook activation be encoded in a separate gate document or remain inside the security/trust draft? | P02 | Source: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
+| OQ-P02-S-002 | Disposed for P04-readiness (scheduled; encoding not decided) | Should hook activation be encoded in a separate gate document or remain inside the security/trust draft? | P02 | Source: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`. Owner: `Rauf Alizada`. P04-readiness disposition: `DEC-P04-DISP-004` (ratified 2026-07-02). See `## P02 Question Details` below. |
 | OQ-P02-S-003 | Open | Should Git destructive-command approval be encoded as a standalone `GIT_SAFETY.md` or remain inside existing governance? | P02 | Source: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
 | OQ-P02-S-004 | Open | Should a dedicated `SECRETS_POLICY.md` be created, or should secret-handling remain in `TRUST_BOUNDARIES.md` / the security-trust draft? | P02 | Source: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
 | OQ-P02-S-005 | Open | How should agent-behavior requirements be split between governance documents and adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`)? | P02 | Source: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
@@ -106,11 +106,11 @@ P02 questions are projected from the ratified P02 discovery artifacts under `DEC
   - impact if unresolved: Candidate requirements remain non-binding indefinitely.
   - no automatic resolution.
 - **OQ-P02-S-002** — Hook activation gate document.
-  - status: `Open`; source task: `CONT-P02-ONB-001`; source decision: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`; owner: `Rauf Alizada`.
+  - status: `Disposed for P04-readiness`; source task: `CONT-P02-ONB-001`; source decision: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`; owner: `Rauf Alizada`.
   - question: Should hook activation be encoded in a separate gate document, or remain inside the security/trust draft?
   - why it matters: Determines how hook activation provenance is recorded.
   - impact if unresolved: Hook-activation authority remains implicit.
-  - no automatic resolution.
+  - P04-readiness disposition: accepted as explicitly scheduled governance-readiness work under `DEC-P04-DISP-004` (ratified 2026-07-02) — the documentation-encoding question does not itself block P04 implementation-readiness, since no hook activation is authorized regardless of how the eventual gate document is structured; the underlying Gate G-5 criteria question remains scheduled under `P02-ROAD-008`. This does not authorize hook activation, and does not decide the encoding question itself.
 - **OQ-P02-S-003** — `GIT_SAFETY.md`.
   - status: `Open`; source task: `CONT-P02-ONB-001`; source decisions: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DATA-CLASSIFICATION-001`; owner: `Rauf Alizada`.
   - question: Should Git destructive-command approval be encoded as a standalone `GIT_SAFETY.md`, or remain inside `.claude/rules/06-git-workflow.md` and `TRUST_BOUNDARIES.md`?

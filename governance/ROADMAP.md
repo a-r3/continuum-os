@@ -189,7 +189,7 @@ This section projects unresolved P02 follow-on work into the canonical roadmap a
 ### P02-ROAD-008 — Decide Hook Activation Gate Criteria
 
 - **Item ID:** `P02-ROAD-008`.
-- **Status:** Proposed; not started.
+- **Status:** Proposed; not started. P04-readiness disposition (`DEC-P04-DISP-004`, ratified 2026-07-02): explicitly scheduled as future Gate G-5 work rather than resolved or implemented now — ratifying activation criteria and activating hooks remain distinct, separately approved future gates; this item's own outstanding state is not itself a P04 implementation blocker.
 - **Candidate phase:** P04.
 - **Source decision(s):** `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`.
 - **Source open-questions / risks:** `P02-RISK-007`; related to `P01-RISK-005`.
@@ -273,7 +273,7 @@ This section projects unresolved P02 follow-on work into the canonical roadmap a
 ### P02-ROAD-014 — Future P04 Mechanism / Hook Prerequisites
 
 - **Item ID:** `P02-ROAD-014`.
-- **Status:** Proposed; not started; future.
+- **Status:** Proposed; not started; future. P04-readiness disposition (`DEC-P04-DISP-004`, ratified 2026-07-02): explicitly scheduled as future mechanism/hook prerequisite work rather than resolved or implemented now — this item's own definitional scope (which artifacts must be ratified before hook/adapter/settings changes) remains open and is not itself a P04 implementation blocker; no hook activation, adapter modification, or settings change is authorized by this disposition.
 - **Candidate phase:** P04.
 - **Source decision(s):** `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`.
 - **Source open-questions / risks:** `P02-RISK-007`, `P02-RISK-005`, `P02-RISK-006`.
