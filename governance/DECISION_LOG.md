@@ -1878,3 +1878,180 @@ Only explicit Product Owner decisions are recorded here.
 - authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
 - predecessor_decisions: `DEC-P03-ARCH-RECO-006`, `DEC-P03-ARCH-REVISION-002`, `DEC-P03-ARCH-ADR-005`, `DEC-P03-ARCH-RECO-005`, `DEC-P03-ARCH-REVISION-001`, `DEC-P03-ARCH-ADR-004`, `DEC-P03-ARCH-RECO-004`, `DEC-P03-ARCH-ADR-003`, `DEC-P03-ARCH-RECO-003`, `DEC-P03-ARCH-ADR-002`, `DEC-P03-ARCH-RECO-002`, `DEC-P03-ARCH-ADR-001`, `DEC-P03-ARCH-RECO-001`, `DEC-P03-ARCH-CRIT-004`, `DEC-P03-ARCH-CRIT-003`, `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`.
 - scope_note: Canonicalizes `ADR-DRAFT-P03-004` (Context Architecture Realization) only, adopting Option `X-B` conditional on Gate G-6 and the eight explicit runtime-context-pack acceptance criteria, using verbatim the Step E-revised package wording ratified under `DEC-P03-ARCH-REVISION-002`; Option `X-A` remains the currently-active canonical baseline. Does **not** re-ratify `R-4` (remains ratified under `DEC-P03-ARCH-RECO-006`). Does **not** re-ratify or modify any other ADR or recommendation. Does **not** ratify any criterion (`I-3`, `I-4`, `I-5`, `I-6`). Does **not** modify or supersede `DEC-P03-ARCH-CRIT-001..004`, `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ARCH-RECO-001..006`, `DEC-P03-ARCH-ADR-001..005`, `DEC-P03-ARCH-REVISION-001`, or `DEC-P03-ARCH-REVISION-002`. Does **not** modify `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md` or `governance/P03_G4_CLASSIFICATION_PLAN.md`. Does **not** elevate the status of `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`. Does **not** mutate any source register. Does **not** authorize Gate G-6 or any runtime context pack generation under any condition, hook activation, settings changes, adapter-rule changes, validator/automated-check activation, enforcement, implementation, project code, dependencies, license, adapter-contract artifact creation, classification-registry file creation, adapter implementation, connector code, or security enforcement controls. Does **not** create any P04 or P05 task; does **not** open P03 closeout; does **not** open P04 GO. Subsequent per-criterion, per-row, P03-closeout, and P04-activation ratification gates remain separately required.
+
+## DEC-P03-ARCH-CRIT-005
+
+- decision_id: `DEC-P03-ARCH-CRIT-005`
+- status: `RATIFIED`
+- decision: Ratify P03 implementation-readiness criterion `I-3` from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8 as canonical procedural discipline under `CONT-P03-ARCH-001`. Ratified criterion text: "any `OQ-P02-*` open question that the Product Owner classifies as P04-blocking has been resolved through a separately approved Product Owner ratification before P04 GO; classification itself is a separate Product Owner-approved diff and is **not** performed by this package." Classification has since been separately performed and ratified under `DEC-P03-ARCH-CLASS-001` (28 `OQ-P02-*` rows classified; 14 rows across all three source registers classified `P04-blocking`). Ratifying `I-3` codifies the binding rule that every `OQ-P02-*` row classified `P04-blocking` under `DEC-P03-ARCH-CLASS-001` must be resolved through its own separately approved Product Owner ratification before P04 GO (source-package Gate G-8); ratifying `I-3` does not itself resolve any such row.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-28`
+- source_task: `CONT-P03-ARCH-001`
+- source_activation: `DEC-P03-ACTIVATION-001`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- criterion_ratified: `I-3` (`governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8).
+- decision_family: `DEC-P03-ARCH-CRIT-NNN` (per `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md` §9). This decision is the fifth row in the `DEC-P03-ARCH-CRIT-NNN` family, sequenced after `DEC-P03-ARCH-CRIT-001` (`I-1`), `DEC-P03-ARCH-CRIT-002` (`I-7`), `DEC-P03-ARCH-CRIT-003` (`I-8`), and `DEC-P03-ARCH-CRIT-004` (`I-2`).
+- related_prior_decisions: `DEC-P03-ARCH-ADR-006`, `DEC-P03-ARCH-RECO-006`, `DEC-P03-ARCH-CRIT-004`, `DEC-P03-ARCH-CRIT-003`, `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`.
+- safety_basis:
+  - `I-3` was previously blocked on G-4 classification (Step B); that dependency is now satisfied because `governance/P03_G4_CLASSIFICATION_PLAN.md` is `Ratified / RATIFIED` under `DEC-P03-ARCH-CLASS-001`, which classified all 28 `OQ-P02-*` rows (27 `P03-blocking`, 14 `P04-blocking`, 21 `deferred-with-acceptance` across all three registers combined).
+  - `I-3` is a procedural / phase-boundary discipline rule binding future per-row resolution gates for `OQ-P02-*` rows classified `P04-blocking`. It does not itself resolve, accept, dispose, or otherwise transition any `OQ-P02-*` row.
+  - `I-3` does not require modifying `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, or `governance/ROADMAP.md`.
+  - `I-3` does not require revising `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` or `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md`; both remain `PROPOSED_INACTIVE` / `NOT_RATIFIED` as canonical reference framing only.
+  - `I-3` does not require modifying or reclassifying any row of `DEC-P03-ARCH-CLASS-001`.
+  - `I-3` is complementary to `DEC-P03-ARCH-CRIT-001` (`I-1`), `DEC-P03-ARCH-CRIT-002` (`I-7`), `DEC-P03-ARCH-CRIT-003` (`I-8`), and `DEC-P03-ARCH-CRIT-004` (`I-2`) and does not conflict with any of them; the five procedural rules co-bind every future P03 ratification gate and every future P04-GO gate.
+- forward_application:
+  - Every `OQ-P02-*` row classified `P04-blocking` under `DEC-P03-ARCH-CLASS-001` must be resolved through its own separately approved Product Owner ratification before P04 GO (source-package Gate G-8); a bundled or implicit resolution across multiple rows is not permitted absent an explicit Product Owner decision stating otherwise.
+  - Resolution rows are recorded in `governance/DECISION_LOG.md` and co-apply with `DEC-P03-ARCH-CRIT-001` (row-uniqueness) and `DEC-P03-ARCH-CRIT-002` (explicit non-authorization disclosure).
+  - This forward-application clause restates and binds `I-3`; it does not itself resolve any `OQ-P02-*` row or open P04 GO.
+- evidence:
+  - `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8 carries `I-3` as a proposed implementation-readiness criterion (status: `proposed`; document remains `PROPOSED_INACTIVE` / `NOT_RATIFIED`).
+  - `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md` §6 lists `I-3` as dependent on G-4 classification (Step B); that dependency is now satisfied.
+  - `governance/P03_G4_CLASSIFICATION_PLAN.md` is `Ratified / RATIFIED` under `DEC-P03-ARCH-CLASS-001`, recording the 14 `P04-blocking` rows across `OQ-P02-*` / `P02-RISK-*` / `P02-ROAD-*`.
+  - `DEC-P03-ARCH-CRIT-001..004` and `DEC-P03-ARCH-ADR-006` are canonical at HEAD `5d4e03031bb5b987671f7252414a765b169aad29`.
+  - This `I-3` ratification diff.
+- non_authorizations:
+  - Does **not** ratify any architecture recommendation `R-1..R-6`.
+  - Does **not** ratify or canonicalize any `ADR-DRAFT-P03-001..006`.
+  - Does **not** ratify any other implementation-readiness criterion (`I-1`, `I-2`, `I-4`, `I-5`, `I-6`, `I-7`, `I-8`). (`I-1`, `I-2`, `I-7`, `I-8` already ratified under `DEC-P03-ARCH-CRIT-001..004`; this decision does not modify or supersede any of them.)
+  - Does **not** modify or supersede `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-003`, or `DEC-P03-ARCH-CRIT-004`.
+  - Does **not** modify or reclassify any row of `DEC-P03-ARCH-CLASS-001`; the G-4 classification set is unchanged.
+  - Does **not** modify `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`, `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md`, or `governance/P03_G4_CLASSIFICATION_PLAN.md`.
+  - Does **not** mutate `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, or `governance/ROADMAP.md`.
+  - Does **not** resolve any `OQ-P02-*` row.
+  - Does **not** accept, dispose, or otherwise transition any `P02-RISK-*` row.
+  - Does **not** schedule any `P02-ROAD-*` roadmap item.
+  - Does **not** authorize implementation, project code, dependency installation, lockfile or manifest changes, license selection, hook registration or activation, settings changes, adapter-rule changes, validator or automated check activation, runtime context pack generation, or P04/P05 activation.
+  - Does **not** create any P04 or P05 task.
+  - Does **not** open P03 closeout (source-package Gate G-7) or P04 GO (source-package Gate G-8). Ratifying `I-3` codifies the resolution discipline; it does not itself constitute, schedule, approve, or initiate either gate.
+  - Does **not** create or modify `governance/PRODUCT_OWNER.md` (absent and remains absent).
+- invariants_preserved:
+  - Exactly one active task: `CONT-P03-ARCH-001` (active-task invariant preserved).
+  - P04 and P05 remain not active; no P04 or P05 task is proposed or activated by this decision.
+  - `DEC-P03-ARCH-CLASS-001` and `DEC-P03-ARCH-CRIT-001..004` remain canonical and are not superseded.
+  - Ratified context-policy set and ratified P02 discovery package remain canonical and are not superseded.
+  - No runtime context pack is generated by this decision.
+  - Canonical-wins discipline (P-4): no derived or generated artifact is elevated by this decision.
+  - Never-automatic surface (P-9): no automation, hook activation, settings change, or adapter-rule change is implied.
+- reversibility: A future Product Owner decision may supersede `DEC-P03-ARCH-CRIT-005` by introducing a successor `DEC-P03-ARCH-CRIT-NNN` row that explicitly supersedes this decision and restates the `P04-blocking` `OQ-P02-*` resolution rule (or replaces it with a successor procedural rule). Until such supersession, the resolution discipline binds every future P04-GO gate.
+- authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
+- predecessor_decisions: `DEC-P03-ARCH-ADR-006`, `DEC-P03-ARCH-RECO-006`, `DEC-P03-ARCH-REVISION-002`, `DEC-P03-ARCH-ADR-005`, `DEC-P03-ARCH-RECO-005`, `DEC-P03-ARCH-REVISION-001`, `DEC-P03-ARCH-ADR-004`, `DEC-P03-ARCH-RECO-004`, `DEC-P03-ARCH-ADR-003`, `DEC-P03-ARCH-RECO-003`, `DEC-P03-ARCH-ADR-002`, `DEC-P03-ARCH-RECO-002`, `DEC-P03-ARCH-ADR-001`, `DEC-P03-ARCH-RECO-001`, `DEC-P03-ARCH-CRIT-004`, `DEC-P03-ARCH-CRIT-003`, `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`.
+- scope_note: Ratifies the `P04-blocking` `OQ-P02-*` resolution rule `I-3` only. Does **not** resolve any `OQ-P02-*` row. Does **not** ratify any recommendation, ADR, or other criterion. Does **not** modify the proposed P03 evaluation package, proposed P03 ratification plan, or G-4 classification record. Does **not** mutate any source register. Does **not** open P03 closeout or P04 GO. Subsequent per-row resolution, P03-closeout, and P04-activation ratification gates remain separately required.
+
+## DEC-P03-ARCH-CRIT-006
+
+- decision_id: `DEC-P03-ARCH-CRIT-006`
+- status: `RATIFIED`
+- decision: Ratify P03 implementation-readiness criterion `I-4` from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8 as canonical procedural discipline under `CONT-P03-ARCH-001`. Ratified criterion text: "any `P02-RISK-*` risk that the Product Owner classifies as P04-blocking has an explicit disposition (accepted with mitigation, transferred, or mitigated) recorded under a separately approved Product Owner gate before P04 GO; classification itself is a separate Product Owner-approved diff." Classification has since been separately performed and ratified under `DEC-P03-ARCH-CLASS-001`. Ratifying `I-4` codifies the binding rule that every `P02-RISK-*` row classified `P04-blocking` under `DEC-P03-ARCH-CLASS-001` must have an explicit disposition (accepted with mitigation, transferred, or mitigated) recorded under a separately approved Product Owner gate before P04 GO (source-package Gate G-8); ratifying `I-4` does not itself dispose of any such row.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-28`
+- source_task: `CONT-P03-ARCH-001`
+- source_activation: `DEC-P03-ACTIVATION-001`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- criterion_ratified: `I-4` (`governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8).
+- decision_family: `DEC-P03-ARCH-CRIT-NNN` (per `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md` §9). This decision is the sixth row in the `DEC-P03-ARCH-CRIT-NNN` family, sequenced after `DEC-P03-ARCH-CRIT-001` (`I-1`), `DEC-P03-ARCH-CRIT-002` (`I-7`), `DEC-P03-ARCH-CRIT-003` (`I-8`), `DEC-P03-ARCH-CRIT-004` (`I-2`), and `DEC-P03-ARCH-CRIT-005` (`I-3`).
+- related_prior_decisions: `DEC-P03-ARCH-CRIT-005`, `DEC-P03-ARCH-ADR-006`, `DEC-P03-ARCH-RECO-006`, `DEC-P03-ARCH-CRIT-004`, `DEC-P03-ARCH-CRIT-003`, `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`.
+- safety_basis:
+  - `I-4` was previously blocked on G-4 classification (Step B); that dependency is now satisfied because `governance/P03_G4_CLASSIFICATION_PLAN.md` is `Ratified / RATIFIED` under `DEC-P03-ARCH-CLASS-001`, which classified all 19 `P02-RISK-*` rows (part of the combined 27 `P03-blocking` / 14 `P04-blocking` / 21 `deferred-with-acceptance` distribution across all three registers).
+  - `I-4` is a procedural / phase-boundary discipline rule binding future per-row disposition gates for `P02-RISK-*` rows classified `P04-blocking`. It does not itself accept, transfer, mitigate, or otherwise dispose of any `P02-RISK-*` row.
+  - `I-4` does not require modifying `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, or `governance/ROADMAP.md`.
+  - `I-4` does not require revising `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` or `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md`; both remain `PROPOSED_INACTIVE` / `NOT_RATIFIED` as canonical reference framing only.
+  - `I-4` does not require modifying or reclassifying any row of `DEC-P03-ARCH-CLASS-001`.
+  - `I-4` is complementary to `DEC-P03-ARCH-CRIT-001` (`I-1`), `DEC-P03-ARCH-CRIT-002` (`I-7`), `DEC-P03-ARCH-CRIT-003` (`I-8`), `DEC-P03-ARCH-CRIT-004` (`I-2`), and `DEC-P03-ARCH-CRIT-005` (`I-3`) and does not conflict with any of them; the six procedural rules co-bind every future P03 ratification gate and every future P04-GO gate.
+- forward_application:
+  - Every `P02-RISK-*` row classified `P04-blocking` under `DEC-P03-ARCH-CLASS-001` must have an explicit disposition (accepted with mitigation, transferred, or mitigated) recorded under its own separately approved Product Owner gate before P04 GO (source-package Gate G-8); a bundled or implicit disposition across multiple rows is not permitted absent an explicit Product Owner decision stating otherwise.
+  - Disposition rows are recorded in `governance/DECISION_LOG.md` and co-apply with `DEC-P03-ARCH-CRIT-001` (row-uniqueness) and `DEC-P03-ARCH-CRIT-002` (explicit non-authorization disclosure).
+  - This forward-application clause restates and binds `I-4`; it does not itself dispose of any `P02-RISK-*` row or open P04 GO.
+- evidence:
+  - `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8 carries `I-4` as a proposed implementation-readiness criterion (status: `proposed`; document remains `PROPOSED_INACTIVE` / `NOT_RATIFIED`).
+  - `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md` §6 lists `I-4` as dependent on G-4 classification (Step B); that dependency is now satisfied.
+  - `governance/P03_G4_CLASSIFICATION_PLAN.md` is `Ratified / RATIFIED` under `DEC-P03-ARCH-CLASS-001`, recording the 14 `P04-blocking` rows across `OQ-P02-*` / `P02-RISK-*` / `P02-ROAD-*`.
+  - `DEC-P03-ARCH-CRIT-001..005` and `DEC-P03-ARCH-ADR-006` are canonical at HEAD `5d4e03031bb5b987671f7252414a765b169aad29`.
+  - This `I-4` ratification diff.
+- non_authorizations:
+  - Does **not** ratify any architecture recommendation `R-1..R-6`.
+  - Does **not** ratify or canonicalize any `ADR-DRAFT-P03-001..006`.
+  - Does **not** ratify any other implementation-readiness criterion (`I-1`, `I-2`, `I-3`, `I-5`, `I-6`, `I-7`, `I-8`). (`I-1`, `I-2`, `I-3`, `I-7`, `I-8` already ratified under `DEC-P03-ARCH-CRIT-001..003` and `DEC-P03-ARCH-CRIT-004..005`; this decision does not modify or supersede any of them.)
+  - Does **not** modify or supersede `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-003`, `DEC-P03-ARCH-CRIT-004`, or `DEC-P03-ARCH-CRIT-005`.
+  - Does **not** modify or reclassify any row of `DEC-P03-ARCH-CLASS-001`; the G-4 classification set is unchanged.
+  - Does **not** modify `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`, `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md`, or `governance/P03_G4_CLASSIFICATION_PLAN.md`.
+  - Does **not** mutate `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, or `governance/ROADMAP.md`.
+  - Does **not** resolve any `OQ-P02-*` row.
+  - Does **not** accept, dispose, or otherwise transition any `P02-RISK-*` row.
+  - Does **not** schedule any `P02-ROAD-*` roadmap item.
+  - Does **not** authorize implementation, project code, dependency installation, lockfile or manifest changes, license selection, hook registration or activation, settings changes, adapter-rule changes, validator or automated check activation, runtime context pack generation, or P04/P05 activation.
+  - Does **not** create any P04 or P05 task.
+  - Does **not** open P03 closeout (source-package Gate G-7) or P04 GO (source-package Gate G-8). Ratifying `I-4` codifies the disposition discipline; it does not itself constitute, schedule, approve, or initiate either gate.
+  - Does **not** create or modify `governance/PRODUCT_OWNER.md` (absent and remains absent).
+- invariants_preserved:
+  - Exactly one active task: `CONT-P03-ARCH-001` (active-task invariant preserved).
+  - P04 and P05 remain not active; no P04 or P05 task is proposed or activated by this decision.
+  - `DEC-P03-ARCH-CLASS-001` and `DEC-P03-ARCH-CRIT-001..005` remain canonical and are not superseded.
+  - Ratified context-policy set and ratified P02 discovery package remain canonical and are not superseded.
+  - No runtime context pack is generated by this decision.
+  - Canonical-wins discipline (P-4): no derived or generated artifact is elevated by this decision.
+  - Never-automatic surface (P-9): no automation, hook activation, settings change, or adapter-rule change is implied.
+- reversibility: A future Product Owner decision may supersede `DEC-P03-ARCH-CRIT-006` by introducing a successor `DEC-P03-ARCH-CRIT-NNN` row that explicitly supersedes this decision and restates the `P04-blocking` `P02-RISK-*` disposition rule (or replaces it with a successor procedural rule). Until such supersession, the disposition discipline binds every future P04-GO gate.
+- authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
+- predecessor_decisions: `DEC-P03-ARCH-CRIT-005`, `DEC-P03-ARCH-ADR-006`, `DEC-P03-ARCH-RECO-006`, `DEC-P03-ARCH-REVISION-002`, `DEC-P03-ARCH-ADR-005`, `DEC-P03-ARCH-RECO-005`, `DEC-P03-ARCH-REVISION-001`, `DEC-P03-ARCH-ADR-004`, `DEC-P03-ARCH-RECO-004`, `DEC-P03-ARCH-ADR-003`, `DEC-P03-ARCH-RECO-003`, `DEC-P03-ARCH-ADR-002`, `DEC-P03-ARCH-RECO-002`, `DEC-P03-ARCH-ADR-001`, `DEC-P03-ARCH-RECO-001`, `DEC-P03-ARCH-CRIT-004`, `DEC-P03-ARCH-CRIT-003`, `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`.
+- scope_note: Ratifies the `P04-blocking` `P02-RISK-*` disposition rule `I-4` only. Does **not** dispose of any `P02-RISK-*` row. Does **not** ratify any recommendation, ADR, or other criterion. Does **not** modify the proposed P03 evaluation package, proposed P03 ratification plan, or G-4 classification record. Does **not** mutate any source register. Does **not** open P03 closeout or P04 GO. Subsequent per-row disposition, P03-closeout, and P04-activation ratification gates remain separately required.
+
+## DEC-P03-ARCH-CRIT-007
+
+- decision_id: `DEC-P03-ARCH-CRIT-007`
+- status: `RATIFIED`
+- decision: Ratify P03 implementation-readiness criterion `I-5` from `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8 as canonical procedural discipline under `CONT-P03-ARCH-001`. Ratified criterion text: "any `P02-ROAD-*` roadmap item required by ratified architecture decisions has been scheduled under a separately approved Product Owner gate before P04 GO; scheduling itself is a separate Product Owner-approved diff." Classification has since been separately performed and ratified under `DEC-P03-ARCH-CLASS-001`. Ratifying `I-5` codifies the binding rule that every `P02-ROAD-*` row classified `P04-blocking` under `DEC-P03-ARCH-CLASS-001`, and any other `P02-ROAD-*` roadmap item required by a ratified architecture decision, must be scheduled under its own separately approved Product Owner gate before P04 GO; ratifying `I-5` does not itself schedule any such item.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-06-28`
+- source_task: `CONT-P03-ARCH-001`
+- source_activation: `DEC-P03-ACTIVATION-001`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- criterion_ratified: `I-5` (`governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8).
+- decision_family: `DEC-P03-ARCH-CRIT-NNN` (per `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md` §9). This decision is the seventh row in the `DEC-P03-ARCH-CRIT-NNN` family, sequenced after `DEC-P03-ARCH-CRIT-001` (`I-1`), `DEC-P03-ARCH-CRIT-002` (`I-7`), `DEC-P03-ARCH-CRIT-003` (`I-8`), `DEC-P03-ARCH-CRIT-004` (`I-2`), `DEC-P03-ARCH-CRIT-005` (`I-3`), and `DEC-P03-ARCH-CRIT-006` (`I-4`).
+- related_prior_decisions: `DEC-P03-ARCH-CRIT-006`, `DEC-P03-ARCH-CRIT-005`, `DEC-P03-ARCH-ADR-006`, `DEC-P03-ARCH-RECO-006`, `DEC-P03-ARCH-CRIT-004`, `DEC-P03-ARCH-CRIT-003`, `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`.
+- safety_basis:
+  - `I-5` was previously blocked on G-4 classification (Step B); that dependency is now satisfied because `governance/P03_G4_CLASSIFICATION_PLAN.md` is `Ratified / RATIFIED` under `DEC-P03-ARCH-CLASS-001`, which classified all 15 `P02-ROAD-*` rows (part of the combined 27 `P03-blocking` / 14 `P04-blocking` / 21 `deferred-with-acceptance` distribution across all three registers).
+  - `I-5` is a procedural / phase-boundary discipline rule binding future per-item scheduling gates for `P02-ROAD-*` roadmap items. It does not itself schedule any `P02-ROAD-*` item.
+  - `I-5` does not require modifying `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, or `governance/ROADMAP.md`.
+  - `I-5` does not require revising `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` or `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md`; both remain `PROPOSED_INACTIVE` / `NOT_RATIFIED` as canonical reference framing only.
+  - `I-5` does not require modifying or reclassifying any row of `DEC-P03-ARCH-CLASS-001`.
+  - `I-5` is complementary to `DEC-P03-ARCH-CRIT-001` (`I-1`), `DEC-P03-ARCH-CRIT-002` (`I-7`), `DEC-P03-ARCH-CRIT-003` (`I-8`), `DEC-P03-ARCH-CRIT-004` (`I-2`), `DEC-P03-ARCH-CRIT-005` (`I-3`), and `DEC-P03-ARCH-CRIT-006` (`I-4`) and does not conflict with any of them; the seven procedural rules co-bind every future P03 ratification gate and every future P04-GO gate.
+- forward_application:
+  - Every `P02-ROAD-*` roadmap item classified `P04-blocking` under `DEC-P03-ARCH-CLASS-001`, and any other `P02-ROAD-*` item required by a ratified architecture decision, must be scheduled under its own separately approved Product Owner gate before P04 GO (source-package Gate G-8); a bundled or implicit scheduling across multiple items is not permitted absent an explicit Product Owner decision stating otherwise.
+  - Scheduling rows are recorded in `governance/DECISION_LOG.md` and co-apply with `DEC-P03-ARCH-CRIT-001` (row-uniqueness) and `DEC-P03-ARCH-CRIT-002` (explicit non-authorization disclosure).
+  - This forward-application clause restates and binds `I-5`; it does not itself schedule any `P02-ROAD-*` item or open P04 GO.
+- evidence:
+  - `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md` §8 carries `I-5` as a proposed implementation-readiness criterion (status: `proposed`; document remains `PROPOSED_INACTIVE` / `NOT_RATIFIED`).
+  - `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md` §6 lists `I-5` as dependent on G-4 classification (Step B); that dependency is now satisfied.
+  - `governance/P03_G4_CLASSIFICATION_PLAN.md` is `Ratified / RATIFIED` under `DEC-P03-ARCH-CLASS-001`, recording the 14 `P04-blocking` rows across `OQ-P02-*` / `P02-RISK-*` / `P02-ROAD-*`.
+  - `DEC-P03-ARCH-CRIT-001..006` and `DEC-P03-ARCH-ADR-006` are canonical at HEAD `5d4e03031bb5b987671f7252414a765b169aad29`.
+  - This `I-5` ratification diff.
+- non_authorizations:
+  - Does **not** ratify any architecture recommendation `R-1..R-6`.
+  - Does **not** ratify or canonicalize any `ADR-DRAFT-P03-001..006`.
+  - Does **not** ratify any other implementation-readiness criterion (`I-1`, `I-2`, `I-3`, `I-4`, `I-6`, `I-7`, `I-8`). (`I-1`, `I-2`, `I-3`, `I-4`, `I-7`, `I-8` already ratified under `DEC-P03-ARCH-CRIT-001..006`; this decision does not modify or supersede any of them.)
+  - Does **not** modify or supersede `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-003`, `DEC-P03-ARCH-CRIT-004`, `DEC-P03-ARCH-CRIT-005`, or `DEC-P03-ARCH-CRIT-006`.
+  - Does **not** modify or reclassify any row of `DEC-P03-ARCH-CLASS-001`; the G-4 classification set is unchanged.
+  - Does **not** modify `governance/P03_ARCHITECTURE_EVALUATION_PACKAGE.md`, `governance/P03_ARCHITECTURE_RATIFICATION_PLAN.md`, or `governance/P03_G4_CLASSIFICATION_PLAN.md`.
+  - Does **not** mutate `governance/OPEN_QUESTIONS.md`, `governance/RISK_REGISTER.md`, or `governance/ROADMAP.md`.
+  - Does **not** resolve any `OQ-P02-*` row.
+  - Does **not** accept, dispose, or otherwise transition any `P02-RISK-*` row.
+  - Does **not** schedule any `P02-ROAD-*` roadmap item.
+  - Does **not** authorize implementation, project code, dependency installation, lockfile or manifest changes, license selection, hook registration or activation, settings changes, adapter-rule changes, validator or automated check activation, runtime context pack generation, or P04/P05 activation.
+  - Does **not** create any P04 or P05 task.
+  - Does **not** open P03 closeout (source-package Gate G-7) or P04 GO (source-package Gate G-8). Ratifying `I-5` codifies the scheduling discipline; it does not itself constitute, schedule, approve, or initiate either gate.
+  - Does **not** create or modify `governance/PRODUCT_OWNER.md` (absent and remains absent).
+- invariants_preserved:
+  - Exactly one active task: `CONT-P03-ARCH-001` (active-task invariant preserved).
+  - P04 and P05 remain not active; no P04 or P05 task is proposed or activated by this decision.
+  - `DEC-P03-ARCH-CLASS-001` and `DEC-P03-ARCH-CRIT-001..006` remain canonical and are not superseded.
+  - Ratified context-policy set and ratified P02 discovery package remain canonical and are not superseded.
+  - No runtime context pack is generated by this decision.
+  - Canonical-wins discipline (P-4): no derived or generated artifact is elevated by this decision.
+  - Never-automatic surface (P-9): no automation, hook activation, settings change, or adapter-rule change is implied.
+- reversibility: A future Product Owner decision may supersede `DEC-P03-ARCH-CRIT-007` by introducing a successor `DEC-P03-ARCH-CRIT-NNN` row that explicitly supersedes this decision and restates the `P02-ROAD-*` scheduling rule (or replaces it with a successor procedural rule). Until such supersession, the scheduling discipline binds every future P04-GO gate.
+- authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
+- predecessor_decisions: `DEC-P03-ARCH-CRIT-006`, `DEC-P03-ARCH-CRIT-005`, `DEC-P03-ARCH-ADR-006`, `DEC-P03-ARCH-RECO-006`, `DEC-P03-ARCH-REVISION-002`, `DEC-P03-ARCH-ADR-005`, `DEC-P03-ARCH-RECO-005`, `DEC-P03-ARCH-REVISION-001`, `DEC-P03-ARCH-ADR-004`, `DEC-P03-ARCH-RECO-004`, `DEC-P03-ARCH-ADR-003`, `DEC-P03-ARCH-RECO-003`, `DEC-P03-ARCH-ADR-002`, `DEC-P03-ARCH-RECO-002`, `DEC-P03-ARCH-ADR-001`, `DEC-P03-ARCH-RECO-001`, `DEC-P03-ARCH-CRIT-004`, `DEC-P03-ARCH-CRIT-003`, `DEC-P03-ARCH-CRIT-002`, `DEC-P03-ARCH-CRIT-001`, `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ACTIVATION-001`.
+- scope_note: Ratifies the `P02-ROAD-*` scheduling rule `I-5` only. Does **not** schedule any `P02-ROAD-*` item. Does **not** ratify any recommendation, ADR, or other criterion. Does **not** modify the proposed P03 evaluation package, proposed P03 ratification plan, or G-4 classification record. Does **not** mutate any source register. Does **not** open P03 closeout or P04 GO. Subsequent per-item scheduling, P03-closeout, and P04-activation ratification gates remain separately required.
