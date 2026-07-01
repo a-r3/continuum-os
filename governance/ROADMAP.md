@@ -23,7 +23,7 @@ This Bundle 5 roadmap update is **ratified** as `ratified_evolving` governance r
 | P01 | Founder Discovery and Product Definition | Closed/Completed; Bundles 1-5 ratified; closed under `DEC-P01-CLOSEOUT-001` | Closed |
 | P02 | Domain, Governance, and Security | Active under `DEC-P02-ACTIVATION-001`; active task `CONT-P02-ONB-001`; gate `P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY` | Domain, Governance, and Security Discovery |
 | P03 | Architecture Evaluation and ADRs | Closed/Completed; closed under `DEC-P03-CLOSEOUT-001`; `CONT-P03-ARCH-001` closed/completed | Closed |
-| P04 | Implementation Readiness Gate | Not active / pending Product Owner activation | Requires explicit Product Owner P04 activation decision and a separately approved P04 task |
+| P04 | Implementation Readiness Gate | Active under `DEC-P04-ACTIVATION-001`; active task `CONT-P04-READINESS-001`; gate `P04_IMPLEMENTATION_READINESS` (`gate_status: ACTIVATED`) | Implementation-readiness review of the 14 `P04-blocking` rows; P04 GO requires a separate explicit Product Owner decision |
 | P05 | Core MVP Implementation | Not started | Requires explicit P04 GO |
 
 ### Phase Model Status Update (Pre-P04)

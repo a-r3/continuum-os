@@ -2634,3 +2634,47 @@ Only explicit Product Owner decisions are recorded here.
 - authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
 - predecessor_decisions: `DEC-PRE-P04-CKF-DEF-001`, `DEC-P03-CLOSEOUT-001`, `DEC-P03-ARCH-CLASS-001`.
 - scope_note: Corrects stale P03/P04 phase-status language in `governance/ROADMAP.md`'s Phase Model table only. Does **not** resolve, reclassify, or schedule any `P04-blocking` or `deferred-with-acceptance` row. Does **not** activate P04 or P05, create a P04/P05 task, or mutate `governance/OPEN_QUESTIONS.md` or `governance/RISK_REGISTER.md`. `governance/DOCUMENT_REGISTRY.md` is updated only with scoped registry updates: the existing `governance/ROADMAP.md` row is updated, the new task row is added, and the `DEC-PRE-P04-ROADMAP-ALIGN-001` decision-reference bullet is added; no unrelated registry row is altered. The repository remains in zero-active-task state after this decision, awaiting a separately approved Product Owner P04 activation decision.
+
+## DEC-P04-ACTIVATION-001
+
+- decision_id: `DEC-P04-ACTIVATION-001`
+- status: `RATIFIED`
+- decision: Activate P04 Implementation-Readiness Gate and `CONT-P04-READINESS-001` (P04 Implementation-Readiness Review) as the single active task under gate `P04_IMPLEMENTATION_READINESS` (`gate_status: ACTIVATED`), moving the repository from zero-active-task state to a single-active-task state.
+- scope: implementation-readiness-review only. Authorized work under `CONT-P04-READINESS-001`: dispositioning (resolving, scheduling, or explicitly accepting) the 14 `P04-blocking` rows classified under `DEC-P03-ARCH-CLASS-001` — open questions `OQ-P02-D-004`, `OQ-P02-S-002`, `OQ-P02-S-006`, `OQ-P02-C-005`, `OQ-P02-C-007`; risks `P02-RISK-008`, `P02-RISK-009`, `P02-RISK-010`, `P02-RISK-011`, `P02-RISK-012`; roadmap items `P02-ROAD-007`, `P02-ROAD-008`, `P02-ROAD-010`, `P02-ROAD-014` — and preparation of a P04 GO/NO-GO recommendation. Each individual row disposition and any eventual P04 GO decision requires its own separately approved Product Owner gate; this activation itself dispositions no row and grants no GO.
+- constraints:
+  - no implementation
+  - no code changes
+  - no dependencies (installation, lockfile changes, manifest changes)
+  - no hooks or adapter rules (`.claude/hooks/**`, `CLAUDE.md`, `AGENTS.md`, `.claude/rules/**`)
+  - no settings changes (`.claude/settings.json`, `.claude/settings.local.example.json`)
+  - no runtime context packs (`.continuum/RUNTIME_CONTEXT.md`, `.continuum/context-index.yaml`, `.continuum/context-budget.yaml`, `.continuum/context-freshness.yaml`, `.continuum/token-audit.md`)
+  - no license changes
+  - no schema, file format, or storage-design creation
+  - no P04 GO decision
+  - no P05 activation
+  - no P05 task creation
+  - no resolution, disposition, or reclassification of any of the 14 `P04-blocking` rows or 21 `deferred-with-acceptance` rows within this activation diff itself
+  - no modification of `governance/OPEN_QUESTIONS.md` or `governance/RISK_REGISTER.md` under this activation
+  - no modification of `governance/ROADMAP.md` beyond the Phase Model table's P04 status cell; no `P02-ROAD-*` item row is modified
+  - no Product Owner identity change
+  - no creation of `governance/PRODUCT_OWNER.md`
+- authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
+- predecessor_decisions: `DEC-PRE-P04-ROADMAP-ALIGN-001`, `DEC-PRE-P04-CKF-DEF-001`, `DEC-P03-CLOSEOUT-001`, `DEC-P03-ARCH-CLASS-001`, `DEC-P03-ARCH-DISP-001`, `DEC-P03-ARCH-DISP-002`, `DEC-P03-ARCH-DISP-003`, `DEC-P03-ARCH-DISP-004`, `DEC-P03-ARCH-DISP-005`, `DEC-P03-ARCH-DISP-006`, `DEC-P03-ARCH-DISP-007`, `DEC-P03-ARCH-RISKDISP-001`.
+- predecessor_task: `CONT-PRE-P04-ROADMAP-001` (closed/completed under `DEC-PRE-P04-ROADMAP-ALIGN-001`).
+- active_task_created: `CONT-P04-READINESS-001` — P04 Implementation-Readiness Review. Single active task. Active-task invariant preserved (exactly one active task across the transition, replacing the zero-active-task state).
+- evidence:
+  - Ratified P03 architecture package carried forward unchanged (6/6 recommendations, 6/6 ADR drafts, 8/8 implementation-readiness criteria, G-4 classification plan).
+  - `governance/P03_G4_CLASSIFICATION_PLAN.md` §9 (P04-Blocking Summary, 14 rows) and §10 (Deferred-With-Acceptance Summary, 21 rows), the authoritative source for the row counts and IDs cited in this decision's scope.
+  - P04 activation diff (this diff).
+- activation_invariants:
+  - exactly one active task during P04 implementation-readiness review: `CONT-P04-READINESS-001`.
+  - Product Owner identity `Rauf Alizada` preserved as sole project authority and sole ratification authority for v1.
+  - P05 remains not active; no P05 task is proposed or activated.
+  - no runtime context pack generated by this activation.
+  - no P04-blocking or deferred-with-acceptance row is resolved, reclassified, or dispositioned by this activation itself; each disposition requires a separately approved Product Owner gate.
+  - all 21 `deferred-with-acceptance` rows remain open and unchanged.
+  - no P04 GO decision is granted by this activation; P04 GO remains a separately approved, distinct Product Owner decision.
+  - `governance/OPEN_QUESTIONS.md` and `governance/RISK_REGISTER.md` remain byte-identical to their pre-activation state.
+  - ratified context-policy set and ratified P02/P03 packages remain canonical and are not superseded.
+  - invalid identities `Raauf Alizada` and `Tural Rahmanli` are not introduced as project authority.
+- scope_note: Activates P04 (implementation-readiness-review only) and creates `CONT-P04-READINESS-001` as the single active task, moving the repository from zero-active-task state to a single-active-task state. Includes the 14 `P04-blocking` rows as explicit task scope for future, separately approved per-row disposition gates. Does **not** resolve, dispose, or reclassify any of those 14 rows, or any of the 21 `deferred-with-acceptance` rows, within this diff. Does **not** authorize implementation, project code, dependencies, hooks, hook activation, adapter-rule changes, settings changes, license selection or creation, schema or storage-design creation, or runtime context pack generation. Does **not** grant P04 GO. Does **not** activate P05 or create a P05 task. Does **not** modify `governance/OPEN_QUESTIONS.md` or `governance/RISK_REGISTER.md`. `governance/ROADMAP.md` is updated only at the Phase Model table's P04 status cell; no `P02-ROAD-*` item row is altered. `governance/DOCUMENT_REGISTRY.md` is updated only with scoped registry updates: the new task row is added, the `governance/ROADMAP.md` row's decision references are updated, and the `DEC-P04-ACTIVATION-001` decision-reference bullet is added; no unrelated registry row is altered.

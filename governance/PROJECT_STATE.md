@@ -12,15 +12,15 @@ product_owner_identity_last_ratified_at: 2026-06-20
 ## Current Snapshot
 
 - Project working title: Continuum OS.
-- Repository status: P00 complete; **P01 closed/completed**; **P02 closed/completed**; **P03 closed/completed**; **P04 not active**; **P05 not active**.
-- Current phase: none. P03 — Architecture Evaluation closed/completed under `DEC-P03-CLOSEOUT-001`. Bounded Pre-P04 zero-active-task transition tasks `CONT-PRE-P04-CKF-001` (under `DEC-PRE-P04-CKF-DEF-001`) and `CONT-PRE-P04-ROADMAP-001` (under `DEC-PRE-P04-ROADMAP-ALIGN-001`) have since closed/completed.
-- Current P03 sub-state: closed/completed under gate `P03_ARCHITECTURE_EVALUATION` (`gate_status: COMPLETED`).
-- Current Pre-P04 sub-state: `CONT-PRE-P04-CKF-001` closed/completed under gate `PRE_P04_CKF_DEFINITION` (`gate_status: COMPLETED`), ratified by `DEC-PRE-P04-CKF-DEF-001`; defines `CKF` as `Canonical Knowledge Format`, a planned specification layer, adds the term to `governance/GLOSSARY.md`, and registers the task and glossary addition in `governance/DOCUMENT_REGISTRY.md`. `CONT-PRE-P04-ROADMAP-001` closed/completed under gate `PRE_P04_ROADMAP_ALIGNMENT` (`gate_status: COMPLETED`), ratified by `DEC-PRE-P04-ROADMAP-ALIGN-001`; corrects `governance/ROADMAP.md`'s Phase Model table P03/P04 status language and registers the task and Roadmap update in `governance/DOCUMENT_REGISTRY.md`. Neither task activates P04 or P05.
-- Active task: **none**. Repository is in zero-active-task state awaiting separately approved P04 activation.
-- Lifecycle status: zero active tasks (allowed transition state).
-- Current gate: `none`.
-- Gate status: `none`.
-- Execution authorized: `false` (zero-active-task state; no implementation, no code, no dependencies, no hooks, no adapter rules, no runtime context packs, no license changes, no P04/P05 activation).
+- Repository status: P00 complete; **P01 closed/completed**; **P02 closed/completed**; **P03 closed/completed**; **P04 active**; **P05 not active**.
+- Current phase: **P04 — Implementation-Readiness Gate**, active under `DEC-P04-ACTIVATION-001`. P03 — Architecture Evaluation closed/completed under `DEC-P03-CLOSEOUT-001`. Bounded Pre-P04 zero-active-task transition tasks `CONT-PRE-P04-CKF-001` (under `DEC-PRE-P04-CKF-DEF-001`) and `CONT-PRE-P04-ROADMAP-001` (under `DEC-PRE-P04-ROADMAP-ALIGN-001`) closed/completed before P04 activation.
+- Current P03 sub-state: closed/completed under gate `P03_ARCHITECTURE_EVALUATION` (`gate_status: COMPLETED`), unchanged by P04 activation.
+- Current Pre-P04 sub-state: `CONT-PRE-P04-CKF-001` closed/completed under gate `PRE_P04_CKF_DEFINITION` (`gate_status: COMPLETED`), ratified by `DEC-PRE-P04-CKF-DEF-001`; defines `CKF` as `Canonical Knowledge Format`, a planned specification layer, adds the term to `governance/GLOSSARY.md`, and registers the task and glossary addition in `governance/DOCUMENT_REGISTRY.md`. `CONT-PRE-P04-ROADMAP-001` closed/completed under gate `PRE_P04_ROADMAP_ALIGNMENT` (`gate_status: COMPLETED`), ratified by `DEC-PRE-P04-ROADMAP-ALIGN-001`; corrects `governance/ROADMAP.md`'s Phase Model table P03/P04 status language and registers the task and Roadmap update in `governance/DOCUMENT_REGISTRY.md`. Neither task activated P04 or P05; `CONT-PRE-P04-ROADMAP-001` is the predecessor task to `CONT-P04-READINESS-001`.
+- Active task: **`CONT-P04-READINESS-001`** — P04 Implementation-Readiness Review. Repository holds exactly one active task.
+- Lifecycle status: `IN_PROGRESS` (single active task).
+- Current gate: `P04_IMPLEMENTATION_READINESS`.
+- Gate status: `ACTIVATED`.
+- Execution authorized: `true`, bounded strictly to `CONT-P04-READINESS-001` scope (dispositioning the 14 `P04-blocking` rows and preparing a P04 GO/NO-GO recommendation, each under a separately approved Product Owner gate; no implementation, no code, no dependencies, no hooks, no adapter rules, no runtime context packs, no license changes, no P04 GO, no P05 activation).
 - P00 status: complete.
 - P01 status: **closed/completed**.
 - P01 founder onboarding: completed (`CONT-P01-ONB-001` closed).
@@ -36,13 +36,14 @@ product_owner_identity_last_ratified_at: 2026-06-20
 - Adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`) have not been modified under P02 activation. The context-policy set has been ratified: `governance/CONTEXT_POLICY.md`, `governance/CONTEXT_BUDGET.md`, and `governance/CONTEXT_RETRIEVAL_PROTOCOL.md`. No runtime context pack has been generated.
 - P03 status: **closed/completed** under `DEC-P03-CLOSEOUT-001`. P03 was activated under `DEC-P03-ACTIVATION-001` and closed under `DEC-P03-CLOSEOUT-001`. `CONT-P03-ARCH-001` is closed/completed under the same closeout decision. Ratified P03 architecture package: 6/6 recommendations (`R-1..R-6`), 6/6 ADR drafts (`ADR-DRAFT-P03-001..006`), 8/8 implementation-readiness criteria (`I-1..I-8`), classification `governance/P03_G4_CLASSIFICATION_PLAN.md` (`DEC-P03-ARCH-CLASS-001`), and 27/27 `P03-blocking` rows dispositioned (`DEC-P03-ARCH-DISP-001..007`, `DEC-P03-ARCH-RISKDISP-001`). Open residual scope carried forward unchanged: 14 `P04-blocking` rows and 21 `deferred-with-acceptance` rows remain open. No implementation, code, dependency, hook, adapter-rule, settings, license, or runtime-context-pack change occurred during P03.
 - Pre-P04 CKF term definition: `CONT-PRE-P04-CKF-001` closed/completed under `DEC-PRE-P04-CKF-DEF-001`, ratified by the Product Owner (`Rauf Alizada`) on `2026-07-01`. Defines `CKF` as `Canonical Knowledge Format`, a planned specification layer, not implementation. No implementation, schema, code, dependency, hook, adapter-rule, settings, license, or runtime-context-pack change occurred. P04 and P05 remain not active.
-- Pre-P04 ROADMAP phase-status alignment: `CONT-PRE-P04-ROADMAP-001` closed/completed under `DEC-PRE-P04-ROADMAP-ALIGN-001`, ratified by the Product Owner (`Rauf Alizada`) on `2026-07-01`. Corrects `governance/ROADMAP.md`'s Phase Model table P03 row (to closed/completed under `DEC-P03-CLOSEOUT-001`) and P04 row (to `Not active / pending Product Owner activation`). Does not resolve any `P04-blocking` or `deferred-with-acceptance` row. No implementation, schema, code, dependency, hook, adapter-rule, settings, license, or runtime-context-pack change occurred. P04 and P05 remain not active.
-- Next action: Repository is in zero-active-task state. The next action is a separately approved Product Owner decision on P04 activation and a separately approved P04 task; no P04 task is proposed or activated by this closeout.
+- Pre-P04 ROADMAP phase-status alignment: `CONT-PRE-P04-ROADMAP-001` closed/completed under `DEC-PRE-P04-ROADMAP-ALIGN-001`, ratified by the Product Owner (`Rauf Alizada`) on `2026-07-01`. Corrects `governance/ROADMAP.md`'s Phase Model table P03 row (to closed/completed under `DEC-P03-CLOSEOUT-001`) and P04 row (to `Not active / pending Product Owner activation`, since superseded by P04 activation below). Does not resolve any `P04-blocking` or `deferred-with-acceptance` row. No implementation, schema, code, dependency, hook, adapter-rule, settings, license, or runtime-context-pack change occurred.
+- P04 activation: `DEC-P04-ACTIVATION-001`, ratified by the Product Owner (`Rauf Alizada`) on `2026-07-01`. Activates P04 (implementation-readiness-review only) and creates `CONT-P04-READINESS-001` as the single active task under gate `P04_IMPLEMENTATION_READINESS` (`gate_status: ACTIVATED`), moving the repository from zero-active-task state to a single-active-task state. Includes the 14 `P04-blocking` rows as explicit task scope for future, separately approved per-row disposition gates; resolves none of them in this activation. Keeps all 21 `deferred-with-acceptance` rows open and unmodified. Does not authorize implementation, hooks, runtime context packs, adapter-rule changes, settings, dependencies, schemas, or code. Does not grant P04 GO. Does not activate P05 or create a P05 task.
+- Next action: `CONT-P04-READINESS-001` is the active task. The next action is Product Owner review and, where ready, separately approved disposition gates for the 14 `P04-blocking` rows, followed by a P04 GO/NO-GO recommendation; P04 GO and P05 activation each remain distinct, separately approved Product Owner decisions.
 
 ## Ratified Boundaries
 
 - Codex authority is limited to P00 bootstrap and closeout unless explicitly reassigned by the Product Owner.
-- Claude Code is the primary project agent. P02 is closed/completed under `DEC-P02-CLOSEOUT-001`; `CONT-P02-ONB-001` is closed/completed under the same decision. P03 is closed/completed under `DEC-P03-CLOSEOUT-001`; `CONT-P03-ARCH-001` is closed/completed under the same decision. Repository is in zero-active-task state; execution is not authorized pending a separately approved P04 activation decision.
+- Claude Code is the primary project agent. P02 is closed/completed under `DEC-P02-CLOSEOUT-001`; `CONT-P02-ONB-001` is closed/completed under the same decision. P03 is closed/completed under `DEC-P03-CLOSEOUT-001`; `CONT-P03-ARCH-001` is closed/completed under the same decision. P04 is active under `DEC-P04-ACTIVATION-001`; `CONT-P04-READINESS-001` is the single active task, and execution is authorized strictly within that task's scope (dispositioning the 14 `P04-blocking` rows and preparing a P04 GO/NO-GO recommendation, each under a separately approved Product Owner gate).
 - Product and domain discovery occur in approved P01/P02 work.
 - Architecture evaluation, tradeoff analysis, technical spikes, and ADR preparation occur only in approved P03 tasks.
 - Architecture decisions may be proposed during P03, but only the Product Owner may ratify them.
@@ -113,6 +114,9 @@ product_owner_identity_last_ratified_at: 2026-06-20
 - Pre-P04 ROADMAP alignment task (closed/completed): `CONT-PRE-P04-ROADMAP-001` — Pre-P04 ROADMAP Phase-Status Cleanup and Alignment.
 - Pre-P04 ROADMAP alignment decision: `DEC-PRE-P04-ROADMAP-ALIGN-001`.
 - Pre-P04 ROADMAP alignment date: 2026-07-01.
+- P04 activation decision: `DEC-P04-ACTIVATION-001`.
+- P04 activation date: 2026-07-01.
+- P04 single active task: `CONT-P04-READINESS-001` — P04 Implementation-Readiness Review.
 
 ## Product Owner Identity Encoding
 
