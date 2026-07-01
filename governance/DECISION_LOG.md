@@ -2600,3 +2600,37 @@ Only explicit Product Owner decisions are recorded here.
 - authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
 - predecessor_decisions: `DEC-P03-CLOSEOUT-001`, `DEC-P03-ARCH-RISKDISP-001`, `DEC-P02-CLOSEOUT-001`.
 - scope_note: Defines the `CKF` term only, as a planned specification layer, not implementation. Does **not** design, schema, or specify CKF content. Does **not** activate P04 or P05, create a P04/P05 task, or mutate any source register. `governance/DOCUMENT_REGISTRY.md` is updated only with CKF-scoped registry updates: the existing Glossary row is updated, the new CKF task row is added, and the `DEC-PRE-P04-CKF-DEF-001` decision-reference bullet is added; no unrelated registry row is altered. The repository remains in zero-active-task state after this decision, awaiting a separately approved Product Owner P04 activation decision.
+
+## DEC-PRE-P04-ROADMAP-ALIGN-001
+
+- decision_id: `DEC-PRE-P04-ROADMAP-ALIGN-001`
+- status: `RATIFIED`
+- decision: Correct stale P03/P04 phase-status language in `governance/ROADMAP.md`'s Phase Model table. The P03 row is changed from `Not started` to reflect closed/completed status under `DEC-P03-CLOSEOUT-001` (`CONT-P03-ARCH-001` closed/completed). The P04 row is changed from `Not started` to `Not active / pending Product Owner activation`, to avoid any misleading implication of current activity. Create and close a bounded zero-active-task transition task, `CONT-PRE-P04-ROADMAP-001`, within this same diff to carry the correction, and register the new task and the `governance/ROADMAP.md` update in `governance/DOCUMENT_REGISTRY.md`. This decision does not activate P04, does not resolve or dispose any `P04-blocking` or `deferred-with-acceptance` row, and does not modify `governance/OPEN_QUESTIONS.md` or `governance/RISK_REGISTER.md`. The repository remains in zero-active-task state before and after this decision, awaiting a separately approved Product Owner P04 activation decision.
+- ratified_by: `Rauf Alizada`
+- ratified_at: `2026-07-01`
+- source_task: `CONT-PRE-P04-ROADMAP-001`
+- drafted_by: `Claude Code`
+- reviewed_by: `Product Owner`
+- coverage_confirmed:
+  - `governance/ROADMAP.md` Phase Model table P03 row updated to closed/completed status under `DEC-P03-CLOSEOUT-001`; P04 row updated to `Not active / pending Product Owner activation`.
+  - An inline provenance-stamped note ("Phase Model Status Update (Pre-P04)") added to `governance/ROADMAP.md`, provenance-stamped to this decision and to `CONT-PRE-P04-ROADMAP-001`, without rewriting the document's original Bundle 5 frontmatter (`last_ratified_by: Rauf Alizada`, `last_ratified_at: 2026-06-21`, `source_task: CONT-P01-BUNDLE-005` unchanged).
+  - `governance/tasks/CONT-PRE-P04-ROADMAP-001.md` created and closed within this same diff (`lifecycle_status: DONE`, `gate_status: COMPLETED`, `ratification_status: RATIFIED`, `active: false`, `execution_authorized: false`, `closeout_decision: DEC-PRE-P04-ROADMAP-ALIGN-001`).
+  - `governance/DOCUMENT_REGISTRY.md` is updated only with scoped registry updates: the existing `governance/ROADMAP.md` row is updated, the new task row is added, and the `DEC-PRE-P04-ROADMAP-ALIGN-001` decision-reference bullet is added; no unrelated registry row is altered.
+- evidence:
+  - This `DEC-PRE-P04-ROADMAP-ALIGN-001` ratification diff, limited to `governance/DECISION_LOG.md`, `governance/ROADMAP.md`, `governance/DOCUMENT_REGISTRY.md`, `governance/tasks/CONT-PRE-P04-ROADMAP-001.md`, `governance/ACTIVE_TASK.md`, `governance/CURRENT_PHASE.md`, `governance/PROJECT_STATE.md`, `governance/HANDOFF.md`, and `governance/SESSION_LOG.md`.
+  - `governance/tasks/CONT-PRE-P04-ROADMAP-001.md` Closeout section, recording the same ratification in task-record form.
+- non_authorizations:
+  - Does **not** activate P04 or P05. P04 GO remains a separately approved Product Owner decision, distinct from this alignment.
+  - Does **not** create a P04 or P05 task.
+  - Does **not** resolve, dispose, reclassify, or schedule any of the 14 `P04-blocking` rows or 21 `deferred-with-acceptance` rows classified under `DEC-P03-ARCH-CLASS-001`.
+  - Does **not** modify any `P02-ROAD-*` item's individual status field.
+  - Does **not** mutate `governance/OPEN_QUESTIONS.md` or `governance/RISK_REGISTER.md`.
+  - Does **not** authorize implementation, project code, dependencies, hooks, hook activation, adapter-rule changes (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`), settings changes, license selection or creation, or runtime context pack generation.
+  - Does **not** modify `governance/PRODUCT_CHARTER.md`, `governance/GLOSSARY.md`, `governance/CHANGE_PROTOCOL.md`, `governance/NEVER_AUTOMATIC.md`, `governance/TRUST_BOUNDARIES.md`, `docs/REFERENCE_STRUCTURE.md`, the ratified context-policy set, or the ratified P02 discovery drafts.
+  - Does **not** rewrite `governance/ROADMAP.md`'s original ratification frontmatter (Bundle 5 provenance fields remain unchanged).
+  - Does **not** correct other known-stale status language in `governance/ROADMAP.md` (e.g., the Bundle 5 Status Notice's P01/P02 language, or the P02 Status section); those remain a separate, non-blocking future alignment item.
+  - No runtime context pack is generated by this decision.
+- reversibility: A future Product Owner decision may supersede or revise this alignment by ratifying a successor `DEC-PRE-P04-ROADMAP-ALIGN-NNN` or `DEC-PRE-P04-ROADMAP-REVISION-NNN` row that explicitly supersedes `DEC-PRE-P04-ROADMAP-ALIGN-001` and restates or revises the ROADMAP phase-status wording. Until such a decision, the alignment recorded here stands.
+- authority: Product Owner (`Rauf Alizada`). Sole Product Owner / sole project authority / sole ratification authority for v1. The spelling `Raauf Alizada` is invalid. The identity `Tural Rahmanli` is not a project identity and must not be encoded as project authority; any incidental appearance of that name in Git committer metadata or environment metadata is not project authority.
+- predecessor_decisions: `DEC-PRE-P04-CKF-DEF-001`, `DEC-P03-CLOSEOUT-001`, `DEC-P03-ARCH-CLASS-001`.
+- scope_note: Corrects stale P03/P04 phase-status language in `governance/ROADMAP.md`'s Phase Model table only. Does **not** resolve, reclassify, or schedule any `P04-blocking` or `deferred-with-acceptance` row. Does **not** activate P04 or P05, create a P04/P05 task, or mutate `governance/OPEN_QUESTIONS.md` or `governance/RISK_REGISTER.md`. `governance/DOCUMENT_REGISTRY.md` is updated only with scoped registry updates: the existing `governance/ROADMAP.md` row is updated, the new task row is added, and the `DEC-PRE-P04-ROADMAP-ALIGN-001` decision-reference bullet is added; no unrelated registry row is altered. The repository remains in zero-active-task state after this decision, awaiting a separately approved Product Owner P04 activation decision.

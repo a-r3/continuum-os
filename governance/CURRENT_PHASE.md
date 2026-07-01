@@ -2,7 +2,7 @@
 
 ## Phase
 
-No phase is currently active. P03 — Architecture Evaluation is **closed/completed** under `DEC-P03-CLOSEOUT-001`. A bounded Pre-P04 zero-active-task transition task, `CONT-PRE-P04-CKF-001`, has since closed/completed under `DEC-PRE-P04-CKF-DEF-001`. P04 is **not active**; P04 activation requires a separately approved Product Owner decision and a separately approved P04 task.
+No phase is currently active. P03 — Architecture Evaluation is **closed/completed** under `DEC-P03-CLOSEOUT-001`. Bounded Pre-P04 zero-active-task transition tasks `CONT-PRE-P04-CKF-001` (under `DEC-PRE-P04-CKF-DEF-001`) and `CONT-PRE-P04-ROADMAP-001` (under `DEC-PRE-P04-ROADMAP-ALIGN-001`) have since closed/completed. P04 is **not active**; P04 activation requires a separately approved Product Owner decision and a separately approved P04 task.
 
 ## Current P03 Sub-State
 
@@ -10,7 +10,9 @@ P03 closed/completed under gate `P03_ARCHITECTURE_EVALUATION` (`gate_status: COM
 
 ## Current Pre-P04 Sub-State
 
-The bounded Pre-P04 CKF (Canonical Knowledge Format) term-definition transition task `CONT-PRE-P04-CKF-001` closed/completed under gate `PRE_P04_CKF_DEFINITION` (`gate_status: COMPLETED`), ratified by decision `DEC-PRE-P04-CKF-DEF-001`. This task defined `CKF` as `Canonical Knowledge Format`, a planned specification layer, added the term to `governance/GLOSSARY.md`, and registered the task and glossary addition in `governance/DOCUMENT_REGISTRY.md`. It did not activate P04 or P05 and did not authorize implementation, runtime context packs, or any other prohibited work. The repository remains in zero-active-task state.
+The bounded Pre-P04 CKF (Canonical Knowledge Format) term-definition transition task `CONT-PRE-P04-CKF-001` closed/completed under gate `PRE_P04_CKF_DEFINITION` (`gate_status: COMPLETED`), ratified by decision `DEC-PRE-P04-CKF-DEF-001`. This task defined `CKF` as `Canonical Knowledge Format`, a planned specification layer, added the term to `governance/GLOSSARY.md`, and registered the task and glossary addition in `governance/DOCUMENT_REGISTRY.md`. It did not activate P04 or P05 and did not authorize implementation, runtime context packs, or any other prohibited work.
+
+The bounded Pre-P04 ROADMAP phase-status alignment transition task `CONT-PRE-P04-ROADMAP-001` closed/completed under gate `PRE_P04_ROADMAP_ALIGNMENT` (`gate_status: COMPLETED`), ratified by decision `DEC-PRE-P04-ROADMAP-ALIGN-001`. This task corrected `governance/ROADMAP.md`'s Phase Model table P03 row (from `Not started` to closed/completed under `DEC-P03-CLOSEOUT-001`) and P04 row (to `Not active / pending Product Owner activation`), added an inline provenance-stamped note without rewriting the Roadmap's original Bundle 5 frontmatter, and registered the task and Roadmap update in `governance/DOCUMENT_REGISTRY.md`. It did not resolve any `P04-blocking` or `deferred-with-acceptance` row, did not activate P04 or P05, and did not authorize implementation, runtime context packs, or any other prohibited work. The repository remains in zero-active-task state.
 
 ## Status
 

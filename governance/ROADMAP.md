@@ -22,9 +22,13 @@ This Bundle 5 roadmap update is **ratified** as `ratified_evolving` governance r
 | P00 | Baseline and Project Control Foundation | Complete | Closeout commit and push authorized by Product Owner |
 | P01 | Founder Discovery and Product Definition | Closed/Completed; Bundles 1-5 ratified; closed under `DEC-P01-CLOSEOUT-001` | Closed |
 | P02 | Domain, Governance, and Security | Active under `DEC-P02-ACTIVATION-001`; active task `CONT-P02-ONB-001`; gate `P02_DOMAIN_GOVERNANCE_SECURITY_DISCOVERY` | Domain, Governance, and Security Discovery |
-| P03 | Architecture Evaluation and ADRs | Not started | Requires P02 closeout and approved P03 task |
-| P04 | Implementation Readiness Gate | Not started | Requires architecture consistency review |
+| P03 | Architecture Evaluation and ADRs | Closed/Completed; closed under `DEC-P03-CLOSEOUT-001`; `CONT-P03-ARCH-001` closed/completed | Closed |
+| P04 | Implementation Readiness Gate | Not active / pending Product Owner activation | Requires explicit Product Owner P04 activation decision and a separately approved P04 task |
 | P05 | Core MVP Implementation | Not started | Requires explicit P04 GO |
+
+### Phase Model Status Update (Pre-P04)
+
+*Ratified under `DEC-PRE-P04-ROADMAP-ALIGN-001` / `CONT-PRE-P04-ROADMAP-001` on 2026-07-01, without rewriting this document's original Bundle 5 frontmatter (`last_ratified_by: Rauf Alizada`, `last_ratified_at: 2026-06-21`, `source_task: CONT-P01-BUNDLE-005`, which remain unchanged).* The P03 and P04 rows in the Phase Model table above are updated to reflect current status: P03 is closed/completed under `DEC-P03-CLOSEOUT-001` (`CONT-P03-ARCH-001` closed/completed), and P04 is explicitly not active, pending a separately approved Product Owner P04 activation decision. This update is a stale-status correction only. It does not resolve, dispose, reclassify, or schedule any of the 14 `P04-blocking` or 21 `deferred-with-acceptance` rows classified under `DEC-P03-ARCH-CLASS-001` (each `P02-ROAD-*` item below retains its existing `Proposed; not started` status, unmutated); does not open P04 GO; does not activate P04 or P05; does not create a P04 or P05 task; and does not authorize implementation, schemas, code, hooks, settings, dependencies, adapter-rule changes, license changes, or runtime context packs. Other historical status language elsewhere in this document (e.g., the Bundle 5 Status Notice and the P02 Status section, both accurate as of their original ratification) is unchanged and remains a separate, non-blocking future alignment item.
 
 ## P01 Bundle Progress
 

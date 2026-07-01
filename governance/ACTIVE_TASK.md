@@ -11,7 +11,7 @@ execution_authorized: false
 
 ## Invariant
 
-The repository may have zero or one active task, but never more than one. Any mutating execution work requires exactly one Product Owner-approved active task and `execution_authorized: true`. A zero-active-task state is allowed only during transition, approval wait, suspension, or closed-project state. After P03 closeout under `DEC-P03-CLOSEOUT-001`, and after the bounded Pre-P04 CKF definition transition task `CONT-PRE-P04-CKF-001` under `DEC-PRE-P04-CKF-DEF-001`, the invariant holds with zero active tasks while the repository awaits a separately approved P04 activation decision and a separately approved P04 task.
+The repository may have zero or one active task, but never more than one. Any mutating execution work requires exactly one Product Owner-approved active task and `execution_authorized: true`. A zero-active-task state is allowed only during transition, approval wait, suspension, or closed-project state. After P03 closeout under `DEC-P03-CLOSEOUT-001`, after the bounded Pre-P04 CKF definition transition task `CONT-PRE-P04-CKF-001` under `DEC-PRE-P04-CKF-DEF-001`, and after the bounded Pre-P04 ROADMAP alignment transition task `CONT-PRE-P04-ROADMAP-001` under `DEC-PRE-P04-ROADMAP-ALIGN-001`, the invariant holds with zero active tasks while the repository awaits a separately approved P04 activation decision and a separately approved P04 task.
 
 ## Current Active Task
 
@@ -24,10 +24,10 @@ The repository may have zero or one active task, but never more than one. Any mu
 - Gate status: `none`
 - Ratification status: `none`
 - Execution authorized: `false`
-- Predecessor task: `CONT-PRE-P04-CKF-001` (closed/completed)
-- Source decision: `DEC-PRE-P04-CKF-DEF-001`
+- Predecessor task: `CONT-PRE-P04-ROADMAP-001` (closed/completed)
+- Source decision: `DEC-PRE-P04-ROADMAP-ALIGN-001`
 
-`CONT-PRE-P04-CKF-001` is closed/completed under `DEC-PRE-P04-CKF-DEF-001`. `CONT-P03-ARCH-001` remains closed/completed under `DEC-P03-CLOSEOUT-001`. `CONT-P02-ONB-001`, `CONT-P01-BUNDLE-005`, `CONT-P01-BUNDLE-004`, `CONT-P01-BUNDLE-003`, `CONT-P01-BUNDLE-002`, `CONT-P01-BUNDLE-001`, `CONT-P01-CONSOL-001`, and `CONT-P01-ONB-001` remain closed/completed. P04 and P05 are not active. The Product Owner / sole ratification authority for v1 is `Rauf Alizada`.
+`CONT-PRE-P04-ROADMAP-001` is closed/completed under `DEC-PRE-P04-ROADMAP-ALIGN-001`. `CONT-PRE-P04-CKF-001` remains closed/completed under `DEC-PRE-P04-CKF-DEF-001`. `CONT-P03-ARCH-001` remains closed/completed under `DEC-P03-CLOSEOUT-001`. `CONT-P02-ONB-001`, `CONT-P01-BUNDLE-005`, `CONT-P01-BUNDLE-004`, `CONT-P01-BUNDLE-003`, `CONT-P01-BUNDLE-002`, `CONT-P01-BUNDLE-001`, `CONT-P01-CONSOL-001`, and `CONT-P01-ONB-001` remain closed/completed. P04 and P05 are not active. The Product Owner / sole ratification authority for v1 is `Rauf Alizada`.
 
 ## Scope Boundaries
 
