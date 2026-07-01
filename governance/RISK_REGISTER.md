@@ -220,7 +220,7 @@ This section projects unresolved P02 risks surfaced by the ratified P02 discover
 ### P02-RISK-008 — Secret or Credential Leakage Into Repo/Governance/Session Logs
 
 - **Risk ID:** `P02-RISK-008`.
-- **Status:** Proposed; open.
+- **Status:** Disposed for P04-readiness — accepted with existing mitigation, under `DEC-P04-DISP-001` (ratified 2026-07-02). The underlying operational risk remains an ongoing governance concern and is not "closed"; only the P04-blocking classification is dispositioned.
 - **Phase:** P02.
 - **Source task:** `CONT-P02-ONB-001`.
 - **Source decisions / open questions:** `DEC-P02-DATA-CLASSIFICATION-001`; `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`; `OQ-P02-S-004`; related to `P00-RISK-003`.
@@ -228,13 +228,14 @@ This section projects unresolved P02 risks surfaced by the ratified P02 discover
 - **Trigger / Cause:** Pasted env content; example snippets; agent summarizing local config; reference vs value confusion.
 - **Impact:** Credential compromise; supply-chain risk; required key rotation; potential reputational/legal cost.
 - **Current mitigation / guardrail:** `.claude/rules/04-security.md` secret rules; ratified P02 secret-handling boundaries (Secret-Bound-1..5); `.gitignore` deny patterns; deny rules on `.env`, `.env.*`, `.claude/settings.local.json`, `CLAUDE.local.md`, `secrets/**`; documentary prohibition on storing values vs references.
-- **Needed Product Owner decision / future work:** Decide whether a ratified `governance/SECRETS_POLICY.md` and/or secret-scan hook is needed.
+- **P04-readiness disposition evidence (`DEC-P04-DISP-001`):** `.claude/rules/04-security.md` (unconditional scope: "never store secret values in project memory, governance, `.continuum/`, docs, tasks, logs, or examples"; "secret references may identify an external secret-management location, but not the secret value") and `governance/TRUST_BOUNDARIES.md` (Stop-Condition Boundary; Evidence Boundary distinguishing reference from value) constitute an existing, live operating mitigation. This is judged sufficient to accept the risk for P04 implementation-readiness purposes; it does not itself resolve the separate "Needed Product Owner decision / future work" item below.
+- **Needed Product Owner decision / future work:** Decide whether a ratified `governance/SECRETS_POLICY.md` and/or secret-scan hook is needed. Remains open and unresolved by this disposition.
 - **Owner / accountable authority:** Product Owner (`Rauf Alizada`).
 
 ### P02-RISK-009 — `.env`, Local Settings, or `secrets/**` Read/Summarized/Committed
 
 - **Risk ID:** `P02-RISK-009`.
-- **Status:** Proposed; open.
+- **Status:** Disposed for P04-readiness — accepted with existing mitigation, under `DEC-P04-DISP-001` (ratified 2026-07-02). The underlying operational risk remains an ongoing governance concern and is not "closed"; only the P04-blocking classification is dispositioned.
 - **Phase:** P02.
 - **Source task:** `CONT-P02-ONB-001`.
 - **Source decisions / open questions:** `DEC-P02-DATA-CLASSIFICATION-001`; `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`; `OQ-P02-S-004`.
@@ -242,7 +243,8 @@ This section projects unresolved P02 risks surfaced by the ratified P02 discover
 - **Trigger / Cause:** Cold-start over-eager file reads; debugging requests that include excluded paths; mis-scoped subagent invocations.
 - **Impact:** Sensitive local state exposed in transcripts or commits; potential credential compromise.
 - **Current mitigation / guardrail:** Claude deny rules; `.claude/rules/04-security.md`; ratified P02 secret-handling boundaries; per-file path-allowlist discipline during prepare-diff work.
-- **Needed Product Owner decision / future work:** Decide whether a ratified hook should enforce the read-deny list at OS level.
+- **P04-readiness disposition evidence (`DEC-P04-DISP-001`):** Live `.claude/settings.json` `permissions.deny` list confirmed at HEAD `f3f867b72ecf0bef7be11e435d1fe5251cf551f8` blocking `Read(/.env)`, `Read(/.env.*)`, `Read(/secrets/**)`, `Read(/.claude/settings.local.json)`, `Read(/CLAUDE.local.md)`; matching `.gitignore` exclusions; `.claude/rules/04-security.md`'s explicit prohibition on reading these paths; `governance/TRUST_BOUNDARIES.md` Stop-Condition Boundary naming these paths directly. This layered mitigation is judged sufficient to accept the risk for P04 implementation-readiness purposes; it does not itself resolve the separate "Needed Product Owner decision / future work" item below.
+- **Needed Product Owner decision / future work:** Decide whether a ratified hook should enforce the read-deny list at OS level. Remains open and unresolved by this disposition.
 - **Owner / accountable authority:** Product Owner (`Rauf Alizada`).
 
 ### P02-RISK-010 — Client / External / Private Data Leakage

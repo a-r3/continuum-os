@@ -28,7 +28,7 @@ This task is **active** as the single active task under gate `P04_IMPLEMENTATION
 
 ## Status
 
-Active. No row disposition, GO/NO-GO recommendation, or other deliverable under this task has yet been produced. This task record documents scope and boundaries as of activation.
+Active. Two of the fourteen `P04-blocking` rows are dispositioned: `P02-RISK-008` and `P02-RISK-009`, each disposed as accepted with existing mitigation under `DEC-P04-DISP-001` (ratified 2026-07-02). Twelve `P04-blocking` rows remain open: `OQ-P02-D-004`, `OQ-P02-S-002`, `OQ-P02-S-006`, `OQ-P02-C-005`, `OQ-P02-C-007`, `P02-RISK-010`, `P02-RISK-011`, `P02-RISK-012`, `P02-ROAD-007`, `P02-ROAD-008`, `P02-ROAD-010`, `P02-ROAD-014`. No GO/NO-GO recommendation has yet been produced.
 
 ## Objective
 
@@ -99,7 +99,9 @@ Authorized work under this task, each item requiring its own separately approved
 
 ## Evidence
 
-- Pending. No disposition or GO/NO-GO deliverable has yet been produced under this task as of activation.
+- `DEC-P04-DISP-001` (ratified 2026-07-02): dispositions `P02-RISK-008` and `P02-RISK-009` as accepted with existing mitigation, recorded in `governance/DECISION_LOG.md` and reflected in `governance/RISK_REGISTER.md`'s `Status` and `P04-readiness disposition evidence` fields for those two rows only.
+- Live evidence cited by `DEC-P04-DISP-001`: `.claude/rules/04-security.md`; `governance/TRUST_BOUNDARIES.md` Stop-Condition and Evidence Boundary sections; `.claude/settings.json` `permissions.deny` list; `.gitignore` exclusions; hook fixture suite result `54 pass / 0 fail` (`.claude/hooks/tests/run-fixtures.sh`).
+- Remaining twelve `P04-blocking` rows and the P04 GO/NO-GO recommendation are pending; no further disposition or GO/NO-GO deliverable has yet been produced.
 
 ## Rollback
 
