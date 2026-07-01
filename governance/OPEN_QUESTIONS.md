@@ -10,7 +10,7 @@ Do not invent answers. Resolve only through Product Owner ratification.
 | OQ-P02-D-001 | Open | Should `Project` and `Workspace` be ratified as distinct domain concepts or unified at v1? | P02 | Source: `DEC-P02-DOMAIN-DISCOVERY-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
 | OQ-P02-D-002 | Open | Should `Plan` remain a task-internal section or become a first-class domain artifact with its own lifecycle? | P02 | Source: `DEC-P02-DOMAIN-DISCOVERY-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
 | OQ-P02-D-003 | Open | Should `Deliverable Draft` be ratified as a distinct domain concept separate from `Document` and `Task`? | P02 | Source: `DEC-P02-DOMAIN-DISCOVERY-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
-| OQ-P02-D-004 | Open | What is the canonical granularity of `Evidence` (per-decision, per-section, per-fixture, per-commit) at the domain level? | P02 | Source: `DEC-P02-DOMAIN-DISCOVERY-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
+| OQ-P02-D-004 | Disposed for P04-readiness (accepted; discipline, not uniform template) | What is the canonical granularity of `Evidence` (per-decision, per-section, per-fixture, per-commit) at the domain level? | P02 | Source: `DEC-P02-DOMAIN-DISCOVERY-001`. Owner: `Rauf Alizada`. P04-readiness disposition: `DEC-P04-DISP-005` (ratified 2026-07-02). See `## P02 Question Details` below. |
 | OQ-P02-D-005 | Open | What is the canonical naming, scope, and boundary of the `Generated Context Pack` as a domain concept? | P02 | Source: `DEC-P02-DOMAIN-DISCOVERY-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
 | OQ-P02-D-006 | Open | Is `Approval Verb` a first-class domain concept or strictly a governance-procedure rule? | P02 | Source: `DEC-P02-DOMAIN-DISCOVERY-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
 | OQ-P02-D-007 | Open | Is `Agent` a domain concept of Continuum OS or strictly an adapter/runtime concern? | P02 | Source: `DEC-P02-DOMAIN-DISCOVERY-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
@@ -61,11 +61,11 @@ P02 questions are projected from the ratified P02 discovery artifacts under `DEC
   - impact if unresolved: Draft-vs-document boundaries remain implicit per-task convention.
   - no automatic resolution.
 - **OQ-P02-D-004** — Evidence granularity.
-  - status: `Open`; source task: `CONT-P02-ONB-001`; source decision: `DEC-P02-DOMAIN-DISCOVERY-001`; owner: `Rauf Alizada`.
+  - status: `Disposed for P04-readiness (accepted; discipline, not uniform template)`; source task: `CONT-P02-ONB-001`; source decision: `DEC-P02-DOMAIN-DISCOVERY-001`; owner: `Rauf Alizada`.
   - question: What is the canonical granularity of `Evidence` — per-decision, per-section, per-fixture, per-commit?
   - why it matters: Determines what counts as a single evidence unit for ratification.
   - impact if unresolved: Evidence references in `DECISION_LOG.md` and task files remain non-uniform.
-  - no automatic resolution.
+  - P04-readiness disposition: `DEC-P04-DISP-005` (ratified 2026-07-02). Accepted as governance-readiness discipline for P04-blocking purposes only — the review/evidence discipline demonstrated across every prior prepare-diff in `CONT-P04-READINESS-001` (named live-file citations, explicit HEAD SHAs, per-row rationale) is sufficient without a uniform evidence template, validator, or hook. The canonical granularity question itself remains open future work; no uniform template is ratified by this disposition.
 - **OQ-P02-D-005** — Generated Context Pack naming/scope/boundary.
   - status: `Open`; source task: `CONT-P02-ONB-001`; source decision: `DEC-P02-DOMAIN-DISCOVERY-001`; owner: `Rauf Alizada`.
   - question: What is the canonical naming, scope, and trust boundary of the `Generated Context Pack`?
