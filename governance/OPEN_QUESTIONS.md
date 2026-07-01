@@ -31,7 +31,7 @@ Do not invent answers. Resolve only through Product Owner ratification.
 | OQ-P02-C-004 | Open | Should generated-context boundaries (Context-Bound-1..5) be folded into ratified `CONTEXT_POLICY.md` / `CONTEXT_RETRIEVAL_PROTOCOL.md` or remain a separate classification concern? | P02 | Source: `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
 | OQ-P02-C-005 | Disposed for P04-readiness (accepted, no runtime yet) | How should client / external / private data isolation be expressed at v1, given no multi-tenant runtime exists yet? | P02 | Source: `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. P04-readiness disposition: `DEC-P04-DISP-002` (ratified 2026-07-02). See `## P02 Question Details` below. |
 | OQ-P02-C-006 | Open | Should destructive-command evidence (Class-13) be encoded as a standalone `GIT_SAFETY.md` / destructive-command log or remain inside the data-classification draft and `TRUST_BOUNDARIES.md`? | P02 | Source: `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
-| OQ-P02-C-007 | Open | Should path-leak and local-environment-metadata boundaries (External-Bound-3) become an explicit redaction policy or remain a candidate handling requirement? | P02 | Source: `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
+| OQ-P02-C-007 | Disposed for P04-readiness (accepted, documentary for now) | Should path-leak and local-environment-metadata boundaries (External-Bound-3) become an explicit redaction policy or remain a candidate handling requirement? | P02 | Source: `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. P04-readiness disposition: `DEC-P04-DISP-003` (ratified 2026-07-02). See `## P02 Question Details` below. |
 | OQ-P02-C-008 | Open | Which candidate data classes should produce `RISK_REGISTER.md` rows under a separately approved update, and which remain candidate-only? | P02 | Source: `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
 | OQ-P02-C-009 | Open | How are candidate handling requirements measured/validated at the governance level before any hooks are activated? | P02 | Source: `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
 | OQ-P02-C-010 | Open | Should the mapping from data class to sensitivity level be encoded as a normative table in a future ratified document, or remain a candidate mapping? | P02 | Source: `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
@@ -193,11 +193,11 @@ P02 questions are projected from the ratified P02 discovery artifacts under `DEC
   - impact if unresolved: Destructive-command evidence remains distributed.
   - no automatic resolution.
 - **OQ-P02-C-007** — Path-leak / local-environment redaction policy.
-  - status: `Open`; source task: `CONT-P02-ONB-001`; source decision: `DEC-P02-DATA-CLASSIFICATION-001`; owner: `Rauf Alizada`.
+  - status: `Disposed for P04-readiness`; source task: `CONT-P02-ONB-001`; source decision: `DEC-P02-DATA-CLASSIFICATION-001`; owner: `Rauf Alizada`.
   - question: Should path-leak and local-environment-metadata boundaries (External-Bound-3) become an explicit redaction policy, or remain a candidate handling requirement?
   - why it matters: Determines whether redaction is governance-binding.
   - impact if unresolved: Path-leak handling remains candidate-only.
-  - no automatic resolution.
+  - P04-readiness disposition: accepted as documentary/review-time practice for now under `DEC-P04-DISP-003` (ratified 2026-07-02) — existing review-time redaction discipline and Evidence-Bound-1..6 candidates are judged sufficient for P04-readiness purposes; whether to escalate to an enforced policy or tooling remains open future work, not decided here.
 - **OQ-P02-C-008** — Data classes as risk rows.
   - status: `Open`; source task: `CONT-P02-ONB-001`; source decision: `DEC-P02-DATA-CLASSIFICATION-001`; owner: `Rauf Alizada`.
   - question: Which candidate data classes should produce `RISK_REGISTER.md` rows under a separately approved update, and which remain candidate-only?

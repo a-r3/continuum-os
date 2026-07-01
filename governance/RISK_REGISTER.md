@@ -280,7 +280,7 @@ This section projects unresolved P02 risks surfaced by the ratified P02 discover
 ### P02-RISK-012 — Path Leak / Local Environment Metadata Persistence
 
 - **Risk ID:** `P02-RISK-012`.
-- **Status:** Proposed; open.
+- **Status:** Disposed for P04-readiness — accepted with existing mitigation, under `DEC-P04-DISP-003` (ratified 2026-07-02). The underlying operational risk remains an ongoing governance concern and is not "closed"; only the P04-blocking classification is dispositioned.
 - **Phase:** P02.
 - **Source task:** `CONT-P02-ONB-001`.
 - **Source decisions / open questions:** `DEC-P02-DATA-CLASSIFICATION-001`; `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`.
@@ -288,6 +288,7 @@ This section projects unresolved P02 risks surfaced by the ratified P02 discover
 - **Trigger / Cause:** Verbose tool output pasted into evidence; cold-start audits that echo local paths; agent enumerating environment to "be thorough".
 - **Impact:** Exposure of operator environment; deanonymization; partial credential surface in some tooling.
 - **Current mitigation / guardrail:** Ratified P02 evidence-boundary candidates (Evidence-Bound-1..6); review-time redaction during prepare-diff; session-log discipline.
+- **P04-readiness disposition evidence (`DEC-P04-DISP-003`):** Existing review-time redaction discipline (demonstrated across every prior prepare-diff in this task) and ratified Evidence-Bound-1..6 candidates constitute a sufficient standing, documentary mitigation for P04 implementation-readiness purposes; no path-redaction tooling or enforcement mechanism exists or is authorized by this disposition. It does not itself resolve the separate "Needed Product Owner decision / future work" item below.
 - **Needed Product Owner decision / future work:** Decide whether redaction is documentary or enforced.
 - **Owner / accountable authority:** Product Owner (`Rauf Alizada`).
 

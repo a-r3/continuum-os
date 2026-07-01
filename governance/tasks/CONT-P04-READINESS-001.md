@@ -28,7 +28,7 @@ This task is **active** as the single active task under gate `P04_IMPLEMENTATION
 
 ## Status
 
-Active. Seven of the fourteen `P04-blocking` rows are dispositioned: `P02-RISK-008` and `P02-RISK-009` under `DEC-P04-DISP-001` (ratified 2026-07-02), each disposed as accepted with existing mitigation; and `OQ-P02-S-006`, `OQ-P02-C-005`, `P02-RISK-010`, `P02-RISK-011`, `P02-ROAD-007` under `DEC-P04-DISP-002` (ratified 2026-07-02), each disposed as accepted-as-deferred future-architecture work (no multi-tenant runtime exists yet). Seven `P04-blocking` rows remain open: `OQ-P02-D-004`, `OQ-P02-S-002`, `OQ-P02-C-007`, `P02-RISK-012`, `P02-ROAD-008`, `P02-ROAD-010`, `P02-ROAD-014`. No GO/NO-GO recommendation has yet been produced.
+Active. Ten of the fourteen `P04-blocking` rows are dispositioned: `P02-RISK-008` and `P02-RISK-009` under `DEC-P04-DISP-001` (ratified 2026-07-02), each disposed as accepted with existing mitigation; `OQ-P02-S-006`, `OQ-P02-C-005`, `P02-RISK-010`, `P02-RISK-011`, `P02-ROAD-007` under `DEC-P04-DISP-002` (ratified 2026-07-02), each disposed as accepted-as-deferred future-architecture work (no multi-tenant runtime exists yet); and `OQ-P02-C-007`, `P02-RISK-012`, `P02-ROAD-010` under `DEC-P04-DISP-003` (ratified 2026-07-02), each disposed as accepted with existing documentary mitigation (path-leak / local-environment redaction cluster). Four `P04-blocking` rows remain open: `OQ-P02-D-004`, `OQ-P02-S-002`, `P02-ROAD-008`, `P02-ROAD-014`. No GO/NO-GO recommendation has yet been produced.
 
 ## Objective
 
@@ -103,7 +103,9 @@ Authorized work under this task, each item requiring its own separately approved
 - Live evidence cited by `DEC-P04-DISP-001`: `.claude/rules/04-security.md`; `governance/TRUST_BOUNDARIES.md` Stop-Condition and Evidence Boundary sections; `.claude/settings.json` `permissions.deny` list; `.gitignore` exclusions; hook fixture suite result `54 pass / 0 fail` (`.claude/hooks/tests/run-fixtures.sh`).
 - `DEC-P04-DISP-002` (ratified 2026-07-02): dispositions `OQ-P02-S-006`, `OQ-P02-C-005`, `P02-RISK-010`, `P02-RISK-011`, and `P02-ROAD-007` as accepted-as-deferred future-architecture work, recorded in `governance/DECISION_LOG.md` and reflected in `governance/OPEN_QUESTIONS.md`'s status cell/detail-block entries, `governance/RISK_REGISTER.md`'s `Status`/`P04-readiness disposition evidence` fields, and `governance/ROADMAP.md`'s `Status` field, each for the named rows only.
 - Live evidence cited by `DEC-P04-DISP-002`: absence of any multi-tenant runtime, storage schema, or tenancy implementation in the repository; ratified P02 external/client data boundaries and scope-boundary candidates; hook fixture suite result `54 pass / 0 fail` (`.claude/hooks/tests/run-fixtures.sh`).
-- Remaining seven `P04-blocking` rows and the P04 GO/NO-GO recommendation are pending; no further disposition or GO/NO-GO deliverable has yet been produced.
+- `DEC-P04-DISP-003` (ratified 2026-07-02): dispositions `OQ-P02-C-007`, `P02-RISK-012`, and `P02-ROAD-010` (path-leak / local-environment redaction cluster) as accepted with existing documentary mitigation, recorded in `governance/DECISION_LOG.md` and reflected in `governance/OPEN_QUESTIONS.md`'s status cell/detail-block entry, `governance/RISK_REGISTER.md`'s `Status`/`P04-readiness disposition evidence` field, and `governance/ROADMAP.md`'s `Status` field, each for the named rows only.
+- Live evidence cited by `DEC-P04-DISP-003`: ratified P02 evidence-boundary candidates (Evidence-Bound-1..6); review-time redaction and per-file path-allowlist discipline demonstrated across every prior prepare-diff in this task; hook fixture suite result `54 pass / 0 fail` (`.claude/hooks/tests/run-fixtures.sh`).
+- Remaining four `P04-blocking` rows and the P04 GO/NO-GO recommendation are pending; no further disposition or GO/NO-GO deliverable has yet been produced.
 
 ## Rollback
 

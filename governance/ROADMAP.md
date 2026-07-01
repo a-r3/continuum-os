@@ -217,7 +217,7 @@ This section projects unresolved P02 follow-on work into the canonical roadmap a
 ### P02-ROAD-010 — Decide Path-Leak / Local-Environment Redaction Policy
 
 - **Item ID:** `P02-ROAD-010`.
-- **Status:** Proposed; not started.
+- **Status:** Proposed; not started. P04-readiness disposition (`DEC-P04-DISP-003`, ratified 2026-07-02): explicitly scheduled as future work rather than resolved or implemented now — existing documentary/review-time redaction discipline is judged sufficient for present P04 implementation-readiness purposes; this item's own outstanding state is not itself a P04 implementation blocker.
 - **Candidate phase:** P02.
 - **Source decision(s):** `DEC-P02-DATA-CLASSIFICATION-001`; `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`.
 - **Source open-questions / risks:** `P02-RISK-012`.
