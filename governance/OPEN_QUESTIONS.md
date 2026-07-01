@@ -21,7 +21,7 @@ Do not invent answers. Resolve only through Product Owner ratification.
 | OQ-P02-S-003 | Open | Should Git destructive-command approval be encoded as a standalone `GIT_SAFETY.md` or remain inside existing governance? | P02 | Source: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
 | OQ-P02-S-004 | Open | Should a dedicated `SECRETS_POLICY.md` be created, or should secret-handling remain in `TRUST_BOUNDARIES.md` / the security-trust draft? | P02 | Source: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
 | OQ-P02-S-005 | Open | How should agent-behavior requirements be split between governance documents and adapter rules (`CLAUDE.md`, `AGENTS.md`, `.claude/rules/`)? | P02 | Source: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
-| OQ-P02-S-006 | Open | How should multi-client privacy/isolation be expressed at v1, given no multi-tenant runtime exists? | P02 | Source: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
+| OQ-P02-S-006 | Disposed for P04-readiness (accepted, no runtime yet) | How should multi-client privacy/isolation be expressed at v1, given no multi-tenant runtime exists? | P02 | Source: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. P04-readiness disposition: `DEC-P04-DISP-002` (ratified 2026-07-02). See `## P02 Question Details` below. |
 | OQ-P02-S-007 | Open | Should a dedicated `EVIDENCE_POLICY.md` be created, or should evidence rules remain distributed across `CHANGE_PROTOCOL.md`, `TRUST_BOUNDARIES.md`, and task records? | P02 | Source: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
 | OQ-P02-S-008 | Open | Which candidate misuse/failure scenarios should be promoted into `RISK_REGISTER.md` rows under a separately approved update? | P02 | Source: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
 | OQ-P02-S-009 | Open | How are candidate security/trust requirements measured/validated at the governance level before any hooks are activated? | P02 | Source: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
@@ -29,7 +29,7 @@ Do not invent answers. Resolve only through Product Owner ratification.
 | OQ-P02-C-002 | Open | Should sensitivity levels become a standalone `SENSITIVITY_LEVELS.md` document or remain inside the data-classification draft? | P02 | Source: `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
 | OQ-P02-C-003 | Open | Where should secret-handling boundaries (Secret-Bound-1..5) live — dedicated `SECRETS_POLICY.md`, `TRUST_BOUNDARIES.md`, security-trust draft, or data-classification draft? | P02 | Source: `DEC-P02-DATA-CLASSIFICATION-001`, `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
 | OQ-P02-C-004 | Open | Should generated-context boundaries (Context-Bound-1..5) be folded into ratified `CONTEXT_POLICY.md` / `CONTEXT_RETRIEVAL_PROTOCOL.md` or remain a separate classification concern? | P02 | Source: `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
-| OQ-P02-C-005 | Open | How should client / external / private data isolation be expressed at v1, given no multi-tenant runtime exists yet? | P02 | Source: `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
+| OQ-P02-C-005 | Disposed for P04-readiness (accepted, no runtime yet) | How should client / external / private data isolation be expressed at v1, given no multi-tenant runtime exists yet? | P02 | Source: `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. P04-readiness disposition: `DEC-P04-DISP-002` (ratified 2026-07-02). See `## P02 Question Details` below. |
 | OQ-P02-C-006 | Open | Should destructive-command evidence (Class-13) be encoded as a standalone `GIT_SAFETY.md` / destructive-command log or remain inside the data-classification draft and `TRUST_BOUNDARIES.md`? | P02 | Source: `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
 | OQ-P02-C-007 | Open | Should path-leak and local-environment-metadata boundaries (External-Bound-3) become an explicit redaction policy or remain a candidate handling requirement? | P02 | Source: `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
 | OQ-P02-C-008 | Open | Which candidate data classes should produce `RISK_REGISTER.md` rows under a separately approved update, and which remain candidate-only? | P02 | Source: `DEC-P02-DATA-CLASSIFICATION-001`. Owner: `Rauf Alizada`. See `## P02 Question Details` below. |
@@ -130,11 +130,11 @@ P02 questions are projected from the ratified P02 discovery artifacts under `DEC
   - impact if unresolved: Agent-behavior authority remains overloaded.
   - no automatic resolution.
 - **OQ-P02-S-006** — Multi-client privacy/isolation at v1.
-  - status: `Open`; source task: `CONT-P02-ONB-001`; source decisions: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DATA-CLASSIFICATION-001`; owner: `Rauf Alizada`.
+  - status: `Disposed for P04-readiness`; source task: `CONT-P02-ONB-001`; source decisions: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`, `DEC-P02-DATA-CLASSIFICATION-001`; owner: `Rauf Alizada`.
   - question: How should multi-client privacy/isolation be expressed at v1, given no multi-tenant runtime exists?
   - why it matters: Defines whether multi-client isolation is a governance posture or only a future-architecture concern.
   - impact if unresolved: Cross-client expectations remain undefined.
-  - no automatic resolution.
+  - P04-readiness disposition: accepted as explicitly deferred future-architecture work under `DEC-P04-DISP-002` (ratified 2026-07-02) — no multi-tenant runtime exists to isolate yet; the underlying scope/isolation-model question (`P02-ROAD-007`) remains scheduled. This does not resolve `OQ-P02-D-001`, `OQ-P02-C-003`, or `OQ-P02-D-006`, which remain open/deferred-with-acceptance unchanged.
 - **OQ-P02-S-007** — `EVIDENCE_POLICY.md`.
   - status: `Open`; source task: `CONT-P02-ONB-001`; source decision: `DEC-P02-SECURITY-TRUST-REQUIREMENTS-001`; owner: `Rauf Alizada`.
   - question: Should a dedicated `EVIDENCE_POLICY.md` be created, or should evidence rules remain distributed across `CHANGE_PROTOCOL.md`, `TRUST_BOUNDARIES.md`, and task records?
@@ -181,11 +181,11 @@ P02 questions are projected from the ratified P02 discovery artifacts under `DEC
   - impact if unresolved: Context-trust authority remains split.
   - no automatic resolution.
 - **OQ-P02-C-005** — Client / external / private data isolation at v1.
-  - status: `Open`; source task: `CONT-P02-ONB-001`; source decision: `DEC-P02-DATA-CLASSIFICATION-001`; owner: `Rauf Alizada`.
+  - status: `Disposed for P04-readiness`; source task: `CONT-P02-ONB-001`; source decision: `DEC-P02-DATA-CLASSIFICATION-001`; owner: `Rauf Alizada`.
   - question: How should client / external / private data isolation be expressed at v1, given no multi-tenant runtime exists yet?
   - why it matters: Defines governance posture toward external/private data before any runtime exists.
   - impact if unresolved: External-data handling expectations remain undefined.
-  - no automatic resolution.
+  - P04-readiness disposition: accepted as explicitly deferred future-architecture work under `DEC-P04-DISP-002` (ratified 2026-07-02) — no multi-tenant runtime exists to isolate yet; the underlying scope/isolation-model question (`P02-ROAD-007`) remains scheduled. This does not resolve `OQ-P02-D-001`, `OQ-P02-C-003`, or `OQ-P02-D-006`, which remain open/deferred-with-acceptance unchanged.
 - **OQ-P02-C-006** — Destructive-command evidence location.
   - status: `Open`; source task: `CONT-P02-ONB-001`; source decision: `DEC-P02-DATA-CLASSIFICATION-001`; owner: `Rauf Alizada`.
   - question: Should destructive-command evidence (Class-13) be encoded as a standalone `GIT_SAFETY.md` / destructive-command log, or remain inside the data-classification draft and `TRUST_BOUNDARIES.md`?

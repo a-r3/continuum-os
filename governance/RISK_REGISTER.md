@@ -250,7 +250,7 @@ This section projects unresolved P02 risks surfaced by the ratified P02 discover
 ### P02-RISK-010 — Client / External / Private Data Leakage
 
 - **Risk ID:** `P02-RISK-010`.
-- **Status:** Proposed; open.
+- **Status:** Disposed for P04-readiness — accepted with existing mitigation, under `DEC-P04-DISP-002` (ratified 2026-07-02). The underlying operational risk remains an ongoing governance concern and is not "closed"; only the P04-blocking classification is dispositioned.
 - **Phase:** P02.
 - **Source task:** `CONT-P02-ONB-001`.
 - **Source decisions / open questions:** `DEC-P02-DATA-CLASSIFICATION-001`; `OQ-P02-C-003`; `OQ-P02-C-008`; `OQ-P02-S-009`.
@@ -258,13 +258,14 @@ This section projects unresolved P02 risks surfaced by the ratified P02 discover
 - **Trigger / Cause:** Mis-scoped task examples; "real-world" snippets pasted into discovery; absence of ratified client-data class; absence of export/share authorization rules.
 - **Impact:** Privacy breach; trust loss; potential legal exposure.
 - **Current mitigation / guardrail:** Ratified P02 external/client data boundaries (External-Bound-1..5); ratified P02 data-classification draft; OQ-P02-C-003 (client-data isolation) and OQ-P02-C-008 (export authorization) explicitly open and unresolved.
+- **P04-readiness disposition evidence (`DEC-P04-DISP-002`):** No multi-tenant runtime exists yet for external/client/private data to flow through; the isolation and export-authorization gap this risk names is therefore future-architecture work, not a present-day implementation blocker. This is judged sufficient to accept the risk for P04 implementation-readiness purposes; it does not resolve `OQ-P02-C-003` or `OQ-P02-C-008`, and does not itself resolve the separate "Needed Product Owner decision / future work" item below.
 - **Needed Product Owner decision / future work:** Ratify client-data isolation requirement and export/share authorization rule.
 - **Owner / accountable authority:** Product Owner (`Rauf Alizada`).
 
 ### P02-RISK-011 — Cross-Client Context Contamination
 
 - **Risk ID:** `P02-RISK-011`.
-- **Status:** Proposed; open.
+- **Status:** Disposed for P04-readiness — accepted with existing mitigation, under `DEC-P04-DISP-002` (ratified 2026-07-02). The underlying operational risk remains an ongoing governance concern and is not "closed"; only the P04-blocking classification is dispositioned.
 - **Phase:** P02.
 - **Source task:** `CONT-P02-ONB-001`.
 - **Source decisions / open questions:** `DEC-P02-DATA-CLASSIFICATION-001`; `DEC-P02-DOMAIN-DISCOVERY-001`; `OQ-P02-C-003`; `OQ-P02-D-006`.
@@ -272,6 +273,7 @@ This section projects unresolved P02 risks surfaced by the ratified P02 discover
 - **Trigger / Cause:** Multi-project use of the same agent session; absence of ratified workspace/tenant noun; absence of ratified scope-bound isolation rule.
 - **Impact:** Confidentiality breach; loss of trust; incorrect decisions made against wrong tenant.
 - **Current mitigation / guardrail:** Ratified P02 scope-boundary candidates (Scope-Bound-1..5); cold-start reading order anchors to one project at a time; OQ-P02-D-006 (multi-tenancy noun) and OQ-P02-C-003 (client-data isolation) explicitly open.
+- **P04-readiness disposition evidence (`DEC-P04-DISP-002`):** No multi-tenant runtime exists yet, so no concrete cross-client contamination pathway is currently implementable; the underlying scope-noun/isolation-model question is scheduled under `P02-ROAD-007`. This is judged sufficient to accept the risk for P04 implementation-readiness purposes; it does not resolve `OQ-P02-D-006` or `OQ-P02-C-003`, and does not itself resolve the separate "Needed Product Owner decision / future work" item below.
 - **Needed Product Owner decision / future work:** Ratify multi-tenancy/workspace concept and isolation boundary.
 - **Owner / accountable authority:** Product Owner (`Rauf Alizada`).
 

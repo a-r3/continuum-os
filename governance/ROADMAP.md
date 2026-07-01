@@ -175,7 +175,7 @@ This section projects unresolved P02 follow-on work into the canonical roadmap a
 ### P02-ROAD-007 — Decide Project / Workspace / Client Isolation Model
 
 - **Item ID:** `P02-ROAD-007`.
-- **Status:** Proposed; not started.
+- **Status:** Proposed; not started. P04-readiness disposition (`DEC-P04-DISP-002`, ratified 2026-07-02): explicitly scheduled as future work rather than resolved or implemented now — no multi-tenant runtime exists yet, so this item's own dependency-on-runtime is not itself a P04 implementation blocker; the item remains open pending its own future Product Owner gate.
 - **Candidate phase:** P02.
 - **Source decision(s):** `DEC-P02-DOMAIN-DISCOVERY-001`; `DEC-P02-DATA-CLASSIFICATION-001`.
 - **Source open-questions / risks:** `OQ-P02-D-006`, `OQ-P02-C-003`; `P02-RISK-010`, `P02-RISK-011`, `P02-RISK-017`.
